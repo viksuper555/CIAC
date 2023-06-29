@@ -1,0 +1,68 @@
+.startingModuleBackground {
+  color: #00AF70;
+  height: 500px;
+  background: #00AF70;
+  width: 100%;
+
+  @media screen and (min-width: 1024px) {
+    height: 900px;
+
+  }
+}
+
+.circleContainer {
+ @apply flex justify-end;
+}
+
+.textContainer {
+  @apply flex absolute justify-center items-center;
+  width: 150px;
+  text-align: center;
+}
+
+.textStyle {
+  color: #0A231B;
+  font-size: 28px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.moduleContainer {
+  @apply flex flex-row justify-center items-center h-full;
+}
+
+.commaContainer {
+  @apply flex absolute;
+}
+
+.commaImage {
+
+  height: 70px;
+  width: 40px;
+
+  @media screen and (min-width: 1024px) {
+    height:  100px !important;
+    width: 60px !important;
+  }
+}
+
+.circle {
+  height: 200px;
+  width: 200px;
+
+  @media screen and (min-width: 1024px) {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+.peopleImagesContainer {
+ @apply flex absolute justify-center w-[50%];
+  margin-top: -240px;
+
+  @media screen and (min-width: 1024px) {
+    margin-top: -400px;
+
+  }
+}
