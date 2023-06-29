@@ -1,0 +1,62 @@
+.nav {
+  @apply pr-4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background: #030303;
+  bbackdrop-filter: blur(34px);
+}
+
+.brand {
+  img {
+    height: 100%
+  }
+}
+
+.toggle-container {
+  display: none;
+}
+
+.links {
+  list-style-type: none;
+  display: flex;
+  gap: 4rem;
+
+  li {
+    a {
+      color: var(--accent-color1);
+      text-decoration: none;
+      &:last-of-type {
+        color: var(--pink)
+      }
+    }
+  }
+}
+
+.light {
+  color: yellow;
+}
+
+.dark {
+  color: black;
+}
+
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  .nav {
+    position: relative;
+    padding: 1rem 2rem;
+  }
+
+  .links {
+    flex-direction: column;
+    li {
+      a {
+        color: var(--background);
+      }
+      &:last-of-type {
+        display: none;
+      }
+    }
+  }
+}
