@@ -1,7 +1,7 @@
 import styles from './startingModule.module.scss'
 import CommaImage from '../../public/CommaImage.png';
-import WhiteCircle from "@/public/WhiteCircle.png";
-import girl2 from "@/public/startingModuleGirl2.png"
+import WhiteCircle from "../../public/WhiteCircle.png";
+import girl2 from "../../public/startingModuleGirl2.png"
 import Image from "next/image";
 import React from "react";
 
