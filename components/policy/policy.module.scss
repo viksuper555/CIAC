@@ -1,0 +1,55 @@
+.policyContainer {
+    color: #00AF70;
+    height: 100%;
+    background: #00AF70;
+    width: 100%;
+}
+
+.titleContainer {
+    @apply flex mt-6 mx-4 justify-center;
+
+    @media screen and (min-width: 1024px) {
+        @apply ml-8;
+        width: 500px;
+        height: 250px;
+    }
+}
+
+.titleText {
+    @apply absolute self-center;
+    font-size: 50px;
+    color: white;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.mainTextContainer {
+    @apply flex;
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 360px;
+
+    @media screen and (min-width: 1024px) {
+        @apply w-[40%];
+    }
+}
+
+.mainText {
+    color: #FFF;
+    text-align: center;
+    font-size: 36px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    @media screen and (min-width: 1024px) {
+        text-align: justify;
+    }
+}
+
+.bottomRightImage {
+    @apply relative flex flex-row items-end justify-end;
+}

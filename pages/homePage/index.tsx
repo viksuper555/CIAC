@@ -2,6 +2,8 @@
 import { useState } from "react";
 import Navbar from "@/components/navbar";
 import StartingModule from "@/components/startingModule";
+import Policy from "@/components/policy";
+import CenteredScheme from "@/components/centeredScheme";
 
 
 const HomePage = () => {
@@ -12,9 +14,11 @@ const HomePage = () => {
     }
 
     return (
-        <div data-theme={theme}>
+        <div className={"h-full"}>
             <Navbar changeTheme={changeTheme} currentTheme={theme}/>
             <StartingModule/>
+            <Policy/>
+            <CenteredScheme/>
         </div>
     )
 }
