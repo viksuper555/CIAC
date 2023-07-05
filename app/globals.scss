@@ -15,6 +15,7 @@
   --card-color: #000000;
   --background: #111111;
   --font-family: "Inter", sans-serif;
+  height: auto;
 }
 
 [data-theme="light"] {
@@ -51,9 +52,7 @@ body {
   overflow-x: hidden;
   transition: 0.5s ease-in-out;
 
-  @media screen and (min-width: 280px) and (max-width: 1080px) {
-    padding: 0;
-  }
+
 }
 
 @media only screen and (min-device-width: 280px) and (max-device-width: 1080px) {

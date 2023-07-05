@@ -5,8 +5,7 @@
   width: 100%;
 
   @media screen and (min-width: 1024px) {
-    height: 900px;
-
+    height: 800px;
   }
 }
 
@@ -58,11 +57,12 @@
 }
 
 .peopleImagesContainer {
- @apply flex absolute justify-center w-[50%];
+ @apply flex absolute justify-center;
   margin-top: -240px;
+  width: 200px;
 
   @media screen and (min-width: 1024px) {
+    @apply w-[50%];
     margin-top: -400px;
-
   }
 }
