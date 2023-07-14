@@ -69,3 +69,11 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: var(--orange);
 }
+
+* {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}

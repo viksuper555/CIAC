@@ -1,0 +1,37 @@
+.container {
+  @apply mt-6;
+  height: 100%;
+  width: 100%;
+  background: #00AF70;
+}
+
+.title {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.textContainer {
+  @apply flex flex-col w-full pb-8;
+  padding-left: 30%;
+  padding-right: 15%;
+}
+
+.scribble {
+  @apply absolute;
+  margin-top: -150px;
+  left: 75%;
+}
+
+.text {
+  @apply pt-6;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

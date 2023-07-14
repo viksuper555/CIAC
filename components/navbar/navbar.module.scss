@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   height: 100px;
-  background: #030303;
+  background: #F9F9F9;
   bbackdrop-filter: blur(34px);
 }
 
@@ -25,10 +25,10 @@
 
   li {
     a {
-      color: var(--accent-color1);
+      color:#686767;
       text-decoration: none;
       &:last-of-type {
-        color: var(--pink)
+       color: #686767;
       }
     }
   }

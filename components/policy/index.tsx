@@ -2,8 +2,13 @@ import Image from "next/image";
 import greenTitleCircle from "../../public/greenTitleCircle.png";
 import styles from "./policy.module.scss"
 import React from "react";
+import ReadMoreBtn from "@/components/ui/readMoreBtn";
 
-const Policy = () => {
+interface Props {
+    hasButton: boolean;
+}
+
+const Policy = ({ hasButton }: Props) => {
 
     return (
         <>
@@ -21,6 +26,7 @@ const Policy = () => {
                         които определят направлението и приоритетите на държавата.
                         Ето някои от основите за политиката на България.
                     </div>
+                    <ReadMoreBtn hasButton={hasButton}/>
                 </div>
                 <div className={styles.bottomRightImage}>
                     <Image src={greenTitleCircle} alt={"img"} className={styles.bottomRightImage}/>
