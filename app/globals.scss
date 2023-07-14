@@ -51,8 +51,7 @@ body {
   font-family: var(--font-family);
   overflow-x: hidden;
   transition: 0.5s ease-in-out;
-
-
+  min-width: 365px;
 }
 
 @media only screen and (min-device-width: 280px) and (max-device-width: 1080px) {
@@ -76,4 +75,19 @@ body {
   -moz-user-drag: none;
   -o-user-drag: none;
   user-drag: none;
+}
+
+.redBackground {
+  background: #E64E5A;
+  color: white !important;
+}
+
+.greenBackground {
+  background: #00AF70;
+  color: white !important;
+}
+
+.grayBackground {
+  background: #ECECEC;
+  color: #686767 !important;
 }

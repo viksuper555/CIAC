@@ -4,6 +4,7 @@ import WhiteCircle from "../../public/WhiteCircle.png";
 import girl2 from "../../public/startingModuleGirl2.png"
 import Image from "next/image";
 import React from "react";
+import girl1 from "../../public/human2.png"
 
 interface Props {
     whiteCircle?: string
@@ -31,7 +32,7 @@ const StartingModule = ({ whiteCircle, commaImage, moduleText }: Props) => {
                     </div>
                 </div>
                 <div className={styles.peopleImagesContainer}>
-                    <Image src={girl2} alt={"girl2"} height={200} width={300}/>
+                    <Image src={girl1} alt={"girl2"} height={150} width={300}/>
                     <Image src={girl2} alt={"girl2"} height={200} width={300}/>
                 </div>
             </div>
