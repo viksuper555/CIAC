@@ -2,13 +2,14 @@ import styles from './infoText.module.scss'
 import Image from "next/image"
 
 interface Props {
-    background: any
+    background: any;
+    bgColor: string;
 }
 
-const InfoText = ({ background }: Props) => {
+const InfoText = ({ background, bgColor }: Props) => {
 
     return (
-        <div className={`${background} ${styles.infoTextContainer} mt-12`}>
+        <div className={`${styles.infoTextContainer} ${bgColor}`}>
             <Image src={background} alt={"infoText"}/>
         </div>
     )

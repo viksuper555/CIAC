@@ -1,0 +1,25 @@
+.examContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.titleContainer {
+  @apply flex mt-6 mx-4 justify-center;
+
+  @media screen and (min-width: 1024px) {
+    @apply ml-8;
+    width: 500px;
+    height: 250px;
+  }
+}
+
+.titleText {
+  @apply absolute self-center mt-4;
+  font-size: 50px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+

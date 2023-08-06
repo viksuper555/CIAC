@@ -7,7 +7,7 @@ interface Props {
     titleImage?: any
     hasTitleImage: boolean;
     hasButton: boolean;
-    titleText: string;
+    titleText?: string;
     mainText: string;
     background: string
     downRightImage?: any;

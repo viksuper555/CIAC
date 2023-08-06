@@ -7,16 +7,17 @@ import React from "react";
 import girl1 from "../../public/human2.png"
 
 interface Props {
+    moduleBackgroundColor: any;
     whiteCircle?: string
     commaImage?: string
     moduleText?: string
 }
 
-const StartingModule = ({ whiteCircle, commaImage, moduleText }: Props) => {
+const StartingModule = ({ moduleBackgroundColor, whiteCircle, commaImage, moduleText }: Props) => {
 
     return (
         <>
-            <div className={styles.startingModuleBackground}>
+            <div className={`${styles.startingModuleBackground} ${moduleBackgroundColor}`}>
                 <div className={styles.moduleContainer}>
                     <div className={styles.circleContainer}>
                         <Image src={WhiteCircle} alt={"whiteCircle"} className={styles.circle}/>
