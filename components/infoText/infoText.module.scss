@@ -1,6 +1,9 @@
 .infoTextContainer {
-  @apply flex justify-center items-center py-6;
+  @apply flex justify-center items-center py-6 mt-4;
   height: 100%;
   width: 100%;
-  background: #ECECEC;
+
+  @media screen and (min-width: 1024px) {
+    @apply mt-12;
+  }
 }
