@@ -27,7 +27,7 @@ const StartingModule = ({ whiteCircle, commaImage, moduleText }: Props) => {
                     </div>
                     <div className={styles.textContainer}>
                         <span className={styles.textStyle}>
-                             Модул 1 България
+                            {moduleText}
                         </span>
                     </div>
                 </div>

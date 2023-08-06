@@ -14,12 +14,13 @@
 }
 
 .titleText {
-    @apply absolute self-center;
+    @apply absolute self-center mt-4;
     font-size: 50px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    text-align: center;
 }
 
 .mainTextContainer {

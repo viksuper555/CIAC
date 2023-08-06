@@ -36,9 +36,13 @@
 }
 
 .scribble {
-  @apply absolute;
+  @apply absolute hidden;
   margin-top: -150px;
   left: 75%;
+
+  @media screen and (min-width: 1440px) {
+    visibility: visible;
+  }
 }
 
 .text {
