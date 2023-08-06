@@ -66,12 +66,10 @@ const HomePage = () => {
             <InfoText background={infoText2}/>
             <InfoWithNotes
                 background={"grayBackground"}
-                hasButton={true}
                 hasTitleImage={true}
                 titleImage={grayTitleCircle}
                 titleText={"Информационни страници"}
                 mainText={"Гражданското участие е важен аспект на демократичното общество и представлява активното участие на гражданите в процесите на вземане на решения и формиране на обществените политики. То включва правото на глас, свободата на изразяване на мнение, свободата на сдружаване и мирното събиране. В България гражданското участие се осъществява чрез различни форми и инструменти:"}
-                downRightImage={peopleDigging}
             />
 
             <StartingModule moduleText={"Модул 2 България"}/>
@@ -89,6 +87,7 @@ const HomePage = () => {
                 background={"grayBackground"}
                 hasTitleImage={true}
                 titleImage={grayTitleCircle}
+                mainText={""}
                 titleText={"Няколко примера за уроци по гражданско образование:"}
             />
             <MainTopic

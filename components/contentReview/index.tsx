@@ -2,11 +2,10 @@ import Image from "next/image";
 import styles from "./contentReview.module.scss"
 
 interface Props {
-    contentImage: string;
+    contentImage: any;
     background: string
-    titleColor: string;
 }
-const ContentReview = ({contentImage, background, titleColor}: Props) => {
+const ContentReview = ({contentImage, background}: Props) => {
 
     return (
         <div className={`${styles.contentReviewContainer} ${background}`}>

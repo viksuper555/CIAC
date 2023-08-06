@@ -2,7 +2,7 @@ import styles from './infoText.module.scss'
 import Image from "next/image"
 
 interface Props {
-    background: string
+    background: any
 }
 
 const InfoText = ({ background }: Props) => {
