@@ -1,0 +1,10 @@
+.singleStickyContainer {
+  @apply w-full h-full flex;
+  min-height: 700px;
+  justify-content: center;
+}
+
+.stickyWrapper {
+ @apply flex;
+  width: 650px;
+}

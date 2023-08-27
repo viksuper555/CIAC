@@ -1,14 +1,14 @@
 import React, {FC, useState} from 'react';
-import logo from '../../public/logo.png';
+import logo from '../../public/bulgaria/logo.png';
 import Image from 'next/image';
 import styles from './navbar.module.scss';
 
 interface Props {
-    changeTheme: any;
-    currentTheme: string;
+    changeTheme?: any;
+    currentTheme?: string;
 }
 
-const Navbar:FC<Props> = ({changeTheme, currentTheme}) => {
+const Navbar:FC<Props> = ({changeTheme, currentTheme}: Props) => {
 
     return (
         <nav className={styles.nav}>

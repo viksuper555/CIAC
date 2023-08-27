@@ -1,10 +1,10 @@
 import styles from './startingModule.module.scss'
-import CommaImage from '../../public/CommaImage.png';
-import WhiteCircle from "../../public/WhiteCircle.png";
-import girl2 from "../../public/startingModuleGirl2.png"
+import CommaImage from '../../public/bulgaria/CommaImage.png';
+import WhiteCircle from "../../public/bulgaria/WhiteCircle.png";
+import girl2 from "../../public/bulgaria/startingModuleGirl2.png"
 import Image from "next/image";
 import React from "react";
-import girl1 from "../../public/human2.png"
+import girl1 from "../../public/bulgaria/human2.png"
 
 interface Props {
     moduleBackgroundColor: any;

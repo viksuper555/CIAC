@@ -2,14 +2,14 @@ import Image from "next/image";
 import styles from "./infoWithNotes.module.scss"
 import React from "react";
 import StickyNote from "@/components/ui/stickyNote";
-import purpleElipse from "../../public/purpleElipse.png"
-import blueElipse from "../../public/blueElipse.png"
-import purpleStickyBg from "../../public/stickyBgPurple.png"
-import blueSticky from "../../public/stickyBgBlue.png"
-import yellowSticky from "../../public/StickyBgYellow.png"
-import yellowElipse from "../../public/yellowElipse.png"
-import greenSticky from "../../public/stickyBgGreen.png"
-import greenElipse from "../../public/greenElipse.png"
+import purpleElipse from "../../public/bulgaria/purpleElipse.png"
+import blueElipse from "../../public/bulgaria/blueElipse.png"
+import purpleStickyBg from "../../public/bulgaria/stickyBgPurple.png"
+import blueSticky from "../../public/bulgaria/stickyBgBlue.png"
+import yellowSticky from "../../public/bulgaria/StickyBgYellow.png"
+import yellowElipse from "../../public/bulgaria/yellowElipse.png"
+import greenSticky from "../../public/bulgaria/stickyBgGreen.png"
+import greenElipse from "../../public/bulgaria/greenElipse.png"
 
 interface Props {
     titleImage?: any

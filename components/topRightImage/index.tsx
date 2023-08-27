@@ -1,8 +1,8 @@
 import styles from './topRightImage.module.scss';
-import leftMagnifyingGlass from "../../public/leftMagnefyingGlass.png";
+import leftMagnifyingGlass from "../../public/bulgaria/leftMagnefyingGlass.png";
 import Image from "next/image";
-import scribble from "../../public/Scribble.png"
-import ReadMoreBtn from "@/components/ui/readMoreBtn";
+import scribble from "../../public/bulgaria/Scribble.png"
+import RedirectButton from "@/components/ui/readMoreBtn";
 
 const TopRightImage = () => {
     return (
@@ -25,7 +25,7 @@ const TopRightImage = () => {
                         <div className={styles.text}>
                             Европейска интеграция: България е член на Европейския съюз (от 2007 г.) и активно подкрепя европейската интеграция и принципите на общността. Държавата работи за съгласуване на своите законодателство и политики с европейските стандарти и ценности.
                         </div>
-                        <ReadMoreBtn/>
+                        <RedirectButton/>
                     </div>
                 </div>
             </div>
