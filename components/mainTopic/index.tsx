@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./policy.module.scss"
 import React from "react";
-import ReadMoreBtn from "@/components/ui/readMoreBtn";
+import RedirectButton from "@/components/ui/readMoreBtn";
 
 interface Props {
     titleImage?: any
@@ -31,7 +31,7 @@ const MainTopic = ({ hasButton, hasTitleImage, titleText, mainText, background, 
                     <div className={styles.mainText}>
                         {mainText}
                     </div>
-                    {hasButton && <ReadMoreBtn/>}
+                    {hasButton && <RedirectButton/>}
                 </div>
                 <div className={styles.bottomRightImage}>
                     <Image src={downRightImage} alt={"img"} className={styles.bottomRightImage} height={300} width={500}/>

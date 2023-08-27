@@ -1,0 +1,21 @@
+.container {
+  @apply w-full h-full flex;
+  min-height: 700px;
+}
+
+.imageContainer {
+  width: 35%;
+  display: flex;
+  align-items: end;
+  margin-left: 30px;
+}
+
+.textsContainer {
+  @apply flex flex-col;
+  width: 50%;
+  justify-content: center;
+}
+
+.text {
+  @apply p-4;
+}

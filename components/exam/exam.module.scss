@@ -1,6 +1,7 @@
 .examContainer {
   height: 100%;
   width: 100%;
+  min-height: 700px;
 }
 
 .titleContainer {
@@ -21,5 +22,15 @@
   font-weight: 700;
   line-height: normal;
   text-align: center;
+}
+
+
+.bottomRightImage {
+  @apply relative flex flex-row items-end justify-end;
+  @media screen and (min-width: 1024px) {
+    &:last-child {
+      margin-right: 50px;
+    }
+  }
 }
 
