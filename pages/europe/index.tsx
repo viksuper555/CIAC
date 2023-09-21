@@ -35,6 +35,63 @@ const Europe = () => {
                 moduleBackgroundColor={"blueBackground"}
                 className={styles.sectionContainer}
             />
+            <div className={`${styles.quotesContainer} ${styles.sectionContainer}`}>
+                <div className={`${styles.quotesRow} mb-20`}>
+                    <div className={styles.quoteMerkel}>
+                        <div className={styles.doubleQuoteMerkel}>
+                            <img src={'/img/europe/quote_blue.svg'} className={styles.firstQuote}/>
+                            <img src={'/img/europe/quote_blue.svg'} className={styles.secondQuote}/>
+                        </div>
+                        <div className={styles.text}>
+                            <p className={styles.person}>A. Меркел</p>
+                            <p className={styles.quoteText}>
+                                Европа е мозайка на културите, която прави нашия континент толкова уникален.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className={styles.quoteKenedy}>
+                        <div className={styles.doubleQuoteKenedy}>
+                            <img src={'/img/europe/quote_gray.svg'} className={styles.firstQuote}/>
+                            <img src={'/img/europe/quote_gray.svg'} className={styles.secondQuote}/>
+                        </div>
+                        <div className={styles.text}>
+                            <p className={styles.person}>Д. Кенеди</p>
+                            <p className={styles.quoteText}>
+                                Европа е мястото, където историята се преплита със съвременността, а традициите се срещат с иновациите.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={styles.quotesRow}>
+                    <div className={styles.quoteDelore}>
+                        <div className={styles.doubleQuoteDelore}>
+                            <img src={'/img/europe/quote_yellow.svg'} className={styles.firstQuote}/>
+                            <img src={'/img/europe/quote_yellow.svg'} className={styles.secondQuote}/>
+                        </div>
+                        <div className={styles.text}>
+                            <p className={styles.person}>Ж. Делор</p>
+                            <p className={styles.quoteText}>
+                                Европа е историята и цивилизацията, и културата и идеите, и мечтите. Тя е бъдещето и надеждата на всички наши народи.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className={styles.quoteBerbatov}>
+                        <div className={styles.doubleQuoteBerbatov}>
+                            <img src={'/img/europe/quote_darkblue.svg'} className={styles.firstQuote}/>
+                            <img src={'/img/europe/quote_darkblue.svg'} className={styles.secondQuote}/>
+                        </div>
+                        <div className={styles.text}>
+                            <p className={styles.person}>Д. Бербатов</p>
+                            <p className={styles.quoteText}>
+                                Европа е симфонията на различията, съчетани със сближаването на ценностите.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <ContentReview
                 contentImage={infoContent} background={"whiteBackgroundEurope"}
                 className={styles.sectionContainer}

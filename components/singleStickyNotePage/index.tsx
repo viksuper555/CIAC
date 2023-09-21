@@ -10,7 +10,6 @@ interface Props {
     className?: string
 }
 const SingleStickyNotePage = ({ noteImageSrc, circleImageSrc, noteWidth, noteHeight, noteText, className }: Props) => {
-    console.log(noteWidth)
     return (
         <div className={`${styles.singleStickyContainer} ${className}`}>
             <div className={styles.stickyWrapper}>
