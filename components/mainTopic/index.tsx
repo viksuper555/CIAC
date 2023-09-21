@@ -11,13 +11,17 @@ interface Props {
     mainText: string;
     background: string
     downRightImage?: any;
+    className?: string
 }
 
-const MainTopic = ({ hasButton, hasTitleImage, titleText, mainText, background, titleImage, downRightImage }: Props) => {
+const MainTopic = ({
+    hasButton, hasTitleImage, titleText, mainText, background, titleImage,
+    downRightImage, className
+}: Props) => {
 
     return (
         <>
-            <div className={`${styles.policyContainer} ${background}`}>
+            <div className={`${styles.policyContainer} ${background} ${className}`}>
                 <div className={styles.titleContainer}>
                     {
                         hasTitleImage && <Image src={titleImage} alt={"commaImg"} className="mt-6"/>

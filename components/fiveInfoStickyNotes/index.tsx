@@ -1,14 +1,17 @@
 import styles from './fiveInfoStickyNotes.module.scss'
 import StickyNote from "@/components/ui/stickyNote";
-import yellowSticky from "../../public/bulgaria/StickyBgYellow.png";
-import yellowElipse from "../../public/bulgaria/yellowElipse.png";
-import blueSticky from "../../public/bulgaria/stickyBgBlue.png";
-import blueElipse from "../../public/bulgaria/blueElipse.png";
+import yellowSticky from "../../public/img/bulgaria/StickyBgYellow.png";
+import yellowElipse from "../../public/img/bulgaria/yellowElipse.png";
+import blueSticky from "../../public/img/bulgaria/stickyBgBlue.png";
+import blueElipse from "../../public/img/bulgaria/blueElipse.png";
 
+interface Props {
+    className?: string
+}
 
-const FiveInfoStickyNotes = () => {
+const FiveInfoStickyNotes = ({ className }: Props) => {
     return (
-        <div className={styles.fiveNotesContainer}>
+        <div className={`${styles.fiveNotesContainer} ${className}`}>
             <div className={styles.rowsContainer}>
                 <div className={styles.firstRow}>
                     <StickyNote noteImageSrc={blueSticky} circleImageSrc={blueElipse} noteText={"1. Европейски парламент: Европейският парламент е единственият орган на ЕС, който се избира директно от гражданите на държавите-членки. Той представлява интересите на гражданите и участва в създаването на ново законодателство на ЕС. Парламентът участва и в одобрението на бюджета на ЕС и осъществява надзор над другите институции."}/>

@@ -1,7 +1,7 @@
 import styles from './topLeftImage.module.scss';
-import leftMagnifyingGlass from "../../public/bulgaria/leftMagnefyingGlass.png";
+import leftMagnifyingGlass from "../../public/img/bulgaria/leftMagnefyingGlass.png";
 import Image from "next/image";
-import scribble from "../../public/bulgaria/Scribble.png"
+import scribble from "../../public/img/bulgaria/Scribble.png"
 
 const TopLeftImage = () => {
     return (

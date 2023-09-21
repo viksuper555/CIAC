@@ -1,6 +1,6 @@
 import styles from "./centeredScheme.module.scss";
 import Image from "next/image";
-import greenTitleCircle from "@/public/bulgaria/greenTitleCircle.png";
+import greenTitleCircle from "@/public/img/bulgaria/greenTitleCircle.png";
 import React from "react";
 
 interface Props {

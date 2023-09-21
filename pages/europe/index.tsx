@@ -1,33 +1,44 @@
 "use client";
-import "../../app/globals.scss"
+import "../../app/globals.scss";
 import { useState } from "react";
 import Navbar from "@/components/navbar";
 import StartingModule from "@/components/startingModule";
 import ContentReview from "@/components/contentReview";
-import infoContent from "@/public/bulgaria/infoContent.svg";
+import infoContent from "@/public/img/bulgaria/infoContent.svg";
 import MainTopic from "@/components/mainTopic";
-import yellowTitleCircle from "../../public/europe/yellowTitleCircle.png";
-import blueTitleCircle from "../../public/europe/blueTitleCircle.png";
-import peopleWithPlanet from "../../public/europe/Group.png";
-import grayTitleCircle from "../../public/bulgaria/grayTitleCircle.png";
+import yellowTitleCircle from "../../public/img/europe/yellowTitleCircle.png";
+import blueTitleCircle from "../../public/img/europe/blueTitleCircle.png";
+import peopleWithPlanet from "../../public/img/europe/Group.png";
+import grayTitleCircle from "../../public/img/bulgaria/grayTitleCircle.png";
 import FiveInfoStickyNotes from "@/components/fiveInfoStickyNotes";
 import Exam from "@/components/exam";
 import SingleStickyNotePage from "@/components/singleStickyNotePage";
-import yellowSticky from "../../public/bulgaria/StickyBgYellow.png"
-import yellowElipse from "../../public/bulgaria/yellowElipse.png"
+import yellowSticky from "../../public/img/bulgaria/StickyBgYellow.png";
+import yellowElipse from "../../public/img/bulgaria/yellowElipse.png";
+import styles from './europe.module.scss';
 
 const Europe = () => {
     const [theme, setTheme] = useState("dark");
 
     const changeTheme = () => {
-        theme === "dark" ? setTheme("light") : setTheme("dark")
-    }
+        theme === "dark" ? setTheme("light") : setTheme("dark");
+    };
 
     return (
         <div className={"app-container"}>
-            <Navbar changeTheme={changeTheme} currentTheme={theme}/>
-            <StartingModule moduleText={"Модул 1 Европа"} moduleBackgroundColor={"blueBackground"}/>
-            <ContentReview contentImage={infoContent} background={"whiteBackgroundEurope"}/>
+            <Navbar
+                changeTheme={changeTheme} currentTheme={theme}
+                className={styles.sectionContainer}
+            />
+            <StartingModule
+                moduleText={"Модул 1 Европа"}
+                moduleBackgroundColor={"blueBackground"}
+                className={styles.sectionContainer}
+            />
+            <ContentReview
+                contentImage={infoContent} background={"whiteBackgroundEurope"}
+                className={styles.sectionContainer}
+            />
             <MainTopic
                 titleImage={blueTitleCircle}
                 background={"blueBackground"}
@@ -35,6 +46,7 @@ const Europe = () => {
                 hasTitleImage={true}
                 titleText={"Политика"}
                 mainText={"Политиката в Европа е изключително разнообразна, тъй като Европа се състои от множество държави със собствени правителства и политически системи. Европейският съюз (ЕС) обаче играе ключова роля във формирането на общата политическа атмосфера на континента."}
+                className={styles.sectionContainer}
             />
             <MainTopic
                 titleImage={yellowTitleCircle}
@@ -44,6 +56,7 @@ const Europe = () => {
                 titleText={"Общество"}
                 downRightImage={peopleWithPlanet}
                 mainText={"Обществото в Европа е изключително разнообразно и многослойно, като обхваща множество култури, езици, религии и обичаи. Европейското общество се характеризира с богата история, дълбоки традиции и променящи се социални структури."}
+                className={styles.sectionContainer}
             />
             <MainTopic
                 titleImage={grayTitleCircle}
@@ -53,20 +66,23 @@ const Europe = () => {
                 titleText={"Институции"}
                 downRightImage={peopleWithPlanet}
                 mainText={"Институциите в Европа обхващат различни организации и структури, които играят ключова роля в управлението и функционирането на Европейския съюз (ЕС). Тези институции създават, прилагат и наблюдават законодателството на ЕС, както и изпълняват други важни функции. Най-важните институции на Европейския съюз са:"}
+                className={styles.sectionContainer}
             />
-            <FiveInfoStickyNotes/>
+            <FiveInfoStickyNotes className={styles.sectionContainer}/>
             <SingleStickyNotePage
                 circleImageSrc={yellowElipse}
                 noteImageSrc={yellowSticky}
                 noteHeight={450}
                 noteWidth={600}
                 noteText={"    Политическият ред в Европа:\n" +
-                "\n" +
-                "Европейският съюз: ЕС е политически и икономически съюз на 27 европейски държави, целящ да насърчи икономическото и политическо сътрудничество между своите членки. Институциите на ЕС включват Европейския парламент, Европейския съвет, Съвета на министрите, Европейската комисия и Европейския съд на правата на човека.\n" +
-                "\n" +
-                "Националните правителства: Всяка европейска държава има свои национални правителства, които се занимават с вътрешните въпроси и политики на държавата.\n" +
-                "\n" +
-                "Местните и регионални органи: Много държави в Европа са разделени на различни административни райони и области със свои местни и регионални органи."}/>
+                    "\n" +
+                    "Европейският съюз: ЕС е политически и икономически съюз на 27 европейски държави, целящ да насърчи икономическото и политическо сътрудничество между своите членки. Институциите на ЕС включват Европейския парламент, Европейския съвет, Съвета на министрите, Европейската комисия и Европейския съд на правата на човека.\n" +
+                    "\n" +
+                    "Националните правителства: Всяка европейска държава има свои национални правителства, които се занимават с вътрешните въпроси и политики на държавата.\n" +
+                    "\n" +
+                    "Местните и регионални органи: Много държави в Европа са разделени на различни административни райони и области със свои местни и регионални органи."}
+                className={styles.sectionContainer}
+            />
             <MainTopic
                 titleImage={blueTitleCircle}
                 background={"blueBackground"}
@@ -75,6 +91,7 @@ const Europe = () => {
                 titleText={"Информационни страници"}
                 downRightImage={peopleWithPlanet}
                 mainText={"Политиката в Европа е изключително разнообразна, тъй като Европа се състои от множество държави със собствени правителства и политически системи. Европейският съюз (ЕС) обаче играе ключова роля във формирането на общата политическа атмосфера на континента."}
+                className={styles.sectionContainer}
             />
             <MainTopic
                 titleImage={blueTitleCircle}
@@ -84,12 +101,23 @@ const Europe = () => {
                 titleText={"Медийна грамотност и разпознаване на фалшиви новини"}
                 downRightImage={peopleWithPlanet}
                 mainText={"Европейските институции и много неправителствени организации работят за повишаване на медийната грамотност и разпознаването на фалшиви новини сред гражданите. Това включва обучителни програми, кампании за информиране и насърчаване на критичното мислене при използването на информация от различни източници. Някои от начините, по които хората могат да разпознаят фалшиви новини, включват:"}
+                className={styles.sectionContainer}
             />
-            <Exam titleImage={blueTitleCircle} background={"blueBackground"}/>
-            <StartingModule moduleText={"Модул 2 Европа"} moduleBackgroundColor={"yellowBackgroundEurope"}/>
-            <ContentReview contentImage={infoContent} background={"yellowBackgroundEurope"}/>
+            <Exam
+                titleImage={blueTitleCircle} background={"blueBackground"}
+                className={styles.sectionContainer}
+            />
+            <StartingModule
+                moduleText={"Модул 2 Европа"}
+                moduleBackgroundColor={"yellowBackgroundEurope"}
+                className={styles.sectionContainer}
+            />
+            <ContentReview
+                contentImage={infoContent} background={"yellowBackgroundEurope"}
+                className={styles.sectionContainer}
+            />
         </div>
-    )
-}
+    );
+};
 
-export default Europe
+export default Europe;

@@ -1,5 +1,5 @@
 import React, {FC, useState} from 'react';
-import logo from '../../public/bulgaria/logo.png';
+import logo from '../../public/img/bulgaria/logo.png';
 import Image from 'next/image';
 import styles from './navbar.module.scss';
 

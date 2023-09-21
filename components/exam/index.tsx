@@ -2,18 +2,19 @@ import styles from "./exam.module.scss";
 import Image from "next/image";
 import React from "react";
 import RedirectButton from "@/components/ui/readMoreBtn";
-import examW1 from "@/public/bulgaria/examW1.png"
-import examW2 from "@/public/bulgaria/examW2.png"
+import examW1 from "@/public/img/bulgaria/examW1.png"
+import examW2 from "@/public/img/bulgaria/examW2.png"
 
 interface Props {
     titleImage: any,
     background: any,
     image?: any
+    className?: string
 }
-const Exam = ({titleImage, background}: Props) => {
+const Exam = ({ titleImage, background, className }: Props) => {
 
     return (
-            <div className={`${styles.examContainer} ${background}`}>
+            <div className={`${styles.examContainer} ${background} ${className}`}>
                 <div className={styles.titleContainer}>
                     <Image src={titleImage} alt={"commaImg"} className="mt-6"/>
                     <span className={`${styles.titleText}`}>

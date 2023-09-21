@@ -1,23 +1,24 @@
 import styles from './startingModule.module.scss'
-import CommaImage from '../../public/bulgaria/CommaImage.png';
-import WhiteCircle from "../../public/bulgaria/WhiteCircle.png";
-import girl2 from "../../public/bulgaria/startingModuleGirl2.png"
+import CommaImage from '../../public/img/bulgaria/CommaImage.png';
+import WhiteCircle from "../../public/img/bulgaria/WhiteCircle.png";
+import girl2 from "../../public/img/bulgaria/startingModuleGirl2.png"
 import Image from "next/image";
 import React from "react";
-import girl1 from "../../public/bulgaria/human2.png"
+import girl1 from "../../public/img/bulgaria/human2.png"
 
 interface Props {
     moduleBackgroundColor: any;
     whiteCircle?: string
     commaImage?: string
     moduleText?: string
+    className?: string
 }
 
-const StartingModule = ({ moduleBackgroundColor, whiteCircle, commaImage, moduleText }: Props) => {
+const StartingModule = ({ moduleBackgroundColor, whiteCircle, commaImage, moduleText, className }: Props) => {
 
     return (
         <>
-            <div className={`${styles.startingModuleBackground} ${moduleBackgroundColor}`}>
+            <div className={`${styles.startingModuleBackground} ${moduleBackgroundColor} ${className}`}>
                 <div className={styles.moduleContainer}>
                     <div className={styles.circleContainer}>
                         <Image src={WhiteCircle} alt={"whiteCircle"} className={styles.circle}/>
