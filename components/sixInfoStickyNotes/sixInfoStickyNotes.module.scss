@@ -1,0 +1,20 @@
+.sixNotesContainer {
+  @apply h-full mt-12 relative;
+  min-height: 700px;
+}
+
+.rowsContainer {
+  @apply flex flex-col items-center relative;
+  font-size: 10px;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 14px;
+  }
+}
+.firstRow {
+  @apply flex flex-row;
+}
+
+.secondRow {
+  @apply flex flex-row;
+}
