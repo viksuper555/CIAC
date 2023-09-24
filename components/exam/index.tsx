@@ -10,24 +10,27 @@ interface Props {
     background: any,
     image?: any
     className?: string
+    id?: string
 }
-const Exam = ({ titleImage, background, className }: Props) => {
+const Exam = ({ titleImage, background, className, id }: Props) => {
 
     return (
-            <div className={`${styles.examContainer} ${background} ${className}`}>
+            <div id={id} className={`${styles.examContainer} ${background} ${className}`}>
                 <div className={styles.titleContainer}>
                     <Image src={titleImage} alt={"commaImg"} className="mt-6"/>
                     <span className={`${styles.titleText}`}>
-                        "Тест"
+                        Тест
                     </span>
                 </div>
-            <div className={"flex justify-center mt-20"}>
-                <RedirectButton btnText={"Започни"}/>
+            <div className={styles.actionBtnContainer}>
+                <div className={styles.actionBtnInner}>
+                    <div className={styles.actionBtn}>
+                        Изтегли
+                    </div>
+                    <img src={'/img/scribble.svg'} className={styles.scribble}/>
+                </div>
             </div>
-            <div className={styles.bottomRightImage}>
-                <Image src={examW1} alt={"img"} className={styles.bottomRightImage} height={200} width={100}/>
-                <Image src={examW2} alt={"img"} className={styles.bottomRightImage} height={200} width={100}/>
-            </div>
+            <img src={'/img/europe/girls.png'} className={styles.bottomRightImage}/>
         </div>
     )
 }

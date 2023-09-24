@@ -217,6 +217,16 @@ const Europe = () => {
                 text4={"4. Европейският съд на правата на човека: Това е независим съдебен орган, който осигурява спазването на законите на ЕС и решава спорове между държавите-членки и институциите на ЕС. Съдът също така разглежда жалби от граждани и компании относно нарушения на техните права или законните правила на ЕС."}
                 text5={"5. Европейската централна банка (ЕЦБ): ЕЦБ е отговорна за монетарната политика на еврозоната, която е групата от държави в ЕС, използващи общата валута - еврото. Тя контролира възможностите за издаване на пари, провежда валутни операции и следи инфлацията и икономическото развитие в региона."}
             />
+            <MainTopic
+                titleImage={blueTitleCircle}
+                background={"blueBackground"}
+                hasButton={false}
+                hasTitleImage={true}
+                titleText={"Информационни страници"}
+                downRightImage={peopleWithPlanet}
+                mainText={"Политиката в Европа е изключително разнообразна, тъй като Европа се състои от множество държави със собствени правителства и политически системи. Европейският съюз (ЕС) обаче играе ключова роля във формирането на общата политическа атмосфера на континента."}
+                className={styles.sectionContainer}
+            />
             <div
                 id={"sticky-note-one"}
                 className={`${styles.sectionContainer} ${styles.bgBlue} ${styles.singleStickyNoteContainer}`}
@@ -263,30 +273,20 @@ const Europe = () => {
                 background={"blueBackground"}
                 hasButton={false}
                 hasTitleImage={true}
-                titleText={"Информационни страници"}
-                downRightImage={peopleWithPlanet}
-                mainText={"Политиката в Европа е изключително разнообразна, тъй като Европа се състои от множество държави със собствени правителства и политически системи. Европейският съюз (ЕС) обаче играе ключова роля във формирането на общата политическа атмосфера на континента."}
-                className={styles.sectionContainer}
-            />
-            <MainTopic
-                titleImage={blueTitleCircle}
-                background={"blueBackground"}
-                hasButton={false}
-                hasTitleImage={true}
                 titleText={"Медийна грамотност и разпознаване на фалшиви новини"}
                 downRightImage={peopleWithPlanet}
                 mainText={"Европейските институции и много неправителствени организации работят за повишаване на медийната грамотност и разпознаването на фалшиви новини сред гражданите. Това включва обучителни програми, кампании за информиране и насърчаване на критичното мислене при използването на информация от различни източници. Някои от начините, по които хората могат да разпознаят фалшиви новини, включват:"}
                 className={styles.sectionContainer}
             />
             <Exam
+                id={"exam-europe-module-1"}
                 titleImage={blueTitleCircle} background={"blueBackground"}
                 className={styles.sectionContainer}
             />
-            <StartingModule
-                moduleText={"Модул 2 Европа"}
-                moduleBackgroundColor={"yellowBackgroundEurope"}
-                className={styles.sectionContainer}
-            />
+            <div className={`${styles.contentsModule2Container} ${styles.sectionContainer}`}>
+                <div className={styles.contentsModule2Title}>СЪДЪРЖАНИЕ</div>
+                <img src={'/img/contents2.png'} className={styles.contentsModule2}/>
+            </div>
             <ContentReview
                 contentImage={infoContent} background={"yellowBackgroundEurope"}
                 className={styles.sectionContainer}

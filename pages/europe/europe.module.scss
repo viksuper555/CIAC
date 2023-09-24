@@ -377,3 +377,24 @@
     right: 10px;
     bottom: 0;
 }
+
+.contentsModule2Container {
+    @apply flex flex-col;
+    padding: 40px 100px;
+    background: #F3AA1A;
+}
+
+.contentsModule2Title {
+    @apply text-center;
+    padding-bottom: 40px;
+    color: #FFF;
+    text-align: center;
+    font-family: "Montserrat Bold";
+    font-size: 70px;
+    font-style: normal;
+    line-height: normal;
+}
+
+.contentsModule2 {
+    width: 1000px;
+}

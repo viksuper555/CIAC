@@ -16,8 +16,8 @@
 
 .titleText {
   @apply absolute self-center mt-4;
-  font-size: 50px;
-  font-family: Montserrat;
+  font-size: 60px;
+  font-family: "Montserrat Bold";
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -26,11 +26,46 @@
 
 
 .bottomRightImage {
-  @apply relative flex flex-row items-end justify-end;
-  @media screen and (min-width: 1024px) {
-    &:last-child {
-      margin-right: 50px;
-    }
+  @apply absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 320px;
+
+  @media screen and (min-width: 1200px) {
+    width: 483px;
   }
+}
+
+.actionBtnContainer {
+  @apply absolute w-full h-full flex justify-center items-center;
+  top: 0;
+  left: 0;
+}
+
+.actionBtnInner {
+  @apply relative;
+}
+
+.actionBtn {
+  @apply flex justify-center items-center cursor-pointer;
+  width: 271px;
+  height: 73px;
+  border-radius: 45px;
+  background: #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #3764E5;
+  text-align: center;
+  font-family: "Montserrat Bold";
+  font-size: 26px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.scribble {
+  @apply absolute;
+  width: 240px;
+  right: -120px;
+  bottom: -110px;
+  transform: rotate(170deg);
 }
 
