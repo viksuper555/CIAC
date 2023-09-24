@@ -245,33 +245,6 @@
     left: 1030px;
 }
 
-.politicsTableContainer {
-    @apply flex justify-center items-center;
-    position: relative;
+.bgBlue {
     background: #3764E5;
-}
-
-.politicsTable {
-    width: 1000px;
-    height: 593px;
-
-    @media screen and (min-width: 1200px) {
-        width: 1160px;
-        height: 688px;
-    }
-
-    @media screen and (min-width: 1440px) {
-        width: 1400px;
-        height: 830px;
-    }
-
-    @media screen and (min-width: 1680px) {
-        width: 1620px;
-        height: 961px;
-    }
-
-    @media screen and (min-width: 1800px) {
-        width: 1725px;
-        height: 1023px;
-    }
 }

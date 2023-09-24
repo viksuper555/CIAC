@@ -16,6 +16,8 @@ import SingleStickyNotePage from "@/components/singleStickyNotePage";
 import yellowSticky from "../../public/img/bulgaria/StickyBgYellow.png";
 import yellowElipse from "../../public/img/bulgaria/yellowElipse.png";
 import styles from './europe.module.scss';
+import { Table } from '@/components/table';
+import { TextWithAction } from "@/components/textWithAction";
 
 const Europe = () => {
     const [theme, setTheme] = useState("dark");
@@ -107,9 +109,47 @@ const Europe = () => {
                 downRightImage={'/img/europe/politics.png'}
                 downRightImageClass={styles.politicsImg}
             />
-            <div className={`${styles.sectionContainer} ${styles.politicsTableContainer}`}>
-                <img src={'/img/europe/politicsTable.png'} className={styles.politicsTable}/>
-            </div>
+            <Table
+                tableImg={'/img/europe/politicsTable.png'}
+                className={styles.sectionContainer}
+            />
+            <TextWithAction
+                className={`${styles.sectionContainer} ${styles.bgBlue}`}
+                scribbleImg={'/img/scribble.svg'}
+                hasActionBtn={true}
+                actionBtnTxt={"Към списък"}
+            >
+                <p>
+                    Европейският съюз е междуправителствена организация, съставена
+                    от <b>27 европейски държави</b>, които си сътрудничат във въпроси
+                    като икономика, търговия, сигурност и околна среда.
+                    Той има институции, които управляват общите политики и законодателство,
+                    като Европейската комисия, Европейския парламент и Съвета на Европейския съюз.
+                </p>
+                <br/>
+                <p>
+                    Европейският парламент е единственият орган, който се избира
+                    директно от гражданите на ЕС и има важна роля в създаването на
+                    законодателство и надзора на другите институции. Европейската
+                    комисия е изпълнителен орган, който предлага ново законодателство и
+                    гарантира изпълнението на вече приетите закони. Съветът на
+                    Европейския съюз представлява държавите-членки и участва в
+                    процеса на приемане на закони.
+                </p>
+                <br/>
+                <p>
+                    Политиката на ЕС обхваща различни области, като свободно движение
+                    на хора, стоки и услуги, обща валута - еврото, сътрудничество
+                    в областта на правосъдието и вътрешните работи, обща селскостопанска
+                    политика, политика за околната среда и други.
+                </p>
+                <br/>
+                <p>
+                    Политическите предизвикателства, пред които Европа се изправя,
+                    включват миграционния поток, изменението на климата, социалните и
+                    икономическите неравенства и отношенията с глобалните играчи.
+                </p>
+            </TextWithAction>
             <MainTopic
                 titleImage={yellowTitleCircle}
                 background={"yellowBackgroundEurope"}
