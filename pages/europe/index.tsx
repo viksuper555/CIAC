@@ -150,6 +150,45 @@ const Europe = () => {
                     икономическите неравенства и отношенията с глобалните играчи.
                 </p>
             </TextWithAction>
+            <div className={`${styles.bgBlue} ${styles.sectionContainer} ${styles.countriesListContainer}`} id={"countries-list"}>
+                <div className={styles.countriesListTitle}>
+                    Списък с 27-те държави - членки на Европейския съюз.
+                    <img src={'/img/sparkle.svg'} className={styles.sparkle}/>
+                </div>
+                <div className={styles.countriesList}>
+                    <div className={styles.coutriesLeftList}>
+                        1. Австрия (Österreich)<br/>
+                        2. Белгия (België/Belgique)<br/>
+                        3. България (България)<br/>
+                        4. Гърция (Ελλάδα)<br/>
+                        5. Германия (Deutschland)<br/>
+                        6. Дания (Danmark)<br/>
+                        7. Естония (Eesti)<br/>
+                        8. Ирландия (Ireland)<br/>
+                        9. Испания (España)<br/>
+                        10. Италия (Italia)<br/>
+                        11. Кипър (Κύπρος/Kıbrıs)<br/>
+                        12. Латвия (Latvija)<br/>
+                        13. Литва (Lietuva)<br/>
+                        14. Люксембург (Luxembourg)<br/>
+                    </div>
+                    <div className={styles.coutriesRightList}>
+                        15. Малта (Malta)<br/>
+                        16. Полша (Polska)<br/>
+                        17. Португалия (Portugal)<br/>
+                        18. Румъния (România)<br/>
+                        19. Словакия (Slovensko)<br/>
+                        20. Словения (Slovenija)<br/>
+                        21. Унгария (Magyarország)<br/>
+                        22. Финландия (Suomi/Finland)<br/>
+                        23. Франция (France)<br/>
+                        24. Холандия (Nederland)<br/>
+                        25. Хърватска (Hrvatska)<br/>
+                        26. Чехия (Česko)<br/>
+                        27. Швеция (Sverige)<br/>
+                    </div>
+                </div>
+            </div>
             <MainTopic
                 titleImage={yellowTitleCircle}
                 background={"yellowBackgroundEurope"}

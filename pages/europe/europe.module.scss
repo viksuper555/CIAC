@@ -248,3 +248,60 @@
 .bgBlue {
     background: #3764E5;
 }
+
+.countriesListContainer {
+    padding: 40px;
+}
+
+.countriesListTitle {
+    @apply relative w-fit m-auto;
+    padding: 40px;
+    color: #FFF;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.countriesList {
+    @apply flex w-full justify-evenly;
+
+    @media screen and (min-width: 1400px) {
+        padding-top: 40px;
+    }
+}
+
+.coutriesLeftList {
+    @apply h-fit;
+    width: 500px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.coutriesRightList {
+    @apply h-fit;
+    width: 500px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.sparkle {
+    @apply absolute hidden;
+    width: 105px;
+
+    @media screen and (min-width: 1200px) {
+        @apply block;
+        right: -30px;
+        top: -20px;
+    }
+}
