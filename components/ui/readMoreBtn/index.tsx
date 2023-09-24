@@ -1,8 +1,8 @@
-import styles from "@/components/mainTopic/policy.module.scss";
+import styles from "@/components/mainTopic/mainTopic.module.scss";
 import React from "react";
 
 interface Props {
-    btnText?: string
+    btnText?: string | undefined;
 }
 const RedirectButton = ( {btnText}: Props ) => {
     return (

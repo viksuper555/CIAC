@@ -1,22 +1,24 @@
 import Image from "next/image";
-import styles from "./policy.module.scss"
+import styles from "./mainTopic.module.scss"
 import React from "react";
 import RedirectButton from "@/components/ui/readMoreBtn";
 
 interface Props {
-    titleImage?: any
+    titleImage?: any;
     hasTitleImage: boolean;
     hasButton: boolean;
+    btnText?: string;
     titleText?: string;
     mainText: string;
-    background: string
+    background: string;
     downRightImage?: any;
-    className?: string
+    className?: string;
+    downRightImageClass?: string;
 }
 
 const MainTopic = ({
     hasButton, hasTitleImage, titleText, mainText, background, titleImage,
-    downRightImage, className
+    downRightImage, className, btnText, downRightImageClass
 }: Props) => {
 
     return (
@@ -35,10 +37,16 @@ const MainTopic = ({
                     <div className={styles.mainText}>
                         {mainText}
                     </div>
-                    {hasButton && <RedirectButton/>}
+                    {hasButton && <RedirectButton btnText={btnText}/>}
                 </div>
                 <div className={styles.bottomRightImage}>
-                    <Image src={downRightImage} alt={"img"} className={styles.bottomRightImage} height={300} width={500}/>
+                    <Image
+                        src={downRightImage}
+                        alt={"img"}
+                        className={`${styles.bottomRightImage} ${downRightImageClass}`}
+                        height={300}
+                        width={500}
+                    />
                 </div>
             </div>
         </>

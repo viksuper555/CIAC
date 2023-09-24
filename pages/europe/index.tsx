@@ -4,7 +4,7 @@ import { useState } from "react";
 import Navbar from "@/components/navbar";
 import StartingModule from "@/components/startingModule";
 import ContentReview from "@/components/contentReview";
-import infoContent from "@/public/img/bulgaria/infoContent.svg";
+import infoContent from "@/public/img/bulgaria/infoContent.png";
 import MainTopic from "@/components/mainTopic";
 import yellowTitleCircle from "../../public/img/europe/yellowTitleCircle.png";
 import blueTitleCircle from "../../public/img/europe/blueTitleCircle.png";
@@ -104,7 +104,12 @@ const Europe = () => {
                 titleText={"Политика"}
                 mainText={"Политиката в Европа е изключително разнообразна, тъй като Европа се състои от множество държави със собствени правителства и политически системи. Европейският съюз (ЕС) обаче играе ключова роля във формирането на общата политическа атмосфера на континента."}
                 className={styles.sectionContainer}
+                downRightImage={'/img/europe/politics.png'}
+                downRightImageClass={styles.politicsImg}
             />
+            <div className={`${styles.sectionContainer} ${styles.politicsTableContainer}`}>
+                <img src={'/img/europe/politicsTable.png'} className={styles.politicsTable}/>
+            </div>
             <MainTopic
                 titleImage={yellowTitleCircle}
                 background={"yellowBackgroundEurope"}

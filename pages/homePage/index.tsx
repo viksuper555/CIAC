@@ -16,7 +16,7 @@ import InfoText from "@/components/infoText";
 import infoText2 from "../../public/img/bulgaria/imgText2.png";
 import infoText1 from "../../public/img/bulgaria/imageText1.png";
 import InfoWithNotes from "@/components/infoWithNotes";
-import infoContent from "../../public/img/bulgaria/infoContent.svg";
+import infoContent from "../../public/img/bulgaria/infoContent.png";
 import ContentReview2 from "../../public/img/bulgaria/contentReview2.png";
 import womenWorking from "../../public/img/bulgaria/womenWorking.png";
 import youthText from "../../public/img/bulgaria/youthTextBulgaria.png"

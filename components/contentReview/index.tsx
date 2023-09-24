@@ -15,7 +15,7 @@ const ContentReview = ({contentImage, background, className}: Props) => {
                     Съдържание
                 </span>
             </div>
-            <div className={"ml-40 mb-10"}>
+            <div className={"ml-40 mt-14"}>
                 <Image src={contentImage} alt={"asd"}/>
             </div>
         </div>
