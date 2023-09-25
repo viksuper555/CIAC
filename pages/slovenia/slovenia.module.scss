@@ -248,9 +248,28 @@
 }
 
 .titleText {
-  @apply absolute self-center mt-4;
+  @apply absolute self-center mt-4 pb-8;
   font-size: 50px;
   font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+.bgBlue {
+  background: #3764E5;
+}
+
+.bgRed {
+  background: #FB5E60;
+  color: white;
+}
+
+.title {
+  color: #686767;
+  font-family: Montserrat;
+  font-size: 44px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
