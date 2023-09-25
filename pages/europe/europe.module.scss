@@ -249,6 +249,10 @@
     background: #3764E5;
 }
 
+.bgYellow {
+    background: #F3AA1A;
+}
+
 .countriesListContainer {
     padding: 40px;
 }
@@ -401,6 +405,7 @@
 
 .citizenAwarenessContainer {
     color: #686767;
+    background: #ECECEC;
 }
 
 .btnCitizenAwareness {
@@ -409,7 +414,7 @@
 }
 
 .citizenAwarenessExamplesContainer {
-    @apply flex items-center flex-col;
+    @apply flex items-center justify-center flex-col h-fit min-h-[1080px];
     padding: 40px;
     background: #ECECEC;
 }
@@ -434,12 +439,13 @@
     @apply w-fit flex flex-wrap justify-evenly;
 }
 
-.stickyNoteContainerBlue, .stickyNoteContainerYellow {
-    @apply flex flex-col items-center mb-12 mx-12;
+.stickyNoteContainerBlue, .stickyNoteContainerYellow, .stickyNoteContainerGreen {
+    @apply flex flex-col items-center mb-12 mx-12 relative;
     padding: 15px;
     padding-top: 0;
     width: 360px;
-    height: 360px;
+    min-height: 360px;
+    height: fit-content;
 }
 
 .stickyNoteContainerBlue {
@@ -449,6 +455,12 @@
 
 .stickyNoteContainerYellow {
     background: #FFED8D;
+    filter: drop-shadow(0px 5.559401988983154px 5.559401988983154px rgba(0, 0, 0, 0.25));
+}
+
+
+.stickyNoteContainerGreen {
+    background: #CBF89E;
     filter: drop-shadow(0px 5.559401988983154px 5.559401988983154px rgba(0, 0, 0, 0.25));
 }
 
@@ -468,6 +480,14 @@
     filter: drop-shadow(0px 5.559401988983154px 5.559401988983154px rgba(0, 0, 0, 0.25));
 }
 
+.CAStickyNotePinGreen {
+    border-radius: 9999px;
+    width: 40px;
+    height: 40px;
+    background: #ACE772;
+    filter: drop-shadow(0px 5.559401988983154px 5.559401988983154px rgba(0, 0, 0, 0.25));
+}
+
 .CAStickyNoteText {
     @apply w-full;
     color: #000;
@@ -477,4 +497,79 @@
     font-weight: 700;
     line-height: normal;
     margin-top: 1.5rem;
+}
+
+.youthEngagement {
+    color: #FFF;
+}
+
+.btnYouthEngagement {
+    color: #3764E5;
+    font-family: "Montserrat Bold";
+}
+
+.youthEngagementImg {
+    @apply absolute;
+    bottom: 50px;
+    left: calc(50% - 435px);
+    width: 870px;
+}
+
+.YEBenefitsBtn {
+    color: #F3AA1A;
+    font-family: "Montserrat Bold";
+    font-size: 27px;
+    font-style: normal;
+}
+
+.YEImage {
+    position: absolute;
+    width: 856px;
+    bottom: 0;
+    right: 15px;
+}
+
+.YEImageContainer {
+    @apply absolute bottom-0 right-0 w-full h-full;
+}
+
+.YEScribbleClass {
+    position: absolute;
+    top: 25px !important;
+    left: -35px !important;
+    width: 300px !important;
+}
+
+.YEBottomRightImg {
+    @apply absolute;
+    width: 843px;
+    bottom: -150px;
+    right: -150px;
+}
+
+.YEContainer {
+    color: #686767;
+    background: #ECECEC;
+}
+
+.YENotes {
+    @apply flex flex-col items-center;
+}
+
+.YEStickyNoteText {
+    @apply w-full;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 1.5rem;
+}
+
+.YESparkle {
+    @apply absolute;
+    width: 220px;
+    top: -130px;
+    right: -135px;
 }

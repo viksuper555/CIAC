@@ -16,11 +16,13 @@ interface Props {
     className?: string;
     downRightImageClass?: string;
     btnClass?: string
+    bottomRightImageContainerClass?: string
 }
 
 const MainTopic = ({
     id, hasButton, hasTitleImage, titleText, mainText, background, titleImage,
-    downRightImage, className, btnText, downRightImageClass, btnClass
+    downRightImage, className, btnText, downRightImageClass, btnClass,
+    bottomRightImageContainerClass
 }: Props) => {
 
     return (
@@ -40,15 +42,17 @@ const MainTopic = ({
                 </div>
                 {hasButton && <RedirectButton btnText={btnText} btnClass={btnClass}/>}
             </div>
-            <div className={styles.bottomRightImage}>
-                <Image
-                    src={downRightImage}
-                    alt={"img"}
-                    className={`${styles.bottomRightImage} ${downRightImageClass}`}
-                    height={300}
-                    width={500}
-                />
-            </div>
+            {downRightImage &&
+                <div className={`${styles.bottomRightImage} ${bottomRightImageContainerClass}`}>
+                    <Image
+                        src={downRightImage}
+                        alt={"img"}
+                        className={`${styles.bottomRightImage} ${downRightImageClass}`}
+                        height={300}
+                        width={500}
+                    />
+                </div>
+            }
         </div>
     )
 }

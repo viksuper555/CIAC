@@ -369,6 +369,168 @@ const Europe = () => {
                     </div>
                 </div>
             </div>
+            <MainTopic
+                id={"youth-engagement"}
+                titleImage={blueTitleCircle}
+                background={"blueBackground"}
+                hasButton={true}
+                hasTitleImage={true}
+                titleText={"Младежка ангажираност в действие"}
+                mainText={"Младежката ангажираност в действие представлява активното включване на младите хора в обществения живот и предприемането на конкретни действия за промяна. Тя насърчава младите хора да се ангажират с проблемите и предизвикателствата в своите общности и да работят за тяхното решаване. Това може да включва доброволчество, социални проекти, политическо ангажиране и други инициативи. "}
+                className={`${styles.sectionContainer} ${styles.youthEngagement} ${styles.bgBlue}`}
+                btnClass={styles.btnYouthEngagement}
+                btnText={"Примери"}
+            />
+            <TextWithAction
+                className={`${styles.sectionContainer} ${styles.bgBlue}`}
+                scribbleImg={'/img/scribble.svg'}
+                hasActionBtn={false}
+            >
+                <p>
+                    Пример за такава програма е <b>"Еразъм + за младежи"</b>, която
+                    предоставя възможности за обучение, обмен на младежи, доброволчество
+                    и партньорства между организации в различни страни. Тази
+                    програма подкрепя младежта в придобиването на нови умения,
+                    развиването на креативност и лидерски умения, както и
+                    разбирането на културното разнообразие и общи ценности на Европа.
+                </p>
+                <img
+                    src={"/img/europe/youthEngagement.png"}
+                    className={styles.youthEngagementImg}
+                />
+            </TextWithAction>
+            <MainTopic
+                titleImage={yellowTitleCircle}
+                background={"yellowBackgroundEurope"}
+                hasButton={true}
+                hasTitleImage={true}
+                titleText={"Ползи от младежката ангажираност"}
+                downRightImage={"/img/europe/youthEngagementBenefits.png"}
+                mainText={"Младежката ангажираност в Европа предоставя множество ползи както за младежите, така и за обществото като цяло. Това е активно участие и ангажираност на младежите в различни области и инициативи, които ги включват в обществените процеси и проблеми.\n"}
+                className={styles.sectionContainer}
+                btnClass={styles.YEBenefitsBtn}
+                downRightImageClass={styles.YEImage}
+                bottomRightImageContainerClass={styles.YEImageContainer}
+            />
+            <TextWithAction
+                className={`${styles.sectionContainer} ${styles.bgYellow}`}
+                scribbleImg={'/img/scribble-yellow.svg'}
+                scribbleImgClass={styles.YEScribbleClass}
+                hasActionBtn={false}
+            >
+                <p>
+                    <b>1. Развиване на лидерски умения:</b> Участието в младежки организации и проекти позволява на младите хора да развият лидерски умения като комуникация, водене на екип, ръководство и организация.
+                </p>
+                <p>
+                    <b>2. Придобиване на нови знания и умения:</b> Ангажираните младежи имат възможност да придобият нови знания и умения в различни области като образование, технологии, социални науки и др.
+                </p>
+                <p>
+                    <b>3. Повишаване на самочувствието и увереността:</b> Участието в младежките инициативи дава на младежите възможност да се изразят, да споделят своите идеи и да бъдат част от решенията, което може да повиши тяхното самочувствие и увереност.
+                </p>
+                <p>
+                    <b>4. Подкрепа за социалната интеграция:</b> Младежката ангажираност може да помогне за социалната интеграция на младите хора, особено на тези от уязвими групи+++.
+                </p>
+                <p>
+                    <b>5. Създаване на общност и приятелства:</b> Участието в младежките инициативи предоставя възможност за създаване на общност и установяване на нови приятелства, което е важно за психологическото благополучие.
+                </p>
+                <p>
+                    <b>6. Промяна на обществото:</b> Ангажираните младежи могат да бъдат двигателите на промяната в обществото, като се заемат със социални проблеми и активно работят за тяхното решаване.
+                </p>
+                <p>
+                    <b>7. Подкрепа за демократични ценности:</b> Младежката ангажираност насърчава участието в демократични процеси и ценности, като гласуване, свобода на изразяване и уважение към правата на човека.
+                </p>
+            </TextWithAction>
+            <MainTopic
+                id={"youth-enagement-opportunities"}
+                titleImage={grayTitleCircle}
+                background={"greyBackground"}
+                hasButton={true}
+                hasTitleImage={true}
+                titleText={"Уроци по гражданско образование"}
+                downRightImage={'/img/europe/ye-opportunities.png'}
+                mainText={"Гражданското образование в Европа е от съществено значение за формирането на активни граждани. В различните европейски страни се провеждат уроци, които насърчават разбирането на демократични принципи, правата на човека, социалната отговорност и устойчивото развитие. Различните страни в Европа имат различни подходи и програми за гражданско образование, като се стремят да развиват активни граждани с разнообразни умения и знания за успешно участие в обществото."}
+                className={`${styles.sectionContainer} ${styles.YEContainer}`}
+                btnClass={styles.btnCitizenAwareness}
+                downRightImageClass={styles.YEBottomRightImg}
+                bottomRightImageContainerClass={styles.YEImageContainer}
+            />
+            <div id={"YE-examples"} className={`${styles.citizenAwarenessExamplesContainer} ${styles.sectionContainer}`}>
+                <div className={styles.CANotes}>
+                    <div className={styles.CAFirstRow}>
+                        <div className={styles.stickyNoteContainerGreen}>
+                            <div className={styles.CAStickyNotePinGreen}/>
+                            <div className={styles.YEStickyNoteText}>
+                                Младежки организации: В Европа съществуват много
+                                младежки организации, които предоставят различни
+                                проекти, обучения, лагери и дейности за младежи.
+                                Те могат да се фокусират върху различни теми като
+                                култура, спорт, околна среда, образование и други.
+
+                            </div>
+                        </div>
+
+                        <div className={styles.stickyNoteContainerYellow}>
+                            <div className={styles.CAStickyNotePinYellow}/>
+                            <div className={styles.YEStickyNoteText}>
+                                Европейски програми и инициативи: Програми като
+                                "Еразъм+", "Корпус на младежта" и "Европейски корпус
+                                за солидарност" предоставят възможности за обмен,
+                                стажове и участие в международни проекти. Тези
+                                програми насърчават културния обмен, междукултурното
+                                разбирателство и развиват лични и професионални
+                                умения на младите хора.
+                            </div>
+                        </div>
+
+                        <div className={styles.stickyNoteContainerGreen}>
+                            <div className={styles.CAStickyNotePinGreen}/>
+                            <div className={styles.YEStickyNoteText}>
+                                Обществено-полезни инициативи: Младежите могат да
+                                се ангажират в различни обществено-полезни инициативи като
+                                кампании за екологична осведоменост, социални каузи и
+                                доброволчество. Това им позволява да допринесат за
+                                подобряване на обществото и да работят за
+                                промяна на проблематични области.
+                            </div>
+                            <img src={'/img/europe/sparkle-yellow.svg'} className={styles.YESparkle}/>
+                        </div>
+                    </div>
+                    <div className={styles.CASecondRow}>
+                        <div className={styles.stickyNoteContainerYellow}>
+                            <div className={styles.CAStickyNotePinYellow}/>
+                            <div className={styles.YEStickyNoteText}>
+                                Младежки съвети и комисии: Много градове и региони имат
+                                младежки съвети и комисии, които представляват мнението и
+                                интересите на младежите пред обществените власти. Това предоставя
+                                възможност на младите хора да участват активно в процесите
+                                на вземане на решения и да се включат в обществените политики.
+                            </div>
+                        </div>
+
+                        <div className={styles.stickyNoteContainerGreen}>
+                            <div className={styles.CAStickyNotePinGreen}/>
+                            <div className={styles.YEStickyNoteText}>
+                                Образователни програми за гражданско образование:
+                                Различни образователни институции и неправителствени организации
+                                предлагат обучения и курсове по гражданско
+                                образование, които насърчават младите хора да разбират
+                                и участват активно в демократичните процеси и
+                                обществените въпроси.
+                            </div>
+                        </div>
+
+                        <div className={styles.stickyNoteContainerYellow}>
+                            <div className={styles.CAStickyNotePinYellow}/>
+                            <div className={styles.YEStickyNoteText}>
+                                Дигитални платформи и социални мрежи: Интернет и
+                                социалните мрежи предоставят възможности за младежите да споделят
+                                своите идеи, да се свързват с други ангажирани младежи
+                                и да участват в онлайн инициативи и кампании.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };

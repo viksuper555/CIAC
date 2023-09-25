@@ -6,12 +6,15 @@ interface Props extends PropsWithChildren {
     className?: string;
     hasActionBtn?: boolean
     actionBtnTxt?: string;
+    scribbleImgClass?: string;
 
 }
 
-export const TextWithAction = ({ scribbleImg, className, children, actionBtnTxt, hasActionBtn }: Props) => {
+export const TextWithAction = ({
+    scribbleImg, className, children, actionBtnTxt, hasActionBtn, scribbleImgClass
+}: Props) => {
     return <div className={`${className} ${styles.container}`}>
-        <img src={scribbleImg} className={styles.scribble}/>
+        <img src={scribbleImg} className={`${styles.scribble} ${scribbleImgClass}`}/>
         {children}
         {hasActionBtn &&
             <div className={styles.actionBtn}>
