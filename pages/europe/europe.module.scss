@@ -600,6 +600,7 @@
     @apply relative;
     width: 1440px;
     max-width: 80%;
+    font-weight: 500;
 
     p {
         @apply mt-12;
@@ -967,4 +968,8 @@
         width: 1328px;
         left: calc(50% - 664px);
     }
+}
+
+.institutionsContainer {
+    color: #686767;
 }
