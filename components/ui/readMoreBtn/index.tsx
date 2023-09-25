@@ -3,11 +3,12 @@ import React from "react";
 
 interface Props {
     btnText?: string | undefined;
+    btnClass?: string | undefined;
 }
-const RedirectButton = ( {btnText}: Props ) => {
+const RedirectButton = ( { btnText, btnClass }: Props ) => {
     return (
         <>
-            <div className={styles.button}>
+            <div className={`${styles.button} ${btnClass}`}>
                 {btnText ?? "Виж още"}
             </div>
         </>

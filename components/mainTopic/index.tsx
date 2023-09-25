@@ -4,6 +4,7 @@ import React from "react";
 import RedirectButton from "@/components/ui/readMoreBtn";
 
 interface Props {
+    id?: string;
     titleImage?: any;
     hasTitleImage: boolean;
     hasButton: boolean;
@@ -14,42 +15,41 @@ interface Props {
     downRightImage?: any;
     className?: string;
     downRightImageClass?: string;
+    btnClass?: string
 }
 
 const MainTopic = ({
-    hasButton, hasTitleImage, titleText, mainText, background, titleImage,
-    downRightImage, className, btnText, downRightImageClass
+    id, hasButton, hasTitleImage, titleText, mainText, background, titleImage,
+    downRightImage, className, btnText, downRightImageClass, btnClass
 }: Props) => {
 
     return (
-        <>
-            <div className={`${styles.policyContainer} ${background} ${className}`}>
-                <div className={styles.titleContainer}>
-                    {
-                        hasTitleImage && <Image src={titleImage} alt={"commaImg"} className="mt-6"/>
-                    }
-                    <span className={`${styles.titleText} ${!hasTitleImage ? "pl-20 pt-12 relative" : ""}`}>
-                        {titleText}
-                    </span>
-                </div>
-
-                <div className={styles.mainTextContainer}>
-                    <div className={styles.mainText}>
-                        {mainText}
-                    </div>
-                    {hasButton && <RedirectButton btnText={btnText}/>}
-                </div>
-                <div className={styles.bottomRightImage}>
-                    <Image
-                        src={downRightImage}
-                        alt={"img"}
-                        className={`${styles.bottomRightImage} ${downRightImageClass}`}
-                        height={300}
-                        width={500}
-                    />
-                </div>
+        <div id={id} className={`${styles.policyContainer} ${background} ${className}`}>
+            <div className={styles.titleContainer}>
+                {
+                    hasTitleImage && <Image src={titleImage} alt={"commaImg"} className="mt-6"/>
+                }
+                <span className={`${styles.titleText} ${!hasTitleImage ? "pl-20 pt-12 relative" : ""}`}>
+                    {titleText}
+                </span>
             </div>
-        </>
+
+            <div className={styles.mainTextContainer}>
+                <div className={styles.mainText}>
+                    {mainText}
+                </div>
+                {hasButton && <RedirectButton btnText={btnText} btnClass={btnClass}/>}
+            </div>
+            <div className={styles.bottomRightImage}>
+                <Image
+                    src={downRightImage}
+                    alt={"img"}
+                    className={`${styles.bottomRightImage} ${downRightImageClass}`}
+                    height={300}
+                    width={500}
+                />
+            </div>
+        </div>
     )
 }
 

@@ -18,6 +18,10 @@ import yellowElipse from "../../public/img/bulgaria/yellowElipse.png";
 import styles from './europe.module.scss';
 import { Table } from '@/components/table';
 import { TextWithAction } from "@/components/textWithAction";
+import StickyNote from "@/components/ui/stickyNote";
+import blueSticky from "@/public/img/bulgaria/stickyBgBlue.png";
+import blueElipse from "@/public/img/bulgaria/blueElipse.png";
+import Image from "next/image";
 
 const Europe = () => {
     const [theme, setTheme] = useState("dark");
@@ -202,7 +206,7 @@ const Europe = () => {
             <MainTopic
                 titleImage={grayTitleCircle}
                 background={"greyBackground"}
-                hasButton={false}
+                hasButton={true}
                 hasTitleImage={true}
                 titleText={"Институции"}
                 downRightImage={peopleWithPlanet}
@@ -287,10 +291,84 @@ const Europe = () => {
                 <div className={styles.contentsModule2Title}>СЪДЪРЖАНИЕ</div>
                 <img src={'/img/contents2.png'} className={styles.contentsModule2}/>
             </div>
-            <ContentReview
-                contentImage={infoContent} background={"yellowBackgroundEurope"}
-                className={styles.sectionContainer}
+            <MainTopic
+                id={"citizen-awareness"}
+                titleImage={grayTitleCircle}
+                background={"greyBackground"}
+                hasButton={true}
+                hasTitleImage={true}
+                titleText={"Уроци по гражданско образование"}
+                downRightImage={'/img/europe/citizenAwareness.png'}
+                mainText={"Гражданското образование в Европа е от съществено значение за формирането на активни граждани. В различните европейски страни се провеждат уроци, които насърчават разбирането на демократични принципи, правата на човека, социалната отговорност и устойчивото развитие. Различните страни в Европа имат различни подходи и програми за гражданско образование, като се стремят да развиват активни граждани с разнообразни умения и знания за успешно участие в обществото."}
+                className={`${styles.sectionContainer} ${styles.citizenAwarenessContainer}`}
+                btnClass={styles.btnCitizenAwareness}
             />
+            <div id={"CA-examples"} className={`${styles.citizenAwarenessExamplesContainer} ${styles.sectionContainer}`}>
+                <div className={styles.CATitle}>
+                    Няколко примера за уроци по гражданско образование:
+                </div>
+                <div className={styles.CANotes}>
+                    <div className={styles.CAFirstRow}>
+                        <div className={styles.stickyNoteContainerBlue}>
+                            <div className={styles.CAStickyNotePinBlue}/>
+                            <div className={styles.CAStickyNoteText}>
+                                1. Гласуване и избори: Уроци за изборни системи,
+                                политически партии и процесите на гласуване, за
+                                да насърчат активното участие в демократичния процес.
+                            </div>
+                        </div>
+
+                        <div className={styles.stickyNoteContainerYellow}>
+                            <div className={styles.CAStickyNotePinYellow}/>
+                            <div className={styles.CAStickyNoteText}>
+                                2. Правата на човека: Обучение по отношение на
+                                правата и свободите на човека, които са съществен
+                                елемент за уважаването на всеки индивид в обществото.
+                            </div>
+                        </div>
+
+                        <div className={styles.stickyNoteContainerBlue}>
+                            <div className={styles.CAStickyNotePinBlue}/>
+                            <div className={styles.CAStickyNoteText}>
+                                3. Екологична осведоменост: Програми за разбиране
+                                на важността на опазването на околната среда и
+                                приемането на устойчиви жизнени стилове.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.CASecondRow}>
+                        <div className={styles.stickyNoteContainerYellow}>
+                            <div className={styles.CAStickyNotePinYellow}/>
+                            <div className={styles.CAStickyNoteText}>
+                                4. Медийна грамотност: Обучение за разпознаване
+                                на фалшиви новини и разбиране на ролята на медиите
+                                в обществото.
+
+                            </div>
+                        </div>
+
+                        <div className={styles.stickyNoteContainerBlue}>
+                            <div className={styles.CAStickyNotePinBlue}/>
+                            <div className={styles.CAStickyNoteText}>
+                                5. Социално предприемачество: Уроци за стимулиране
+                                на предприемчивостта и създаване на социални
+                                икономически проекти, насочени към общественото благо.
+                            </div>
+                        </div>
+
+                        <div className={styles.stickyNoteContainerYellow}>
+                            <div className={styles.CAStickyNotePinYellow}/>
+                            <div className={styles.CAStickyNoteText}>
+                                6. Междукултурно разбирателство: Образование,
+                                насочено към уважението към различията и насърчаването
+                                на мирното съжителство сред различни култури.
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };

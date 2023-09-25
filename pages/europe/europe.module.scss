@@ -1,5 +1,5 @@
 .sectionContainer {
-    @apply py-4 relative;
+    @apply py-4 relative overflow-hidden;
     height: 1080px;
     width: 100%;
 }
@@ -397,4 +397,84 @@
 
 .contentsModule2 {
     width: 1000px;
+}
+
+.citizenAwarenessContainer {
+    color: #686767;
+}
+
+.btnCitizenAwareness {
+    color: #686767;
+    font-family: "Montserrat Bold";
+}
+
+.citizenAwarenessExamplesContainer {
+    @apply flex items-center flex-col;
+    padding: 40px;
+    background: #ECECEC;
+}
+
+.CATitle {
+    @apply w-fit text-center m-auto;
+    max-width: 80%;
+    padding-bottom: 40px;
+    color: #686767;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.CANotes {
+    @apply flex flex-col items-center;
+}
+
+.CAFirstRow, .CASecondRow {
+    @apply w-fit flex flex-wrap justify-evenly;
+}
+
+.stickyNoteContainerBlue, .stickyNoteContainerYellow {
+    @apply flex flex-col items-center mb-12 mx-12;
+    padding: 15px;
+    padding-top: 0;
+    width: 360px;
+    height: 360px;
+}
+
+.stickyNoteContainerBlue {
+    background: #CCDEFF;
+    filter: drop-shadow(0px 5.559401988983154px 5.559401988983154px rgba(0, 0, 0, 0.25));
+}
+
+.stickyNoteContainerYellow {
+    background: #FFED8D;
+    filter: drop-shadow(0px 5.559401988983154px 5.559401988983154px rgba(0, 0, 0, 0.25));
+}
+
+.CAStickyNotePinBlue {
+    border-radius: 9999px;
+    width: 40px;
+    height: 40px;
+    background: #91B5F8;
+    filter: drop-shadow(0px 5.559401988983154px 5.559401988983154px rgba(0, 0, 0, 0.25));
+}
+
+.CAStickyNotePinYellow {
+    border-radius: 9999px;
+    width: 40px;
+    height: 40px;
+    background: #FFD360;
+    filter: drop-shadow(0px 5.559401988983154px 5.559401988983154px rgba(0, 0, 0, 0.25));
+}
+
+.CAStickyNoteText {
+    @apply w-full;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 1.5rem;
 }
