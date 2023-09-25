@@ -2,6 +2,7 @@ import styles from './textWithAction.module.scss';
 import { PropsWithChildren } from "react";
 
 interface Props extends PropsWithChildren {
+    id?: string;
     scribbleImg: string;
     className?: string;
     hasActionBtn?: boolean
@@ -11,9 +12,10 @@ interface Props extends PropsWithChildren {
 }
 
 export const TextWithAction = ({
-    scribbleImg, className, children, actionBtnTxt, hasActionBtn, scribbleImgClass
+    id, scribbleImg, className, children, actionBtnTxt, hasActionBtn,
+    scribbleImgClass
 }: Props) => {
-    return <div className={`${className} ${styles.container}`}>
+    return <div id={id} className={`${className} ${styles.container}`}>
         <img src={scribbleImg} className={`${styles.scribble} ${scribbleImgClass}`}/>
         {children}
         {hasActionBtn &&

@@ -12,33 +12,34 @@ interface Props {
     commaImage?: string
     moduleText?: string
     className?: string
+    id?: string
 }
 
-const StartingModule = ({ moduleBackgroundColor, whiteCircle, commaImage, moduleText, className }: Props) => {
+const StartingModule = ({
+    id, moduleBackgroundColor, whiteCircle, commaImage, moduleText, className
+}: Props) => {
 
     return (
-        <>
-            <div className={`${styles.startingModuleBackground} ${moduleBackgroundColor} ${className}`}>
-                <div className={styles.moduleContainer}>
-                    <div className={styles.circleContainer}>
-                        <Image src={WhiteCircle} alt={"whiteCircle"} className={styles.circle}/>
-                        <div className={styles.commaContainer}>
-                            <Image src={CommaImage} alt={"commaImg"} className={styles.commaImage}/>
-                            <Image src={CommaImage} alt={"commaImg"} className={styles.commaImage}/>
-                        </div>
-                    </div>
-                    <div className={styles.textContainer}>
-                        <span className={styles.textStyle}>
-                            {moduleText}
-                        </span>
+        <div id={id} className={`${styles.startingModuleBackground} ${moduleBackgroundColor} ${className}`}>
+            <div className={styles.moduleContainer}>
+                <div className={styles.circleContainer}>
+                    <Image src={WhiteCircle} alt={"whiteCircle"} className={styles.circle}/>
+                    <div className={styles.commaContainer}>
+                        <Image src={commaImage ?? CommaImage} alt={"commaImg"} className={styles.commaImage}/>
+                        <Image src={commaImage ?? CommaImage} alt={"commaImg"} className={styles.commaImage}/>
                     </div>
                 </div>
-                <div className={styles.peopleImagesContainer}>
-                    <Image src={girl1} alt={"girl2"} height={150} width={300}/>
-                    <Image src={girl2} alt={"girl2"} height={200} width={300}/>
+                <div className={styles.textContainer}>
+                    <span className={styles.textStyle}>
+                        {moduleText}
+                    </span>
                 </div>
             </div>
-        </>
+            <div className={styles.peopleImagesContainer}>
+                <Image src={girl1} alt={"girl2"} height={150} width={300}/>
+                <Image src={girl2} alt={"girl2"} height={200} width={300}/>
+            </div>
+        </div>
     )
 }
 

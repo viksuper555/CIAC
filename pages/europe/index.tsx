@@ -280,6 +280,12 @@ const Europe = () => {
                 titleImage={blueTitleCircle} background={"blueBackground"}
                 className={styles.sectionContainer}
             />
+            <StartingModule
+                id={"starting-module-2"}
+                moduleText={"Модул 2 Европа"}
+                moduleBackgroundColor={"yellowBackground"}
+                className={`${styles.sectionContainer} ${styles.bgYellow}`}
+            />
             <div className={`${styles.contentsModule2Container} ${styles.sectionContainer}`}>
                 <div className={styles.contentsModule2Title}>СЪДЪРЖАНИЕ</div>
                 <img src={'/img/contents2.png'} className={styles.contentsModule2}/>
@@ -610,6 +616,138 @@ const Europe = () => {
                 btnClass={styles.IABtnClass}
                 titleClass={styles.IATestTitle}
             />
+            <StartingModule
+                id={"starting-module-3"}
+                moduleText={"Модул 3 Европа"}
+                moduleBackgroundColor={"grayBackground"}
+                className={styles.sectionContainer}
+            />
+            <div className={`${styles.contentsModule3Container} ${styles.sectionContainer}`}>
+                <div className={styles.contentsModule3Title}>СЪДЪРЖАНИЕ</div>
+                <img src={'/img/contents-module-3.png'} className={styles.contentsModule2}/>
+            </div>
+            <MainTopic
+                id={"travel-europe"}
+                titleImage={blueTitleCircle}
+                background={"blueBackground"}
+                hasButton={true}
+                hasTitleImage={true}
+                titleText={"Живот, работа, пътуване в ЕС."}
+                downRightImage={peopleWithPlanet}
+                mainText={"За младите хора предоставянето на възможности за живот, работа и пътуване в Европа може да бъде изключително обогатяващо. Ето някои аспекти:\n"}
+                className={styles.sectionContainer}
+                btnClass={styles.TEBtn}
+            />
+            <div
+                id={"travel-advice"}
+                className={`${styles.bgBlue} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}
+            >
+                <div className={styles.TEAdviceText}>
+                    <p>
+                        <b>Образование:</b> Европа притежава много престижни университети
+                        и образователни институции. Младите хора имат възможност да получат
+                        качествено образование в разнообразни области. Програми като --- предоставят
+                        възможности за студентска мобилност и обмен, които
+                        позволяват на студентите да прекарат определен период в
+                        друга държава-членка на Европейския съюз.
+                    </p>
+                    <p>
+                        <b>Работа и Кариера:</b> Младите специалисти могат да открият
+                        разнообразни възможности за работа и кариера в Европа.
+                        Професионалната мобилност може да бъде подкрепена чрез
+                        различни програми и инициативи, които съдействат за търсенето
+                        и намирането на работа в различни страни.
+                        Освен това, някои държави предоставят специални визови режими за
+                        млади хора, които искат да работят и живеят там.
+                    </p>
+
+                    <img src={'/img/sparkle.svg'} className={styles.MASparkle}/>
+                </div>
+            </div>
+            <div
+                id={"travel-advice-2"}
+                className={`${styles.bgBlue} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}
+            >
+                <div className={styles.TEAdviceText2}>
+                    <p>
+                        <b> Пътувания и Откриване:</b> Европа е известна с богатата
+                        си култура, история и разнообразие. Младите хора имат възможност
+                        да пътуват и откриват различни държави и градове, които
+                        предлагат уникални и автентични преживявания.
+                    </p>
+                    <p>
+                        <b>Стажове и Програми за Обучение:</b> Много организации
+                        и компании предлагат стажове и програми за обучение за млади
+                        професионалисти. Това може да бъде отличен начин да
+                        се развият уменията и да се запознаете с работната
+                        среда в Европа.
+                    </p>
+                    <p>
+                        <b>Стартъпи и Предприемачество:</b> Ако имате идеи и амбиции
+                        за създаване на свой бизнес, Европа предлага разнообразни
+                        възможности за стартъпи и предприемачество. Много държави
+                        предоставят подкрепа и ресурси за млади предприемачи.
+                    </p>
+                </div>
+                <img src={'/img/europe/erasmus-europe.png'} className={styles.TEEurasmusImg}/>
+            </div>
+            <MainTopic
+                id={"active-citizens"}
+                titleImage={yellowTitleCircle}
+                background={"yellowBackgroundEurope"}
+                hasButton={true}
+                hasTitleImage={true}
+                titleText={"Какво означава да си активен европейски гражданин?"}
+                downRightImage={"/img/europe/active-citizen.png"}
+                mainText={"Да бъдеш активен европейски гражданин означава да участваш активно в обществения живот на Европейския съюз, да използваш своите права и да се ангажираш в дейности, които подпомагат интеграцията, сътрудничеството и разбирателството между държавите-членки. Това може да включва участие в изборите за Европейски парламент, изразяване на своите мнения и идеи, подкрепа на инициативи за обществено благо и дори участие в междукултурни обменни програми."}
+                className={`${styles.sectionContainer} ${styles.ACContainer}`}
+                btnClass={styles.YEBenefitsBtn}
+                downRightImageClass={styles.YEImage}
+                bottomRightImageContainerClass={styles.YEImageContainer}
+            />
+            <div
+                id={"active-citizens-info"}
+                className={`${styles.bgYellow} ${styles.sectionContainer} ${styles.activeCitizensContainer}`}
+            >
+                <div className={styles.MAInner}>
+                    <p>
+                        <b>1. Участие в изборите:</b> Гласуването на европейски избори е важен начин да се изрази твоето мнение и да вземеш участие във формирането на политическото бъдеще на Европейския съюз.
+                    </p>
+                    <p>
+                        <b>2. Подкрепа на обществени каузи:</b> Ангажирането със социални и екологични проблеми, като например борбата с изменението на климата, защита на правата на човека и подкрепа на уязвимите общности.
+                    </p>
+                    <p>
+                        <b>3. Участие в граждански инициативи:</b> Подкрепянето и подписването на петиции и инициативи, които насърчават изменения в законодателството или важни обществени въпроси.
+                    </p>
+                    <p>
+                        <b>4. Участие в обменни програми и проекти:</b> Примери включват участие в студентски обменни програми като Erasmus+, които подпомагат междукултурния обмен и ученето в различни страни.
+                    </p>
+                    <img src={'/img/scribble-yellow.svg'} className={styles.ACSparkle}/>
+                </div>
+            </div>
+            <TextWithAction
+                id={"active-citizens-info-2"}
+                className={`${styles.sectionContainer} ${styles.bgYellow} ${styles.activeCitizensContainer2}`}
+                scribbleImg={'/img/scribble-yellow.svg'}
+                hasActionBtn={false}
+                scribbleImgClass={styles.ACScribble}
+            >
+                <div className={styles.ACTextContainer}>
+                    <p>
+                        <b>1. Активно следене на политически събития:</b> Информирането за развитието на европейската политика и участието в дискусии за важни въпроси.
+                    </p>
+                    <p>
+                        <b>2. Участие в общностни организации:</b> Присъединяване към неправителствени организации и групи, които работят в области като образование, култура, здравеопазване и други.
+                    </p>
+                    <p>
+                        <b>3. Използване на правата на свободното движение:</b> Използване на възможностите за свободно пътуване, работа и учене в различни държави-членки.
+                    </p>
+                </div>
+                <img
+                    src={"/img/europe/active-citizen-2.png"}
+                    className={styles.ACImg}
+                />
+            </TextWithAction>
         </div>
     );
 };

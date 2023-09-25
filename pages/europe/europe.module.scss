@@ -685,3 +685,125 @@
 .IATestTitle {
     color: #fff;
 }
+
+.contentsModule3Title {
+    @apply text-center;
+    padding-bottom: 40px;
+    color: #7B7977;
+    text-align: center;
+    font-family: "Montserrat Bold";
+    font-size: 70px;
+    font-style: normal;
+    line-height: normal;
+}
+
+.contentsModule3Container {
+    @apply flex flex-col;
+    padding: 40px 100px;
+    background: #ECECEC;
+}
+
+.TEBtn {
+    color: #3764E5;
+    font-family: "Montserrat Bold";
+}
+
+.TEAdviceText {
+    @apply relative;
+    width: 1440px;
+    max-width: 80%;
+    font-family: "Montserrat";
+    font-weight: 500;
+
+    p {
+        @apply mt-12;
+    }
+}
+
+.TEEurasmusImg {
+    @apply absolute;
+    width: 900px;
+    bottom: 0;
+    left: calc(50% - 450px);
+}
+
+.TEAdviceText2 {
+    @apply relative;
+    font-size: 26px;
+    width: 1440px;
+    max-width: 80%;
+    font-family: "Montserrat";
+    font-weight: 500;
+
+    p {
+        @apply mt-12;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 34px;
+    }
+}
+
+.activeCitizensContainer {
+    @apply flex flex-col justify-center items-center;
+    color: #FFF;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.ACContainer {
+    color: #FFF;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.ACSparkle {
+    @apply absolute;
+    top: -60px;
+    right: -110px;
+    width: 240px;
+    transform: rotate(100deg);
+}
+
+.ACImg {
+    @apply absolute;
+    bottom: 0;
+    right: 15px;
+    width: 756px;
+}
+
+.activeCitizensContainer2 {
+    padding-top: 105px;
+}
+
+.ACScribble {
+    top: 45px !important;
+    left: -10px !important;
+    width: 240px;
+}
+
+.ACTextContainer {
+    width: 1048px;
+    max-width: 80%;
+    color: #FFF;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    z-index: 25;
+    position: relative;
+
+    p {
+        @apply mb-12;
+    }
+}
