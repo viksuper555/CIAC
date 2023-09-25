@@ -1,5 +1,5 @@
 .sectionContainer {
-  @apply py-4;
+  @apply py-4 relative overflow-hidden;
   height: 1080px;
   width: 100%;
 }

@@ -6,12 +6,13 @@ import styles from './navbar.module.scss';
 interface Props {
     changeTheme?: any;
     currentTheme?: string;
+    className?: string;
 }
 
-const Navbar:FC<Props> = ({changeTheme, currentTheme}: Props) => {
+const Navbar:FC<Props> = ({changeTheme, currentTheme, className}: Props) => {
 
     return (
-        <nav className={styles.nav}>
+        <nav className={`${styles.nav} ${className}`}>
             <div>
                 <div className={styles.brand}>
                     <Image src={logo} alt={"logo"}/>

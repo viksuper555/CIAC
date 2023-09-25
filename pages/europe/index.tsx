@@ -27,7 +27,6 @@ const Europe = () => {
         <div className={"app-container"}>
             <Navbar
                 changeTheme={changeTheme} currentTheme={theme}
-                className={styles.sectionContainer}
             />
             <StartingModule
                 moduleText={"Модул 1 Европа"}

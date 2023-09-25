@@ -36,10 +36,7 @@ const Slovenia = () => {
 
     return (
         <div className={"app-container"}>
-            <Navbar
-                changeTheme={changeTheme} currentTheme={theme}
-                className={styles.sectionContainer}
-            />
+            <Navbar changeTheme={changeTheme} currentTheme={theme}/>
             <StartingModule
                 moduleText={"Модул 1 Словения"}
                 moduleBackgroundColor={"blueBackground"}
