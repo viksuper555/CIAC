@@ -253,6 +253,10 @@
     background: #F3AA1A;
 }
 
+.bgGray {
+    background: #ECECEC;
+}
+
 .countriesListContainer {
     padding: 40px;
 }
@@ -805,5 +809,76 @@
 
     p {
         @apply mb-12;
+    }
+}
+
+.EUBContainer {
+    color: #686767;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: #ECECEC;
+}
+
+.EUBenefitsBtn {
+    color: #686767;
+    font-family: "Montserrat Bold";
+    font-size: 27px;
+    font-style: normal;
+}
+
+.EUBInfoContainer {
+    @apply flex flex-col justify-center items-center;
+    color: #686767;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 32px;
+    }
+}
+
+.EUBSparkle {
+    position: absolute;
+    bottom: -140px;
+    right: -175px;
+    width: 300px;
+    transform: rotate(10deg);
+}
+
+.EUBSparkle2 {
+    position: absolute;
+    bottom: -175px;
+    left: -165px;
+    width: 300px;
+    transform: rotate(100deg);
+}
+
+.EUToolsBtn {
+    color: #3764E5;
+    font-family: "Montserrat Bold";
+    font-size: 27px;
+    font-style: normal;
+}
+
+.EUToolsContainer {
+    @apply flex flex-col justify-center items-center;
+    color: #fff;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 32px;
     }
 }
