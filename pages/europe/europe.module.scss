@@ -528,9 +528,9 @@
 
 .YEImage {
     position: absolute;
-    width: 856px;
+    width: 700px;
     bottom: 0;
-    right: 15px;
+    right: 0;
 }
 
 .YEImageContainer {
@@ -880,5 +880,91 @@
 
     @media screen and (min-width: 1200px) {
         font-size: 32px;
+    }
+}
+
+.EDContainer {
+    color: #FFF;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    div:nth-of-type(1) > span {
+        font-size: 40px;
+    }
+}
+
+.EDInner {
+    @apply relative;
+    width: 1440px;
+    max-width: 80%;
+    font-family: Montserrat;
+    font-weight: 500;
+
+    p {
+        @apply mt-12;
+    }
+}
+
+.EDErasmusImg {
+    @apply absolute;
+    width: 900px;
+    left: calc(50% - 450px);
+    bottom: 0;
+}
+
+.EDInner2 {
+    @apply relative;
+    width: 1440px;
+    max-width: 80%;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 26px;
+
+    p {
+        @apply mt-12;
+    }
+}
+
+.EDInfoContainer {
+    @apply flex flex-col justify-center items-center;
+    color: #FFF;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 10rem;
+}
+
+.EDSparkle {
+    @apply absolute;
+    top: -88px;
+    left: -140px;
+    width: 240px;
+    transform: rotate(-95deg);
+}
+
+.EDSparkle2 {
+    @apply absolute;
+    top: -88px;
+    right: -140px;
+    width: 240px;
+    transform: rotate(-10deg);
+}
+
+.ERImg {
+    @apply absolute;
+    width: 900px;
+    bottom: 0;
+    left: calc(50% - 450px);
+
+    @media screen and (min-width: 1400px) {
+        width: 1328px;
+        left: calc(50% - 664px);
     }
 }

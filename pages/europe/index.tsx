@@ -900,6 +900,81 @@ const Europe = () => {
                     </p>
                 </div>
             </div>
+            <MainTopic
+                id={"erasmus-docs"}
+                titleImage={yellowTitleCircle}
+                background={"yellowBackgroundEurope"}
+                hasButton={true}
+                hasTitleImage={true}
+                titleText={"Документи и публикации Следвайки приоритети на програмата „Еразъм+“."}
+                downRightImage={"/img/europe/erasmus-docs.png"}
+                mainText={"Програмата Еразъм+ и младежкият сектор на Европейския съюз се фокусират върху подкрепата и развитието на младежите чрез образование, обучение, мобилност и участие в различни дейности. Тук са някои ключови документи и публикации, които можете да изследвате, за да разберете повече за тези области:"}
+                className={`${styles.sectionContainer} ${styles.EDContainer}`}
+                btnClass={styles.YEBenefitsBtn}
+                btnText={"Виж примери"}
+                downRightImageClass={styles.YEImage}
+                bottomRightImageContainerClass={styles.YEImageContainer}
+            />
+            <div
+                id={"erasmus-docs-info"}
+                className={`${styles.bgYellow} ${styles.sectionContainer} ${styles.activeCitizensContainer}`}
+            >
+                <div className={styles.EDInner}>
+                    <p>
+                        <b>1. План за младежта (2019-2027):</b> Това е стратегически документ на ЕС, който определя приоритетите и действията за подкрепа на младежите в Европа. Включва разнообразни мерки за подобряване на образованието, заетостта, участието и мобилността на младежите.
+                    </p>
+                    <p>
+                        <b>2. Еразъм+ Портал:</b> Официалният уебсайт на програмата "Еразъм+" съдържа информация за всички аспекти на програмата, включително възможностите за младежите. Тук можете да намерите информация за образователни програми, стипендии, обменни програми и други мобилностни възможности.
+                    </p>
+                    <p>
+                        <b>3. Европейска младежка стратегия (2010-2018):</b> Този документ представя стратегия за интегрирането на младежите в области като образование, заетост, участие и култура. Също предоставя полезни насоки за разбиране на областта на младежкия сектор в Европейския съюз.
+                    </p>
+                    <img src={'/img/sparkle-yellow.svg'} className={styles.EDSparkle}/>
+                </div>
+            </div>
+            <div
+                id={"erasmus-docs-info-2"}
+                className={`${styles.bgYellow} ${styles.sectionContainer} ${styles.EDInfoContainer}`}
+            >
+                <div className={styles.EDInner2}>
+                    <p>
+                        <b>4. Доклади и анализи на ЕС за младежката политика:</b> Европейската комисия и други
+                        органи на ЕС редовно публикуват доклади, анализи и статистически
+                        данни за различни аспекти на младежката политика и младежката заетост.
+                    </p>
+                    <p>
+                        <b>5. Директиви и законодателство на ЕС:</b> Официалният уебсайт
+                        на програмата "Еразъм+" съдържа информация за всички аспекти
+                        на програмата, включително възможностите за младежите. Тук можете да
+                        намерите информация за образователни програми, стипендии, обменни
+                        програми и други мобилностни възможности.
+                    </p>
+                    <p>
+                        <b>6. Семинари, събития и обучения на младежкия сектор:</b>
+                        Този документ представя стратегия за интегрирането на младежите в
+                        области като образование, заетост, участие и култура.
+                        Също предоставя полезни насоки за разбиране на областта
+                        на младежкия сектор в Европейския съюз.
+                    </p>
+                    <p>
+                        <b>С тези ресурси ще можете да се запознаете с приоритетите на програмата "Еразъм+" и младежкия сектор на ЕС, както и с възможностите, които се предоставят на младите хора.</b>
+                    </p>
+                    <img src={'/img/sparkle-yellow.svg'} className={styles.EDSparkle2}/>
+                </div>
+                <img src={'/img/europe/erasmus-europe-yellow.png'} className={styles.EDErasmusImg}/>
+            </div>
+            <Exam
+                id={"exam-europe-module-3"}
+                titleImage={yellowTitleCircle} background={"yellowBackground"}
+                className={`${styles.sectionContainer} ${styles.bgYellow}`}
+                scribbleImg={'/img/scribble-yellow.svg'}
+                scribbleImgClass={styles.IAScribble}
+                btnClass={styles.IABtnClass}
+                titleClass={styles.IATestTitle}
+            />
+            <div id={"extra-resources"} className={`${styles.sectionContainer} ${styles.bgYellow}`}>
+                <img src={'/img/europe/extra-resource.png'} className={styles.ERImg}/>
+            </div>
         </div>
     );
 };
