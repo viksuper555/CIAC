@@ -12,16 +12,9 @@ import peopleWithPlanet from "../../public/img/europe/Group.png";
 import grayTitleCircle from "../../public/img/bulgaria/grayTitleCircle.png";
 import FiveInfoStickyNotes from "@/components/fiveInfoStickyNotes";
 import Exam from "@/components/exam";
-import SingleStickyNotePage from "@/components/singleStickyNotePage";
-import yellowSticky from "../../public/img/bulgaria/StickyBgYellow.png";
-import yellowElipse from "../../public/img/bulgaria/yellowElipse.png";
 import styles from './europe.module.scss';
 import { Table } from '@/components/table';
 import { TextWithAction } from "@/components/textWithAction";
-import StickyNote from "@/components/ui/stickyNote";
-import blueSticky from "@/public/img/bulgaria/stickyBgBlue.png";
-import blueElipse from "@/public/img/bulgaria/blueElipse.png";
-import Image from "next/image";
 
 const Europe = () => {
     const [theme, setTheme] = useState("dark");
@@ -492,7 +485,7 @@ const Europe = () => {
                                 подобряване на обществото и да работят за
                                 промяна на проблематични области.
                             </div>
-                            <img src={'/img/europe/sparkle-yellow.svg'} className={styles.YESparkle}/>
+                            <img src={'/img/sparkle-yellow.svg'} className={styles.YESparkle}/>
                         </div>
                     </div>
                     <div className={styles.CASecondRow}>
@@ -531,6 +524,92 @@ const Europe = () => {
                     </div>
                 </div>
             </div>
+            <MainTopic
+                id={"media"}
+                titleImage={blueTitleCircle}
+                background={"blueBackground"}
+                hasButton={false}
+                hasTitleImage={true}
+                titleText={"Медийна грамотност и разпознаване на фалшиви новини"}
+                downRightImage={'/img/europe/media-engagement.png'}
+                mainText={"Европейските институции и много неправителствени организации " +
+                    "работят за повишаване на медийната грамотност и разпознаването на" +
+                    " фалшиви новини сред гражданите. Това включва обучителни програми," +
+                    " кампании за информиране и насърчаване на критичното мислене при използването" +
+                    " на информация от различни източници.\n" +
+                    "Някои от начините, по които хората могат да разпознаят фалшиви новини, включват:\n"}
+                className={styles.sectionContainer}
+                downRightImageClass={styles.mediaBottomRightImg}
+                bottomRightImageContainerClass={styles.YEImageContainer}
+            />
+            <div
+                id={"media-advice"}
+                className={`${styles.bgBlue} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}
+            >
+                <div className={styles.MAInner}>
+                    <p>
+                        <b>1. Проверка на източника:</b> Проверявайте дали новината идва от утвърден и надежден медиен източник. Ако източникът е непознат или неизвестен, може да сте пред измама.
+                    </p>
+                    <p>
+                        <b>2. Проверка на фактите:</b> Проверете фактите и информацията от няколко различни и надеждни източника, преди да я приемете за вярна.
+                    </p>
+                    <p>
+                        <b>3. Внимателно четене:</b> Прочетете цялата статия, а не само заглавието, преди да споделите информация.
+                    </p>
+                    <p>
+                        <b>4. Критично мислене:</b> Задавайте си въпроси като "Каква е целта на тази новина?" или "Има ли някакви скрити интереси?".
+                    </p>
+                    <p>
+                        <b>5. Проверка на снимки и видеа:</b> Проверете дали снимките и видеата, които са придружени с новината, са верни и актуални.
+                    </p>
+                    <img src={'/img/sparkle.svg'} className={styles.MASparkle}/>
+                </div>
+            </div>
+            <div id={"impact-assessment"} className={`${styles.sectionContainer} ${styles.impactAssessment} ${styles.bgYellow}`}>
+                <div className={styles.IATitle}>
+                    <span>Оценка на въздействието на младежката активност</span>
+                    <img src={"/img/europe/yellowTitleCircle.png"} className={styles.IATitleCircle}/>
+                </div>
+                <div className={styles.textContent}>
+                    <img src={"/img/sparkle-yellow.svg"} className={styles.IAsparkle}/>
+                    <p>
+                        Младежката активност включва участие в различни инициативи,
+                        програми и дейности, които имат за цел да подкрепят развитието
+                        и участието на младежта в обществото. Тази активност може да
+                        има множество положителни въздействия в различни области като:
+                    </p>
+
+                    <ul>
+                        <li>Образование и умения;</li>
+                        <li>Развитие на личността;</li>
+                        <li>Гражданско участие и демокрация;</li>
+                        <li>Развитие на социалната мрежа;</li>
+                        <li>Интеркултурно разбирателство;</li>
+                        <li>Подпомагане на предприемачество.</li>
+                    </ul>
+                </div>
+            </div>
+            <MainTopic
+                titleImage={yellowTitleCircle}
+                background={"yellowBackgroundEurope"}
+                hasButton={false}
+                hasTitleImage={true}
+                titleText={"Методи за оценка"}
+                downRightImage={"/img/europe/impact-assessment.png"}
+                mainText={"За да се оцени въздействието на младежката активност, често се използват методи за изследване, включващи анкети, интервюта, събиране на статистически данни и анализ на резултатите. Оценката на въздействието може да помогне за по-добро разбиране на ползите и ефектите от младежката активност и да служи като основа за усъвършенстване на програми и политики, насочени към подкрепа на младежта в Европа."}
+                className={styles.sectionContainer}
+                downRightImageClass={styles.IAImage}
+                bottomRightImageContainerClass={styles.YEImageContainer}
+            />
+            <Exam
+                id={"exam-europe-module-2"}
+                titleImage={yellowTitleCircle} background={"yellowBackground"}
+                className={`${styles.sectionContainer} ${styles.bgYellow}`}
+                scribbleImg={'/img/scribble-yellow.svg'}
+                scribbleImgClass={styles.IAScribble}
+                btnClass={styles.IABtnClass}
+                titleClass={styles.IATestTitle}
+            />
         </div>
     );
 };

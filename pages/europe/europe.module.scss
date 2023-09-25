@@ -573,3 +573,115 @@
     top: -130px;
     right: -135px;
 }
+
+.mediaBottomRightImg {
+    position: absolute !important;
+    width: 777px;
+    bottom: -200px;
+    right: 20px;
+}
+
+.mediaAdviceContainer {
+    @apply flex flex-col justify-center items-center;
+    color: #FFF;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.MAInner {
+    @apply relative;
+    width: 1440px;
+    max-width: 80%;
+
+    p {
+        @apply mt-12;
+    }
+}
+
+.MASparkle {
+    @apply absolute;
+    top: -25px;
+    right: -80px;
+    width: 120px;
+    transform: rotate(10deg);
+}
+
+.impactAssessment {
+    padding: 40px;
+
+    .textContent {
+        @apply mx-auto relative;
+        color: #FFF;
+        text-align: justify;
+        font-family: Montserrat;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        width: 1440px;
+        max-width: 80%;
+
+        p {
+            @apply mb-12;
+        }
+
+        ul {
+            list-style-type: disc;
+        }
+    }
+}
+
+.IATitle {
+    @apply relative flex justify-start items-center mb-20;
+    width: 500px;
+    height: 250px;
+
+    span {
+        @apply absolute w-full;
+        color: #FFF;
+        margin-top: 1rem;
+        align-self: center;
+        font-size: 50px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+    }
+}
+
+.IATitleCircle {
+    @apply mt-6 mb-12;
+}
+
+.IAsparkle {
+    @apply absolute;
+    width: 240px;
+    top: -130px;
+    right: -155px;
+}
+
+.IAImage {
+    position: absolute;
+    width: 840px;
+    bottom: 0;
+    right: 0px;
+}
+
+.IAScribble {
+    right: -175px !important;
+    bottom: -95px !important;
+    width: 270px;
+}
+
+.IABtnClass {
+    color: #F3AA1A;
+}
+
+.IATestTitle {
+    color: #fff;
+}
