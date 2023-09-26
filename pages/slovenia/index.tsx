@@ -6,12 +6,10 @@ import StartingModule from "@/components/startingModule";
 import ContentReview from "@/components/contentReview";
 import infoContent from "@/public/img/bulgaria/infoContent.svg";
 import MainTopic from "@/components/mainTopic";
-import yellowTitleCircle from "../../public/img/europe/yellowTitleCircle.png";
 import blueTitleCircle from "../../public/img/europe/blueTitleCircle.png";
 import peopleWithPlanet from "../../public/img/europe/Group.png";
 import grayTitleCircle from "../../public/img/bulgaria/grayTitleCircle.png";
 import Exam from "@/components/exam";
-import SingleStickyNotePage from "@/components/singleStickyNotePage";
 import yellowSticky from "../../public/img/bulgaria/StickyBgYellow.png";
 import yellowElipse from "../../public/img/bulgaria/yellowElipse.png";
 import styles from './slovenia.module.scss';
@@ -26,6 +24,12 @@ import {TextWithAction} from "@/components/textWithAction";
 import sloveniaContentTwo from "../../public/img/slovenia/sloveniaContentTwo.png"
 import citizenEducation from "../../public/img/slovenia/citizenEducation.png"
 import FiveInfoStickyNotes from "@/components/fiveInfoStickyNotes";
+import celebrating from "../../public/img/slovenia/celebrating.png"
+import whiteScribble from "../../public/img/slovenia/whiteScribble.png"
+import contentReview3 from "../../public/img/slovenia/contentReview3.png"
+import europeanCitizen from "../../public/img/slovenia/europeanCItizen.png"
+import redTitleCircle from "../../public/img/redTitleCircle.png"
+import notesCheck from "../../public/img/slovenia/notesCheck.png"
 
 const Slovenia = () => {
     const [theme, setTheme] = useState("dark");
@@ -39,7 +43,7 @@ const Slovenia = () => {
             <Navbar changeTheme={changeTheme} currentTheme={theme}/>
             <StartingModule
                 moduleText={"Модул 1 Словения"}
-                moduleBackgroundColor={"blueBackground"}
+                moduleBackgroundColor={styles.bgRed}
                 className={styles.sectionContainer}
             />
             <div className={`${styles.quotesContainer} ${styles.sectionContainer}`}>
@@ -118,8 +122,8 @@ const Slovenia = () => {
                 className={styles.sectionContainer}
             />
             <MainTopic
-                titleImage={yellowTitleCircle}
-                background={"yellowBackgroundEurope"}
+                titleImage={redTitleCircle}
+                background={styles.bgRed}
                 hasButton={false}
                 hasTitleImage={true}
                 titleText={"Общество"}
@@ -258,6 +262,7 @@ const Slovenia = () => {
                     text4={"4. Учебни методи: Гражданското образование се основава на интерактивни и учаственически методи на обучение. Учениците се стимулират да изразяват мненията си, да провеждат дебати и да работят в групи.\n"}
                     text5={"5. Гражданска отговорност и активизъм: Учениците се насърчават да се ангажират с обществото и да участват в инициативи, които насърчават промени за подобряване на обществото."}
                     text6={"6. Подготовка за граждански живот: Гражданското образование предоставя умения, необходими за участие в граждански организации, процеси на вземане на решения и решаване на обществени проблеми."}
+                    className={styles.sectionContainer}
                 />
             </div>
             <MainTopic
@@ -278,8 +283,8 @@ const Slovenia = () => {
                 text5={"Финансова подкрепа: Младежката ангажираност в Словения може да бъде подкрепена и финансово чрез грантове и фондове, които се предоставят за младежки проекти и инициативи."}
             />
             <MainTopic
-                titleImage={blueTitleCircle}
-                background={"blueBackground"}
+                titleImage={grayTitleCircle}
+                background={"redBackground"}
                 hasButton={true}
                 hasTitleImage={true}
                 titleText={"Ползи от младежката ангажираност"}
@@ -288,7 +293,7 @@ const Slovenia = () => {
                 className={styles.sectionContainer}
             />
             <TextWithAction
-                className={`${styles.sectionContainer} ${styles.bgBlue}`}
+                className={`${styles.sectionContainer} ${styles.bgRed}`}
                 scribbleImg={'/img/scribble.svg'}
                 hasActionBtn={false}
                 actionBtnTxt={"Към списък"}
@@ -332,9 +337,378 @@ const Slovenia = () => {
                     което обогатява обществото.
                 </p>
             </TextWithAction>
+            <MainTopic
+                titleImage={grayTitleCircle}
+                background={"redBackground"}
+                hasButton={true}
+                hasTitleImage={true}
+                titleText={"Възможности за младежката ангажираност"}
+                downRightImage={celebrating}
+                mainText={"В Словения има разнообразни възможности за младежка ангажираност, които предоставят на младежите възможност да участват активно в обществото, да развиват умения и да допринесат за положителни промени."}
+                className={styles.sectionContainer}
+            />
+            <TextWithAction
+                className={`${styles.sectionContainer} ${styles.bgRed} w-1/2`}
+                scribbleImg={'/img/scribble.svg'}
+                hasActionBtn={false}
+                actionBtnTxt={"Към списък"}
+            >
+                <p>
+                    <b>1. Младежки организации:</b> В Словения съществуват множество младежки
+                    организации, които предоставят възможности за младежите да се
+                    ангажират в различни инициативи, проекти и кампании,
+                    свързани с образование, култура, околна среда, здраве и други.
+                </p>
+                <br/>
+                <p>
+                    <b>2. Младежки клубове и центрове:</b> Младежките клубове
+                    и центрове предлагат пространства, където младежите могат
+                    да се срещат, обменят идеи, участват в образователни
+                    събития и работят по обществени проекти.
+                </p>
+                <br/>
+                <p>
+                    <b>3. Младежки съвети:</b> В много градове и общности съществуват
+                    младежки съвети, които предоставят на младежите
+                    възможност да се ангажират в обсъждане на важни
+                    въпроси и да представят своите идеи пред местните власти.
+                </p>
+                <br/>
+                <p>
+                    <b>4. Образователни програми и курсове:</b> Младежките организации
+                    и училища предоставят разнообразни образователни програми
+                    и курсове, които развиват уменията на младежите в области
+                    като лидерство, предприемачество, комуникация и други.
+                </p>
+            </TextWithAction>
+            <div
+                id={"media-advice"}
+                className={`${styles.bgBlue} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}
+            >
+                <div className={styles.MAInner}>
+                    <p>
+                        <b>1. Образователни програми: </b> Образователните институции и организации могат да разработят специални програми и уроци, насочени към развиване на медийна грамотност. Тези програми могат да обхващат умения като критично мислене, изследване на източници, анализ на информация и други.
+                    </p>
+                    <p>
+                       <b>2. Обучения и семинари:</b> Младежки центрове, университети, медийни организации и други институции могат да организират обучения и семинари, които да предоставят на младежите практически инструменти за разпознаване на фалшиви новини.
+                    </p>
+                    <p>
+                       <b>3. Медийни кампании:</b> Организации и инициативи в Словения могат да провеждат медийни кампании, които да повишат осведомеността за важността на медийната грамотност и разпознаването на фалшиви новини.
+                    </p>
+                    <img src={'/img/sparkle.svg'} className={styles.MASparkle}/>
+                </div>
+            </div>
+
+            <div
+                id={"media-advice"}
+                className={`${styles.bgBlue} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}
+            >
+                <div className={styles.MAInner}>
+                    <p>
+                        <b>1. Образователни програми: </b> Образователните институции и организации могат да разработят специални програми и уроци, насочени към развиване на медийна грамотност. Тези програми могат да обхващат умения като критично мислене, изследване на източници, анализ на информация и други.
+                    </p>
+                    <p>
+                        <b>2. Обучения и семинари:</b> Младежки центрове, университети, медийни организации и други институции могат да организират обучения и семинари, които да предоставят на младежите практически инструменти за разпознаване на фалшиви новини.
+                    </p>
+                    <p>
+                        <b>3. Медийни кампании:</b> Организации и инициативи в Словения могат да провеждат медийни кампании, които да повишат осведомеността за важността на медийната грамотност и разпознаването на фалшиви новини.
+                    </p>
+                    <img src={'/img/sparkle.svg'} className={styles.MASparkle}/>
+                </div>
+            </div>
+
+            <div
+                id={"media-advice"}
+                className={`${styles.bgBlue} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}
+            >
+                <div className={styles.MAInner}>
+                    <p>
+                        <b>1. Образователни програми: </b> Образователните институции и организации могат да разработят специални програми и уроци, насочени към развиване на медийна грамотност. Тези програми могат да обхващат умения като критично мислене, изследване на източници, анализ на информация и други.
+                    </p>
+                    <p>
+                        <b>2. Обучения и семинари:</b> Младежки центрове, университети, медийни организации и други институции могат да организират обучения и семинари, които да предоставят на младежите практически инструменти за разпознаване на фалшиви новини.
+                    </p>
+                    <p>
+                        <b>3. Медийни кампании:</b> Организации и инициативи в Словения могат да провеждат медийни кампании, които да повишат осведомеността за важността на медийната грамотност и разпознаването на фалшиви новини.
+                    </p>
+                    <img src={'/img/sparkle.svg'} className={styles.MASparkleLeft}/>
+                </div>
+            </div>
+            <MainTopic
+                titleImage={grayTitleCircle}
+                background={"redBackground"}
+                hasButton={true}
+                hasTitleImage={true}
+                titleText={"Оценка на въздействието на младежката активност"}
+                downRightImage={celebrating}
+                mainText={"Младежката активност в Словения представлява динамичен и разнообразен сектор, който насърчава младежите да се ангажират в различни инициативи и дейности за лично и обществено развитие. Този сектор предоставя на младежите възможности да развият умения, да изразяват свои идеи и да допринесат за обществото."}
+                className={styles.sectionContainer}
+            />
+            {/*<div id={"list"} className={`${styles.sectionContainer}   ${styles.impactAssessment} ${"redBackground"}`}>*/}
+            {/*    <img src={'img/greyScribble.svg'} className={`${styles.topLeftScribble}`}/>*/}
+            {/*    <div className={styles.textContent}>*/}
+            {/*        <ul>*/}
+            {/*            <li>Образование и умения;</li>*/}
+            {/*            <li>Развитие на личността;</li>*/}
+            {/*            <li>Гражданско участие и демокрация;</li>*/}
+            {/*            <li>Развитие на социалната мрежа;</li>*/}
+            {/*            <li>Интеркултурно разбирателство;</li>*/}
+            {/*            <li>Подпомагане на предприемачество.</li>*/}
+            {/*        </ul>*/}
+            {/*    </div>*/}
+            {/*    <img src={'/img/scribble-gray.svg'} className={styles.EUBSparkle}/>*/}
+            {/*</div>*/}
+
+            <Exam titleImage={redTitleCircle} background={"redBackground"} className={styles.sectionContainer}/>
+            <StartingModule moduleBackgroundColor={styles.whiteBackground} moduleText={"Модул 3 Словения"} className={styles.sectionContainer}/>
+            <ContentReview contentImage={contentReview3} background={styles.whiteBackground} className={styles.sectionContainer}/>
+            <div id={"impact-assessment"} className={`${styles.sectionContainer} ${styles.impactAssessment} ${styles.bgBlue}`}>
+                <div className={styles.IATitle}>
+                    <span>Живот, работа, пътуване в ЕС</span>
+                    <img src={"/img/europe/blueTitleCircle.png"} className={styles.IATitleCircle}/>
+                </div>
+                <div className={styles.textContent}>
+                    <img src={"/img/sparkle.svg"} className={styles.IAsparkle}/>
+                    <p>
+                        Словения е прекрасна държава в Европейския съюз с много предимства за живот, работа и пътуване. Ето някои от тях:
+                    </p>
+                    <p>
+                        <b>1. Свобода на движение:</b> Бъдейки част от Европейския съюз,
+                        гражданите на Словения и другите държави-членки имат
+                        право на свободно движение и работа във всички страни от ЕС.
+                        Това означава, че можете да избирате между различни работни и
+                        образователни възможности в рамките на Съюза.
+                    </p>
+
+                    <p>
+                        <b>2. Евро като валута:</b> Словения използва еврото като своя валута.
+                        Това облекчава пътуванията и търговията в рамките на Еврозоната,
+                        като се избягват разходи за обмяна на валута.
+                    </p>
+                    <p>
+                        <b>3. Стабилност и инфраструктура:</b>
+                        Държавата има стабилна и развита икономика,
+                        както и добре развита инфраструктура, което подобрява качеството на живот.
+                    </p>
+                </div>
+            </div>
+            <div
+                id={"media-advice"}
+                className={`${styles.bgBlue} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}
+            >
+                <div className={`${styles.bgBlue} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}>
+                    <div className={styles.MAInner}>
+                        <p>
+                            <b>Пътувания и Откриване: </b> Европа е известна с богатата си култура, история и разнообразие. Младите хора имат възможност да пътуват и откриват различни държави и градове, които предлагат уникални и автентични преживявания.
+                        </p>
+                        <p>
+                           <b>Стажове и Програми за Обучение:</b> Много организации и компании предлагат стажове и програми за обучение за млади професионалисти. Това може да бъде отличен начин да се развият уменията и да се запознаете с работната среда в Европа.
+                        </p>
+
+                        <p>
+                            <b>Стартъпи и Предприемачество:</b> Ако имате идеи и амбиции за създаване на свой бизнес, Европа предлага разнообразни възможности за стартъпи и предприемачество. Много държави предоставят подкрепа и ресурси за млади предприемачи.
+                        </p>
+                        <img src={'/img/sparkle.svg'} className={styles.MASparkleLeft}/>
+
+                    </div>
+                </div>
+            </div>
+            <MainTopic
+                titleImage={redTitleCircle}
+                background={styles.bgRed}
+                hasButton={true}
+                hasTitleImage={true}
+                titleText={"Какво означава да си активен европейски гражданин?\n"}
+                downRightImage={europeanCitizen}
+                mainText={"Да бъдеш активен европейски гражданин означава да участваш активно в обществения живот на Европейския съюз, да използваш своите права и да се ангажираш в дейности, които подпомагат интеграцията, сътрудничеството и разбирателството между държавите-членки. Това може да включва участие в изборите за Европейски парламент, изразяване на своите мнения и идеи, подкрепа на инициативи за обществено благо и дори участие в междукултурни обменни програми.\n"}
+                className={styles.sectionContainer}
+            />
+            <div
+                id={"european-citizen-text"}
+                className={`${styles.bgRed} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}
+            >
+                <div className={styles.MAInner}>
+                    <p>
+                        <b>1. Гласуване на избори:</b> Участвайте в изборите за Европейски парламент, както и в местните избори, за да упражните правото си на глас и да влияете на вземането на решения.</p>
+                    <p>
+                        <b>2. Образователни събития:</b> Присъствайте на семинари, конференции и образователни събития, където можете да научите повече за Европейския съюз, неговите институции и политики.</p>
+                    <p>
+                        <b>3. Участие в обществени консултации:</b> Следете за консултации и обсъждания, свързани с ЕС и националната политика, и предоставете своята гледна точка и предложения.</p>
+                    <p>
+                        <b>4. Европейски доброволчески проекти:</b> Присъединете се към доброволчески проекти и инициативи, които насърчават културен обмен, екологична осведоменост и социална интеграция.</p>
+                    <img src={'/img/redScribble.png'} className={styles.MAScribble}/>
+                </div>
+            </div>
+
+            <div
+                id={"slovenia-benefits-info"}
+                className={`${styles.bgRed} ${styles.sectionContainer} ${styles.EUBInfoContainer}`}
+            >
+                <div className={styles.TEAdviceText}>
+                    <p>
+                        <b>5. Подкрепа на европейски инициативи: </b>
+                        Участвайте в кампании и петиции, които подкрепят конкретни европейски инициативи и ценности, които ви вълнуват.
+                    </p>
+                    <p>
+                        <b>6. Участие в европейски културни събития:</b>
+                        Присъединете се към културни събития, свързани
+                        с различните страни на ЕС, за да научите повече за техните традиции и обичаи.
+                    </p>
+                    <p>
+                        <b>7. Разпространение на информация:</b>
+                            Споделяйте информация за ЕС и неговите ползи сред своите приятели и семейство, за да повишите осведомеността им.
+                    </p>
+                    <img src={'/img/scribble-gray.svg'} className={styles.EUBSparkle}/>
+                </div>
+            </div>
+            <MainTopic
+                titleImage={grayTitleCircle}
+                background={styles.whiteBackground}
+                hasButton={true}
+                hasTitleImage={true}
+                titleText={"Какво прави ЕС за своите граждани?\n"}
+                downRightImage={notesCheck}
+                mainText={"Европейският съюз (ЕС) предоставя разнообразни ползи и подкрепа за своите словенски граждани и граждани на всички държави-членки. Ето някои от тези инициативи и политики:"}
+                className={styles.sectionContainer}
+            />
+            <TextWithAction
+                className={`${styles.sectionContainer} ${styles.whiteBackground}`}
+                scribbleImg={'/img/greyScribble.svg'}
+                hasActionBtn={false}
+                actionBtnTxt={"Към списък"}
+            >
+                <p>
+                    <b>1. Свободно движение и работа:</b> Гражданите на Словения
+                    имат право на свободно движение и работа във всички
+                    страни-членки на ЕС. Това означава, че те могат да
+                    търсят работа, да работят и да живеят в други
+                    държави-членки без нужда от специални разрешения.
+                </p>
+                <br/>
+                <p>
+                    <b> 2. Финансова подкрепа:</b> Гражданите на Словения се
+                    възползват от финансова подкрепа от ЕС чрез
+                    структурните и инвестиционните фондове. Тези средства се
+                    използват за подпомагане на икономическото развитие,
+                    инфраструктурните проекти, образованието и други области.
+                </p>
+            </TextWithAction>
 
 
+            <div
+                id={"slovenia-benefits-info"}
+                className={`${styles.whiteBackground} ${styles.sectionContainer} ${styles.EUBInfoContainer}`}
+            >
+                <div className={styles.TEAdviceText}>
+                    <p>
+                        <b>3. Образование и научни изследвания:</b>
+                        Гражданите на Словения имат достъп до програми за образование,
+                        обучение и научни изследвания, финансирани от ЕС. Това включва възможности
+                        за обучение в университети и институции в различни държави-членки.
+                    </p>
+                    <p>
+                        <b>4. Здраве и социални въпроси:</b>
+                        ЕС подкрепя сътрудничеството между държавите-членки
+                        в областта на здравеопазването, социалната сигурност
+                        и социалната интеграция. Гражданите на Словения имат право на ос
+                    </p>
+                    <p>
+                        <b>5. Сигурност и права:</b>
+                        ЕС се стреми да осигури сигурността и защитата на своите
+                        граждани чрез сътрудничество в областта на правосъдието,
+                        полицейското сътрудничество и борбата с тероризма.
+                        Гражданите на Словения имат права на справедливо съдебно
+                        разследване и правата на човека се зачитат и защитават.
+                    </p>
 
+                    <p>
+                        <b>Социални програми:</b>
+                        ЕС подкрепя различни социални програми, които целят подпомагане
+                        на уязвимите групи в обществото, включително безработни,
+                        деца, възрастни хора и др.
+                    </p>
+                    <img src={'/img/scribble-gray.svg'} className={styles.EUBSparkle}/>
+                </div>
+            </div>
+            <div id={"european-instruments"} className={`${styles.sectionContainer} ${styles.impactAssessment} ${styles.bgBlue}`}>
+                <div className={styles.IATitle}>
+                    <span>Кои са европейските инструменти?</span>
+                    <img src={"/img/europe/blueTitleCircle.png"} className={styles.IATitleCircle}/>
+                </div>
+                <div className={styles.textContent}>
+                    <img src={"/img/sparkle.svg"} className={styles.IAsparkle}/>
+                    <p>
+                        Младежката активност включва участие в различни инициативи,
+                        програми и дейности, които имат за цел да подкрепят развитието
+                        и участието на младежта в обществото. Тази активност може да
+                        има множество положителни въздействия в различни области като:
+                    </p>
+
+                   <p>
+                       <b>1. Структурни и инвестиционни фондове (СИФ): </b>
+                       Тези фондове осигуряват финансиране за различни
+                       проекти, които подобряват икономическото и социално
+                       развитие в регионите на ЕС. Това включва инфраструктурни
+                       проекти, образование, научни изследвания и други.
+                   </p>
+
+                    <p>
+                        <b>2. Програма "Хоризонт 2020" (Horizon 2020):</b>
+                        Това е програма за научни изследвания и иновации,
+                        която финансира проекти, насочени към развитие на
+                        научни познания, технологичен напредък и иновации.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                id={"media-advice"}
+                className={`${styles.bgBlue} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}
+            >
+                <div className={`${styles.bgBlue} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}>
+                    <div className={styles.MAInner}>
+                        <p>
+                            <b>3. Европейска социална фонд (ЕСФ):</b> Този фонд подпомага проекти и инициативи, които подобряват заетостта, обучението и образованието, както и социалното приобщаване в ЕС
+                        </p>
+                        <p>
+                            <b>4. Програма "Еразъм+" (Erasmus+):</b> Тази програма подкрепя образователни, обучителни и младежки проекти, които насърчават мобилността и междукултурния обмен между младежите в ЕС.
+                        </p>
+                        <p>
+                            <b>5. Програма за здравето на ЕС:</b> Тази програма подпомага сътрудничеството в областта на общественото здраве и улеснява обмена на информация и най-добри практики.
+                        </p>
+                        <p>
+                            <b>6. Европейска структура за сътрудничество в областта на правосъдието (ЕССОП):</b> Това е рамка за сътрудничество между държавите-членки в областта на правосъдието, където се споделят информация и се създават общи стратегии.
+                        </p>
+                        <p>
+                            <b>7. Европейска служба за външни действия (ЕСВД):</b> Това е дипломатическа служба на ЕС, която подпомага външната политика и дейностите на Съюза.
+                        </p>
+                        <img src={'/img/sparkle.svg'} className={styles.MASparkleLeft}/>
+                    </div>
+                </div>
+            </div>
+            <MainTopic
+                titleImage={redTitleCircle}
+                background={styles.bgRed}
+                hasButton={true}
+                hasTitleImage={true}
+                titleText={"Документи и публикации Следвайки приоритети на програмата „Еразъм+“.\n"}
+                downRightImage={notesCheck}
+                mainText={"Програмата \"Еразъм+\" е образователна програма на Европейския съюз, която подпомага мобилността и сътрудничеството между образователните институции в различни държави-членки, включително и Словения. Програмата \"Еразъм+\" обхваща образование, обучение, младежки обмен и спорт, предоставяйки възможности за хора от всички възрасти и области."}
+                className={styles.sectionContainer}
+                btnText={"Виж Примери"}
+            />
+            <FiveInfoStickyNotes
+                text1={"Мобилност на студенти: Програмата предоставя на студентите възможност да учат или стажуват в учебни заведения или предприятия в други държави-членки на ЕС, което ги излага на нови образователни и културни опити."}
+                text2={"Мобилност на персонала: Преподавателите, учители и други специалисти от образователните институции могат да участват в обучения, стажове и семинари в чужбина, за да подобрят своите умения и да споделят опит."}
+                text3={"Младежки обмен и дейности: Програмата насърчава младежкия обмен и активното участие на младите хора в обществото чрез различни проекти и инициативи."}
+                text4={"Сътрудничество между институции: Програмата подпомага сътрудничеството между образователните институции, училищата и университетите, както и между организации в областта на младежката дейност."}
+                text5={"Подобряване на качеството на образованието и обучението: Чрез обмен на опит и добри практики, програмата насърчава подобряването на качеството на образованието и обучението във всички нива."}
+                className={styles.sectionContainer}
+            />
+            <Exam titleImage={redTitleCircle} background={styles.bgRed} className={styles.sectionContainer}/>
+            <div id={"extra-resources"} className={`${styles.sectionContainer} ${styles.bgRed}`}>
+                <img src={'/img/europe/extra-resource.png'} className={styles.ERImg}/>
+            </div>
         </div>
     );
 };

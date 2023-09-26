@@ -259,11 +259,17 @@
 
 .bgBlue {
   background: #3764E5;
+  color: white;
 }
 
 .bgRed {
   background: #FB5E60;
   color: white;
+}
+
+.yellowBackground {
+  background: #F3AA1A;
+  color: #FFF;
 }
 
 .title {
@@ -274,4 +280,171 @@
   font-weight: 700;
   line-height: normal;
   text-align: center;
+}
+
+
+.mediaAdviceContainer {
+  @apply flex flex-col justify-center items-center;
+  color: #FFF;
+  text-align: justify;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.MAInner {
+  @apply relative;
+  width: 1440px;
+  max-width: 80%;
+  font-weight: 500;
+
+  p {
+    @apply mt-12;
+  }
+}
+
+.MASparkle {
+  @apply absolute;
+  top: -25px;
+  right: -80px;
+  width: 120px;
+  transform: rotate(10deg);
+}
+
+.MASparkleLeft {
+  @apply absolute;
+  top: -30px;
+  left: -80px;
+  width: 120px;
+  transform: rotate(-90deg);
+}
+
+.MAScribble {
+  @apply absolute;
+  top: -25px;
+  right: -80px;
+  width: 120px;
+  transform: rotate(90deg);
+  width: 200px;
+}
+
+.topLeftScribble {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 240px;
+}
+
+.whiteBackground {
+  background: #ECECEC;
+  color: #686767 !important;
+}
+
+.EUBSparkle {
+  position: absolute;
+  bottom: -140px;
+  right: -175px;
+  width: 300px;
+  transform: rotate(10deg);
+}
+
+.TEAdviceText {
+  @apply relative;
+  width: 1440px;
+  max-width: 80%;
+  font-family: "Montserrat";
+  font-weight: 500;
+
+  p {
+    @apply mt-12;
+  }
+}
+
+.EUBInfoContainer {
+  @apply flex flex-col justify-center items-center;
+  color: white;
+  text-align: justify;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 32px;
+  }
+}
+
+.whiteScribble {
+  transform: rotate(180deg);
+}
+
+.IATitle {
+  @apply relative flex justify-start items-center mb-20;
+  width: 500px;
+  height: 250px;
+
+  span {
+    @apply absolute w-full;
+    color: #FFF;
+    margin-top: 1rem;
+    align-self: center;
+    font-size: 50px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+  }
+}
+
+
+.impactAssessment {
+  padding: 40px;
+
+  .textContent {
+    @apply mx-auto relative;
+    color: #FFF;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 1440px;
+    max-width: 80%;
+
+    p {
+      @apply mb-12;
+    }
+
+    ul {
+      list-style-type: disc;
+    }
+  }
+}
+
+.IATitleCircle {
+  @apply mt-6 mb-12;
+}
+
+.IAsparkle {
+  @apply absolute;
+  width: 240px;
+  top: -130px;
+  right: -155px;
+}
+
+.ERImg {
+  @apply absolute;
+  width: 900px;
+  bottom: 0;
+  left: calc(50% - 450px);
+
+  @media screen and (min-width: 1400px) {
+    width: 1328px;
+    left: calc(50% - 664px);
+  }
 }
