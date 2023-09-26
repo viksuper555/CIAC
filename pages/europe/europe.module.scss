@@ -4,6 +4,72 @@
     width: 100%;
 }
 
+.chatGPTContainer {
+    @apply flex flex-col items-center;
+    padding: 40px;
+}
+
+.CGPTTitle {
+    padding-bottom: 40px;
+    color: #fff;
+    margin-top: 1rem;
+    align-self: center;
+    font-size: 50px;
+    font-family: "Montserrat Bold";
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+.CGPTContent {
+    @apply flex flex-col items-center justify-center;
+    padding: 1rem;
+    background: #ECECEC;
+    width: 80%;
+    height: 650px;
+}
+
+.CGPTInputWrapper {
+    @apply flex w-full;
+}
+
+.CGPTInput {
+    width: 100%;
+    height: 40px;
+    margin-right: 1rem;
+    font-family: "Montserrat Bold";
+    font-size: 26px;
+    border: #555555;
+    background: #e3e3e3;
+    padding: 0 1rem;
+}
+
+.askChatGPTBtn {
+    @apply flex justify-center items-center cursor-pointer;
+    font-family: "Montserrat Bold";
+    font-size: 26px;
+    width: 120px;
+    height: 40px;
+    background: #2665e1;
+    color: #fff;
+}
+
+.CGPTResponse {
+    @apply mt-4;
+    padding: 1rem;
+    width: 100%;
+    height: 562px;
+    border: #555555;
+    background: #e3e3e3;
+    overflow-y: auto;
+    font-family: "Montserrat Bold";
+    font-size: 20px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+
 .quotesContainer {
     background: #ECECEC;
     display: flex;

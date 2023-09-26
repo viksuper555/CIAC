@@ -10,18 +10,55 @@ import yellowTitleCircle from "../../public/img/europe/yellowTitleCircle.png";
 import blueTitleCircle from "../../public/img/europe/blueTitleCircle.png";
 import peopleWithPlanet from "../../public/img/europe/Group.png";
 import grayTitleCircle from "../../public/img/bulgaria/grayTitleCircle.png";
-import FiveInfoStickyNotes from "@/components/fiveInfoStickyNotes";
 import Exam from "@/components/exam";
 import styles from './europe.module.scss';
 import { Table } from '@/components/table';
 import { TextWithAction } from "@/components/textWithAction";
+import OpenAI from 'openai';
 
 const Europe = () => {
     const [theme, setTheme] = useState("dark");
+    const [prompt, setPrompt] = useState("");
+    const [response, setResponse] = useState<any>("");
+    const [generatingResponse, setGeneratingResponse] = useState<boolean>(false);
 
     const changeTheme = () => {
         theme === "dark" ? setTheme("light") : setTheme("dark");
     };
+
+    const handleInputChange = (event: any) => {
+        setPrompt(event?.target?.value);
+    }
+
+    const askChatGPT = async () => {
+        if (!generatingResponse) {
+            if (prompt?.length <= 0) {
+                alert("Please insert a valid message! :)");
+            }
+
+            setGeneratingResponse(true);
+            const openai = new OpenAI({
+                apiKey: process.env["NEXT_PUBLIC_OPENAI_API_KEY"],
+                dangerouslyAllowBrowser: true
+            });
+
+            setResponse("");
+            const chatCompletion = await openai.chat.completions.create({
+                messages: [{ role: 'user', content: prompt }],
+                model: 'gpt-3.5-turbo',
+            });
+
+            if (!chatCompletion?.choices[0]?.message?.content) {
+                alert("Something went wrong! Please try asking another question...")
+            } else {
+                setResponse(`Q: ${prompt}\n\nA: ${chatCompletion?.choices[0]?.message?.content}`)
+            }
+
+            setGeneratingResponse(false);
+        } else {
+            alert("Please wait, a response is being generated for you! :)")
+        }
+    }
 
     return (
         <div className={"app-container"}>
@@ -33,6 +70,33 @@ const Europe = () => {
                 moduleBackgroundColor={"blueBackground"}
                 className={styles.sectionContainer}
             />
+            <div id={"chat-gpt"} className={`${styles.chatGPTContainer} ${styles.sectionContainer} ${styles.bgBlue}`}>
+                <div className={styles.CGPTTitle}>
+                    Ask some questions concerning the topic!<br/>
+                    <span>(Powered by ChatGPT)</span>
+                </div>
+                <div className={styles.CGPTContent}>
+                    <div className={styles.CGPTInputWrapper}>
+                        <input
+                            id={"chatGPT-prompt"}
+                            placeholder={"Your question goes here..."}
+                            className={styles.CGPTInput}
+                            value={prompt}
+                            onChange={handleInputChange}
+                        />
+                        <div
+                            className={styles.askChatGPTBtn}
+                            onClick={askChatGPT}
+                            title={generatingResponse ? "Generating response, please wait..." : ""}
+                        >
+                            {generatingResponse ? "..." : "GO"}
+                        </div>
+                    </div>
+                    <pre id={"response-body"} className={styles.CGPTResponse}>
+                        {response ?? "Response will be generated here..."}
+                    </pre>
+                </div>
+            </div>
             <div className={`${styles.quotesContainer} ${styles.sectionContainer}`}>
                 <div className={`${styles.quotesRow} mb-20`}>
                     <div className={styles.quoteMerkel}>
@@ -868,35 +932,6 @@ const Europe = () => {
             >
                 <div className={styles.TEAdviceText}>
                     <p>
-                        <b>6. Европейски централен банк:</b> Отговаря за управлението
-                        на еврото и монетарната политика в еврозоната.
-                    </p>
-                    <p>
-                        <b>7. Европейска инвестиционна банка:</b> Подпомага проекти,
-                        насочени към инфраструктура, икономическо развитие и
-                        иновации в Европейския съюз.
-                    </p>
-                    <p>
-                        <b>8. Европейска инвестиционна служба:</b> Предоставя финансови и
-                        технически ресурси за изпълнение на проекти в различни сфери.
-                    </p>
-                    <p>
-                        <b>9. Европейска служба за външна дейност:</b> Координира външната
-                        политика на ЕС и представлява Съюза на международната сцена.
-                    </p>
-                    <p>
-                        <b>10. Европейска агенция по околната среда, Европейска агенция по лекарствата и други:</b>
-                        Специализирани агенции, които подпомагат регулаторните и научни
-                        аспекти в конкретни области.
-                    </p>
-                </div>
-            </div>
-            <div
-                id={"eu-tools-info-2"}
-                className={`${styles.bgBlue} ${styles.sectionContainer} ${styles.EUToolsContainer}`}
-            >
-                <div className={styles.TEAdviceText}>
-                    <p>
                         <b>1. Европейски парламент:</b> Органът на представителната
                         демокрация, който заседава в Страсбург и Брюксел.
                         Участва в законодателния процес и надзирава дейността на
@@ -922,6 +957,35 @@ const Europe = () => {
                         <b>5. Европейски съвет:</b> Включва главите на държавите-членки
                         и председателят на Европейската комисия. Този орган установява
                         общи насоки и стратегии за развитие на Европейския съюз.
+                    </p>
+                </div>
+            </div>
+            <div
+                id={"eu-tools-info-2"}
+                className={`${styles.bgBlue} ${styles.sectionContainer} ${styles.EUToolsContainer}`}
+            >
+                <div className={styles.TEAdviceText}>
+                    <p>
+                        <b>6. Европейски централен банк:</b> Отговаря за управлението
+                        на еврото и монетарната политика в еврозоната.
+                    </p>
+                    <p>
+                        <b>7. Европейска инвестиционна банка:</b> Подпомага проекти,
+                        насочени към инфраструктура, икономическо развитие и
+                        иновации в Европейския съюз.
+                    </p>
+                    <p>
+                        <b>8. Европейска инвестиционна служба:</b> Предоставя финансови и
+                        технически ресурси за изпълнение на проекти в различни сфери.
+                    </p>
+                    <p>
+                        <b>9. Европейска служба за външна дейност:</b> Координира външната
+                        политика на ЕС и представлява Съюза на международната сцена.
+                    </p>
+                    <p>
+                        <b>10. Европейска агенция по околната среда, Европейска агенция по лекарствата и други:</b>
+                        Специализирани агенции, които подпомагат регулаторните и научни
+                        аспекти в конкретни области.
                     </p>
                 </div>
             </div>
