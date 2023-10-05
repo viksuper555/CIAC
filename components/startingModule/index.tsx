@@ -25,8 +25,8 @@ const StartingModule = ({
                 <div className={styles.circleContainer}>
                     <Image src={WhiteCircle} alt={"whiteCircle"} className={styles.circle}/>
                     <div className={styles.commaContainer}>
-                        <Image src={commaImage ?? CommaImage} alt={"commaImg"} className={styles.commaImage}/>
-                        <Image src={commaImage ?? CommaImage} alt={"commaImg"} className={styles.commaImage}/>
+                        <img src={commaImage ? commaImage : "/img/bulgaria/CommaImage.png"} alt={"commaImg"} className={styles.commaImage}/>
+                        <img src={commaImage ? commaImage : "/img/bulgaria/CommaImage.png"} alt={"commaImg"} className={styles.commaImage}/>
                     </div>
                 </div>
                 <div className={styles.textContainer}>

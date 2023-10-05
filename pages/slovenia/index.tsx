@@ -25,7 +25,6 @@ import sloveniaContentTwo from "../../public/img/slovenia/sloveniaContentTwo.png
 import citizenEducation from "../../public/img/slovenia/citizenEducation.png"
 import FiveInfoStickyNotes from "@/components/fiveInfoStickyNotes";
 import celebrating from "../../public/img/slovenia/celebrating.png"
-import whiteScribble from "../../public/img/slovenia/whiteScribble.png"
 import contentReview3 from "../../public/img/slovenia/contentReview3.png"
 import europeanCitizen from "../../public/img/slovenia/europeanCItizen.png"
 import redTitleCircle from "../../public/img/redTitleCircle.png"
@@ -104,7 +103,7 @@ const Slovenia = () => {
                 </div>
             </div>
             <ContentReview
-                contentImage={infoContent} background={"whiteBackgroundEurope"}
+                contentImage={infoContent} background={styles.redText}
                 className={styles.sectionContainer}
             />
             <MainTopic
@@ -151,7 +150,7 @@ const Slovenia = () => {
                 text6={"6. Социални и здравни услуги: Институции, които се грижат за социалното и здравното благосъстояние на гражданите."}
                 className={styles.sectionContainer}
             />
-            <div id={"three-sticky"} className={styles.sectionContainer}>
+            <div id={"three-sticky"} className={`${styles.sectionContainer} greyBackground}`}>
                 <div className={styles.titleContainer}>
                     <Image src={grayTitleCircle} alt={"commaImg"} className="mt-6"/>
                     <span className={`${styles.titleText}`}>
@@ -499,14 +498,16 @@ const Slovenia = () => {
                 <div className={`${styles.bgBlue} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}>
                     <div className={styles.MAInner}>
                         <p>
-                            <b>Пътувания и Откриване: </b> Европа е известна с богатата си култура, история и разнообразие. Младите хора имат възможност да пътуват и откриват различни държави и градове, които предлагат уникални и автентични преживявания.
+                            <b>4. Красива природа: </b> Словения разполага с изключително красива природа, включително планини, езера и гори. Това предоставя много възможности за отдих.
                         </p>
                         <p>
-                           <b>Стажове и Програми за Обучение:</b> Много организации и компании предлагат стажове и програми за обучение за млади професионалисти. Това може да бъде отличен начин да се развият уменията и да се запознаете с работната среда в Европа.
+                            <b> 5. Културно и историческо наследство:</b> Държавата има богата история и култура, което означава, че има много забележителности, музеи и традиции за изследване.
                         </p>
-
                         <p>
-                            <b>Стартъпи и Предприемачество:</b> Ако имате идеи и амбиции за създаване на свой бизнес, Европа предлага разнообразни възможности за стартъпи и предприемачество. Много държави предоставят подкрепа и ресурси за млади предприемачи.
+                            <b>6. Образование:</b> Словения предлага качествено образование на всички нива - от начално до университетско. Гражданите на държавата също имат възможност да учат и работят в различни учебни институции в други страни от ЕС.
+                        </p>
+                        <p>
+                            <b>Здравна грижа:</b> Здравната грижа в Словения е добре организирана и достъпна. Гражданите имат право на основни медицински услуги и лечение.
                         </p>
                         <img src={'/img/sparkle.svg'} className={styles.MASparkleLeft}/>
 

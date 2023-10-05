@@ -10,19 +10,31 @@
 
     @media screen and (min-width: 1024px) {
         @apply ml-8;
-        width: 500px;
+        width: 600px;
         height: 250px;
     }
 }
 
 .titleText {
-    @apply absolute self-center mt-4;
+    @apply absolute self-center mt-6;
     font-size: 50px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-align: center;
+    max-width: 450px;
+}
+
+.titleTextSmall {
+    @apply absolute self-center mt-6;
+    font-size: 35px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    max-width: 450px;
 }
 
 .mainTextContainer {
@@ -39,7 +51,7 @@
 .mainText {
     width: 828px;
     text-align: center;
-    font-size: 36px;
+    font-size: 34px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;

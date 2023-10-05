@@ -1,6 +1,6 @@
 "use client";
 import "../../app/globals.scss";
-import { useState } from "react";
+import React, { useState } from "react";
 import Navbar from "@/components/navbar";
 import StartingModule from "@/components/startingModule";
 import ContentReview from "@/components/contentReview";
@@ -15,6 +15,7 @@ import styles from './europe.module.scss';
 import { Table } from '@/components/table';
 import { TextWithAction } from "@/components/textWithAction";
 import OpenAI from 'openai';
+import Image from "next/image";
 
 const Europe = () => {
     const [theme, setTheme] = useState("dark");
@@ -70,16 +71,16 @@ const Europe = () => {
                 moduleBackgroundColor={"blueBackground"}
                 className={styles.sectionContainer}
             />
-            <div id={"chat-gpt"} className={`${styles.chatGPTContainer} ${styles.sectionContainer} ${styles.bgBlue}`}>
+            <div id={"chat-gpt2"} className={`${styles.chatGPTContainer} ${styles.sectionContainer} ${styles.bgBlue}`}>
                 <div className={styles.CGPTTitle}>
-                    Ask some questions concerning the topic!<br/>
+                    Попитай chatGPT относно тази тема !<br/>
                     <span>(Powered by ChatGPT)</span>
                 </div>
                 <div className={styles.CGPTContent}>
                     <div className={styles.CGPTInputWrapper}>
                         <input
                             id={"chatGPT-prompt"}
-                            placeholder={"Your question goes here..."}
+                            placeholder={"Напишете въпроса тук"}
                             className={styles.CGPTInput}
                             value={prompt}
                             onChange={handleInputChange}
@@ -95,6 +96,41 @@ const Europe = () => {
                     <pre id={"response-body"} className={styles.CGPTResponse}>
                         {response ?? "Response will be generated here..."}
                     </pre>
+                </div>
+            </div>
+
+            <div className={`${styles.sectionContainer}`}>
+                <div className={`${styles.titleText} relative`}>
+                    Политика на европа
+                </div>
+                <div className={styles.mainTextContainer}>
+                    <div className={styles.mainText}>
+                        Политиката в Европа е изключително разнообразна, тъй като Европа се състои от множество държави със собствени правителства и политически системи. Европейският съюз (ЕС) обаче играе ключова роля във формирането на общата политическа атмосфера на континента.
+
+                    </div>
+                </div>
+                <div className={`${styles.bottomRightImage}`}>
+                    <div className={styles.CGPTContentDownRight}>
+                        <div className={styles.CGPTInputWrapper}>
+                            <input
+                                id={"chatGPT-prompt"}
+                                placeholder={"Напишете въпроса тук"}
+                                className={styles.CGPTInput}
+                                value={prompt}
+                                onChange={handleInputChange}
+                            />
+                            <div
+                                className={styles.askChatGPTBtn}
+                                onClick={askChatGPT}
+                                title={generatingResponse ? "Generating response, please wait..." : ""}
+                            >
+                                {generatingResponse ? "..." : "GO"}
+                            </div>
+                        </div>
+                        <pre id={"response-body"} className={styles.CGPTResponse}>
+                        {response ?? "Response will be generated here..."}
+                    </pre>
+                    </div>
                 </div>
             </div>
             <div className={`${styles.quotesContainer} ${styles.sectionContainer}`}>
@@ -580,7 +616,6 @@ const Europe = () => {
                                 подобряване на обществото и да работят за
                                 промяна на проблематични области.
                             </div>
-                            <img src={'/img/sparkle-yellow.svg'} className={styles.YESparkle}/>
                         </div>
                     </div>
                     <div className={styles.CASecondRow}>
@@ -627,12 +662,7 @@ const Europe = () => {
                 hasTitleImage={true}
                 titleText={"Медийна грамотност и разпознаване на фалшиви новини"}
                 downRightImage={'/img/europe/media-engagement.png'}
-                mainText={"Европейските институции и много неправителствени организации " +
-                    "работят за повишаване на медийната грамотност и разпознаването на" +
-                    " фалшиви новини сред гражданите. Това включва обучителни програми," +
-                    " кампании за информиране и насърчаване на критичното мислене при използването" +
-                    " на информация от различни източници.\n" +
-                    "Някои от начините, по които хората могат да разпознаят фалшиви новини, включват:\n"}
+                mainText={"Европейските институции и много неправителствени организации работят за повишаване на медийната грамотност и разпознаването на фалшиви новини сред гражданите. Това включва обучителни програми, кампании за информиране и насърчаване на критичното мислене при използването на информация от различни източници. Някои от начините, по които хората могат да разпознаят фалшиви новини, включват:"}
                 className={styles.sectionContainer}
                 downRightImageClass={styles.mediaBottomRightImg}
                 bottomRightImageContainerClass={styles.YEImageContainer}

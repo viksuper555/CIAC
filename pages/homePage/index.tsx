@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import React, { useState } from "react";
 import Navbar from "@/components/navbar";
 import StartingModule from "@/components/startingModule";
 import CenteredScheme from "@/components/centeredScheme";
@@ -38,6 +38,8 @@ import euForPeople from "../../public/img/bulgaria/euForPeople.png"
 import europeanInstruments from "../../public/img/bulgaria/europeanInstruments.png"
 import docs from "../../public/img/bulgaria/docs.png"
 import styles from './bulgaria.module.scss'
+import Image from "next/image";
+import RedirectButton from "@/components/ui/readMoreBtn";
 
 const HomePage = () => {
     const [theme, setTheme] = useState("dark");
@@ -145,7 +147,7 @@ const HomePage = () => {
                 downRightImage={greenHandsTree}
                 className={styles.sectionContainer}
             />
-            <InfoText background={volunteerText} bgColor={"greyBackground"}/>
+            <InfoText background={volunteerText} bgColor={"grayBackgroundBulgaria"}/>
 
             <MainTopic
                 background={"greenBackground"}
@@ -169,7 +171,7 @@ const HomePage = () => {
                 className={styles.sectionContainer}
             />
             <Exam titleImage={redTitleCircle} background={"redBackground"} className={styles.sectionContainer}/>
-            <StartingModule moduleText={"Модул 3 България"} moduleBackgroundColor={"greyBackground"} className={styles.sectionContainer}/>
+            <StartingModule moduleText={"Модул 3 България"} moduleBackgroundColor={"grayBackgroundBulgaria"} className={styles.sectionContainer}/>
             <ContentReview contentImage={ContentReview2} background={"redBackground"} className={styles.sectionContainer}/>
             <MainTopic
                 background={"greenBackground"}
@@ -185,13 +187,14 @@ const HomePage = () => {
                 background={"redBackground"}
                 hasButton={false}
                 hasTitleImage={false}
+                titleText={""}
                 titleImage={greenTitleCircle}
                 mainText={"Животът в ЕС предоставя широк спектър от услуги и социални гаранции, като здравеопазване, образование и социална помощ. Системите за социална сигурност и защита на работниците обикновено са добре развити, като включват пенсии, болнични и осигуряване при безработица. Работата в ЕС предоставя възможности за кариерно развитие и професионални предимства. Гражданите на държавите - членки могат да търсят работа в други страни от ЕС без ограничения. Това отваря врати за разнообразни работни места и професионални възможности.\n"}
                 downRightImage={workAndTravel2}
                 className={styles.sectionContainer}
             />
             <MainTopic
-                background={"greyBackground"}
+                background={"grayBackgroundBulgaria"}
                 hasButton={true}
                 hasTitleImage={true}
                 titleImage={grayTitleCircle}
@@ -200,7 +203,7 @@ const HomePage = () => {
                 downRightImage={euForPeople}
                 className={styles.sectionContainer}
             />
-            <DownLeftImageTexts background={"greyBackground"} leftImage={handsTree}/>
+            <DownLeftImageTexts background={"grayBackgroundBulgaria"} leftImage={handsTree}/>
 
         <MainTopic
             background={"greenBackground"}

@@ -273,7 +273,7 @@
 }
 
 .yellowBackground {
-  background: #F3AA1A;
+  background: #F0BE57;
   color: #FFF;
 }
 
@@ -318,6 +318,24 @@
   transform: rotate(10deg);
 }
 
+
+.MASparkleWb {
+  @apply absolute;
+  top: 50px;
+  right: -80px;
+  width: 120px;
+  transform: rotate(10deg);
+}
+
+.maSparkleDownLeft {
+  @apply absolute;
+  bottom: -75px;
+  left: -80px;
+  width: 120px;
+  transform: rotate(180deg);
+
+}
+
 .MASparkleLeft {
   @apply absolute;
   top: -30px;
@@ -339,6 +357,14 @@
   position: absolute;
   top: 20px;
   left: 20px;
+  width: 240px;
+}
+
+
+.topLeftScribbleWb {
+  position: absolute;
+  top: -80px;
+  left: -120px;
   width: 240px;
 }
 
@@ -454,7 +480,167 @@
   }
 }
 
-.grayBackground {
-  background: #686767;
-  color: #686767 !important;
+.yellowBg {
+  background: #F0BE57 !important;
+  color: white;
+}
+
+.yellowText {
+  color: #F3AA1A;
+}
+
+.tealBackground {
+  background: #2E6A72;
+  color: white;
+}
+
+.IAScribble {
+  right: -175px !important;
+  bottom: -95px !important;
+  width: 270px;
+}
+
+.IABtnClass {
+  color: #F3AA1A !important;
+}
+
+.tealBtnClass {
+  color: #2E6A72 !important;
+}
+
+.IATestTitle {
+  color: #fff;
+}
+
+.contentsModule2Container {
+  @apply flex flex-col;
+  padding: 40px 100px;
+  background: #2E6A72;
+}
+
+.contentsModule2Title {
+  @apply text-center;
+  padding-bottom: 40px;
+  color: #FFF;
+  text-align: center;
+  font-family: "Montserrat Bold";
+  font-size: 70px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.contentsModule2 {
+  width: 1000px;
+}
+
+
+.youthEngagement {
+  color: #FFF;
+}
+
+.btnYouthEngagement {
+  color: #3764E5;
+  font-family: "Montserrat Bold";
+}
+
+
+.citizenAwarenessExamplesContainer {
+  @apply flex items-center justify-center flex-col h-fit min-h-[1080px];
+  padding: 40px;
+  background: #2E6A72;
+}
+
+.CATitle {
+  @apply w-fit text-center m-auto;
+  max-width: 80%;
+  padding-bottom: 40px;
+  color: #686767;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.CANotes {
+  @apply flex flex-col items-center;
+}
+
+.CAFirstRow, .CASecondRow {
+  @apply w-fit flex flex-wrap justify-evenly;
+}
+
+.stickyNoteContainerBlue, .stickyNoteContainerYellow, .stickyNoteContainerGreen {
+  @apply flex flex-col items-center mb-12 mx-12 relative;
+  padding: 15px;
+  padding-top: 0;
+  width: 360px;
+  min-height: 360px;
+  height: fit-content;
+}
+
+.stickyNoteContainerBlue {
+  background: #FFFFFF;
+  filter: drop-shadow(0px 5.559401988983154px 5.559401988983154px rgba(0, 0, 0, 0.25));
+}
+
+.stickyNoteContainerYellow {
+  background: #FFFFFF;
+  filter: drop-shadow(0px 5.559401988983154px 5.559401988983154px rgba(0, 0, 0, 0.25));
+}
+
+
+.stickyNoteContainerGreen {
+  background: #FFFFFF;
+  filter: drop-shadow(0px 5.559401988983154px 5.559401988983154px rgba(0, 0, 0, 0.25));
+}
+
+.CAStickyNotePinBlue {
+  border-radius: 9999px;
+  width: 40px;
+  height: 40px;
+  background: #2E6A72;;
+  filter: drop-shadow(0px 5.559401988983154px 5.559401988983154px rgba(0, 0, 0, 0.25));
+}
+
+.CAStickyNotePinYellow {
+  border-radius: 9999px;
+  width: 40px;
+  height: 40px;
+  background: #FFD360;
+  filter: drop-shadow(0px 5.559401988983154px 5.559401988983154px rgba(0, 0, 0, 0.25));
+}
+
+.CAStickyNotePinGreen {
+  border-radius: 9999px;
+  width: 40px;
+  height: 40px;
+  background: #2E6A72;
+  filter: drop-shadow(0px 5.559401988983154px 5.559401988983154px rgba(0, 0, 0, 0.25));
+}
+
+.CAStickyNoteText {
+  @apply w-full;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 1.5rem;
+}
+
+.YENotes {
+  @apply flex flex-col items-center;
+}
+
+.YEStickyNoteText {
+  @apply w-full;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 1.5rem;
 }

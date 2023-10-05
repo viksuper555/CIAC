@@ -9,7 +9,7 @@ interface Props {
     hasTitleImage: boolean;
     hasButton: boolean;
     btnText?: string;
-    titleText?: string;
+    titleText: string;
     mainText: string;
     background: string;
     downRightImage?: any;
@@ -31,7 +31,7 @@ const MainTopic = ({
                 {
                     hasTitleImage && <Image src={titleImage} alt={"commaImg"} className="mt-6"/>
                 }
-                <span className={`${styles.titleText} ${!hasTitleImage ? "pl-20 pt-12 relative" : ""}`}>
+                <span className={`${titleText.length < 30 ? styles.titleText : styles.titleTextSmall} ${!hasTitleImage ? "pl-20 pt-12 relative" : ""}`}>
                     {titleText}
                 </span>
             </div>
