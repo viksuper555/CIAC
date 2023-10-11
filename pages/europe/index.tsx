@@ -23,8 +23,7 @@ const Europe = () => {
     const [prompt, setPrompt] = useState("");
     const [response, setResponse] = useState<any>("");
     const [generatingResponse, setGeneratingResponse] = useState<boolean>(false);
-    const { texts } = getTexts();
-    console.log("==> ",texts)
+    const { texts: {Europe: texts} } = getTexts();
 
     const changeTheme = () => {
         theme === "dark" ? setTheme("light") : setTheme("dark");
@@ -70,7 +69,7 @@ const Europe = () => {
                 changeTheme={changeTheme} currentTheme={theme}
             />
             <StartingModule
-                moduleText={"Модул 1 Европа"}
+                moduleText={texts.moduleOneEurope}
                 moduleBackgroundColor={"blueBackground"}
                 className={styles.sectionContainer}
             />
