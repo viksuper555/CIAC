@@ -1,0 +1,18 @@
+{
+  "Europe": {
+    "SampleText": "Wow",
+    "SampleText2": "Wow"
+  },
+  "Bulgaria": {
+    "ModuleOne": "Модул 1 България",
+    "SampleText2": "Wow"
+  },
+  "WesternBalkans": {
+    "SampleText": "Wow",
+    "SampleText2": "Wow"
+  },
+  "Slovenia": {
+    "SampleText": "Wow",
+    "SampleText2": "Wow"
+  }
+}

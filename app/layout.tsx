@@ -1,6 +1,6 @@
 import './globals.scss'
 import { Inter } from 'next/font/google'
-import Navbar from "@/components/navbar";
+import { LanguageProv } from "@/contexts/LanguageContext";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <LanguageProv>
+        <body className={inter.className}>{children}</body>
+      </LanguageProv>
     </html>
   )
 }

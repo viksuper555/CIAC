@@ -1,6 +1,6 @@
 .sectionContainer {
   @apply py-4 relative overflow-hidden;
-  height: 1080px;
+  height: 1080px !important;
   width: 100%;
 }
 
@@ -333,7 +333,14 @@
   left: -80px;
   width: 120px;
   transform: rotate(180deg);
+}
 
+.maSparkleDownRight {
+  @apply absolute;
+  bottom: -75px;
+  right: -80px;
+  width: 120px;
+  transform: rotate(180deg);
 }
 
 .MASparkleLeft {
@@ -486,7 +493,7 @@
 }
 
 .yellowText {
-  color: #F3AA1A;
+  color: #F3AA1A !important;
 }
 
 .tealBackground {

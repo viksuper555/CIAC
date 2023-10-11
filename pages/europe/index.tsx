@@ -16,12 +16,15 @@ import { Table } from '@/components/table';
 import { TextWithAction } from "@/components/textWithAction";
 import OpenAI from 'openai';
 import Image from "next/image";
+import {getTexts} from "@/contexts/LanguageContext";
 
 const Europe = () => {
     const [theme, setTheme] = useState("dark");
     const [prompt, setPrompt] = useState("");
     const [response, setResponse] = useState<any>("");
     const [generatingResponse, setGeneratingResponse] = useState<boolean>(false);
+    const { texts } = getTexts();
+    console.log("==> ",texts)
 
     const changeTheme = () => {
         theme === "dark" ? setTheme("light") : setTheme("dark");

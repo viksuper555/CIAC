@@ -40,9 +40,12 @@ import docs from "../../public/img/bulgaria/docs.png"
 import styles from './bulgaria.module.scss'
 import Image from "next/image";
 import RedirectButton from "@/components/ui/readMoreBtn";
+import {getTexts} from "@/contexts/LanguageContext";
 
 const HomePage = () => {
     const [theme, setTheme] = useState("dark");
+    const { texts } = getTexts();
+    console.log("==> ",texts)
 
     const changeTheme = () => {
         theme === "dark" ? setTheme("light") : setTheme("dark")

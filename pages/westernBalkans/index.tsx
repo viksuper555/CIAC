@@ -21,10 +21,14 @@ import Exam from "@/components/exam";
 import civilianEducationWB from "../../public/img/westernBalkans/civilianEducationWB.png"
 import contentReview3 from "../../public/img/westernBalkans/content3Wb.png"
 import activeCitizen from "../../public/img/westernBalkans/activeCitizen.png"
+import wbInstruments from "../../public/img/westernBalkans/wbInstruments.png"
+import wbDocuments from "../../public/img/westernBalkans/wbInstruments.png"
+import {getTexts} from "@/contexts/LanguageContext";
 
 const WesternBalkans = () => {
     const [theme, setTheme] = useState("dark");
-
+    const { texts } = getTexts();
+    console.log("==> ",texts)
     const changeTheme = () => {
         theme === "dark" ? setTheme("light") : setTheme("dark")
     }
@@ -271,7 +275,7 @@ const WesternBalkans = () => {
                     </p>
                     <b>5. Културно многообразие:</b> Уроците могат да насърчават разбирателство и уважение към
                     различните култури и етнически групи, които съставляват региона.
-                    <img src={'/img/westernBalkans/tealSparkle.svg'} className={styles.maSparkleDownLeft}/>
+                    <img src={'/img/westernBalkans/tealSparkle.svg'} className={styles.maSparkleDownRight}/>
                 </div>
             </div>
         </div>
@@ -728,7 +732,7 @@ const WesternBalkans = () => {
             titleText={"Какво прави Западни Балкани за своите граждани?"}
             mainText={"Западните Балкани са регион, който включва няколко балкански държави в Югоизточна Европа, като Сърбия, Хърватия, Словения, Черна гора, Македония, Албания и Босна и Херцеговина. Различните държави в този регион предприемат различни инициативи и политики, за да подпомагат и подобряват живота на своите граждани. Важно е да се обърне внимание, че всички тези държави имат индивидуални управленски системи и приоритети, така че мерките и програмите могат да варират значително."}
             className={`${styles.sectionContainer} ${styles.youthEngagement}`}
-            btnClass={styles.btnYouthEngagement}
+            btnClass={styles.yellowText}
             downRightImage={activeCitizen}
         />
         <div
@@ -770,10 +774,11 @@ const WesternBalkans = () => {
             <div className={styles.MAInner}>
                 <p>
                     <b>5.Култура и туризъм:</b> Западните Балкани се гордеят с богатото си културно наследство и
-                        туристически атракции, които се предлагат на своите граждани и посетители.
+                    туристически атракции, които се предлагат на своите граждани и посетители.
                 </p>
                 <p>
-                    <b>6.Подкрепа за младежта:</b> Различни програми и инициативи са насочени към подпомагане на младежта в
+                    <b>6.Подкрепа за младежта:</b> Различни програми и инициативи са насочени към подпомагане на
+                    младежта в
                     региона, включително образование, обмен на студенти и стажове.
                 </p>
                 <p>
@@ -784,9 +789,74 @@ const WesternBalkans = () => {
                     предприемачеството и
                     създаването на работни места са сред стратегиите за икономическо развитие.
                 </p>
-                <img src={'/img/greyScribble.svg'} className={styles.topLeftScribbleWb}/>
+                <img src={'/img/greyScribble.svg'} className={styles.maSparkleDownRight}/>
             </div>
         </div>
+        <MainTopic
+            id={"wb-instruments"}
+            titleImage={yellowTitleCircle}
+            background={styles.yellowBackground}
+            hasButton={true}
+            hasTitleImage={true}
+            titleText={"Повече за европейските инструменти и Западни Балкани?"}
+            mainText={"Европейският съюз (ЕС) е активен в Западния Балкан чрез редица инструменти и програми, предназначени да подкрепят стабилността, икономическото развитие и европейската интеграция на региона. Ето някои от тях:\n"}
+            className={`${styles.sectionContainer} ${styles.youthEngagement}`}
+            btnClass={styles.yellowText}
+            downRightImage={wbInstruments}
+        />
+
+        <div
+            id={"wb-instruments-2"}
+            className={`${styles.yellowBackground} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}
+        >
+            <div className={styles.MAInner}>
+                <p>
+                    <b>1. Инструмент за предприсъединителна помощ (ИПП):</b> Този инструмент цели да подпомага страните
+                    от
+                    Западния Балкан, които желаят да станат членки на ЕС, в подготовката им за присъединяване. Той
+                    финансира проекти и програми, които се фокусират на реформи в области като правосъдие,
+                    инфраструктура и образование.
+                </p>
+                <p>
+                    <b>2. Европейски фонд за стабилност (ЕФС):</b> Този инструмент на ЕС се използва за подкрепа на
+                    стабилността и развитието в Западния Балкан, като финансира проекти за развитие на инфраструктура,
+                    подпомагане на икономическия растеж и укрепване на демократичните институции.
+                </p>
+                <p>
+                    <b>3. Инициатива за подкрепа на младежта в Западния Балкан (ЕРАСМУС+):</b> Програмата ЕРАСМУС+ на ЕС
+                    предоставя възможности за младежи от Западния Балкан да учат, работят и пътуват в рамките на ЕС.
+                    Това помага за развитието на младите хора и насърчава културния обмен.
+                </p>
+                <p>
+                    <b>4. Регионална сътрудничество и интеграция в ЕС:</b> ЕС насърчава регионалното сътрудничество между
+                    страните от Западния Балкан чрез различни програми и инициативи, като например Процеса на Берлин и
+                    Регионалния структурен и инвестиционен фонд (РСИФ). Тези инициативи подкрепят интеграцията на
+                    региона и сътрудничеството в области като икономика, инфраструктура и енергетика.
+                </p>
+                <img src={'/img/scribble-yellow.svg'} className={styles.maSparkleDownRight}/>
+            </div>
+        </div>
+        <MainTopic
+            id={"wb-documents-publications"}
+            titleImage={tealTitleCircle}
+            background={styles.tealBackground}
+            hasButton={true}
+            hasTitleImage={true}
+            titleText={"Документи и публикации Следвайки приоритети на програмата „Еразъм+“."}
+            mainText={"Програмата Еразъм на Европейския съюз (ЕС) има за цел насърчаване на образованието, обучението, младежта и спорта в рамките на ЕС и извън него. Този многобройностен инструмент на ЕС предоставя различни документи и публикации, които се фокусират върху приоритетите на програмата Еразъм. Ето някои от тях:"}
+            className={`${styles.sectionContainer} ${styles.youthEngagement}`}
+            btnClass={styles.tealBtnClass}
+            downRightImage={wbDocuments}
+        />
+        <Exam
+            id={"exam-europe-module-3"}
+            titleImage={tealTitleCircle} background={styles.sectionContainer}
+            className={`${styles.tealBackground} ${styles.sectionContainer}`}
+            scribbleImg={'/img/westernBalkans/tealScribble.svg'}
+            scribbleImgClass={styles.IAScribble}
+            btnClass={styles.tealBtnClass}
+            titleClass={styles.IATestTitle}
+        />
     </div>
 }
 
