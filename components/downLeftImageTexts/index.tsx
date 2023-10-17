@@ -4,15 +4,16 @@ import Image from "next/image";
 
 interface Props {
     background: any,
-    leftImage: any
     texts?: string[]
+    leftImage: any,
+    className: string
 }
 
-const DownLeftImageTexts = ({background, leftImage, texts}: Props) => {
+const DownLeftImageTexts = ({background, leftImage, texts, className}: Props) => {
 
     return (
         <>
-            <div className={`${styles.container} ${background}`}>
+            <div className={`${styles.container} ${background} ${className}`}>
                 <div className={styles.imageContainer}>
                     <Image src={leftImage} alt={"commaImg"} className="mt-6"/>
                 </div>

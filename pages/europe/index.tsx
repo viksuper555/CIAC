@@ -65,9 +65,6 @@ const Europe = () => {
 
     return (
         <div className={"app-container"}>
-            <Navbar
-                changeTheme={changeTheme} currentTheme={theme}
-            />
             <StartingModule
                 moduleText={texts.moduleOneEurope}
                 moduleBackgroundColor={"blueBackground"}

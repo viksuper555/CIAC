@@ -29,7 +29,10 @@ const Navbar:FC<Props> = ({changeTheme, currentTheme, className}: Props) => {
                             <a href={"#"}> За Нас </a>
                         </li>
                         <li>
-                            <a href={"#"}> Модули </a>
+                            <a href={"/modules"}> Модули </a>
+                        </li>
+                        <li>
+                            <a href={"/materials"}> Национален Опит </a>
                         </li>
                         <li>
                             <a href={"/Launch"}> Екип </a>

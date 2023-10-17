@@ -18,13 +18,14 @@ interface Props {
     mainText?: string;
     background: string
     notes?: string[]
+    className: string
 }
 
-const InfoWithNotes = ({ hasTitleImage, titleText, mainText, background, titleImage, notes }: Props) => {
+const InfoWithNotes = ({ hasTitleImage, titleText, mainText, background, titleImage, notes, className }: Props) => {
     var parse = require('html-react-parser');
     return (
         <>
-            <div className={`${styles.policyContainer} ${background}`}>
+            <div className={`${styles.policyContainer} ${background} ${className}`}>
                 <div className={styles.titleContainer}>
                     {hasTitleImage && <Image src={titleImage} alt={"commaImg"} className="mt-6"/>}
                     <span className={`${styles.titleText} ${!hasTitleImage ? "pl-20 pt-12 relative" : ""}`}>
@@ -45,8 +46,8 @@ const InfoWithNotes = ({ hasTitleImage, titleText, mainText, background, titleIm
                     <StickyNote noteImageSrc={blueSticky} circleImageSrc={blueElipse} noteText={parse(notes![1])}/>
                     <StickyNote noteImageSrc={yellowSticky} circleImageSrc={yellowElipse} noteText={parse(notes![2])}/>
                     <StickyNote noteImageSrc={greenSticky} circleImageSrc={greenElipse} noteText={parse(notes![3])}/>
-                </div> 
-                }   
+                </div>
+                }
             </div>
         </>
     )

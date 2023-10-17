@@ -1,0 +1,85 @@
+.moreMaterials {
+  max-width: 300px;
+  border-bottom: 1px solid;
+  margin-top: 50px;
+  padding-left: 150px;
+  color: #686767;
+  text-align: justify;
+  font-family: Montserrat;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: bolder;
+  line-height: normal;
+}
+
+.columnContainers {
+  @apply flex flex-row w-full
+}
+
+.firstCol {
+  @apply flex flex-col ml-20;
+  color: #686767;
+  text-align: justify;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  max-width: 200px;
+  min-width: 200px;
+
+  @media screen and (min-width: 1440px) {
+    max-width: 400px;
+    min-width: 400px;
+  }
+}
+
+.secondCol {
+
+
+  @apply flex flex-col pl-20;
+  color: #686767;
+  text-align: justify;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  max-width: 250px;
+  min-width: 250px;
+
+  @media screen and (min-width: 1440px) {
+    max-width: 400px;
+    min-width: 400px;
+  }
+}
+
+.number {
+  @apply pr-10;
+  color: #FBAE25;
+  text-align: justify;
+  font-family: Montserrat;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.container {
+  @apply justify-center flex flex-row items-center;
+  max-width: 370px;
+  border-bottom: 1px solid;
+  min-height: 170px;
+  max-height: 170px;
+}
+
+.text {
+  @apply my-10;
+  max-width: 200px;
+}
+
+.sectionContainer {
+  @apply py-4 relative overflow-hidden;
+  height: 1080px;
+  width: 100%;
+}

@@ -34,8 +34,6 @@ const WesternBalkans = () => {
     }
 
     return <div className={"h-full"}>
-        <Navbar changeTheme={changeTheme} currentTheme={theme}/>
-
         <StartingModule moduleText={"Модул 1 Западни Балкани"} commaImage={'/img/yellowComma.png'}
                         moduleBackgroundColor={styles.yellowBg} className={styles.sectionContainer}/>
         <div className={`${styles.quotesContainer} ${styles.sectionContainer}`}>

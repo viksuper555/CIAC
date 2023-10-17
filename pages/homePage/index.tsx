@@ -98,6 +98,7 @@ const HomePage = () => {
                 titleText={texts.M1_topic10}
                 mainText={texts.M1_topic10_text}
                 notes={texts.M1_topic10_notes}
+                className={styles.sectionContainer}
             />
             <Exam titleImage={redTitleCircle} background={"redBackground"} className={styles.sectionContainer}/>
             <StartingModule moduleText={texts.M2_title} moduleBackgroundColor={"redBackground"} className={styles.sectionContainer}/>
@@ -118,6 +119,7 @@ const HomePage = () => {
                 titleImage={grayTitleCircle}
                 titleText={texts.M2_topic2}
                 notes={texts.M2_topic2_notes}
+                className={styles.sectionContainer}
             />
             <MainTopic
                 background={"greenBackground"}
@@ -205,7 +207,7 @@ const HomePage = () => {
                 downRightImage={euForPeople}
                 className={styles.sectionContainer}
             />
-            <DownLeftImageTexts texts={texts.M3_topic5_texts} background={"grayBackgroundBulgaria"} leftImage={handsTree}/>
+            <DownLeftImageTexts texts={texts.M3_topic5_texts} background={"grayBackgroundBulgaria"} leftImage={handsTree} className={styles.sectionContainer}/>
 
         <MainTopic
             background={"greenBackground"}
