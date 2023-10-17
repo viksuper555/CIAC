@@ -13,8 +13,6 @@ import redTitleCircle from "../../public/img/bulgaria/redTitleCircle.png";
 import grayTitleCircle from "../../public/img/bulgaria/grayTitleCircle.png";
 import peopleDigging from "../../public/img/bulgaria/twoPeopleDigging.png";
 import InfoText from "@/components/infoText";
-import infoText2 from "../../public/img/bulgaria/imgText2.png";
-import infoText1 from "../../public/img/bulgaria/imageText1.png";
 import InfoWithNotes from "@/components/infoWithNotes";
 import infoContent from "../../public/img/bulgaria/infoContent.png";
 import ContentReview2 from "../../public/img/bulgaria/contentReview2.png";
@@ -41,6 +39,7 @@ import styles from './bulgaria.module.scss'
 import Image from "next/image";
 import RedirectButton from "@/components/ui/readMoreBtn";
 import {getTexts} from "@/contexts/LanguageContext";
+import parse from "html-react-parser";
 
 const HomePage = () => {
     const [theme, setTheme] = useState("dark");
@@ -49,11 +48,69 @@ const HomePage = () => {
     const changeTheme = () => {
         theme === "dark" ? setTheme("light") : setTheme("dark")
     }
+    var parse = require('html-react-parser');
 
     return (
         <div className={"h-full"}>
             <Navbar changeTheme={changeTheme} currentTheme={theme}/>
             <StartingModule moduleText={texts.M1_title} moduleBackgroundColor={"greenBackground"} className={styles.sectionContainer}/>
+            <div className={`${styles.quotesContainer} ${styles.sectionContainer}`}>
+                <div className={`${styles.quotesRow} mb-20`}>
+                    <div className={styles.quoteMerkel}>
+                        <div className={styles.doubleQuoteMerkel}>
+                            <img src={'/img/bulgaria/CommaImage.png'} className={styles.firstQuote}/>
+                            <img src={'/img/bulgaria/CommaImage.png'} className={styles.secondQuote}/>
+                        </div>
+                        <div className={styles.text}>
+                            <p className={styles.person}>A. Меркел</p>
+                            <p className={styles.quoteText}>
+                                Европа е мозайка на културите, която прави нашия континент толкова уникален.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className={styles.quoteKenedy}>
+                        <div className={styles.doubleQuoteKenedy}>
+                            <img src={'/img/europe/quote_gray.svg'} className={styles.firstQuote}/>
+                            <img src={'/img/europe/quote_gray.svg'} className={styles.secondQuote}/>
+                        </div>
+                        <div className={styles.text}>
+                            <p className={styles.person}>Д. Кенеди</p>
+                            <p className={styles.quoteText}>
+                                Европа е мястото, където историята се преплита със съвременността, а традициите се срещат с иновациите.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={styles.quotesRow}>
+                    <div className={styles.quoteDelore}>
+                        <div className={styles.doubleQuoteDelore}>
+                            <img src={'/img/europe/quote_yellow.svg'} className={styles.firstQuote}/>
+                            <img src={'/img/europe/quote_yellow.svg'} className={styles.secondQuote}/>
+                        </div>
+                        <div className={styles.text}>
+                            <p className={styles.person}>Ж. Делор</p>
+                            <p className={styles.quoteText}>
+                                Европа е историята и цивилизацията, и културата и идеите, и мечтите. Тя е бъдещето и надеждата на всички наши народи.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className={styles.quoteBerbatov}>
+                        <div className={styles.doubleQuoteBerbatov}>
+                            <img src={'/img/europe/quote_darkblue.svg'} className={styles.firstQuote}/>
+                            <img src={'/img/europe/quote_darkblue.svg'} className={styles.secondQuote}/>
+                        </div>
+                        <div className={styles.text}>
+                            <p className={styles.person}>Д. Бербатов</p>
+                            <p className={styles.quoteText}>
+                                Европа е симфонията на различията, съчетани със сближаването на ценностите.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <ContentReview heading={texts.M1_content_heading} contentImage={infoContent} background={"whiteBackground"} className={styles.sectionContainer}/>
             <MainTopic titleImage={greenTitleCircle} background={"greenBackground"} hasButton={true} hasTitleImage={true}
                        className={styles.sectionContainer}
@@ -89,8 +146,40 @@ const HomePage = () => {
                 downRightImage={peopleDigging}
                 className={styles.sectionContainer}
             />
-            <InfoText background={infoText1} bgColor={"grayBackground"}/>
-            <InfoText background={infoText2} bgColor={"grayBackground"}/>
+            <div
+                id={"media-advice"}
+                className={`${"grayBackground"} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}
+            >
+                <div className={styles.MAInner}>
+                    <p>
+                        {parse(texts.M1_topic8_texts[0])}
+                    </p>
+                    <p>
+                        {parse(texts.M1_topic8_texts[1])}
+                    </p>
+                    <p>
+                        {parse(texts.M1_topic8_texts[2])}
+                    </p>
+                </div>
+            </div>
+
+            <div
+                id={"media-advice"}
+                className={`${"grayBackground"} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}
+            >
+                <div className={styles.MAInner}>
+                    <p>
+                        {parse(texts.M1_topic9_texts[0])}
+                    </p>
+                    <p>
+                        {parse(texts.M1_topic9_texts[1])}
+                    </p>
+                    <p>
+                        {parse(texts.M1_topic9_texts[2])}
+                    </p>
+                </div>
+            </div>
+
             <InfoWithNotes
                 background={"grayBackground"}
                 hasTitleImage={true}
@@ -100,8 +189,8 @@ const HomePage = () => {
                 notes={texts.M1_topic10_notes}
                 className={styles.sectionContainer}
             />
-            <Exam titleImage={redTitleCircle} background={"redBackground"} className={styles.sectionContainer}/>
-            <StartingModule moduleText={texts.M2_title} moduleBackgroundColor={"redBackground"} className={styles.sectionContainer}/>
+            <Exam titleImage={greenTitleCircle} background={"greenBackground"} className={styles.sectionContainer} btnClass={styles.greenText} scribbleImg={'./img/greenScribble.svg'} scribbleImgClass={styles.greenScribble}/>
+            <StartingModule moduleText={texts.M2_title} moduleBackgroundColor={"redBackground"} className={styles.sectionContainer} commaImage={"./img/redComma.svg"}/>
             <ContentReview heading={texts.M2_content_heading} contentImage={ContentReview2} background={"redBackground"} className={styles.sectionContainer}/>
             <MainTopic
                 background={"grayBackground"}
@@ -141,7 +230,28 @@ const HomePage = () => {
                 downRightImage={cleaning}
                 className={styles.sectionContainer}
             />
-            <InfoText background={youthText} bgColor={"redBackground"}/>
+            <div
+                id={"svobodi"}
+                className={`${"redBackground"} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}
+            >
+                <div className={styles.MAInner}>
+                    <p>
+                        {parse(texts.M2_topic5_texts[0])}
+                    </p>
+                    <p>
+                        {parse(texts.M2_topic5_texts[1])}
+                    </p>
+                    <p>
+                        {parse(texts.M2_topic5_texts[2])}
+                    </p>
+                    <p>
+                        {parse(texts.M2_topic5_texts[3])}
+                    </p>
+                    <p>
+                        {parse(texts.M2_topic5_texts[4])}
+                    </p>
+                </div>
+            </div>
             <MainTopic
                 background={"grayBackground"}
                 hasButton={true}
@@ -152,8 +262,25 @@ const HomePage = () => {
                 downRightImage={greenHandsTree}
                 className={styles.sectionContainer}
             />
-            <InfoText background={volunteerText} bgColor={"grayBackgroundBulgaria"}/>
-
+            <div
+                id={"svobodi"}
+                className={`${"grayBackground"} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}
+            >
+                <div className={styles.MAInner}>
+                    <p>
+                        {parse(texts.M2_topic7_texts[0])}
+                    </p>
+                    <p>
+                        {parse(texts.M2_topic7_texts[1])}
+                    </p>
+                    <p>
+                        {parse(texts.M2_topic7_texts[2])}
+                    </p>
+                    <p>
+                        {parse(texts.M2_topic7_texts[3])}
+                    </p>
+                </div>
+            </div>
             <MainTopic
                 background={"greenBackground"}
                 hasButton={true}
@@ -164,7 +291,25 @@ const HomePage = () => {
                 downRightImage={falseNews}
                 className={styles.sectionContainer}
             />
-            <InfoText background={youthText2} bgColor={"greenBackground"}/>
+            <div
+                id={"false-news-recoginition"}
+                className={`${"greenBackground"} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}
+            >
+                <div className={styles.MAInner}>
+                    <p>
+                        {parse(texts.M2_topic9_texts[0])}
+                    </p>
+                    <p>
+                        {parse(texts.M2_topic9_texts[1])}
+                    </p>
+                    <p>
+                        {parse(texts.M2_topic9_texts[2])}
+                    </p>
+                    <p>
+                        {parse(texts.M2_topic9_texts[3])}
+                    </p>
+                </div>
+            </div>
             <MainTopic
                 background={"redBackground"}
                 hasButton={false}
@@ -219,7 +364,25 @@ const HomePage = () => {
             downRightImage={europeanInstruments}
             className={styles.sectionContainer}
         />
-        <InfoText background={europeanInstroTexts} bgColor={"greenBackground"}/>
+        <div
+            id={"european-instrument-texts"}
+            className={`${"greenBackground"} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}
+        >
+            <div className={styles.MAInner}>
+                <p>
+                    {parse(texts.M3_topic8_texts[0])}
+                </p>
+                <p>
+                    {parse(texts.M3_topic8_texts[1])}
+                </p>
+                <p>
+                    {parse(texts.M3_topic8_texts[2])}
+                </p>
+                <p>
+                    {parse(texts.M3_topic8_texts[3])}
+                </p>
+            </div>
+        </div>
         <MainTopic
             background={"redBackground"}
             hasButton={true}
@@ -230,8 +393,29 @@ const HomePage = () => {
             downRightImage={docs}
             className={styles.sectionContainer}
         />
-        <InfoText background={erasmusTexts} bgColor={"redBackground"}/>
-        <Exam titleImage={redTitleCircle} background={"redBackground"} className={styles.sectionContainer}/>
+        <div
+            id={"european-instrument-texts"}
+            className={`${styles.redBackground} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}
+        >
+            <div className={styles.MAInner}>
+                <p>
+                    {parse(texts.M3_topic8_texts[0])}
+                </p>
+                <p>
+                    {parse(texts.M3_topic8_texts[1])}
+                </p>
+                <p>
+                    {parse(texts.M3_topic8_texts[2])}
+                </p>
+                <p>
+                    {parse(texts.M3_topic8_texts[3])}
+                </p>
+            </div>
+        </div>
+        <Exam titleImage={redTitleCircle} background={"redBackground"} className={styles.sectionContainer} btnClass={styles.redText} scribbleImg={'/img/redScribble.png'}/>
+            <div id={"extra-resources"} className={`${styles.sectionContainer} ${styles.redBackground}`}>
+                <img src={'/img/europe/extra-resource.png'} className={styles.ERImg}/>
+            </div>
         </div>
     )
 }

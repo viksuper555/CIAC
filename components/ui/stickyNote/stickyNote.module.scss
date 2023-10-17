@@ -1,9 +1,9 @@
 .stickyNoteContainer {
   @apply relative flex flex-col;
-  height: 20rem;
   margin-bottom: 1rem;
   min-width: 260px;
   max-width: 390px;
+  min-height: 300px;
 }
 
 .stickyNoteBackground {

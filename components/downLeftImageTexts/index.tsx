@@ -1,6 +1,7 @@
 import React from "react";
 import styles from './downLeftImageTexts.module.scss'
 import Image from "next/image";
+import parse from "html-react-parser";
 
 interface Props {
     background: any,
@@ -19,9 +20,9 @@ const DownLeftImageTexts = ({background, leftImage, texts, className}: Props) =>
                 </div>
                 { texts != null &&
                 <div className={styles.textsContainer}>
-                    <div className={styles.text}> {texts[0]} </div>
-                    <div className={styles.text}> {texts[1]} </div>
-                    <div className={styles.text}> {texts[2]} </div>
+                    <div className={styles.text}> {parse(texts[0])}</div>
+                    <div className={styles.text}> {parse(texts[1])} </div>
+                    <div className={styles.text}> {parse(texts[2])} </div>
                 </div>
                 }
             </div>

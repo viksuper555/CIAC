@@ -42,10 +42,10 @@ const InfoWithNotes = ({ hasTitleImage, titleText, mainText, background, titleIm
                 {
                 notes != null &&
                 <div className={styles.notesContainer}>
-                    <StickyNote noteImageSrc={purpleStickyBg} circleImageSrc={purpleElipse} noteText={parse(notes![0])}/>
-                    <StickyNote noteImageSrc={blueSticky} circleImageSrc={blueElipse} noteText={parse(notes![1])}/>
-                    <StickyNote noteImageSrc={yellowSticky} circleImageSrc={yellowElipse} noteText={parse(notes![2])}/>
-                    <StickyNote noteImageSrc={greenSticky} circleImageSrc={greenElipse} noteText={parse(notes![3])}/>
+                    <StickyNote noteImageSrc={purpleStickyBg} circleImageSrc={purpleElipse} noteText={parse(notes![0])} noteHeight={500}/>
+                    <StickyNote noteImageSrc={blueSticky} circleImageSrc={blueElipse} noteText={parse(notes![1])} noteHeight={500}/>
+                    <StickyNote noteImageSrc={yellowSticky} circleImageSrc={yellowElipse} noteText={parse(notes![2])} noteHeight={500}/>
+                    <StickyNote noteImageSrc={greenSticky} circleImageSrc={greenElipse} noteText={parse(notes![3])} noteHeight={500}/>
                 </div>
                 }
             </div>

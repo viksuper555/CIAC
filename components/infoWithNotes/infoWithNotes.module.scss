@@ -27,17 +27,17 @@
 .mainTextContainer {
   @apply flex flex-col;
   margin-left: 10%;
+  margin-right: 10%;
   margin-top: 50px;
-  width: 360px;
 
   @media screen and (min-width: 1024px) {
-    @apply w-[40%];
+
   }
 }
 
 .mainText {
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
