@@ -1,6 +1,6 @@
 .sectionContainer {
   @apply py-4 relative overflow-hidden;
-  height: 800px;
+  height: 1080px !important;
   width: 100%;
 }
 
@@ -342,6 +342,21 @@
   width: 240px;
 }
 
+.topLeftScribble2 {
+  position: absolute;
+  top: 200px;
+  left: 120px;
+  width: 240px;
+}
+
+.topLeftScribbleDown2 {
+  position: absolute;
+  top: 0px;
+  right: 120px;
+  width: 240px;
+  z-index: 20;
+}
+
 .whiteBackground {
   background: #ECECEC;
   color: #686767 !important;
@@ -411,6 +426,31 @@
 
   .textContent {
     @apply mx-auto relative;
+    color: #FFF;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 1440px;
+    max-width: 80%;
+
+    p {
+      @apply mb-12;
+    }
+
+    ul {
+      list-style-type: disc;
+    }
+  }
+}
+
+.centeredContent {
+  padding: 40px;
+
+  .textContent2 {
+    @apply flex justify-center items-center h-full mx-auto relative;
     color: #FFF;
     text-align: justify;
     font-family: Montserrat;

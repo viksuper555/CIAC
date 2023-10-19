@@ -2,6 +2,7 @@ import React, {FC, useState} from 'react';
 import logo from '../../public/img/bulgaria/logo.png';
 import Image from 'next/image';
 import styles from './navbar.module.scss';
+import LangSwitcher from "@/components/ui/langSwitcher";
 
 interface Props {
     changeTheme?: any;
@@ -28,9 +29,15 @@ const Navbar:FC<Props> = ({changeTheme, currentTheme, className}: Props) => {
                         <li>
                             <a href={"#"}> За Нас </a>
                         </li>
-                        <li>
+                        <ul className={styles.moduleDropdown}>
                             <a href={"/modules"}> Модули </a>
-                        </li>
+                            <div className={styles.dropdownItems}>
+                                <li><a href="/"> България</a></li>
+                                <li><a href="/europe">Европа</a></li>
+                                <li><a href="/slovenia">Словения</a></li>
+                                <li><a href="/westernBalkans">Западни Балкани</a></li>
+                            </div>
+                        </ul>
                         <li>
                             <a href={"/materials"}> Национален Опит </a>
                         </li>
@@ -40,6 +47,7 @@ const Navbar:FC<Props> = ({changeTheme, currentTheme, className}: Props) => {
                         <li>
                             <a href={"/"}> Контакти </a>
                         </li>
+                        <LangSwitcher/>
                     </ul>
                 </div>
             </div>

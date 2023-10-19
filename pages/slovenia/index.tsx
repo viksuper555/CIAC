@@ -39,7 +39,6 @@ const Slovenia = () => {
 
     return (
         <div className={"app-container"}>
-            <Navbar changeTheme={changeTheme} currentTheme={theme}/>
             <StartingModule
                 moduleText={"Модул 1 Словения"}
                 moduleBackgroundColor={styles.bgRed}
@@ -282,9 +281,10 @@ const Slovenia = () => {
                 text3={"Доброволчество и гражданска активност: Младежите в Словения имат възможност да се включат в доброволчески проекти и граждански инициативи, които се занимават с разнообразни въпроси като околната среда, образование, култура и социална интеграция."}
                 text4={"Младежки центрове и събития: Младежките центрове в различни градове на Словения предоставят място за срещи, обучения, дискусии и събития за младежи. Тези центрове могат да бъдат инициирани както от държавата, така и от неправителствени организации."}
                 text5={"Финансова подкрепа: Младежката ангажираност в Словения може да бъде подкрепена и финансово чрез грантове и фондове, които се предоставят за младежки проекти и инициативи."}
+                className={styles.sectionContainer}
             />
             <MainTopic
-                titleImage={grayTitleCircle}
+                titleImage={redTitleCircle}
                 background={"redBackground"}
                 hasButton={true}
                 hasTitleImage={true}
@@ -295,7 +295,7 @@ const Slovenia = () => {
             />
             <TextWithAction
                 className={`${styles.sectionContainer} ${styles.bgRed}`}
-                scribbleImg={'/img/scribble.svg'}
+                scribbleImg={'/img/redScribble.png'}
                 hasActionBtn={false}
                 actionBtnTxt={"Към списък"}
             >
@@ -339,7 +339,7 @@ const Slovenia = () => {
                 </p>
             </TextWithAction>
             <MainTopic
-                titleImage={grayTitleCircle}
+                titleImage={redTitleCircle}
                 background={"redBackground"}
                 hasButton={true}
                 hasTitleImage={true}
@@ -436,7 +436,7 @@ const Slovenia = () => {
                 </div>
             </div>
             <MainTopic
-                titleImage={grayTitleCircle}
+                titleImage={redTitleCircle}
                 background={"redBackground"}
                 hasButton={true}
                 hasTitleImage={true}
@@ -445,20 +445,21 @@ const Slovenia = () => {
                 mainText={"Младежката активност в Словения представлява динамичен и разнообразен сектор, който насърчава младежите да се ангажират в различни инициативи и дейности за лично и обществено развитие. Този сектор предоставя на младежите възможности да развият умения, да изразяват свои идеи и да допринесат за обществото."}
                 className={styles.sectionContainer}
             />
-            {/*<div id={"list"} className={`${styles.sectionContainer}   ${styles.impactAssessment} ${"redBackground"}`}>*/}
-            {/*    <img src={'img/greyScribble.svg'} className={`${styles.topLeftScribble}`}/>*/}
-            {/*    <div className={styles.textContent}>*/}
-            {/*        <ul>*/}
-            {/*            <li>Образование и умения;</li>*/}
-            {/*            <li>Развитие на личността;</li>*/}
-            {/*            <li>Гражданско участие и демокрация;</li>*/}
-            {/*            <li>Развитие на социалната мрежа;</li>*/}
-            {/*            <li>Интеркултурно разбирателство;</li>*/}
-            {/*            <li>Подпомагане на предприемачество.</li>*/}
-            {/*        </ul>*/}
-            {/*    </div>*/}
-            {/*    <img src={'/img/scribble-gray.svg'} className={styles.EUBSparkle}/>*/}
-            {/*</div>*/}
+            <div id={"list"} className={`${styles.sectionContainer}   ${styles.centeredContent} ${"redBackground"}`}>
+                <img src={'img/greyScribble.svg'} className={`${styles.topLeftScribble2}`}/>
+                <div className={styles.textContent2}>
+                    <ul>
+                        <li>Образование и умения;</li>
+                        <li>Развитие на личността;</li>
+                        <li>Гражданско участие и демокрация;</li>
+                        <li>Развитие на социалната мрежа;</li>
+                        <li>Интеркултурно разбирателство;</li>
+                        <li>Подпомагане на предприемачество.</li>
+                    </ul>
+                    <img src={'img/greyScribble.svg'} className={`${styles.topLeftScribbleDown2}`}/>
+
+                </div>
+            </div>
 
             <Exam titleImage={redTitleCircle} background={"redBackground"} className={styles.sectionContainer}/>
             <StartingModule moduleBackgroundColor={styles.whiteBackground} moduleText={"Модул 3 Словения"} className={styles.sectionContainer}/>

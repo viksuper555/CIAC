@@ -20,6 +20,21 @@
   transform: rotate(20.469deg);
 }
 
+.maScribbleDownLeft {
+  @apply absolute;
+  bottom: -75px;
+  left: -80px;
+  width: 120px;
+  transform: rotate(280deg);
+}
+
+.maScribbleDownBgLeft {
+  @apply absolute;
+  bottom: -75px;
+  left: -80px;
+  width: 120px;
+  transform: rotate(90deg);
+}
 
 .mediaAdviceContainer {
   @apply flex flex-col justify-center items-center;

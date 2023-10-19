@@ -1,6 +1,6 @@
 .container {
-  @apply mt-6;
-  height: 100%;
+  @apply py-4 relative overflow-hidden;
+  height: 1080px;
   width: 100%;
   background: #00AF70;
 }

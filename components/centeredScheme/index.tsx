@@ -7,13 +7,14 @@ interface Props {
     title?: string;
     centerImageSrc: any;
     text: string;
+    className?: string;
 }
 
-const CenteredScheme = ({ title, centerImageSrc, text }: Props) => {
+const CenteredScheme = ({ title, centerImageSrc, text, className }: Props) => {
 
     return (
         <>
-            <div className={`${styles.pageContainer} ${title == null ? "mt-6": ""}`}>
+            <div className={`${styles.pageContainer} ${className}  ${title == null ? "": ""}`}>
                 {
                     title != null &&
                     <div className={styles.titleContainer}>

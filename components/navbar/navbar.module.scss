@@ -60,3 +60,18 @@
     }
   }
 }
+
+.moduleDropdown:hover {
+  .dropdownItems {
+    position: absolute;
+    display: block;
+    color: black !important;
+  }
+}
+
+.dropdownItems {
+  background: white;
+  backdrop-filter: blur(15px);
+  display: none;
+  z-index: 20;
+}
