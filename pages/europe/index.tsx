@@ -101,7 +101,7 @@ const Europe = () => {
 
             <div className={`${styles.sectionContainer}`}>
                 <div className={`${styles.titleText} relative`}>
-                    {texts.M1_topic1}
+                    Политика на европа
                 </div>
                 <div className={styles.mainTextContainer}>
                     <div className={styles.mainText}>
