@@ -115,8 +115,8 @@ const Slovenia = () => {
                 background={"blueBackground"}
                 hasButton={true}
                 hasTitleImage={true}
-                titleText={texts.M1_topic3}
-                mainText={texts.M1_topic3_text}
+                titleText={texts.M1_topic1}
+                mainText={texts.M1_topic1_text}
                 className={styles.sectionContainer}
                 downRightImage={workingPeople}
                 chatGptMessage={"woof woof"}
@@ -130,12 +130,27 @@ const Slovenia = () => {
                 background={styles.bgRed}
                 hasButton={false}
                 hasTitleImage={true}
-                titleText={texts.M1_topic3}
+                titleText={texts.M1_topic2}
                 downRightImage={sloveniaCommunity}
-                mainText={texts.M1_topic3_text}
+                mainText={texts.M1_topic2_text}
                 className={styles.sectionContainer}
             />
-
+            <TextWithAction
+                className={`${styles.sectionContainer} ${styles.bgRed}`}
+                scribbleImg={'/img/redScribble.png'}
+                hasActionBtn={false}
+            >
+                {parse(texts.M1_topic3_text)}
+            </TextWithAction>
+            <SixInfoStickyNotes
+                    text1={parse(texts.M1_topic3_texts[0]) as string}
+                    text2={parse(texts.M1_topic3_texts[1]) as string}
+                    text3={parse(texts.M1_topic3_texts[2]) as string}
+                    text4={parse(texts.M1_topic3_texts[3]) as string}
+                    text5={parse(texts.M1_topic3_texts[4]) as string}
+                    text6={parse(texts.M1_topic3_texts[5]) as string}
+                    className={styles.sectionContainer}
+                />
             <MainTopic
                 titleImage={grayTitleCircle}
                 background={"greyBackground"}
@@ -284,8 +299,16 @@ const Slovenia = () => {
                 scribbleImg={'/img/scribble.svg'}
                 hasActionBtn={false}
             >
-                {parse(texts.M2_topic9_text2)}
+                {parse(texts.M2_topic9_texts2[0])}
             </TextWithAction>
+            <div
+                id={"european-citizen-text"}
+                className={`${styles.bgRed} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}>
+                <div className={styles.MAInner}>
+                    {parse(texts.M2_topic9_texts2[1])}
+                   <img src={'/img/redScribble.png'} className={styles.MAScribble}/>
+                </div>
+            </div>
             <MainTopic
                 titleImage={blueTitleCircle}
                 background={"blueBackground"}
@@ -412,7 +435,7 @@ const Slovenia = () => {
                 className={`${styles.whiteBackground} ${styles.sectionContainer} ${styles.EUBInfoContainer}`}
             >
                 <div className={styles.TEAdviceText}>
-                {parse(texts.M3_topic8_texts[0])}
+                {parse(texts.M3_topic7_texts[1])}
 
                     <img src={'/img/scribble-gray.svg'} className={styles.EUBSparkle}/>
                 </div>
