@@ -1,0 +1,102 @@
+.chatContainer {
+  @apply flex flex-col justify-center items-center;
+  position: fixed;
+  height: 320px;
+  width: 400px;
+  bottom: 40px;
+  right: 20px;
+  z-index: 99;
+}
+
+.closeBtn {
+  @apply absolute flex items-center justify-center;
+  top: -50px;
+  right: -5px;
+  background: #FB5E60;
+  width: 25px;
+  border-radius: 40px;
+  cursor: pointer ;
+}
+
+.chatIcon {
+  @apply flex flex-col justify-center items-center;
+  position: fixed;
+  height: 60px;
+  width: 74px;
+  bottom: 40px;
+  right: 20px;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.chatGPTContainer {
+  @apply flex flex-col items-center absolute;
+  padding: 40px;
+}
+
+.CGPTTitle {
+  padding-bottom: 40px;
+  color: #fff;
+  margin-top: 1rem;
+  align-self: center;
+  font-size: 50px;
+  font-family: "Montserrat Bold";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+.CGPTContent {
+  @apply flex flex-col items-center justify-center items-center;
+  padding: 1rem;
+  background: #ECECEC;
+  width: 80%;
+}
+
+.CGPTContentDownRight {
+  @apply flex flex-col items-center justify-end;
+  padding: 1rem;
+  background: #ECECEC;
+}
+
+.CGPTInputWrapper {
+  @apply flex w-full items-center;
+}
+
+.CGPTInput {
+  width: 100%;
+  height: 40px;
+  margin-right: 1rem;
+  font-family: "Montserrat Bold";
+  font-size: 22px;
+  border: #555555;
+  background: #e3e3e3;
+  padding: 0 1rem;
+}
+
+.askChatGPTBtn {
+  @apply flex justify-center items-center cursor-pointer;
+  font-family: "Montserrat Bold";
+  font-size: 26px;
+  background: #2665e1;
+  color: #fff;
+  height: 30px;
+  width: 40px;
+}
+
+.CGPTResponse {
+  @apply mt-4;
+  overflow: auto;
+  padding: 1rem;
+  width: 100%;
+  height: 320px;
+  border: #555555;
+  background: #e3e3e3;
+  overflow-y: auto;
+  font-family: "Montserrat Bold";
+  font-size: 20px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}

@@ -2,6 +2,9 @@ import Image from "next/image";
 import styles from "./mainTopic.module.scss"
 import React from "react";
 import RedirectButton from "@/components/ui/readMoreBtn";
+import {dispatchCustomEvent} from "@/lib/functions";
+import config from "@/lib/config";
+import chatGpt from "@/components/ui/chatGpt";
 
 interface Props {
     id?: string;
@@ -17,12 +20,13 @@ interface Props {
     downRightImageClass?: string;
     btnClass?: string
     bottomRightImageContainerClass?: string
+    chatGptMessage?: string;
 }
 
 const MainTopic = ({
     id, hasButton, hasTitleImage, titleText, mainText, background, titleImage,
     downRightImage, className, btnText, downRightImageClass, btnClass,
-    bottomRightImageContainerClass
+    bottomRightImageContainerClass, chatGptMessage
 }: Props) => {
 
     return (
@@ -42,7 +46,7 @@ const MainTopic = ({
                 <div className={styles.mainText}>
                     {mainText}
                 </div>
-                {hasButton && <RedirectButton btnText={btnText} btnClass={btnClass}/>}
+                {hasButton && <RedirectButton btnText={btnText} btnClass={btnClass} chatGptMessage={chatGptMessage}/>}
             </div>
             {downRightImage &&
                 <div className={`${styles.bottomRightImage} ${bottomRightImageContainerClass}`}>
