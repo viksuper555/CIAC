@@ -1,19 +1,452 @@
 {
-    "Europe": {
-      "moduleOneEurope": "Модул 1 Европа",
-      "SampleText": "Wow",
-      "SampleText2": "Wow"
-    },
-    "Bulgaria": {
-      "ModuleOne": "Модул 1 България",
-      "SampleText2": "Wow"
-    },
-    "WesternBalkans": {
-      "SampleText": "Wow",
-      "SampleText2": "Wow"
-    },
-    "Slovenia": {
-      "SampleText": "Wow",
-      "SampleText2": "Wow"
-    }
+  "Europe": {
+    "Content_heading": "Vsebina",
+    "M1_title": "Modul 1 Evropa",
+    "M1_topic1_quotes": [
+      "A. Merkel",
+      "Evropa je mozaik kultur, zaradi česar je naša celina tako edinstvena.",
+      "D. Kennedy",
+      "Evropa je kraj, kjer se zgodovina sreča s sodobnostjo in tradicija z inovativnostjo.",
+      "J. Delor",
+      "Evropa je zgodovina in civilizacija in kultura in ideje in sanje. ",
+      "D. Berbatov",
+      "Evropa je simfonija razlik v kombinaciji s konvergenco vrednot."
+    ],
+    "M1_topic2": "Politika",
+    "M1_topic2_text": "Politika v Evropi je izjemno raznolika, saj Evropo sestavlja veliko držav s svojimi vladami in političnimi sistemi. ",
+    "M1_topic4_text": "<p>Evropska unija je medvladna organizacija, ki jo sestavljajo <b>27 evropskih držav</b>, ki sodelujejo pri vprašanjih, kot so gospodarstvo, trgovina, varnost in okolje.  </p><br/><p>Evropski parlament je edini organ, ki ga neposredno volijo državljani EU in ima pomembno vlogo pri oblikovanju zakonodaje in nadzoru drugih institucij. </p><br/><p>Politika EU pokriva različna področja, kot so prosti pretok ljudi, blaga in storitev, skupna valuta - evro, sodelovanje na področju pravosodja in notranjih zadev, skupna kmetijska politika, okoljska politika in druga.</p><br/><p>Politični izzivi, s katerimi se sooča Evropa, vključujejo migracijske tokove, podnebne spremembe, socialne in ekonomske neenakosti ter odnose z globalnimi akterji.</p>",
+    "M1_topic4_button": "Našteti",
+    "M1_topic5": "Seznam 27 držav članic Evropske unije.",
+    "M1_topic5_texts": [
+      "1. Avstrija (Österreich)<br/> 2. Belgija (België/Belgique)<br/> 3. Bolgarija (Bolgarija)<br/> 4. Grčija (Ελλάδα)<br/> 5. Nemčija (Deutschland)<br/> 6. Danska (Danska)<br/> 7. Estonija (Eesti)<br/> 8. Irska<br/> 9. Španija (España)<br/> 10. Italija (Italia)<br/> 11. Ciper (Κύπρος/Kıbrıs)<br/> 12. Latvija (Latvija)<br/> 13. Litva (Lietuva)<br/> 14. Luksemburg (Luksemburg)<br/>",
+      "15. Malta<br/> 16. Poljska (Polska)<br/> 17. Portugalska<br/> 18. Romunija (România)<br/> 19. Slovaška (Slovensko)<br/> 20. Slovenija (Slovenija)<br/> 21. Madžarska (Magyarország)<br/> 22. Finska (Suomi/Finska)<br/> 23. Francija<br/> 24. Nizozemska (Nederland)<br/> 25. Hrvaška (Hrvatska)<br/> 26. Češka (Češko)<br/> 27. Švedska (Sverige)<br/>"
+    ],
+    "M1_topic6": "Skupnost",
+    "M1_topic6_text": "Družba v Evropi je izjemno raznolika in večplastna ter zajema več kultur, jezikov, ver in običajev. ",
+    "M1_topic7": "Ustanove",
+    "M1_topic7_text": "Institucije v Evropi zajemajo različne organizacije in strukture, ki igrajo ključno vlogo pri upravljanju in delovanju Evropske unije (EU). ",
+    "M1_topic8_texts": [
+      "1. Evropski parlament: Evropski parlament je edini organ EU, ki ga neposredno volijo državljani držav članic. ",
+      "2. Evropska komisija: Evropska komisija je izvršilni organ EU. ",
+      "3. Svet Evropske unije: Svet je organ, ki zastopa države članice EU. ",
+      "4. Evropsko sodišče za človekove pravice: To je neodvisen sodni organ, ki uveljavlja pravo EU in rešuje spore med državami članicami in institucijami EU. ",
+      "5. Evropska centralna banka (ECB): ECB je odgovorna za denarno politiko evroobmočja, ki je skupina držav v EU, ki uporabljajo skupno valuto evro. "
+    ],
+    "M1_topic9": "Informacijske strani",
+    "M1_topic9_text": "Sodelovanje državljanov v Evropi je ključni vidik demokratičnih procesov v državah članicah Evropske unije in drugih evropskih državah. ",
+    "M1_topic10_texts": [
+      "1. Volitve v Evropski parlament: Državljani imajo pravico voliti poslance Evropskega parlamenta, ki zastopajo njihove interese in glasujejo o pomembnih vprašanjih na evropski ravni. <br/><br/> 2. Evropske državljanske pobude: državljani EU lahko z določenim številom podpisov sprožijo peticijo za predlog nove zakonodaje ali sprememb obstoječih zakonov.<br/><br/> 3. Civilne organizacije: V Evropi je veliko civilnih organizacij, ki se ukvarjajo z različnimi temami – od človekovih pravic in okolja do izobraževanja in zdravstva.",
+      "4. Lokalni akterji in javna posvetovanja: Nekatere države so spodbujale udeležbo državljanov prek lokalnih javnih posvetovanj in neposrednih dialogov z lokalnimi oblastmi.<br/><br/> 5. Glasovanje in referendumi: Državljani imajo možnost sodelovati na državnih in regionalnih volitvah ter na referendumih o pomembnih vprašanjih.<br/><br/> 6. Civilna družba in družbeni mediji: Državljani uporabljajo družbene medije in druge spletne platforme za izražanje svojih mnenj in sodelovanje v javnih razpravah."
+    ],
+    "M2_title": "Modul 2 Evropa",
+    "M2_topic2": "Pouk državljanske vzgoje",
+    "M2_topic2_text": "Državljanska vzgoja v Evropi je bistvena za oblikovanje aktivnih državljanov. ",
+    "M2_topic3": "Nekaj ​​primerov pouka državljanske vzgoje:",
+    "M2_topic3_texts": [
+      "1. Volitve in volitve: Lekcije o volilnih sistemih, političnih strankah in volilnih postopkih za spodbujanje aktivne udeležbe v demokratičnem procesu.",
+      "2. Človekove pravice: Izobraževanje o človekovih pravicah in svoboščinah, ki so bistveni element spoštovanja vsakega posameznika v družbi.",
+      "3. Okoljska ozaveščenost: Programi za razumevanje pomena varovanja okolja in sprejemanja trajnostnega načina življenja.",
+      "4. Medijska pismenost: Usposabljanje za prepoznavanje lažnih novic in razumevanje vloge medijev v družbi.",
+      "5. Socialno podjetništvo: Spoznanja za spodbujanje podjetništva in ustvarjanje socialnoekonomskih projektov, usmerjenih v javno dobro.",
+      "6. Medkulturno razumevanje: Izobraževanje, usmerjeno v spoštovanje razlik in spodbujanje mirnega sobivanja med različnimi kulturami."
+    ],
+    "M2_topic4": "Angažma mladih v akciji",
+    "M2_topic4_text": "Mladinska angažiranost v akciji je aktivno vključevanje mladih v javno življenje in konkretna dejanja za spremembe. ",
+    "M2_topic4_button": "Primeri",
+    "M2_topic5_text": "<p> Primer takega programa je <b>\"Erasmus za mlade\"</b>, ki ponuja možnosti za usposabljanje, mladinske izmenjave, prostovoljstvo in partnerstva med organizacijami v različnih državah.  </p>",
+    "M2_topic6": "Prednosti angažiranja mladih",
+    "M2_topic6_text": "Udejstvovanje mladih v Evropi prinaša številne koristi tako mladim kot družbi kot celoti. \n",
+    "M2_topic7_text": "<p> <b>1. Razvijanje vodstvenih sposobnosti:</b> Sodelovanje v mladinskih organizacijah in projektih mladim omogoča razvoj vodstvenih veščin, kot so komunikacija, timsko vodenje, vodenje in organizacija. </p> <p> <b>2. Pridobivanje novih znanj in veščin:</b> Angažirani mladi imajo možnost pridobivanja novih znanj in veščin na različnih področjih, kot so izobraževanje, tehnologija, družboslovje itd. </p> <p> <b>3. Povečanje samospoštovanja in zaupanja:</b> Sodelovanje v mladinskih pobudah daje mladim priložnost, da se izrazijo, delijo svoje ideje in so del odločitev, kar lahko poveča njihovo samopodobo in samozavest. </p> <p> <b>4. Podpora socialni integraciji:</b> Mladinska angažiranost lahko pripomore k socialni integraciji mladih, predvsem tistih iz ranljivih skupin. </p> <p> <b>5. Gradnja skupnosti in prijateljstev:</b> Sodelovanje v mladinskih pobudah je priložnost za ustvarjanje skupnosti in navezovanje novih prijateljstev, kar je pomembno za psihično dobro počutje. </p> <p> <b>6. Spreminjanje družbe:</b> Angažirana mladina je lahko gonilo sprememb v družbi z naslavljanjem družbenih vprašanj in aktivnim prizadevanjem za njihovo reševanje. </p> <p> <b>7. Podpora demokratičnim vrednotam:</b> Udejstvovanje mladih spodbuja sodelovanje v demokratičnih procesih in vrednotah, kot so glasovanje, svoboda izražanja in spoštovanje človekovih pravic. </p>",
+    "M2_topic8": "Priložnosti za angažiranje mladih",
+    "M2_topic8_text": "Mladinska angažiranost v Evropi predstavlja aktivno vključevanje in sodelovanje mladih v javnih in državljanskih procesih. ",
+    "M2_topic9_texts": [
+      "Mladinske organizacije: V Evropi je veliko mladinskih organizacij, ki izvajajo različne projekte, usposabljanja, tabore in aktivnosti za mlade. ",
+      "Evropski programi in pobude: Programi, kot so \"Erasmus\", \"Youth Corps\" in \"European Solidarity Corps\", ponujajo priložnosti za izmenjave, pripravništva in sodelovanje v mednarodnih projektih. ",
+      "Pobude za storitve skupnosti: Mladi se lahko vključijo v različne pobude za storitve skupnosti, kot so kampanje za okoljsko ozaveščenost, socialne zadeve in prostovoljstvo. ",
+      "Mladinski sveti in komisije: Številna mesta in regije imajo mladinske svete in komisije, ki zastopajo poglede in interese mladih pri javnih organih. ",
+      "Izobraževalni programi državljanske vzgoje: Različne izobraževalne ustanove in nevladne organizacije ponujajo usposabljanje in tečaje državljanske vzgoje, ki mlade spodbujajo k razumevanju in dejavnemu sodelovanju v demokratičnih procesih in javnih vprašanjih.",
+      "Digitalne platforme in družbena omrežja: Internet in družbena omrežja mladim nudijo priložnosti, da delijo svoje zamisli, se povezujejo z drugimi angažiranimi mladimi in sodelujejo v spletnih pobudah in kampanjah."
+    ],
+    "M2_topic10": "Medijska pismenost in prepoznavanje lažnih novic",
+    "M2_topic10_text": "Evropske institucije in številne nevladne organizacije si prizadevajo za večjo medijsko pismenost in prepoznavanje lažnih novic med državljani. ",
+    "M2_topic11_text": "<p> <b>1. Preverjanje vira:</b> Preverite, ali novica prihaja iz uveljavljenega in zanesljivega medijskega vira.  </p> <p> <b>2. Preverjanje dejstev:</b> Preverite dejstva in informacije iz več različnih in zanesljivih virov, preden jih sprejmete za resnične. </p> <p> <b>3. Pozorno branje:</b> Preden delite informacije, preberite celoten članek, ne le naslova. </p> <p> <b>4. Kritično mišljenje:</b> Zastavite si vprašanja, kot je \"Kaj je namen te novice?\"  </p> <p> <b>5. Preverjanje fotografij in videoposnetkov:</b> Preverite, ali so fotografije in video posnetki, ki spremljajo novico, pravilni in ažurni. </p>",
+    "M2_topic12": "Ocena vpliva mladinske dejavnosti",
+    "M2_topic12_text": "<p> Mladinski aktivizem vključuje sodelovanje v različnih pobudah, programih in aktivnostih, katerih namen je podpirati razvoj in sodelovanje mladih v družbi.  </p> <ul> <li>Izobrazba in veščine;</li> <li>Osebnostni razvoj;</li> <li>Državljanska udeležba in demokracija;</li> <li>Razvoj socialnega omrežja;</li> <li>Medkulturno razumevanje;</li> <li>Podpora podjetništvu.</li> </ul>",
+    "M2_topic13": "Metode vrednotenja",
+    "M2_topic13_text": "Za oceno vpliva mladinskega aktivizma se pogosto uporabljajo raziskovalne metode, vključno z anketami, intervjuji, statističnim zbiranjem podatkov in analizo rezultatov. ",
+    "M3_title": "Modul 3 Evropa",
+    "M3_topic1": "Živeti, delati, potovati v EU.",
+    "M3_topic1_text": "Za mlade je lahko zagotavljanje priložnosti za življenje, delo in potovanje v Evropi izjemno bogato. \n",
+    "M3_topic2_text": "<p> <b>Izobrazba:</b> Evropa ima številne prestižne univerze in izobraževalne ustanove.  </p> <p> <b>Delo in kariera:</b> Mladi strokovnjaki lahko v Evropi najdejo različne zaposlitvene in poklicne priložnosti.  </p>",
+    "M3_topic3_text": "<p> <b> Potovanja in odkrivanja:</b> Evropa je znana po svoji bogati kulturi, zgodovini in raznolikosti.  </p> <p> <b>Pripravništva in programi usposabljanja:</b> Številne organizacije in podjetja ponujajo pripravništva in programe usposabljanja za mlade strokovnjake.  </p> <p> <b>Startupi in podjetništvo:</b> Če imate ideje in ambicije ustvariti lastno podjetje, Evropa ponuja različne priložnosti za startupe in podjetništvo.  </p>",
+    "M3_topic4": "Kaj pomeni biti aktiven evropski državljan?",
+    "M3_topic4_text": "Biti aktiven evropski državljan pomeni aktivno sodelovati v javnem življenju Evropske unije, uporabljati svoje pravice in se ukvarjati z dejavnostmi, ki podpirajo povezovanje, sodelovanje in razumevanje med državami članicami. ",
+    "M3_topic5_texts": [
+      "<p> <b>1. Udeležba na volitvah:</b> Glasovanje na evropskih volitvah je pomemben način, da izrazite svoje mnenje in sodelujete pri oblikovanju politične prihodnosti Evropske unije. </p> <p> <b>2. Podpora javnim namenom:</b> Ukvarjanje z družbenimi in okoljskimi vprašanji, kot so boj proti podnebnim spremembam, zaščita človekovih pravic in podpora ranljivim skupnostim. </p> <p> <b>3. Sodelovanje v civilnih iniciativah:</b> Podpiranje in podpisovanje peticij in pobud, ki spodbujajo spremembe zakonodaje ali pomembnih javnih vprašanj. </p> <p> <b>4. Sodelovanje v programih in projektih izmenjave:</b> Primeri vključujejo sodelovanje v programih študentske izmenjave, kot je Erasmus, ki podpirajo medkulturno izmenjavo in učenje v različnih državah. </p>",
+      "<p> <b>1. Aktivno spremljanje političnega dogajanja:</b> Obveščanje o razvoju evropskih politik in sodelovanje v razpravah o pomembnih vprašanjih. </p> <p> <b>2. Sodelovanje v skupnostnih organizacijah:</b> Pridružite se nevladnim organizacijam in skupinam, ki delujejo na področjih, kot so izobraževanje, kultura, zdravje ipd. </p> <p> <b>3. Uresničevanje pravice do prostega gibanja:</b> Izkoriščanje priložnosti za svobodno potovanje, delo in študij v različnih državah članicah. </p>"
+    ],
+    "M3_topic6": "Kaj naredi EU za svoje državljane?",
+    "M3_topic6_text": "Evropska unija (EU) svojim državljanom nudi različne vrste podpore in pobud na področjih, kot so socialna zaščita, izobraževanje, zdravje, delo, mobilnost in druga. \n",
+    "M3_topic7_texts": [
+      "<p> <b>1. Svoboda gibanja in pravica do dela:</b> Evropska unija podpira prost pretok ljudi, blaga, storitev in kapitala na svojem ozemlju.  </p> <p> <b>2. Izobraževanje in znanost:</b> Programi, kot je Erasmus, zagotavljajo priložnosti za izobraževalno in študentsko mobilnost, ki študentom in učiteljem omogočajo študij in poučevanje v drugih državah članicah.  </p> <p> <b>3. Socialna zaščita in pravice delavcev:</b> EU spodbuja izvajanje standardov za delovne pogoje, enako plačilo in socialne pravice v vseh državah članicah.  </p>",
+      "<p> <b>4. Zdravje in varnost hrane:</b> EU si prizadeva zagotoviti visok standard zdravja in varnosti hrane za svoje državljane.  </p> <p> <b>5. Varstvo potrošnikov:</b> EU ima zakonodajo, ki varuje pravice potrošnikov in jih obvešča o njihovih pravicah pri nakupu blaga in storitev. </p> <p> <b>6. Okoljska in podnebna politika:</b> EU si prizadeva za zaščito okolja in zmanjšanje vpliva podnebnih sprememb.  </p> <p> <b>7. Boj proti revščini in socialni izključenosti:</b> Programi in sredstva EU se uporabljajo za podporo socialno ogroženim skupinam ter boj proti revščini in socialni izključenosti. </p>"
+    ],
+    "M3_topic8": "Kateri so evropski instrumenti?",
+    "M3_topic8_text": "V Evropi obstajajo številni instrumenti in institucije, ki podpirajo sodelovanje, povezovanje in razvoj Evropske unije. \n",
+    "M3_topic9_texts": [
+      "<p> <b>1. Evropski parlament:</b> Organ predstavniške demokracije, ki zaseda v Strasbourgu in Bruslju.  </p> <p> <b>2. Evropska komisija:</b> Organ, odgovoren za izvajanje prava EU in zastopanje interesov Unije na svetovnem prizorišču. </p> <p> <b>3. Svet Evropske unije:</b> Forum za usklajevanje politik držav članic in odločanje na pomembnih področjih. </p> <p> <b>4. Svet ministrov:</b> Člani tega sveta so ministri iz vlad držav članic, ki obravnavajo posebna vprašanja glede na svoje tematsko področje, kot so gospodarstvo, zunanji odnosi itd. </p> <p> <b>5. Evropski svet:</b> V njej so voditelji držav članic in predsednik Evropske komisije.  </p>",
+      "<p> <b>6. Evropska centralna banka:</b> Odgovoren za upravljanje evra in denarne politike v evroobmočju. </p> <p> <b>7. Evropska investicijska banka:</b> Podpira projekte, namenjene infrastrukturi, gospodarskemu razvoju in inovacijam v Evropski uniji. </p> <p> <b>8. Evropski investicijski urad:</b> Zagotavlja finančna in tehnična sredstva za izvedbo projektov na različnih področjih. </p> <p> <b>9. Evropska služba za zunanje delovanje:</b> Usklajuje zunanjo politiko EU in predstavlja Unijo na mednarodnem prizorišču. </p> <p> <b>10. Evropska agencija za okolje, Evropska agencija za zdravila in drugi:</b> Specializirane agencije, ki pomagajo pri regulativnih in znanstvenih vidikih na določenih področjih. </p>"
+    ],
+    "M3_topic10": "Dokumenti in publikacije Po prednostnih nalogah programa Erasmus.",
+    "M3_topic10_text": "Program Erasmus in mladinski sektor Evropske unije se osredotočata na podporo in razvoj mladih prek izobraževanja, usposabljanja, mobilnosti in sodelovanja v različnih aktivnostih. ",
+    "M3_topic11_texts": [
+      "<p> <b>1. Načrt za mlade (2019–2027):</b> Je strateški dokument EU, ki določa prednostne naloge in ukrepe za podporo mladim v Evropi.  </p> <p> <b>2. Portal Erasmus:</b> Uradna spletna stran programa Erasmus vsebuje informacije o vseh vidikih programa, vključno s priložnostmi za mlade.  </p> <p> <b>3. Evropska strategija za mlade (2010–2018):</b> Ta dokument predstavlja strategijo za vključevanje mladih na področjih, kot so izobraževanje, zaposlovanje, sodelovanje in kultura.  </p>",
+      "<p> <b>4. Poročila in analize EU o mladinski politiki:</b> Evropska komisija in drugi organi EU redno objavljajo poročila, analize in statistike o različnih vidikih mladinske politike in zaposlovanja mladih. </p> <p> <b>5. Direktive in zakonodaja EU:</b> Uradna spletna stran programa Erasmus vsebuje informacije o vseh vidikih programa, vključno s priložnostmi za mlade.  </p> <p> <b>6. Seminarji, dogodki in usposabljanja mladinskega sektorja:</b> Ta dokument predstavlja strategijo za vključevanje mladih na področjih, kot so izobraževanje, zaposlovanje, sodelovanje in kultura.  </p> <p> <b>S temi viri se boste lahko seznanili s prednostnimi nalogami programa Erasmus in mladinskega sektorja EU ter s priložnostmi, ki so na voljo mladim.</b> </p>"
+    ]
+  },
+  "Bulgaria": {
+    "M1_title": "Modul 1 Bolgarija",
+    "M1_content_heading": "Vsebina",
+    "M1_topic1": "Politika",
+    "M1_topic1_text": "Politika Bolgarije temelji na več ključnih načelih in vrednotah, ki določajo usmeritev in prednostne naloge države. ",
+    "M1_topic1_quotes": [
+      "N. Haitov",
+      "Krila ima samo tisti, katerega srce želi leteti...",
+      "W. Stone",
+      "Vsake velike sanje se začnejo s sanjačem.",
+      "E. Casey",
+      "Sanje so današnji odgovori na jutrišnja vprašanja.",
+      "N. Hill",
+      "Človek lahko doseže vse, dokler v to verjame."
+    ],
+    "M1_topic2": "Shema",
+    "M1_topic2_text": "Državna uprava Republike Bolgarije",
+    "M1_topic2_texts": [
+      "<b>Zakonodajalec</b> izvaja Parlament Republike Bolgarije – Narodna skupščina. ",
+      "<b>Izvršilna oblast</b> izvajata predsednik Republike Bolgarije, ki je glavna oseba v državi, in vlada. ",
+      "<b>Sodstvo</b> vključuje ustavno sodišče, vrhovno kasacijsko sodišče, pritožbena sodišča in splošna sodišča. "
+    ],
+    "M1_topic3": "Osnove v politiki",
+    "M1_topic3_text1": "Demokracija in pravna država: Bolgarija si prizadeva podpirati demokratična načela, vključno s svobodnimi in rednimi volitvami, spoštovanjem človekovih pravic in temeljnih svoboščin, pravno državo in neodvisnostjo sodstva.",
+    "M1_topic3_text2": "Evropsko povezovanje: Bolgarija je članica Evropske unije (od leta 2007) in aktivno podpira evropsko povezovanje in načela skupnosti. ",
+    "M1_topic3_text3": "Gospodarski razvoj: Bolgarija si prizadeva za trajnostni gospodarski razvoj, ustvarjanje bogastva in izboljšanje življenjskega standarda državljanov. ",
+    "M1_topic3_text4": "Izobraževanje in znanost: Bolgarija pripisuje velik pomen izobraževanju in znanosti kot glavnima gonilnima silama za razvoj družbe. ",
+    "M1_topic3_text5": "Socialna politika: Bolgarija si prizadeva za pošteno in vključujočo družbo, kjer imajo državljani enake možnosti in dostop do socialne zaščite. ",
+    "M1_topic5": "Skupnost",
+    "M1_topic5_text": "Bolgarska družba je raznolika in večplastna, sestavljena iz državljanov z različnimi družbenimi, kulturnimi in etničnimi identitetami. ",
+    "M1_topic6": "Primeri organizacij so:",
+    "M1_topic6_text": "socialni partnerji (sindikati in združenja delodajalcev); ",
+    "M1_topic7": "Ustanove",
+    "M1_topic7_text": "Bolgarija ima vrsto institucij, ki igrajo pomembno vlogo pri upravljanju države in zagotavljajo delovanje različnih sektorjev. ",
+    "M1_topic8_texts": [
+      "<b>1. Vlada in zakonodaja: </b><br>Državni zbor: zakonodajni organ, ki sprejema, spreminja in razveljavlja zakone, izvaja parlamentarni nadzor in oblikuje politično voljo naroda.<br> Vlada: izvršilni organ, odgovoren za vodenje države, oblikovanje politik, izvajanje zakonov in sprejemanje odločitev o pomembnih vprašanjih. <br>Ministrstva: odgovorna za upravljanje v različnih sektorjih, kot so gospodarstvo, izobraževanje, zdravstvo, promet, kmetijstvo in drugi.",
+      "<b>2. Pravičnost:</b> <br> Vrhovno kasacijsko sodišče: najvišja sodna instanca, ki nadzoruje pravilno uporabo zakonov in odloča o kasacijskih pritožbah. <br>Sodišča: Vključuje upravna, okrožna, pritožbena in višja sodišča, ki odločajo o civilnih in kazenskih zadevah.",
+      "<b>3. Centralna banka:</b> <br> Bolgarska narodna banka (BNB): odgovorna za upravljanje denarne politike in finančne stabilnosti, nadzoruje bančni sistem in zagotavlja delovanje plačil."
+    ],
+    "M1_topic9_texts": [
+      "<b>4. Regulativne institucije:</b> <br>Komisija za varstvo konkurence (KVK): Pristojna za varstvo konkurence in preprečevanje nepoštenih praks na trgu. <br>Regulativna komisija za energijo in vodo (EWRC): odgovorna za regulacijo energetskega in vodnega sektorja, vključno z določanjem tarif in nadzorom dobaviteljev. <br>Komisija za finančni nadzor (FSC): Odgovorna za nadzor finančnih institucij, kot so borze, banke, zavarovalnice in pokojninske družbe.",
+      "<b>5. Lokalna samouprava:</b> <br>Občine: Predstavljajo najnižjo raven lokalne samouprave in zagotavljajo upravljanje lokalnih zadev in storitev na svojem območju. <br>Občinski sveti: Volijo jih občani in odločajo o lokalnih zadevah, proračunu in razvoju občine.",
+      "<b>6. Izobrazba:</b> <br>Ministrstvo za izobraževanje in znanost: Pristojno za razvoj in izvajanje izobraževalne politike, standardov, programov in učnih načrtov.<br>Univerze in visoke šole: ponujajo visokošolsko izobraževanje in raziskave na različnih področjih."
+    ],
+    "M1_topic10": "Informacijske strani",
+    "M1_topic10_text": "Državljanska participacija je pomemben vidik demokratične družbe in predstavlja aktivno sodelovanje državljanov v procesih odločanja in oblikovanja javnih politik. ",
+    "M1_topic10_notes": [
+      "Volitve: Državljani imajo pravico voliti svoje predstavnike v zakonodajnih telesih (Državni zbor), pri čemer se volitve izvajajo v rednih časovnih presledkih. ",
+      "Peticije in državljanske pobude: Državljani imajo pravico vlagati peticije na državne institucije in predlagati državljanske pobude za spremembo zakonodaje. ",
+      "Sveti in komisije: Državne institucije lahko ustanovijo svete in komisije, v katerih lahko državljani sodelujejo in dajejo svoje mnenje in nasvete o določenih vprašanjih. ",
+      "Nevladne organizacije (NVO): Državljani se lahko vključijo v aktivnosti NVO, ki se ukvarjajo z različnimi vprašanji in spremembami v družbi. "
+    ],
+    "M2_title": "Modul 2 Bolgarija",
+    "M2_content_heading": "Vsebina",
+    "M2_topic1": "Pouk državljanske vzgoje",
+    "M2_topic1_text": "Namen pouka državljanske vzgoje je razviti osnovne državljanske kompetence učencev in jih pripraviti, da bodo aktivni in odgovorni državljani. ",
+    "M2_topic2": "Nekaj ​​primerov pouka državljanske vzgoje:",
+    "M2_topic2_notes": [
+      "1. Razumevanje temeljnih pravic in svoboščin:<br>- Razprava o Splošni deklaraciji človekovih pravic in njenem pomenu. <br>- Analiza konkretnih primerov kršitev pravic in svoboščin ter načinov varstva teh pravic. <br>- Izdelava plakatov ali brošur, ki informirajo o pomenu človekovih pravic in svoboščin.",
+      "2. Razvoj državljanske participacije: - Preučevanje različnih oblik državljanske participacije, kot so peticije, javne kampanje ipd. ",
+      "3. Študij demokratičnih procesov: - Razprava o ključnih konceptih, povezanih z demokracijo, kot so volitve, zakonodaja, vlada in drugo. ",
+      "4. Razvoj medijske pismenosti: - Vaje za analizo medijskih sporočil in razumevanje njihove vloge pri oblikovanju javnega mnenja. "
+    ],
+    "M2_topic3": "Angažma mladih v akciji",
+    "M2_topic3_text": "Mladinska angažiranost v akciji je aktivno vključevanje mladih v javno življenje in konkretna dejanja za spremembe. ",
+    "M2_topic4": "Pouk državljanske vzgoje",
+    "M2_topic4_text": "Mladinska angažiranost, ki vključuje aktivno sodelovanje in vključevanje mladih v javna vprašanja in pobude, ima številne koristi in prednosti. ",
+    "M2_topic5_texts": [
+      "<b>1. Izboljšanje državljanskih veščin:</b> <br> Sodelovanje mladih pomaga mladim razviti in izboljšati pomembne državljanske veščine, kot so komunikacija, vodenje, timsko delo, pogajanja in reševanje problemov. ",
+      "<b>2. Razvoj samozavesti in samozavesti:</b> <br> Ko se mladi ukvarjajo z družbenimi vprašanji in si aktivno prizadevajo za njihovo reševanje, so prepričani v svojo sposobnost, da pozitivno spremenijo svet okoli sebe. ",
+      "<b>3. Razumevanje socialnih vprašanj:</b> <br> Udejstvovanje mladih opolnomoči mlade, da razumejo in cenijo družbena vprašanja, ki zadevajo njihove skupnosti in svet na splošno.",
+      "<b>4. Ustvarjanje povezav in omrežij:</b> <br> Udejstvovanje mladih jim daje priložnost za srečanje in delo z drugimi mladimi in odraslimi, ki imajo podobne interese in cilje.",
+      "<b>5. Vpliv na javne odločitve:</b> <br> Mladinska angažiranost mladim omogoča, da so del in vplivajo na javno odločanje."
+    ],
+    "M2_topic6": "Priložnosti za angažiranje mladih",
+    "M2_topic6_text": "Mladinska angažiranost ponuja različne priložnosti za mlade, da se vključijo in igrajo aktivno vlogo v družbi. ",
+    "M2_topic7_texts": [
+      "<b>Prostovoljstvo:</b> Mladi se lahko vključijo v prostovoljske programe in projekte, ki se ukvarjajo z različnimi družbenimi, okoljskimi ali izobraževalnimi izzivi. ",
+      "<b>Socialni projekti:</b> Mladi lahko začnejo in organizirajo lastne socialne projekte, namenjene reševanju konkretnih problemov ali pomoči tistim v stiski. ",
+      "<b>Politični angažma:</b> Mladi se lahko vključujejo v politične procese in izražajo svoja stališča in ideje.  ",
+      "<b>Tehnologija in mediji:</b> Mladi lahko uporabljajo tehnologijo in medije, da posredujejo svoja sporočila in vplivajo na javno mnenje. "
+    ],
+    "M2_topic8": "Medijska pismenost",
+    "M2_topic8_text": "Medijska pismenost in sposobnost prepoznavanja lažnih novic sta v današnji informacijski družbi izjemno pomembni. ",
+    "M2_topic9_texts": [
+      "<b>1. Razumevanje medijskih virov:</b> Medijska pismenost vključuje sposobnost analiziranja in ocenjevanja različnih medijskih virov. ",
+      "<b>2. Kritično mišljenje in analiza:</b> Medijska pismenost razvija kritično mišljenje in sposobnost analiziranja medijskih sporočil.  ",
+      "<b>3. Prepoznavanje lažnih novic:</b> Lažne novice in dezinformacije so danes zelo razširjene. ",
+      "<b>4. Etika in odgovorna uporaba medijev:</b> Pomembno je, da mladi razumejo in sprejmejo svojo odgovornost uporabnikov medijev. "
+    ],
+    "M2_topic10": "Ocena vpliva mladinske dejavnosti",
+    "M2_topic10_text": "Vrednotenje vpliva mladinskega aktivizma vključuje ocenjevanje osebnega razvoja in veščin mladih, njihove državljanske odgovornosti, vpliva na skupnost, vpliva na politike in sisteme ter trajnosti aktivizma na dolgi rok. ",
+    "M3_title": "Modul 3 Bolgarija",
+    "M3_content_heading": "Vsebina",
+    "M3_topic1": "Živeti, delati, potovati v EU",
+    "M3_topic1_text": "Življenje, delo in potovanje v Evropski uniji (EU) ponuja različne priložnosti in ugodnosti. ",
+    "M3_topic2_text": "Življenje v EU zagotavlja široko paleto storitev in socialnih jamstev, kot so zdravstveno varstvo, izobraževanje in socialna pomoč. \n",
+    "M3_topic4": "Kaj naredi EU za svoje državljane?",
+    "M3_topic4_text": "Evropska unija (EU) sprejema številne ukrepe in pobude za zaščito in podporo svojim državljanom. ",
+    "M3_topic5_texts": [
+      "<b>1. Svoboda gibanja:</b> EU zagotavlja prost pretok ljudi, blaga, storitev in kapitala med državami članicami. ",
+      "<b>2. Socialne pravice in varstvo:</b> EU spodbuja socialno solidarnost in zaščito pravic delavcev. ",
+      "<b>3. Zdravje in varnost:</b> EU podpira sodelovanje na področju zdravstva, zagotavlja orodja za boj proti svetovnim grožnjam, kot so pandemije, ter zagotavlja regulativni nadzor in varnost hrane in izdelkov na trgu."
+    ],
+    "M3_topic_6_texts": [
+      "<b>4. Izobraževanje in mobilnost mladih:</b> EU spodbuja izobraževalne programe in mobilnost mladih, kot je program Erasmus.  ",
+      "<b>5. Finančna podpora:</b> EU zagotavlja finančno podporo prek različnih skladov in programov. "
+    ],
+    "M3_topic7": "Kateri so evropski instrumenti?",
+    "M3_topic7_text": "Evropska unija (EU) ima vrsto instrumentov, ki se uporabljajo za oblikovanje in upravljanje skupne politike EU. ",
+    "M3_topic8_texts": [
+      "<b>1. Pogodbe EU:</b> To so pravni temelji EU, ki vzpostavljajo osnovna načela, cilje in pravila za delovanje EU. ",
+      "<b>2. Evropska komisija:</b> Komisija je izvršilni organ EU in je odgovorna za predlaganje in izvajanje zakonodaje EU, upravljanje proračuna EU in zaščito interesov EU na mednarodnem prizorišču.",
+      "<b>3. Evropski parlament:</b> Parlament je zakonodajno telo EU in zastopa državljane EU.  ",
+      "<b>4. Svet EU:</b> Svet je organ, ki zastopa vlade držav članic EU. "
+    ],
+    "M3_topic9": "Dokumenti in publikacije Erasmus.",
+    "M3_topic9_text": "Če želite slediti prednostnim nalogam programa Erasmus, se lahko seznanite z dokumenti in publikacijami, povezanimi z njim. ",
+    "M3_topic10_texts": [
+      "<b>1. Spletna stran programa Erasmus:</b> Uradna spletna stran programa vsebuje podrobne informacije o ciljih, prednostnih nalogah, pogojih in možnostih za sodelovanje. ",
+      "<b>2. Vodenje programa Erasmus:</b> To je dokument, ki vsebuje informacije in smernice o različnih dejavnostih in priložnostih, ki jih ponuja program. ",
+      "<b>3. Publikacije Evropske komisije in nacionalnih agencij:</b> Evropska komisija in nacionalne agencije Erasmus izdajajo publikacije, glasila in poročila, ki zagotavljajo podrobnosti o različnih vidikih programa, uspešnih projektih, smernicah za kakovost in drugih uporabnih virih.",
+      "<b>4. Nacionalni informacijski centri in koordinatorji programov:</b> Vsaka sodelujoča država v programu Erasmus ima nacionalni informacijski center oziroma koordinatorja, ki zagotavlja informacije in pomoč potencialnim prijaviteljem. "
+    ]
+  },
+  "WesternBalkans": {
+    "Content_heading": "Vsebina",
+    "M1_title": "Modul 1 Zahodni Balkan",
+    "M1_topic1_quotes": [
+      "Z. Zaev",
+      "Izobraževanje in inovacije so motorji razvoja.",
+      "A. Vučić",
+      "Izobraževanje in razvoj mladih sta ključna za prihodnost.",
+      "A. Vučić",
+      "Sodelovanje in dialog s sosednjimi državami sta ključna za ohranjanje miru in stabilnosti.",
+      "J. Claude ",
+      "Izolacija ni rešitev. "
+    ],
+    "M1_topic1": "Politika",
+    "M1_topic1_text": "Politika na Zahodnem Balkanu se osredotoča na prizadevanja za spodbujanje stabilnosti, demokracije in gospodarskega razvoja v regiji. ",
+    "M1_topic3": "Skupnost",
+    "M1_topic3_text": "Družba na Zahodnem Balkanu je zelo raznolika in bogata s kulturnimi, etničnimi in verskimi razlikami. ",
+    "M1_topic4_text": "<p> <b>1. Etnična raznolikost: </b> Regija vključuje več etničnih skupin, kot so Srbi, Hrvati, Albanci, Bošnjaki in drugi.  </p> <br/> <p> <b>2. Verske skupnosti: </b> Zahodni Balkan ima različne verske skupnosti, vključno s pravoslavnimi kristjani, katoličani, muslimani in drugimi.  </p> <br/> <p> <b> 3. Civilna družba:</b> Civilna družba: regija ima aktivno civilno družbo in nevladne organizacije, ki se ukvarjajo s temami, kot so človekove pravice, socialna pravičnost in trajnostni razvoj. </p> <br/> <p> <b> 4. Zgodovinski konflikti:</b>Zahodni Balkan so v zadnjih desetletjih prizadeli resni konflikti in vojne, ki so pustili sledi v družbah in pojav medetničnih napetosti. </p> <br/> <p> <b> 5. Prizadevanja za stabilnost in integracijo:</b> Številne države Zahodnega Balkana si prizadevajo za doseganje stabilnosti in integracije v Evropsko unijo in druge mednarodne organizacije kot način za spodbujanje razvoja in miru v regiji. </p> <br/> <p> <b>6. Raznolikost stališč:</b> Mladi so raznolika skupina z različnimi pogledi in idejami.  </p>",
+    "M1_topic4_button": "Našteti",
+    "M1_topic5": "Ustanove",
+    "M1_topic5_text": "Institucije na Zahodnem Balkanu so kombinacija vladnih, regionalnih in lokalnih organov, ki upravljajo in urejajo različne vidike javnega življenja. \n",
+    "M1_topic6_texts": [
+      "1. Vladna ministrstva: Ukvarjajo se z različnimi vidiki državne uprave. ",
+      "2. Parlamenti: nacionalni parlamenti (kot je Narodna skupščina Republike Srbije) ustvarjajo in sprejemajo zakone, zastopajo interese državljanov in nadzorujejo izvršilno vejo oblasti.",
+      "3. Lokalne občine: Upravljajo določena geografska območja in skrbijo za lokalne potrebe. ",
+      "4. Pravosodni sistemi: Ti vključujejo sodišča in tožilce, ki odločajo o pravnih vprašanjih in izvajajo pravosodje. ",
+      "5. Policija: Organi kazenskega pregona skrbijo za zakon in zagotavljajo javni red. "
+    ],
+    "M1_topic7": "Informacijske strani",
+    "M1_topic7_text": "Obstaja veliko informacijskih virov in spletnih mest z novicami, ki lahko zagotovijo najnovejše novice, analize in članke o regiji. ",
+    "M1_topic8_text": "<p> <b>Balkan Insight (BIRN) -<a href={\"www.balkaninsight.com/\"}>https://balkaninsight.com/ </a> </b>Novičarski portal, ki ponuja analize in novice iz balkanske regije. </p> <p> <b>Evropski Zahodni Balkan - https://europeanwesternbalkans.com/ </b> Specializirana spletna stran, osredotočena na dogodke in dogajanja na Zahodnem Balkanu, povezana z Evropsko unijo. </p> <p> <b>Balkanska raziskovalna mreža (BIRN) - https://birn.eu.com/ </b> Raziskovalna novinarska organizacija, ki objavlja analize in poročanje o regiji. </p> <p> <b>BBC News Evropa - Oddelek za Balkan - https://www.bbc.com/news/world/europe/balkans </b> Oddelek BBC News Balkans, ki zagotavlja novice in analize. </p> <p> <b>Al Jazeera Balkans - https://balkans.aljazeera.net/ </b> Mednarodni vir novic s posebnim razdelkom o Balkanu.</p> <p><b>Regionalne tiskovne agencije </b>- Številne države Zahodnega Balkana imajo svoje nacionalne tiskovne agencije, ki posredujejo informacije o dogodkih v regiji.  </p> <p> Ti viri ponujajo različne perspektive in vire informacij, ki vam lahko pomagajo spremljati novice in dogodke na Zahodnem Balkanu.</p>",
+    "M2_title": "Modul 2 Zahodni Balkan",
+    "M2_topic3": "Pouk državljanske vzgoje",
+    "M2_topic3_text": "Pouk državljanske vzgoje na Zahodnem Balkanu je del izobraževalnega sistema in je namenjen poučevanju mladih o njihovih pravicah, odgovornostih in vlogi v družbi. ",
+    "M2_topic4_text": "<p> <b> 1. Človekove pravice:</b> Študenti lahko spoznajo pomembne mednarodne dokumente, kot je Splošna deklaracija človekovih pravic, in kako se te pravice uporabljajo v njihovem kontekstu. </p> <p> <b>2. Demokratične institucije:</b> Lekcije lahko razložijo, kako delujejo parlamenti, vlade in sodstvo ter kakšna je njihova vloga pri vodenju države. </p> <p> <b>3. Sodelovanje in aktivizem:</b> Dijaki se lahko naučijo vključevanja v družbo s sodelovanjem v civilnih pobudah, protestih in drugih oblikah aktivizma. </p> <p> <b>4. Zgodovina regije:</b> Državljanska vzgoja lahko vključuje lekcije o zgodovini Zahodnega Balkana, vključno s konflikti in procesi mirnega sobivanja. </p> <b>5. Kulturna raznolikost:</b> Lekcije lahko spodbujajo razumevanje in spoštovanje različnih kultur in etničnih skupin, ki sestavljajo regijo.",
+    "M2_topic5": "Angažma mladih v akciji",
+    "M2_topic5_text": "Mladinska angažiranost v akciji je aktivno vključevanje mladih v javno življenje in konkretna dejanja za spremembe. ",
+    "M2_topic5_button": "Primeri",
+    "M2_topic6_text": "<p> Mladinske organizacije in gibanja: Mladinske organizacije imajo pomembno vlogo pri mobilizaciji mladih in podpiranju njihovih pobud.  </p>",
+    "M2_topic7": "Prednosti angažiranja mladih",
+    "M2_topic7_text": "Angažiranje mladih na Zahodnem Balkanu igra ključno vlogo pri razvoju regije in prihodnosti mladih.  ",
+    "M2_topic8_texts": [
+      "<b>1. Podpira aktivno državljansko udeležbo: </b> Mladi, vključeni v različne pobude in skupnostne projekte, se učijo, kako se ukvarjati z javnimi vprašanji in oblikovati svoj glas.",
+      "2. Ustvarja priložnosti za izobraževanje in usposabljanje: Mladinske organizacije in programi zagotavljajo usposabljanje in mentorstvo, ki izboljšuje spretnosti in kvalifikacije mladih.",
+      "3. Podpira socialno integracijo: Za angažirano mladino je večja verjetnost, da bo razvila pozitivne socialne povezave in se počutila del družbe.",
+      "4. Prispeva h gospodarski rasti: Mladi podjetniki in inovatorji lahko spodbudijo gospodarstvo in inovacije v regiji.",
+      "5. Gradi mostove sodelovanja: Mladi, ki delajo skupaj prek meja in razlik, lahko spodbujajo mir in sodelovanje na Zahodnem Balkanu."
+    ],
+    "M2_topic9": "Priložnosti za angažiranje mladih",
+    "M2_topic9_text": "Udejstvovanje mladih na Zahodnem Balkanu podpirajo in spodbujajo različne institucije in programi. ",
+    "M2_topic10_texts": [
+      "<p> <b>1. Mladinske organizacije in gibanja:</b> Na Zahodnem Balkanu obstajajo številne mladinske organizacije in gibanja, ki ponujajo priložnosti za sodelovanje in aktivizem.  </p> <p> <b>2. Izobraževalni programi:</b> Mladi se lahko vključijo v izobraževalne programe in projekte, ki podpirajo njihovo učenje in razvoj.  </p> <p> <b>3. Civilna družba in aktivizem:</b> Mladi se lahko vključijo v civilne organizacije in sodelujejo v aktivističnih kampanjah in projektih, ki se borijo za družbene in politične spremembe. </p>",
+      "<p> <b>4. Umetnost in kultura:</b> Umetnost in kultura: Zahodni Balkan je bogat s kulturno dediščino.  </p> <p> <b>5. Sodelovanje v politiki::</b> Mladi se lahko vključujejo v politične procese, postanejo člani mladinskih svetov in komisij ter izražajo svoja stališča in interese znotraj političnega sistema. </p> <p> <b>6. Mednarodni programi izmenjave:</b> Različni programi, kot je Erasmus, ponujajo priložnosti za mladinske izmenjave in pripravništva v različnih državah, kar pripomore k širjenju obzorij in pridobivanju mednarodnih izkušenj. </p> <p> <b>7. Medijski in komunikacijski projekti:</b> Mladi se lahko vključijo v medijske projekte, pisanje blogov, ustvarjanje video vsebin in druge komunikacijske pobude. </p> <p> <b>8. Šport in fitnes:</b> Udeležba na športnih tekmovanjih in fitnesu spodbuja zdrav način življenja in druženje različnih mladih. </p>"
+    ],
+    "M2_topic11": "Medijska pismenost in prepoznavanje lažnih novic",
+    "M2_topic11_text": "Medijska pismenost in sposobnost prepoznavanja lažnih novic je bistvenega pomena za Zahodni Balkan in njegove državljane. ",
+    "M2_topic12_texts": [
+      "<p> <b>1. Preverjanje virov:</b> Ko ste izpostavljeni novicam, natančno analizirajte vir.  </p> <p> <b>2. Kritično mišljenje:</b> Informacije vedno poskušajte kritično analizirati.  </p> <p> <b>3. Preverjanje dejstev:</b> Uporabite spletna mesta za preverjanje dejstev ali poiščite neodvisne vire, da preverite informacije, preden jih delite z drugimi ali jim verjamete.  </p> <p> <b>4. Razlikujte med mnenjem in dejstvom:</b> Novice morajo podajati dejstva, mnenja pa so izražena v komentarjih in analizah.  </p>",
+      "<p> <b>5. Deliti z odgovornostjo:</b> Preden delite novice ali informacije, pomislite, kako bi to dejanje lahko vplivalo na druge.  </p> <p> <b>6. Istočasno preslikavo več virov:</b> Za odmevne dogodke primerjajte informacije iz več zanesljivih virov novic, da zagotovite njihovo točnost.</p> "
+    ],
+    "M2_topic13": "Ocena vpliva mladinske dejavnosti",
+    "M2_topic13_text": "Ocena vpliva mladinskega aktivizma na Zahodnem Balkanu je lahko zelo pozitivna, saj imajo mladi pomembno vlogo pri prenovi in ​​razvoju regije. ",
+    "M2_topic14_texts": [
+      "1. Sodelovanje v družbenih procesih: Mladi, ki se vključujejo v mladinske organizacije, gibanja in aktivnosti, imajo možnost izraziti svoja stališča in interese. ",
+      "2. Vodenje in osebni razvoj: Mladi pridobijo dragocene vodstvene sposobnosti, komunikacijske veščine in izkušnje s sodelovanjem v različnih mladinskih projektih. ",
+      "3. Raznolikost in večkulturnost: Mladinski aktivizem lahko spodbuja raznolikost in večkulturno izmenjavo v regiji. ",
+      "4. Individualni in skupni dosežki: Mladinske pobude in projekti pogosto vodijo do individualnih in skupnih dosežkov. ",
+      "5. Priložnosti za izobraževanje in usposabljanje: Mladinski aktivizem ponuja priložnosti za izobraževanje in usposabljanje, ki spodbujajo učenje in razvoj mladih. ",
+      "6. Spreminjanje stereotipov in odnosa do mladih: Mladi, ki se vključujejo v pozitivne in družbene pobude, lahko spremenijo stereotipe in odnos do njih v družbi. "
+    ],
+    "M2_topic15_text": "Kljub temu pozitivnemu učinku obstajajo tudi izzivi, povezani z aktivizmom mladih na Zahodnem Balkanu, kot je potreba po izboljšanju dostopa do izobraževanja in priložnosti za mlade ter boj proti brezposelnosti in gospodarskim izzivom. ",
+    "M3_title": "Modul 3 Zahodni Balkan",
+    "M3_topic3": "Življenje, delo, potovanja na Zahodnem Balkanu.",
+    "M3_topic3_text": "Zahodni Balkan je edinstvena regija, kjer življenje, delo in potovanja bogatijo srca in misli. ",
+    "M3_topic4_texts": [
+      "<p> <b>življenje:</b> </p> <p> <b>1. Kultura in tradicija:</b> Zahodni Balkan ima bogato kulturno dediščino in tradicijo.  </p> <p> <b>2. Gostoljubnost:</b> Prebivalci regije so znani po svoji gostoljubnosti.  </p> <p> <b>3. Naravne lepote:</b> Zahodni Balkan ponuja različne naravne lepote, vključno z gorami, jezeri in plažami.  </p> <p> <b>delo:</b> </p> <p> <b>1. Gospodarstvo:</b> Gospodarstvo Zahodnega Balkana se razvija, vključno s sektorji, kot so turizem, informacijska tehnologija, kmetijstvo in proizvodnja. </p> <p> <b>2. Kultura dela:</b> Delovna kultura se razlikuje glede na državo, vendar je regija na splošno dobrodošla za delavce iz drugih držav. </p> <p> <b>3. Jeziki:</b> V regiji se govorijo različni jeziki, kot so srbščina, hrvaščina, bosanščina, albanščina in drugi.  </p>",
+      "<p> <b>Potovanje:</b> </p> <p> <b>1. Prevoz:</b> Zahodni Balkan ima dobro razvite prometne povezave, vključno s cestami, železnicami in letališči.  </p> <p> <b>2. Turistične destinacije:</b> Regija ponuja vrsto turističnih znamenitosti, od kulturnih mest, kot sta Sarajevo in Beograd, do čudovitih naravnih znamenitosti, kot je južna plaža Albanije. </p> <p> <b>3. Varnost:</b> Varnost se lahko razlikuje od države do države, zato je pomembno, da upoštevate lokalne nasvete in se pred potovanjem seznanite s trenutno situacijo. </p>"
+    ],
+    "M3_topic5": "Kaj pomeni biti aktiven državljan v regiji?",
+    "M3_topic5_text": "Biti aktiven državljan na Zahodnem Balkanu, tako kot v mnogih drugih regijah, pomeni angažirati in aktivno sodelovati v družbi, da bi pomagali pri njenem izboljšanju in razvoju demokratičnih procesov. ",
+    "M3_topic6_text": "<p> <b>1. Sodelovanje v družbenih in političnih procesih:</b> Aktiven državljan Zahodnega Balkana se lahko vključi v volilno kampanjo, sodeluje pri glasovanju, kandidira za javno ali politično funkcijo ter izraža svoja mnenja in poglede na pomembna javna vprašanja. </p> <p> <b>2. Sodelovanje v nevladnih organizacijah (NVO):</b> Mnogi se vključijo v delo nevladnih organizacij, ki spodbujajo družbene, kulturne, okoljske ali druge spremembe v družbi.  </p> <p> <b>3. Solidarnost in medsebojna pomoč:</b> Aktivni državljani se lahko udeležujejo shodov, protestov in pobud za pomoč ranljivim skupinam v družbi.  </p> <p> <b>4. Izobraževanje in usposabljanje:</b> Del aktivne državljanske vloge je tudi udeležba na izobraževalnih programih, seminarjih in usposabljanjih o temah, povezanih z državljansko dejavnostjo in sodelovanjem v družbi. </p> <b> <b>Ustvarjanje informirane družbe:</b> Aktivni državljani si lahko prizadevajo za spodbujanje svobodnega in neodvisnega medijskega sektorja, ki zagotavlja dostop do informacij in spodbuja izmenjavo idej in mnenj. </b>",
+    "M3_topic7": "Kaj Zahodni Balkan naredi za svoje državljane?",
+    "M3_topic7_text": "Zahodni Balkan je regija, ki vključuje več balkanskih držav v jugovzhodni Evropi, kot so Srbija, Hrvaška, Slovenija, Črna gora, Makedonija, Albanija ter Bosna in Hercegovina. ",
+    "M3_topic8_texts": [
+      "<p> <b>Kljub raznolikosti pristopov nekatere pobude in ukrepi, ki jih Zahodni Balkan lahko ponudi svojim državljanom, vključujejo: </b></p> <p> <b>1. Izobraževanje:</b> Zagotavljanje kakovostnega izobraževanja je prednostna naloga mnogih držav v regiji.  </p> <p> <b>2. Zdravstveno varstvo:</b> Zahodni Balkan zagotavlja zdravstveno varstvo svojim državljanom prek javnih in zasebnih zdravstvenih ustanov ter programov za podporo zdravega načina življenja. </p> <p> <b>3. Socialna varnost in pomoč:</b> Države zagotavljajo socialne storitve in pomoč ranljivim skupinam prebivalstva, kot so upokojenci, invalidi in brezposelni. </p> <p> <b>4. Gospodarski razvoj in zaposlovanje:</b> Vlaganja v gospodarstvo, spodbujanje podjetništva in ustvarjanje delovnih mest so med strategijami gospodarskega razvoja. </p>",
+      "<p> <b>5. Kultura in turizem:</b> Zahodni Balkan je ponosen na svojo bogato kulturno dediščino in turistične atrakcije, ki jih ponujajo državljanom in obiskovalcem. </p> <p> <b>6. Podpora mladim:</b> Različni programi in pobude so namenjeni podpori mladih v regiji, vključno z izobraževanjem, izmenjavo študentov in prakso. </p> <p> <b>3. Socialna varnost in pomoč:</b> Države zagotavljajo socialne storitve in pomoč ranljivim skupinam </p> <p> <b>4. Gospodarski razvoj in zaposlovanje:</b> Vlaganja v gospodarstvo, spodbujanje podjetništva in ustvarjanje delovnih mest so med strategijami gospodarskega razvoja. </p>"
+    ],
+    "M3_topic9": "Več o evropskih instrumentih in Zahodnem Balkanu?",
+    "M3_topic9_text": "Evropska unija (EU) je dejavna na Zahodnem Balkanu s številnimi instrumenti in programi, namenjenimi podpiranju stabilnosti, gospodarskega razvoja in evropske integracije regije. \n",
+    "M3_topic10_text": "<p> <b>1. Instrument za predpristopno pomoč (IPA):</b> Namen tega instrumenta je podpora državam Zahodnega Balkana, ki želijo postati članice EU, pri njihovih pripravah na pristop.  </p> <p> <b>2. Evropski sklad za stabilnost (ESS):</b> Ta instrument EU se uporablja za podporo stabilnosti in razvoja na Zahodnem Balkanu s financiranjem projektov za razvoj infrastrukture, podporo gospodarski rasti in krepitev demokratičnih institucij. </p> <p> <b>3. Pobuda za podporo mladim na Zahodnem Balkanu (ERASMUS):</b> Program EU ERASMUS mladim z Zahodnega Balkana ponuja priložnosti za študij, delo in potovanja po EU.  </p> <p> <b>4. Regionalno sodelovanje in povezovanje v EU:</b> EU spodbuja regionalno sodelovanje med državami Zahodnega Balkana z različnimi programi in pobudami, kot sta Berlinski proces in Regionalni strukturni in investicijski sklad (RSIF).  </p>",
+    "M3_topic11": "Dokumenti in publikacije Po prednostnih nalogah programa Erasmus.",
+    "M3_topic11_text": "Program Erasmus Evropske unije (EU) je namenjen spodbujanju izobraževanja, usposabljanja, mladih in športa v EU in zunaj nje. ",
+    "M3_topic12_texts": [
+      "<b>1. Sodelovanje v družbenih procesih: </b> Mladi, ki se vključujejo v mladinske organizacije, gibanja in aktivnosti, imajo možnost izraziti svoja stališča in interese. ",
+      "<b>2. Vodenje in osebni razvoj:</b> Mladi pridobivajo dragocene vodstvene veščine, komunikacijske veščine in izkušnje s sodelovanjem v različnih mladinskih projektih. ",
+      "<b>3. Raznolikost in večkulturnost:</b> Aktivizem mladih lahko spodbuja raznolikost in večkulturno izmenjavo v regiji. ",
+      "<b>4. Individualni in skupni dosežki:</b> Mladinske pobude in projekti pogosto vodijo do individualnih in skupnih dosežkov. ",
+      "<b>5. Možnosti izobraževanja in usposabljanja:</b>  Mladinski aktivizem ponuja priložnosti za izobraževanje in usposabljanje, ki spodbujajo učenje in razvoj mladih. ",
+      "<b>6. Spreminjanje stereotipov in odnosa do mladih:</b>   Mladi, ki se ukvarjajo s pozitivnimi in družbenimi pobudami, lahko spremenijo stereotipe in odnos do njih v družbi. "
+    ]
+  },
+  "Slovenia": {
+    "Content_heading": "Vsebina",
+    "M1_title": "Modul 1 Slovenija",
+    "M1_topic1_quotes": [
+      "E. Casey",
+      "Sanje so današnji odgovori na jutrišnja vprašanja.",
+      "P. Drucker",
+      "Najboljši način za napovedovanje prihodnosti je ustvarjanje.",
+      "L. Brown",
+      "Osebni razvoj je ključ do premagovanja vaših omejitev.",
+      "N. Hill",
+      " Človek lahko doseže vse, dokler v to verjame."
+    ],
+    "M1_topic1": "Politika",
+    "M1_topic1_text": "Politika se v Sloveniji oblikuje skozi parlamentarno demokracijo. ",
+    "M1_topic2": "Skupnost",
+    "M1_topic2_text": "Družba v Sloveniji je raznolika in kulturno bogata. ",
+    "M1_topic3_text": "<b>1. Etnična in kulturna raznolikost:</b> Slovenija je razmeroma majhna država, vendar ima raznoliko prebivalstvo z različnimi etničnimi in kulturnimi identitetami.  <br/><b>2. Jezikovne lastnosti:</b> Slovenski jezik je uradni jezik v državi.  <br/><b>3. Izobraževanje in znanost:</b> Izobrazba je v družbi zelo cenjena.  <br/><b>4. Gospodarstvo in delo:</b> Slovenija ima stabilno in razvito gospodarstvo.  <br/><b>5. Socialno varstvo in zdravstvo:</b> Slovenija zagotavlja obsežno socialno varstvo in kakovostno zdravstveno varstvo.  <br/><b>6. Kulturne tradicije in umetnost:</b> Slovenska kulturna dediščina je bogata in raznolika. ",
+    "M1_topic3_texts": [
+      "1. Literatura in pisci: Slovenska književnost ima dolgo zgodovino, ki sega od srednjeveških epov do sodobnih avtorjev. ",
+      "2. Glasba: Glasba je v Sloveniji pomemben del kulture. ",
+      "3. Vizualne umetnosti: Država ima bogato tradicijo vizualnih umetnosti, vključno s slikarstvom, kiparstvom in grafiko. ",
+      "4. Gledališče in kino: Gledališka umetnost je pomemben vidik kulture. ",
+      "5. Kulturni festivali: Slovenija skozi vse leto gosti številne kulturne festivale. ",
+      "6. Kulinarična tradicija: Slovenska kulinarična umetnost odraža vplive iz sosednjih držav. "
+    ],
+    "M1_topic4": "Ustanove",
+    "M1_topic4_text": "Institucije v Sloveniji pokrivajo različna področja upravljanja in delovanja države. \n",
+    "M1_topic5_texts": [
+      "1. Izvršilna oblast: Vlada in predsednik Republike Slovenije vodita državo in usmerjata izvršilno funkcijo.",
+      "2. Zakonodaja: Državni zbor Republike Slovenije sprejema zakone in predpise, ki urejajo različna področja javnega življenja.",
+      "3. Pravosodni sistem: Vključuje različna sodišča in instance, ki zagotavljajo neodvisno in pošteno pravosodje v državi.\n",
+      "4. Volilni procesi: Institucije, povezane z volitvami, organizirajo in nadzorujejo volilni proces, vključno s predsedniškimi, parlamentarnimi in lokalnimi volitvami.\n",
+      "5. Izobraževanje in kultura: Različne institucije podpirajo izobraževalne in kulturne interese državljanov.",
+      "6. Socialne in zdravstvene storitve: Ustanove, ki skrbijo za socialno in zdravstveno varstvo državljanov.",
+      "7. Gospodarstvo in finance: Institucije, povezane z ekonomskimi in finančnimi vidiki vlade.",
+      "8. Lokalna samouprava: Občine in regionalne strukture upravljajo lokalne zadeve in zagotavljajo storitve državljanom.",
+      "9. Zunanja politika in mednarodni odnosi: Ustanove, ki se ukvarjajo z odnosi s tujino in predstavljanjem države na mednarodnem prizorišču.\n"
+    ],
+    "M1_topic5_button": "več",
+    "M1_topic6": "Informacijske strani",
+    "M1_topic6_text": "Politika v Evropi je izjemno raznolika, saj Evropo sestavlja veliko držav s svojimi vladami in političnimi sistemi. ",
+    "M1_topic7_text": "<p> <b>1. Možnosti:</b> Državljani Slovenije imajo pravico do udeležbe na parlamentarnih, predsedniških in lokalnih volitvah.  </p> <br/> <p> <b>2. Civilne organizacije:</b> V državi deluje veliko civilnih organizacij, ki se ukvarjajo z različnimi družbenimi, gospodarskimi in okoljskimi vprašanji.  </p> <br/> <p> <b>3. Javna posvetovanja:</b> Oblasti v Sloveniji pogosto organizirajo javna posvetovanja o različnih temah, kot so gospodarstvo, ekologija, izobraževanje itd.  </p> <br/> <p> <b>4. Družbena gibanja in protesti:</b> Državljani Slovenije smo se vključili v različna družbena gibanja in proteste, ki se osredotočajo na različne probleme in vprašanja.  </p> <br/> <p> <b>5. Mediji in spletna udeležba:</b> Državljani imajo možnost izraziti svoja mnenja in deliti informacije prek medijev in socialnih omrežij.  </p> <br/> <p className={\"text-opacity-25\"}> Državljanska participacija igra pomembno vlogo pri razvoju demokratične družbe v Sloveniji, saj državljanom daje glas in podpira njihovo sodelovanje v procesu odločanja. </p>",
+    "M1_topic7_button": "Našteti",
+    "M2_title": "Modul 2 Slovenija",
+    "M2_topic3": "Pouk državljanske vzgoje",
+    "M2_topic3_text": "Državljanska vzgoja v Sloveniji je namenjena pripravi državljanov na znanja, spretnosti in vrednote, potrebne za aktivno in odgovorno sodelovanje v demokratični družbi. ",
+    "M2_topic4": "Nekaj ​​značilnosti državljanske vzgoje v državi:",
+    "M2_topic4_texts": [
+      "1. Učni načrti in pouk: Državljanska vzgoja je vključena v učne načrte različnih stopenj izobraževanja - od osnovnošolskega do srednješolskega. ",
+      "2. Vrednote demokracije: Izobraževalni sistem spodbuja vrednote, kot so svoboda, strpnost, enakost in spoštovanje mnenj drugih. \n",
+      "3. Učna gradiva: Učbeniki in gradiva za državljansko vzgojo so posodobljeni tako, da odražajo aktualne dogodke in izzive v družbi. \n",
+      "4. Metode poučevanja: Državljanska vzgoja temelji na interaktivnih in participativnih metodah poučevanja. \n",
+      "5. Državljanska odgovornost in aktivizem: študente spodbujamo, da se vključijo v družbo in sodelujejo pri pobudah, ki spodbujajo spremembe za izboljšanje družbe.",
+      "6. Priprava na državljansko življenje: Državljanska vzgoja zagotavlja veščine, potrebne za sodelovanje v civilnih organizacijah, procesih odločanja in reševanja družbenih problemov."
+    ],
+    "M2_topic5": "Angažma mladih v akciji",
+    "M2_topic5_text": "Udejstvovanje mladih v Sloveniji spodbujamo in podpiramo z različnimi programi, organizacijami in pobudami. ",
+    "M2_topic6_texts": [
+      "Evropski programi: Slovenija sodeluje v različnih evropskih programih in pobudah, ki spodbujajo angažiranost mladih.",
+      "Izobraževalni programi za mlade V Sloveniji obstajajo izobraževalni programi in tečaji, ki se osredotočajo na razvoj vodstvenih veščin, podjetnosti, socialnih veščin in drugih veščin, ki so koristne za angažiranje mladih.",
+      "Prostovoljstvo in državljansko udejstvovanje: Mladi v Sloveniji imajo možnost, da se vključijo v prostovoljske projekte in civilne iniciative, ki se ukvarjajo s tako različnimi vprašanji, kot so okolje, izobraževanje, kultura in socialna integracija.",
+      "Mladinski centri in dogodki: Mladinski centri v različnih mestih Slovenije nudijo prostor za srečanja, izobraževanja, razprave in dogodke za mlade. ",
+      "Finančna podpora: Udejstvovanje mladih v Sloveniji je možno podpreti tudi finančno z dotacijami in sredstvi, ki so namenjena mladinskim projektom in pobudam."
+    ],
+    "M2_topic7": "Prednosti angažiranja mladih",
+    "M2_topic7_text": "Mladinska angažiranost v Sloveniji predstavlja aktivno in ozaveščeno sodelovanje mladih na različnih področjih družbe z namenom doseganja sprememb in izboljšav. \n",
+    "M2_topic8_text": "<p> <b>1. Osebni in strokovni razvoj:</b> Sodelovanje v mladinskih organizacijah, pobudah in projektih mladim omogoča razvoj komunikacijskih veščin, vodstvenih lastnosti, reševanja problemov in timskega dela.  </p> <br/> <p> <b>2. Civilna odgovornost in dejavnost: </b> Sodelovanje mladih v pobudah skupnosti jih uči aktivnega sodelovanja v družbi.  </p> <br/> <p> <b>3. Povečanje samospoštovanja:</b> Mladi, ki so vključeni v pobude skupnosti, pogosto občutijo večjo samozavest in občutek dosežka.  </p> <br/> <p> <b>4. Socialne povezave in omrežja:</b> Mladinska angažiranost daje mladim priložnost za srečanje in delo z ljudmi iz različnih področij in okolij.  </p> <br/> <p> <b>5. Spremembe v družbi:</b> Mladi so pogosto gonilo sprememb v družbi.  </p> <br/> <p> <b>6. Raznolikost stališč:</b> Mladi so raznolika skupina z različnimi pogledi in idejami.  </p>",
+    "M2_topic8_button": "Našteti",
+    "M2_topic9": "Priložnosti za angažiranje mladih",
+    "M2_topic9_text": "V Sloveniji obstaja vrsta možnosti za angažiranje mladih, ki mladim nudijo možnost aktivnega sodelovanja v družbi, razvijanja veščin in prispevanja k pozitivnim spremembam.",
+    "M2_topic9_texts2": [
+      "<p> <b>1. Mladinske organizacije:</b> V Sloveniji je veliko mladinskih organizacij, ki mladim dajejo možnost, da se vključijo v različne pobude, projekte in akcije, povezane z izobraževanjem, kulturo, okoljem, zdravjem ipd. </p> <br/> <p> <b>2. Mladinski klubi in centri:</b> Mladinski klubi in centri ponujajo prostore, kjer se lahko mladi srečujejo, izmenjujejo ideje, sodelujejo v izobraževalnih dogodkih in delajo na skupnostnih projektih. </p> <br/> <p> <b>3. Mladinski sveti:</b> V mnogih mestih in skupnostih obstajajo mladinski sveti, ki mladim dajejo priložnost, da se vključijo v razprave o pomembnih vprašanjih in predstavijo svoje zamisli lokalnim oblastem. </p> <br/> <p> <b>4. Izobraževalni programi in tečaji:</b> Mladinske organizacije in šole ponujajo različne izobraževalne programe in tečaje, ki razvijajo veščine mladih na področjih, kot so vodenje, podjetništvo, komunikacija in več. </p>",
+      "<b>5. Mednarodni programi izmenjave:</b> Mladi imajo možnost sodelovati v programih mednarodne izmenjave, ki jim omogočajo potovanja, spoznavanje različnih kultur in širjenje obzorij. <br><b>6. Prostovoljstvo in socialno delo:</b> Mladi se lahko kot prostovoljci vključijo v različne družbene in skupnostne pobude, katerih namen je pomagati tistim v stiski in izboljšati družbo. <br><b>7. Mladinski mediji in projekti:</b> Mladi se lahko vključijo v medijske projekte, bloge, poddaje in druge medijske platforme, da delijo svoja mnenja in ideje. <br><b>8. Pobude za varstvo okolja:</b> Mladi se lahko vključijo v pobude in projekte, povezane z varstvom okolja in trajnostnim razvojem."
+    ],
+    "M2_topic10": "Medijska pismenost in prepoznavanje lažnih novic",
+    "M2_topic10_text": "Medijska pismenost in prepoznavanje lažnih novic sta pomembni veščini za mlade in državljane nasploh, ne glede na državo. ",
+    "M2_topic11_texts": [
+      "<p> <b>1. Izobraževalni programi: </b> Izobraževalne ustanove in organizacije lahko razvijejo posebne programe in učne ure, namenjene razvijanju medijske pismenosti.  </p> <p> <b>2. Usposabljanja in seminarji:</b> Mladinski centri, univerze, medijske organizacije in druge ustanove lahko organizirajo usposabljanja in seminarje, da bi mladim ponudili praktična orodja za prepoznavanje lažnih novic. </p> <p> <b>3. Medijske kampanje:</b> Organizacije in iniciative v Sloveniji lahko izvajajo medijske kampanje za ozaveščanje o pomenu medijske pismenosti in prepoznavanja lažnih novic. </p>",
+      "<p> <b>4. Spletni viri:</b> Ustvarjanje spletnih virov, kot so spletne strani, blogi ali video vadnice, je lahko koristen način za doseganje mladih in zagotavljanje informacij o vprašanjih medijske pismenosti. </p> <b>5. Sodelovanje z mediji:</b> Sodelovanje med medijskimi organizacijami in izobraževalnimi ustanovami lahko prispeva k boljšemu razumevanju procesov, ki stojijo za novinarskim delom, in prepoznavanju zanesljivih virov novic. <p> <b>6. Kritično mišljenje v učnem načrtu:</b> Vključevanje veščin kritičnega mišljenja in prepoznavanje lažnih novic v učne načrte lahko pomaga učencem, da postanejo bolj pozorni in obveščeni državljani. </p>"
+    ],
+    "M2_topic12": "Ocena vpliva mladinske dejavnosti",
+    "M2_topic12_text": "Mladinski aktivizem v Sloveniji je dinamičen in raznolik sektor, ki mlade spodbuja k vključevanju v različne pobude in aktivnosti za osebni in družbeni razvoj. ",
+    "M2_topic13_text": "<ul> <li>Izobrazba in veščine;</li> <li>Osebnostni razvoj;</li> <li>Državljanska udeležba in demokracija;</li> <li>Razvoj socialnega omrežja;</li> <li>Medkulturno razumevanje;</li> <li>Podpora podjetništvu.</li> </ul>",
+    "M3_title": "Modul 3 Slovenija",
+    "M3_topic3": "Živeti, delati, potovati v EU",
+    "M3_topic3_texts": [
+      "<p> Slovenija je čudovita država v Evropski uniji s številnimi prednostmi za življenje, delo in potovanja.  </p> <p> <b>1. Svoboda gibanja:</b> Kot del Evropske unije imajo državljani Slovenije in drugih držav članic pravico do prostega gibanja in dela v vseh državah EU.  </p> <p> <b>2. Evro kot valuta:</b> Slovenija kot valuto uporablja evro.  </p> <p> <b>3. Stabilnost in infrastruktura:</b> Država ima stabilno in razvito gospodarstvo ter dobro razvito infrastrukturo, ki izboljšuje kakovost življenja. </p>",
+      "<p> <b>4. Čudovita narava: </b> Slovenija ima izjemno lepo naravo, vključno z gorami, jezeri in gozdovi.  </p> <p> <b> 5. Kulturna in zgodovinska dediščina:</b> Država ima bogato zgodovino in kulturo, kar pomeni, da je veliko znamenitosti, muzejev in tradicij za raziskovanje. </p> <p> <b>6. Izobrazba:</b> Slovenija ponuja kakovostno izobraževanje na vseh ravneh – od osnovne do univerzitetne.  </p> <p> <b>Skrb za zdravje:</b> Zdravstvo v Sloveniji je dobro organizirano in cenovno dostopno.  </p>"
+    ],
+    "M3_topic4": "Kaj pomeni biti aktiven evropski državljan?\n",
+    "M3_topic4_text": "Biti aktiven evropski državljan pomeni aktivno sodelovati v javnem življenju Evropske unije, uporabljati svoje pravice in se ukvarjati z dejavnostmi, ki podpirajo povezovanje, sodelovanje in razumevanje med državami članicami. \n",
+    "M3_topic5_texts": [
+      "<p> <b>1. Glasovanje na volitvah:</b> Udeležite se volitev v Evropski parlament in lokalnih volitev, da uveljavite svojo volilno pravico in vplivate na odločanje.</p> <p> <b>2. Izobraževalni dogodki:</b> Udeležite se seminarjev, konferenc in izobraževalnih dogodkov, kjer lahko izveste več o Evropski uniji, njenih institucijah in politikah.</p> <p> <b>3. Sodelovanje v javnih posvetovanjih:</b> Bodite pozorni na posvetovanja in razprave o politiki EU in nacionalnih politik ter podajte svoje stališče in predloge.</p> <p> <b>4. Evropski prostovoljni projekti:</b> Pridružite se prostovoljnim projektom in pobudam, ki spodbujajo kulturno izmenjavo, okoljsko ozaveščenost in socialno integracijo.</p>",
+      "<p> <b>5. Podpora evropskim pobudam: </b> Sodelujte v kampanjah in peticijah, ki podpirajo posebne evropske pobude in vrednote, ki vas zanimajo. </p> <p> <b>6. Sodelovanje na evropskih kulturnih dogodkih:</b> Pridružite se kulturnim dogodkom, povezanim z različnimi državami EU, da izveste več o njihovih tradicijah in običajih. </p> <p> <b>7. Razširjanje informacij:</b> Delite informacije o EU in njenih prednostih s prijatelji in družino, da povečate njihovo ozaveščenost. </p>"
+    ],
+    "M3_topic6": "Kaj naredi EU za svoje državljane?\n",
+    "M3_topic6_text": "Evropska unija (EU) svojim državljanom Slovenije in državljanom vseh držav članic zagotavlja vrsto ugodnosti in podpore. ",
+    "M3_topic7_texts": [
+      "<p> <b>1. Prosto gibanje in delo:</b> Državljani Slovenije imajo pravico do prostega gibanja in dela v vseh državah članicah EU.  </p> <br/> <p> <b> 2. Finančna podpora:</b> Slovenski državljani so deležni finančne podpore EU prek strukturnih in investicijskih skladov.  </p>",
+      "<p> <b>3. Izobraževanje in raziskovanje:</b> Slovenski državljani imajo dostop do programov izobraževanja, usposabljanja in raziskovanja, ki jih financira EU.  </p> <p> <b>4. Zdravstvene in socialne zadeve:</b> EU podpira sodelovanje med državami članicami na področju zdravja, socialne varnosti in socialne integracije.  </p> <p> <b>5. Varnost in pravice:</b> EU si prizadeva zagotoviti varnost in zaščito svojih državljanov s sodelovanjem na področju pravosodja, policijskega sodelovanja in boja proti terorizmu.  </p> <p> <b>Socialni programi:</b> EU podpira različne socialne programe, ki so namenjeni pomoči ranljivim skupinam v družbi, vključno z brezposelnimi, otroki, starejšimi itd. </p>"
+    ],
+    "M3_topic7_button": "Našteti",
+    "M3_topic8": "Kateri so evropski instrumenti?",
+    "M3_topic8_texts": [
+      "<p> Mladinski aktivizem vključuje sodelovanje v različnih pobudah, programih in aktivnostih, katerih namen je podpirati razvoj in sodelovanje mladih v družbi.  </p> <p> <b>1. Strukturni in investicijski skladi (SIS): </b> Ta sredstva zagotavljajo sredstva za različne projekte, ki izboljšujejo gospodarski in družbeni razvoj v regijah EU.  </p> <p> <b>2. Program »Obzorje 2020« (Horizon 2020):</b> Gre za raziskovalni in inovacijski program, ki financira projekte, namenjene razvoju znanstvenih spoznanj, tehnološkemu napredku in inovacijam. </p>",
+      "<p> <b>3. Evropski socialni sklad (ESS):</b> Ta sklad podpira projekte in pobude, ki izboljšujejo zaposlovanje, usposabljanje in izobraževanje ter socialno vključenost v EU </p> <p> <b>4. Program \"Erasmus\" (Erasmus):</b> Ta program podpira projekte izobraževanja, usposabljanja in mladine, ki spodbujajo mobilnost in medkulturno izmenjavo med mladimi v EU. </p> <p> <b>5. Zdravstveni program EU:</b> Ta program podpira sodelovanje na področju javnega zdravja in omogoča izmenjavo informacij in najboljših praks. </p> <p> <b>6. Evropski okvir za pravosodno sodelovanje (EJSC):</b> Je okvir za sodelovanje med državami članicami na področju pravosodja, kjer se izmenjujejo informacije in ustvarjajo skupne strategije. </p> <p> <b>7. Evropska služba za zunanje delovanje (EEAS):</b> Je diplomatska služba EU, ki podpira zunanjo politiko in dejavnosti Unije. </p>"
+    ],
+    "M3_topic9": "Dokumenti in publikacije Po prednostnih nalogah programa Erasmus.\n",
+    "M3_topic9_text": "Program Erasmus je izobraževalni program Evropske unije, ki podpira mobilnost in sodelovanje med izobraževalnimi ustanovami v različnih državah članicah, tudi v Sloveniji. ",
+    "M3_topic9_button": "Glej primere",
+    "M3_topic10_texts": [
+      "Študentska mobilnost: Program študentom nudi možnost študija ali prakse na izobraževalnih ustanovah ali podjetjih v drugih državah članicah EU, s čimer jih izpostavi novim izobraževalnim in kulturnim izkušnjam.",
+      "Mobilnost osebja: Predavatelji, učitelji in drugi strokovnjaki iz izobraževalnih ustanov se lahko udeležijo usposabljanj, pripravništev in seminarjev v tujini, da bi izboljšali svoje sposobnosti in izmenjali izkušnje.",
+      "Mladinska izmenjava in aktivnosti: Program spodbuja mladinsko izmenjavo in aktivno sodelovanje mladih v družbi preko različnih projektov in pobud.",
+      "Sodelovanje med institucijami: Program podpira sodelovanje med izobraževalnimi institucijami, šolami in univerzami ter med organizacijami na področju mladinskega dela.",
+      "Izboljšanje kakovosti izobraževanja in usposabljanja: Z izmenjavo izkušenj in dobrih praks program spodbuja izboljšanje kakovosti izobraževanja in usposabljanja na vseh ravneh."
+    ]
+  }
 }

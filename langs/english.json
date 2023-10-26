@@ -1,19 +1,452 @@
 {
   "Europe": {
-    "moduleOneEurope": "Module 1 Europe",
-    "SampleText": "Wow",
-    "SampleText2": "Wow"
+    "Content_heading": "Content",
+    "M1_title": "Module 1 Europe",
+    "M1_topic1_quotes": [
+      "A. Merkel",
+      "Europe is a mosaic of cultures that makes our continent so unique.",
+      "D. Kennedy",
+      "Europe is where history meets modernity and tradition meets innovation.",
+      "J. Delor",
+      "Europe is history and civilization and culture and ideas and dreams. ",
+      "D. Berbatov",
+      "Europe is the symphony of differences combined with convergence of values."
+    ],
+    "M1_topic2": "Politics",
+    "M1_topic2_text": "Politics in Europe is extremely diverse as Europe is made up of many countries with their own governments and political systems. ",
+    "M1_topic4_text": "<p>The European Union is an intergovernmental organization made up of <b>27 European countries</b>, which cooperate on issues such as economy, trade, security and environment.  </p><br/><p>The European Parliament is the only body directly elected by EU citizens and has an important role in creating legislation and overseeing the other institutions. </p><br/><p>EU policy covers various areas, such as free movement of people, goods and services, common currency - the euro, cooperation in the field of justice and home affairs, common agricultural policy, environmental policy and others.</p><br/><p>The political challenges facing Europe include migration flows, climate change, social and economic inequalities and relations with global players.</p>",
+    "M1_topic4_button": "To list",
+    "M1_topic5": "List of the 27 member states of the European Union.",
+    "M1_topic5_texts": [
+      "1. Austria (Österreich)<br/> 2. Belgium (België/Belgique)<br/> 3. Bulgaria (Bulgaria)<br/> 4. Greece (Ελλάδα)<br/> 5. Germany (Deutschland)<br/> 6. Denmark (Danmark)<br/> 7. Estonia (Eesti)<br/> 8. Ireland<br/> 9. Spain (España)<br/> 10. Italy (Italia)<br/> 11. Cyprus (Κύπρος/Kıbrıs)<br/> 12. Latvia (Latvija)<br/> 13. Lithuania (Lietuva)<br/> 14. Luxembourg (Luxembourg)<br/>",
+      "15. Malta<br/> 16. Poland (Polska)<br/> 17. Portugal<br/> 18. Romania (România)<br/> 19. Slovakia (Slovensko)<br/> 20. Slovenia (Slovenija)<br/> 21. Hungary (Magyarország)<br/> 22. Finland (Suomi/Finland)<br/> 23. France<br/> 24. Netherlands (Nederland)<br/> 25. Croatia (Hrvatska)<br/> 26. Czech Republic (Česko)<br/> 27. Sweden (Sverige)<br/>"
+    ],
+    "M1_topic6": "Community",
+    "M1_topic6_text": "Society in Europe is extremely diverse and multi-faceted, encompassing multiple cultures, languages, religions and customs. ",
+    "M1_topic7": "Institutions",
+    "M1_topic7_text": "The institutions in Europe encompass various organizations and structures that play a key role in the governance and functioning of the European Union (EU). ",
+    "M1_topic8_texts": [
+      "1. European Parliament: The European Parliament is the only EU body that is directly elected by the citizens of the member states. ",
+      "2. European Commission: The European Commission is the executive body of the EU. ",
+      "3. Council of the European Union: The Council is the body representing the EU member states. ",
+      "4. The European Court of Human Rights: This is an independent judicial body that enforces EU law and resolves disputes between member states and EU institutions. ",
+      "5. The European Central Bank (ECB): The ECB is responsible for the monetary policy of the Eurozone, which is the group of countries in the EU using the common currency, the Euro. "
+    ],
+    "M1_topic9": "Information pages",
+    "M1_topic9_text": "Citizen participation in Europe is a key aspect of democratic processes in the member states of the European Union and other European countries. ",
+    "M1_topic10_texts": [
+      "1. Elections to the European Parliament: Citizens have the right to elect members of the European Parliament who represent their interests and vote on important issues at the European level. <br/><br/> 2. European citizens' initiatives: EU citizens can initiate petitions with a certain number of signatures to propose new legislation or amendments to existing laws.<br/><br/> 3. Civil organizations: There are many civil organizations in Europe that deal with different topics - from human rights and the environment to education and health care.",
+      "4. Local actors and public consultations: Some countries have encouraged citizen participation through local public consultations and direct dialogues with local authorities.<br/><br/> 5. Voting and referendums: Citizens have the opportunity to participate in national and regional elections, as well as in referendums on important issues.<br/><br/> 6. Civil society and social media: Citizens use social media and other online platforms to express their opinions and participate in public debates."
+    ],
+    "M2_title": "Module 2 Europe",
+    "M2_topic2": "Civic education lessons",
+    "M2_topic2_text": "Civic education in Europe is essential for the formation of active citizens. ",
+    "M2_topic3": "Some examples of civics lessons:",
+    "M2_topic3_texts": [
+      "1. Voting and elections: Lessons on electoral systems, political parties and voting processes to encourage active participation in the democratic process.",
+      "2. Human rights: Education regarding human rights and freedoms, which are an essential element for the respect of every individual in society.",
+      "3. Environmental awareness: Programs to understand the importance of protecting the environment and adopting sustainable lifestyles.",
+      "4. Media Literacy: Training to recognize fake news and understand the role of the media in society.",
+      "5. Social entrepreneurship: Lessons for stimulating entrepreneurship and creating social economic projects aimed at the public good.",
+      "6. Intercultural understanding: Education aimed at respecting differences and promoting peaceful coexistence among different cultures."
+    ],
+    "M2_topic4": "Youth engagement in action",
+    "M2_topic4_text": "Youth engagement in action is the active involvement of young people in public life and taking concrete actions for change. ",
+    "M2_topic4_button": "Examples",
+    "M2_topic5_text": "<p> An example of such a program is <b>\"Erasmus for Youth\"</b>, which provides opportunities for training, youth exchange, volunteering and partnerships between organizations in different countries.  </p>",
+    "M2_topic6": "Benefits of youth engagement",
+    "M2_topic6_text": "Youth engagement in Europe provides multiple benefits for both young people and society as a whole. \n",
+    "M2_topic7_text": "<p> <b>1. Developing leadership skills:</b> Participation in youth organizations and projects allows young people to develop leadership skills such as communication, team leadership, leadership and organization. </p> <p> <b>2. Acquisition of new knowledge and skills:</b> Engaged youth have the opportunity to acquire new knowledge and skills in various fields such as education, technology, social sciences, etc. </p> <p> <b>3. Increasing self-esteem and confidence:</b> Participation in youth initiatives gives young people the opportunity to express themselves, share their ideas and be part of decisions, which can increase their self-esteem and confidence. </p> <p> <b>4. Support for social integration:</b> Youth engagement can help the social integration of young people, especially those from vulnerable groups. </p> <p> <b>5. Building Community and Friendships:</b> Participation in youth initiatives provides an opportunity to create community and establish new friendships, which is important for psychological well-being. </p> <p> <b>6. Changing Society:</b> Engaged youth can be the drivers of change in society by addressing social issues and actively working to solve them. </p> <p> <b>7. Support for democratic values:</b> Youth engagement promotes participation in democratic processes and values, such as voting, freedom of expression and respect for human rights. </p>",
+    "M2_topic8": "Opportunities for youth engagement",
+    "M2_topic8_text": "In Europe, youth engagement represents the active involvement and participation of young people in public and civic processes. ",
+    "M2_topic9_texts": [
+      "Youth organizations: There are many youth organizations in Europe that provide various projects, trainings, camps and activities for young people. ",
+      "European programs and initiatives: Programs such as \"Erasmus\", \"Youth Corps\" and \"European Solidarity Corps\" provide opportunities for exchanges, internships and participation in international projects. ",
+      "Community Service Initiatives: Youth can engage in various community service initiatives such as environmental awareness campaigns, social causes and volunteering. ",
+      "Youth councils and commissions: Many cities and regions have youth councils and commissions that represent the views and interests of young people to public authorities. ",
+      "Civic Education Education Programs: Various educational institutions and non-governmental organizations offer civic education training and courses that encourage young people to understand and actively participate in democratic processes and public issues.",
+      "Digital platforms and social networks: The Internet and social networks provide opportunities for young people to share their ideas, connect with other engaged young people and participate in online initiatives and campaigns."
+    ],
+    "M2_topic10": "Media Literacy and Recognizing Fake News",
+    "M2_topic10_text": "European institutions and many non-governmental organizations are working to increase media literacy and the recognition of fake news among citizens. ",
+    "M2_topic11_text": "<p> <b>1. Source Verification:</b> Check if the news comes from an established and reliable media source.  </p> <p> <b>2. Fact check:</b> Check the facts and information from several different and reliable sources before accepting it as true. </p> <p> <b>3. Careful reading:</b> Read the entire article, not just the title, before sharing information. </p> <p> <b>4. Critical thinking:</b> Ask yourself questions like \"What is the purpose of this news?\"  </p> <p> <b>5. Checking photos and videos:</b> Check that the photos and videos that accompany the news are correct and up-to-date. </p>",
+    "M2_topic12": "Evaluation of the impact of youth activity",
+    "M2_topic12_text": "<p> Youth activism includes participation in various initiatives, programs and activities that aim to support the development and participation of youth in society.  </p> <ul> <li>Education and skills;</li> <li>Personality development;</li> <li>Civic participation and democracy;</li> <li>Development of the social network;</li> <li>Intercultural understanding;</li> <li>Supporting entrepreneurship.</li> </ul>",
+    "M2_topic13": "Evaluation methods",
+    "M2_topic13_text": "To assess the impact of youth activism, research methods are often used, including surveys, interviews, statistical data collection and analysis of results. ",
+    "M3_title": "Module 3 Europe",
+    "M3_topic1": "Living, working, traveling in the EU.",
+    "M3_topic1_text": "For young people, providing opportunities to live, work and travel in Europe can be extremely enriching. \n",
+    "M3_topic2_text": "<p> <b>Education:</b> Europe has many prestigious universities and educational institutions.  </p> <p> <b>Work and Career:</b> Young professionals can find a variety of job and career opportunities in Europe.  </p>",
+    "M3_topic3_text": "<p> <b> Travels and Discovery:</b> Europe is known for its rich culture, history and diversity.  </p> <p> <b>Internships and Training Programs:</b> Many organizations and companies offer internships and training programs for young professionals.  </p> <p> <b>Startups and Entrepreneurship:</b> If you have ideas and ambitions to create your own business, Europe offers a variety of opportunities for startups and entrepreneurship.  </p>",
+    "M3_topic4": "What does it mean to be an active European citizen?",
+    "M3_topic4_text": "Being an active European citizen means actively participating in the public life of the European Union, using your rights and engaging in activities that support integration, cooperation and understanding between member states. ",
+    "M3_topic5_texts": [
+      "<p> <b>1. Participation in the elections:</b> Voting in European elections is an important way to express your opinion and take part in shaping the political future of the European Union. </p> <p> <b>2. Support of public causes:</b> Engaging with social and environmental issues such as combating climate change, protecting human rights and supporting vulnerable communities. </p> <p> <b>3. Participation in civic initiatives:</b> Supporting and signing petitions and initiatives that promote changes in legislation or important public issues. </p> <p> <b>4. Participation in exchange programs and projects:</b> Examples include participation in student exchange programs such as Erasmus, which support cross-cultural exchange and learning in different countries. </p>",
+      "<p> <b>1. Active monitoring of political events:</b> Informing about European policy developments and participating in discussions on important issues. </p> <p> <b>2. Participation in community organizations:</b> Join NGOs and groups that work in areas such as education, culture, health and more. </p> <p> <b>3. Exercising the rights of free movement:</b> Making use of the opportunities to travel, work and study freely in different Member States. </p>"
+    ],
+    "M3_topic6": "What does the EU do for its citizens?",
+    "M3_topic6_text": "The European Union (EU) provides various types of support and initiatives for its citizens in areas such as social protection, education, health, work, mobility and others. \n",
+    "M3_topic7_texts": [
+      "<p> <b>1. Freedom of movement and right to work:</b> The European Union supports the free movement of people, goods, services and capital within its territory.  </p> <p> <b>2. Education and science:</b> Programs such as Erasmus provide opportunities for educational and student mobility that allow students and teachers to study and teach in other Member States.  </p> <p> <b>3. Social protection and workers' rights:</b> The EU promotes the implementation of standards for working conditions, equal pay and social rights in all member states.  </p>",
+      "<p> <b>4. Health and food safety:</b> The EU works to ensure a high standard of health and food safety for its citizens.  </p> <p> <b>5. Consumer Protection:</b> The EU has legislation that protects the rights of consumers and informs them of their rights when purchasing goods and services. </p> <p> <b>6. Environmental and climate policy:</b> The EU works to protect the environment and reduce the impact of climate change.  </p> <p> <b>7. Fighting poverty and social exclusion:</b> EU programs and funds are used to support socially disadvantaged groups and to fight poverty and social exclusion. </p>"
+    ],
+    "M3_topic8": "What are the European instruments?",
+    "M3_topic8_text": "In Europe, there are numerous instruments and institutions that support the cooperation, integration and development of the European Union. \n",
+    "M3_topic9_texts": [
+      "<p> <b>1. European Parliament:</b> The body of representative democracy that sits in Strasbourg and Brussels.  </p> <p> <b>2. European Commission:</b> The body responsible for implementing EU law and representing the Union's interests on the world stage. </p> <p> <b>3. Council of the European Union:</b> A forum for the coordination of Member States' policies and decision-making in important areas. </p> <p> <b>4. Council of Ministers:</b> The members of this council are ministers from the governments of the member states who consider specific issues according to their thematic area, such as economy, foreign relations, etc. </p> <p> <b>5. European Council:</b> It includes the heads of the Member States and the President of the European Commission.  </p>",
+      "<p> <b>6. European Central Bank:</b> Responsible for the management of the euro and monetary policy in the euro area. </p> <p> <b>7. European Investment Bank:</b> It supports projects aimed at infrastructure, economic development and innovation in the European Union. </p> <p> <b>8. European Investment Office:</b> Provides financial and technical resources for the implementation of projects in various fields. </p> <p> <b>9. European External Action Service:</b> It coordinates the EU's foreign policy and represents the Union on the international stage. </p> <p> <b>10. European Environment Agency, European Medicines Agency and others:</b> Specialized agencies that assist with regulatory and scientific aspects in specific areas. </p>"
+    ],
+    "M3_topic10": "Documents and publications Following the priorities of the Erasmus programme.",
+    "M3_topic10_text": "The Erasmus program and the youth sector of the European Union focus on supporting and developing young people through education, training, mobility and participation in various activities. ",
+    "M3_topic11_texts": [
+      "<p> <b>1. Youth Plan (2019-2027):</b> It is an EU strategic document that sets priorities and actions to support young people in Europe.  </p> <p> <b>2. Erasmus Portal:</b> The official website of the Erasmus program contains information on all aspects of the program, including opportunities for young people.  </p> <p> <b>3. European Youth Strategy (2010-2018):</b> This document presents a strategy for the integration of young people in areas such as education, employment, participation and culture.  </p>",
+      "<p> <b>4. EU reports and analyzes on youth policy:</b> The European Commission and other EU bodies regularly publish reports, analyzes and statistics on various aspects of youth policy and youth employment. </p> <p> <b>5. EU Directives and Legislation:</b> The official website of the Erasmus program contains information on all aspects of the program, including opportunities for young people.  </p> <p> <b>6. Seminars, events and trainings of the youth sector:</b> This document presents a strategy for the integration of young people in areas such as education, employment, participation and culture.  </p> <p> <b>With these resources, you will be able to familiarize yourself with the priorities of the Erasmus program and the EU youth sector, as well as with the opportunities available to young people.</b> </p>"
+    ]
   },
   "Bulgaria": {
-    "_1_Main": "Module 1 Bulgaria",
-    "SampleText2": "Wow"
+    "M1_title": "Module 1 Bulgaria",
+    "M1_content_heading": "Content",
+    "M1_topic1": "Politics",
+    "M1_topic1_text": "Bulgaria's policy is based on several key principles and values ​​that determine the direction and priorities of the country. ",
+    "M1_topic1_quotes": [
+      "N. Haitov",
+      "Only those whose hearts want to fly have wings...",
+      "W. Stone",
+      "Every great dream begins with the dreamer.",
+      "E. Casey",
+      "Dreams are today's answers to tomorrow's questions.",
+      "N. Hill",
+      "A person can achieve anything as long as he believes in it."
+    ],
+    "M1_topic2": "Scheme",
+    "M1_topic2_text": "State Administration of the Republic of Bulgaria",
+    "M1_topic2_texts": [
+      "<b>The legislature</b> is carried out by the Parliament of the Republic of Bulgaria - the National Assembly. ",
+      "<b>The executive branch</b> is carried out by the President of the Republic of Bulgaria, who is the main figure in the state, and by the government. ",
+      "<b>The judiciary</b> includes the Constitutional Court, the Supreme Court of Cassation, the Courts of Appeal and the General Courts. "
+    ],
+    "M1_topic3": "Basics in politics",
+    "M1_topic3_text1": "Democracy and the rule of law: Bulgaria strives to uphold democratic principles, including free and regular elections, respect for human rights and fundamental freedoms, the rule of law and the independence of the judiciary.",
+    "M1_topic3_text2": "European integration: Bulgaria is a member of the European Union (since 2007) and actively supports European integration and community principles. ",
+    "M1_topic3_text3": "Economic development: Bulgaria pursues the goal of sustainable economic development, creating wealth and improving the living standards of citizens. ",
+    "M1_topic3_text4": "Education and science: Bulgaria attaches great importance to education and science as the main driving forces for the development of society. ",
+    "M1_topic3_text5": "Social policy: Bulgaria strives for a fair and inclusive society where citizens have equal opportunities and access to social protection. ",
+    "M1_topic5": "Community",
+    "M1_topic5_text": "Bulgarian society is diverse and multi-layered, made up of citizens with different social, cultural and ethnic identities. ",
+    "M1_topic6": "Examples of organizations are:",
+    "M1_topic6_text": "social partners (trade unions and employers' associations); ",
+    "M1_topic7": "Institutions",
+    "M1_topic7_text": "Bulgaria has a variety of institutions that play an important role in the governance of the country and ensure the functioning of various sectors. ",
+    "M1_topic8_texts": [
+      "<b>1. Government and legislation: </b><br>National Assembly: Legislative body that enacts, amends and repeals laws, exercises parliamentary control and formulates the political will of the nation.<br> Government: An executive body responsible for running the country, making policies, implementing laws and making decisions on important issues. <br>Ministries: Responsible for governance in various sectors such as economy, education, health, transport, agriculture and others.",
+      "<b>2. Justice:</b> <br> Supreme Court of Cassation: The highest judicial instance that exercises control over the correct application of laws and makes decisions on cassation appeals. <br>Courts: Includes administrative, district, appellate and high courts, which decide civil, criminal.",
+      "<b>3. Central Bank:</b> <br> Bulgarian National Bank (BNB): Responsible for the management of monetary policy and financial stability, controls the banking system and ensures the functioning of payments."
+    ],
+    "M1_topic9_texts": [
+      "<b>4. Regulatory institutions:</b> <br>Commission for the Protection of Competition (CPC): Responsible for the protection of competition and the prevention of unfair practices in the market. <br>Energy and Water Regulatory Commission (EWRC): Responsible for regulating the energy and water sector, including setting tariffs and controlling suppliers. <br>Financial Supervision Commission (FSC): Responsible for the supervision of financial institutions, such as stock exchanges, banks, insurance and pension companies.",
+      "<b>5. Local self-government:</b> <br>Municipalities: Represent the lowest level of local self-government and provide management of local affairs and services in their territory. <br>Municipal councils: They are elected by the citizens and make decisions on local issues, budget and development of the municipality.",
+      "<b>6. Education:</b> <br>Ministry of Education and Science: Responsible for the development and implementation of educational policy, standards, programs and curricula.<br>Universities and Colleges: Offer higher education and research in various fields."
+    ],
+    "M1_topic10": "Information pages",
+    "M1_topic10_text": "Civic participation is an important aspect of a democratic society and represents the active participation of citizens in decision-making processes and the formation of public policies. ",
+    "M1_topic10_notes": [
+      "Elections: Citizens have the right to elect their representatives in the legislative bodies (National Assembly), with elections held at regular intervals. ",
+      "Petitions and citizens' initiatives: Citizens have the right to submit petitions to state institutions and propose citizens' initiatives to amend legislation. ",
+      "Councils and commissions: Government institutions can create councils and commissions in which citizens can participate and give their opinion and advice on specific issues. ",
+      "Non-Governmental Organizations (NGOs): Citizens can get involved in the activities of NGOs that deal with various issues and changes in society. "
+    ],
+    "M2_title": "Module 2 Bulgaria",
+    "M2_content_heading": "Content",
+    "M2_topic1": "Civic education lessons",
+    "M2_topic1_text": "Civic education lessons aim to develop students' basic civic competences and prepare them to be active and responsible citizens. ",
+    "M2_topic2": "Some examples of civics lessons:",
+    "M2_topic2_notes": [
+      "1. Understanding fundamental rights and freedoms:<br>- Discussion of the Universal Declaration of Human Rights and its meaning. <br>- Analysis of specific cases of violation of rights and freedoms and ways to protect these rights. <br>- Creating posters or brochures that inform about the importance of human rights and freedoms.",
+      "2. Development of civic participation: - Studying different forms of civic participation, such as petitions, public campaigns and others. ",
+      "3. Study of Democratic Processes: - Discussion of key concepts related to democracy such as elections, legislation, government and others. ",
+      "4. Development of media literacy: - Exercises to analyze media messages and understand their role in the formation of public opinion. "
+    ],
+    "M2_topic3": "Youth engagement in action",
+    "M2_topic3_text": "Youth engagement in action is the active involvement of young people in public life and taking concrete actions for change. ",
+    "M2_topic4": "Civic education lessons",
+    "M2_topic4_text": "Youth engagement, which involves the active participation and involvement of young people in public issues and initiatives, has many benefits and advantages. ",
+    "M2_topic5_texts": [
+      "<b>1. Improvement of civic skills:</b> <br> Youth engagement helps young people develop and improve important civic skills such as communication, leadership, teamwork, negotiation and problem solving. ",
+      "<b>2. Development of self-confidence and self-confidence:</b> <br> When young people engage with societal issues and actively work to solve them, they feel confident in their ability to make a positive difference in the world around them. ",
+      "<b>3. Understanding social issues:</b> <br> Youth engagement empowers young people to understand and appreciate social issues that affect their communities and the world at large.",
+      "<b>4. Creating connections and networks:</b> <br> Youth engagement gives them the opportunity to meet and work with other youth and adults who have similar interests and goals.",
+      "<b>5. Influence on public decisions:</b> <br> Youth engagement enables young people to be part of and influence public decision-making."
+    ],
+    "M2_topic6": "Opportunities for youth engagement",
+    "M2_topic6_text": "Youth engagement offers a variety of opportunities for young people to get involved and play an active role in society. ",
+    "M2_topic7_texts": [
+      "<b>Volunteering:</b> Young people can get involved in volunteer programs and projects that deal with various social, environmental or educational challenges. ",
+      "<b>Social projects:</b> Young people can start and organize their own social projects aimed at solving specific problems or helping those in need. ",
+      "<b>Political engagement:</b> Young people can engage in political processes and express their views and ideas.  ",
+      "<b>Technology and media:</b> Young people can use technology and media to get their messages across and influence public opinion. "
+    ],
+    "M2_topic8": "Media literacy",
+    "M2_topic8_text": "Media literacy and the ability to spot fake news are extremely important in today's information society. ",
+    "M2_topic9_texts": [
+      "<b>1. Understanding media sources:</b> Media literacy includes the ability to analyze and evaluate various media sources. ",
+      "<b>2. Critical thinking and analysis:</b> Media literacy develops critical thinking and the ability to analyze media messages.  ",
+      "<b>3. Recognizing fake news:</b> Fake news and misinformation are rampant these days. ",
+      "<b>4. Ethics and responsible use of the media:</b> It is important that young people understand and accept their responsibility as media users. "
+    ],
+    "M2_topic10": "Evaluation of the impact of youth activity",
+    "M2_topic10_text": "Evaluating the impact of youth activism includes assessing the personal development and skills of young people, their civic responsibility, the impact on the community, the impact on policies and systems, and the sustainability of the activism in the long term. ",
+    "M3_title": "Module 3 Bulgaria",
+    "M3_content_heading": "Content",
+    "M3_topic1": "Living, working, traveling in the EU",
+    "M3_topic1_text": "Living, working and traveling in the European Union (EU) offers a variety of opportunities and benefits. ",
+    "M3_topic2_text": "Living in the EU provides a wide range of services and social guarantees, such as healthcare, education and social assistance. \n",
+    "M3_topic4": "What does the EU do for its citizens?",
+    "M3_topic4_text": "The European Union (EU) takes many measures and initiatives to protect and support its citizens. ",
+    "M3_topic5_texts": [
+      "<b>1. Freedom of movement:</b> The EU guarantees the free movement of people, goods, services and capital between member states. ",
+      "<b>2. Social rights and protection:</b> The EU promotes social solidarity and the protection of workers' rights. ",
+      "<b>3. Health and Safety:</b> The EU supports health cooperation, provides tools to fight global threats such as pandemics and ensures regulatory control and safety of food and products on the market."
+    ],
+    "M3_topic_6_texts": [
+      "<b>4. Education and youth mobility:</b> The EU promotes educational programs and youth mobility, such as the Erasmus programme.  ",
+      "<b>5. Financial support:</b> The EU provides financial support through various funds and programmes. "
+    ],
+    "M3_topic7": "What are the European instruments?",
+    "M3_topic7_text": "The European Union (EU) has a variety of instruments that are used to build and manage common EU policy. ",
+    "M3_topic8_texts": [
+      "<b>1. The EU Treaties:</b> These are the legal foundations of the EU, which establish the basic principles, objectives and rules for the functioning of the EU. ",
+      "<b>2. The European Commission:</b> The Commission is the EU's executive body and is responsible for proposing and implementing EU legislation, managing the EU budget and protecting the EU's interests on the international stage.",
+      "<b>3. The European Parliament:</b> The Parliament is the legislative body of the EU and represents the citizens of the EU.  ",
+      "<b>4. The Council of the EU:</b> The Council is the body that represents the governments of the EU member states. "
+    ],
+    "M3_topic9": "Erasmus documents and publications.",
+    "M3_topic9_text": "To follow the priorities of the Erasmus program, you can familiarize yourself with the documents and publications related to it. ",
+    "M3_topic10_texts": [
+      "<b>1. The website of the Erasmus program:</b> The official website of the program provides detailed information on the objectives, priorities, conditions and opportunities for participation. ",
+      "<b>2. The management of the Erasmus program:</b> This is a document providing information and guidance on the various activities and opportunities offered by the programme. ",
+      "<b>3. Publications of the European Commission and National Agencies:</b> The European Commission and national Erasmus agencies issue publications, newsletters and reports that provide details on different aspects of the programme, successful projects, quality guidelines and other useful resources.",
+      "<b>4. National information centers and program coordinators:</b> Each participating country in the Erasmus program has a national information center or coordinator that provides information and assistance to potential applicants. "
+    ]
   },
   "WesternBalkans": {
-    "SampleText": "Wow",
-    "SampleText2": "Wow"
+    "Content_heading": "Content",
+    "M1_title": "Module 1 Western Balkans",
+    "M1_topic1_quotes": [
+      "Z. Zaev",
+      "Education and innovation are the engines of development.",
+      "A. Vucic",
+      "The education and development of young people is key to the future.",
+      "A. Vucic",
+      "Cooperation and dialogue with neighboring countries is essential to maintain peace and stability.",
+      "J. Claude ",
+      "Isolation is not a solution. "
+    ],
+    "M1_topic1": "Politics",
+    "M1_topic1_text": "Policy in the Western Balkans focuses on efforts to promote stability, democracy and economic development in the region. ",
+    "M1_topic3": "Community",
+    "M1_topic3_text": "Society in the Western Balkans is very diverse and rich in cultural, ethnic and religious differences. ",
+    "M1_topic4_text": "<p> <b>1. Ethnic diversity: </b> The region includes many ethnic groups, such as Serbs, Croats, Albanians, Bosniaks and others.  </p> <br/> <p> <b>2. Religious communities: </b> The Western Balkans have diverse religious communities, including Orthodox Christians, Catholics, Muslims, and others.  </p> <br/> <p> <b> 3. Civil society:</b> Civil society: The region has an active civil society and non-governmental organizations that deal with issues such as human rights, social justice and sustainable development. </p> <br/> <p> <b> 4. Historical conflicts:</b>The Western Balkans have been affected by serious conflicts and wars in recent decades, which have left traces in societies and the emergence of inter-ethnic tensions. </p> <br/> <p> <b> 5. Stability and Integration Efforts:</b> A number of countries from the Western Balkans are working towards achieving stability and integration in the European Union and other international organizations as a way to promote development and peace in the region. </p> <br/> <p> <b>6. Diversity of viewpoints:</b> Young people are a diverse group with different perspectives and ideas.  </p>",
+    "M1_topic4_button": "To list",
+    "M1_topic5": "Institutions",
+    "M1_topic5_text": "Institutions in the Western Balkans are a combination of governmental, regional and local bodies that govern and regulate various aspects of public life. \n",
+    "M1_topic6_texts": [
+      "1. Government Ministries: They deal with various aspects of state administration. ",
+      "2. Parliaments: National parliaments (such as the National Assembly of the Republic of Serbia) create and pass laws, represent the interests of citizens and oversee the executive branch.",
+      "3. Local municipalities: They govern specific geographical areas and cater to local needs. ",
+      "4. Judicial systems: These include courts and prosecutors who decide legal issues and administer justice. ",
+      "5. Police: Law enforcement agencies uphold the law and ensure public order. "
+    ],
+    "M1_topic7": "Information pages",
+    "M1_topic7_text": "There are many information resources and news sites that can provide up-to-date news, analysis and articles about the region. ",
+    "M1_topic8_text": "<p> <b>Balkan Insight (BIRN) -<a href={\"www.balkaninsight.com/\"}>https://balkaninsight.com/ </a> </b>A news portal that provides analysis and news from the Balkan region. </p> <p> <b>European Western Balkans - https://europeanwesternbalkans.com/ </b> A specialized website focused on events and developments in the Western Balkans related to the European Union. </p> <p> <b>Balkan Investigative Reporting Network (BIRN) - https://birn.eu.com/ </b> Investigative news organization that publishes analysis and reporting on the region. </p> <p> <b>BBC News Europe - Balkans Section - https://www.bbc.com/news/world/europe/balkans </b> BBC News Balkans section, providing news and analysis. </p> <p> <b>Al Jazeera Balkans - https://balkans.aljazeera.net/ </b> International news resource, with a special section on the Balkans.</p> <p><b>Regional news agencies </b>- Many of the countries in the Western Balkans have their own national news agencies that provide information on events in the region.  </p> <p> These resources provide different perspectives and sources of information that can help you follow news and events in the Western Balkans.</p>",
+    "M2_title": "Module 2 Western Balkans",
+    "M2_topic3": "Civic education lessons",
+    "M2_topic3_text": "Civic education lessons in the Western Balkans are part of the education system and aim to teach young people about their rights, responsibilities and role in society. ",
+    "M2_topic4_text": "<p> <b> 1. Human rights:</b> Students can learn about important international documents, such as the Universal Declaration of Human Rights, and how these rights apply in their own context. </p> <p> <b>2. Democratic institutions:</b> Lessons can explain how parliaments, governments and the judiciary work and what their roles are in running a country. </p> <p> <b>3. Participation and activism:</b> Students can learn how to engage in society by participating in civic initiatives, protests and other forms of activism. </p> <p> <b>4. History of the region:</b> Civic education can include lessons on the history of the Western Balkans, including conflicts and processes of peaceful coexistence. </p> <b>5. Cultural diversity:</b> Lessons can promote understanding and respect for the different cultures and ethnic groups that make up the region.",
+    "M2_topic5": "Youth engagement in action",
+    "M2_topic5_text": "Youth engagement in action is the active involvement of young people in public life and taking concrete actions for change. ",
+    "M2_topic5_button": "Examples",
+    "M2_topic6_text": "<p> Youth organizations and movements: Youth organizations play an important role in mobilizing youth and supporting their initiatives.  </p>",
+    "M2_topic7": "Benefits of youth engagement",
+    "M2_topic7_text": "Youth engagement in the Western Balkans plays a key role in the development of the region and the future of young people.  ",
+    "M2_topic8_texts": [
+      "<b>1. Supports active civic participation: </b> Young people involved in various initiatives and community projects learn how to engage with public issues and shape their voices.",
+      "2. Creates opportunities for education and training: Youth organizations and programs provide training and mentoring that improves the skills and qualifications of young people.",
+      "3. Supports social integration: Engaged youth are more likely to develop positive social connections and feel part of society.",
+      "4. Contributes to economic growth: Young entrepreneurs and innovators can stimulate the economy and innovation in the region.",
+      "5. Builds bridges of cooperation: Young people working together across borders and differences can promote peace and cooperation in the Western Balkans."
+    ],
+    "M2_topic9": "Opportunities for youth engagement",
+    "M2_topic9_text": "Youth engagement in the Western Balkans is supported and promoted by various institutions and programs. ",
+    "M2_topic10_texts": [
+      "<p> <b>1. Youth organizations and movements::</b> There are numerous youth organizations and movements in the Western Balkans that offer opportunities for participation and activism.  </p> <p> <b>2. Educational programs:</b> Young people can get involved in educational programs and projects that support their learning and development.  </p> <p> <b>3. Civil society and activism::</b> Young people can engage in civic organizations and participate in activist campaigns and projects that fight for social and political change. </p>",
+      "<p> <b>4. Art and Culture: :</b> Art and Culture: The Western Balkans are rich in cultural heritage.  </p> <p> <b>5. Participation in politics::</b> Young people can get involved in political processes, become members of youth councils and commissions, and express their views and interests within the political system. </p> <p> <b>6. International exchange programs:</b> Various programs such as Erasmus provide opportunities for youth exchanges and internships in different countries, which helps to broaden horizons and gain international experience. </p> <p> <b>7. Media and communication projects:</b> Young people can engage in media projects, writing blogs, creating video content and other communication initiatives. </p> <p> <b>8. Sports and fitness:</b> Participating in sports competitions and fitness activities promotes a healthy lifestyle and socializing with diverse youth. </p>"
+    ],
+    "M2_topic11": "Media Literacy and Recognizing Fake News",
+    "M2_topic11_text": "Media literacy and the ability to recognize fake news is essential for the Western Balkans and its citizens. ",
+    "M2_topic12_texts": [
+      "<p> <b>1. Checking sources:</b> When exposed to news, carefully analyze the source.  </p> <p> <b>2. Critical thinking:</b> Always try to analyze the information critically.  </p> <p> <b>3. Fact-checking:</b> Use fact-checking websites or seek independent sources to verify information before sharing or believing it.  </p> <p> <b>4. Distinguish between opinion and fact:</b> News articles should provide facts, while opinions are expressed in commentary and analysis.  </p>",
+      "<p> <b>5. Sharing with responsibility:</b> Before sharing news or information, think about how this action might affect others.  </p> <p> <b>6. Simultaneous Multiple Source Mapping:</b> For high-profile events, compare information from several reliable news sources to ensure its accuracy.</p> "
+    ],
+    "M2_topic13": "Evaluation of the impact of youth activity",
+    "M2_topic13_text": "The assessment of the impact of youth activism in the Western Balkans can be very positive, as young people play an important role in the renewal and development of the region. ",
+    "M2_topic14_texts": [
+      "1. Participation in social processes: Young people who engage in youth organizations, movements and activities have the opportunity to express their points of view and interests. ",
+      "2. Leadership and personal development: Young people gain valuable leadership skills, communication skills and experience through participation in various youth projects. ",
+      "3. Diversity and multiculturalism: Youth activism can promote diversity and multicultural exchange in the region. ",
+      "4. Individual and collective achievements: Youth initiatives and projects often lead to individual and collective achievements. ",
+      "5. Educational and training opportunities: Youth activism provides educational and training opportunities that promote the learning and development of young people. ",
+      "6. Changing stereotypes and attitudes towards youth: Youth who engage in positive and social initiatives can change stereotypes and attitudes towards them in society. "
+    ],
+    "M2_topic15_text": "Despite this positive impact, there are also challenges related to youth activism in the Western Balkans, such as the need to improve access to education and opportunities for young people, as well as combat unemployment and economic challenges. ",
+    "M3_title": "Module 3 Western Balkans",
+    "M3_topic3": "Life, work, travel in the Western Balkans.",
+    "M3_topic3_text": "The Western Balkans is a unique region where life, work and travel enrich hearts and minds. ",
+    "M3_topic4_texts": [
+      "<p> <b>Life :</b> </p> <p> <b>1. Culture and traditions:</b> The Western Balkans have a rich cultural heritage and traditions.  </p> <p> <b>2. Hospitality:</b> The people of the region are known for their hospitality.  </p> <p> <b>3. Natural beauties:</b> The Western Balkans offers a variety of natural beauties, including mountains, lakes and beaches.  </p> <p> <b>Work:</b> </p> <p> <b>1. Economy:</b> The economy of the Western Balkans is developing, including sectors such as tourism, information technology, agriculture and manufacturing. </p> <p> <b>2. Work culture:</b> Work culture varies by country, but overall the region is welcoming to workers from other countries. </p> <p> <b>3. Languages:</b> Various languages ​​are spoken in the region, such as Serbian, Croatian, Bosnian, Albanian and others.  </p>",
+      "<p> <b>Travel :</b> </p> <p> <b>1. Transportation:</b> The Western Balkans has well-developed transport links, including roads, railways and airports.  </p> <p> <b>2. Tourist destinations:</b> The region offers a variety of tourist attractions, from cultural cities such as Sarajevo and Belgrade to beautiful natural sites such as Albania's southern beach. </p> <p> <b>3. Safety:</b> Safety can vary from country to country, so it is important to follow local advice and be informed of the current situation before travelling. </p>"
+    ],
+    "M3_topic5": "What does it mean to be an active citizen in the region?",
+    "M3_topic5_text": "Being an active citizen in the Western Balkans, as in many other regions, means engaging and actively participating in society to help improve it and develop democratic processes. ",
+    "M3_topic6_text": "<p> <b>1. Participation in social and political processes:</b> An active citizen in the Western Balkans can engage in election campaigns, participate in voting, run for public or political office, and express their opinions and views on important public issues. </p> <p> <b>2. Participation in non-governmental organizations (NGOs):</b> Many become involved in the work of NGOs that promote social, cultural, environmental or other changes in society.  </p> <p> <b>3. Solidarity and mutual assistance:</b> Active citizens can participate in gatherings, protests and initiatives to help vulnerable groups in society.  </p> <p> <b>4. Education and Training:</b> Participation in educational programs, seminars and trainings on issues related to civic activity and participation in society is also part of the active civic role. </p> <b> <b>Creating an informed society:</b> Active citizens can work to promote a free and independent media sector that provides access to information and encourages the exchange of ideas and opinions. </b>",
+    "M3_topic7": "What does the Western Balkans do for its citizens?",
+    "M3_topic7_text": "The Western Balkans is a region that includes several Balkan countries in Southeast Europe, such as Serbia, Croatia, Slovenia, Montenegro, Macedonia, Albania, and Bosnia and Herzegovina. ",
+    "M3_topic8_texts": [
+      "<p> <b>Despite the diversity of approaches, some of the initiatives and measures that the Western Balkans can offer its citizens include: </b></p> <p> <b>1.Education:</b> Providing quality education is a priority for many countries in the region.  </p> <p> <b>2. Health care:</b> The Western Balkans provides health care for its citizens through public and private health institutions and programs to support healthy lifestyles. </p> <p> <b>3. Social security and assistance:</b> States provide social services and assistance to vulnerable groups of the population, such as pensioners, the disabled and the unemployed. </p> <p> <b>4. Economic development and employment:</b> Investments in the economy, stimulation of entrepreneurship and job creation are among the strategies for economic development. </p>",
+      "<p> <b>5. Culture and tourism:</b> The Western Balkans are proud of their rich cultural heritage and tourist attractions on offer to their citizens and visitors. </p> <p> <b>6. Support for youth:</b> Various programs and initiatives are aimed at supporting youth in the region, including education, student exchange and internships. </p> <p> <b>3. Social security and assistance:</b> States provide social services and assistance to vulnerable groups </p> <p> <b>4. Economic development and employment:</b> Investments in the economy, stimulation of entrepreneurship and job creation are among the strategies for economic development. </p>"
+    ],
+    "M3_topic9": "More about European instruments and Western Balkans?",
+    "M3_topic9_text": "The European Union (EU) is active in the Western Balkans through a number of instruments and programs designed to support the stability, economic development and European integration of the region. \n",
+    "M3_topic10_text": "<p> <b>1. Instrument for Pre-Accession Assistance (IPA):</b> This instrument aims to support the countries of the Western Balkans, which wish to become members of the EU, in their preparation for accession.  </p> <p> <b>2. European Stability Fund (ESF):</b> This EU instrument is used to support stability and development in the Western Balkans by financing projects to develop infrastructure, support economic growth and strengthen democratic institutions. </p> <p> <b>3. Initiative to support youth in the Western Balkans (ERASMUS):</b> The EU ERASMUS program provides opportunities for young people from the Western Balkans to study, work and travel within the EU.  </p> <p> <b>4. Regional cooperation and integration in the EU:</b> The EU promotes regional cooperation between the countries of the Western Balkans through various programs and initiatives, such as the Berlin Process and the Regional Structural and Investment Fund (RSIF).  </p>",
+    "M3_topic11": "Documents and publications Following the priorities of the Erasmus programme.",
+    "M3_topic11_text": "The Erasmus program of the European Union (EU) aims to promote education, training, youth and sport within the EU and beyond. ",
+    "M3_topic12_texts": [
+      "<b>1. Participation in social processes: </b> Young people who engage in youth organizations, movements and activities have the opportunity to express their views and interests. ",
+      "<b>2. Leadership and personal development:</b> Young people gain valuable leadership skills, communication skills and experience through participation in various youth projects. ",
+      "<b>3. Diversity and multiculturalism:</b> Youth activism can promote diversity and multicultural exchange in the region. ",
+      "<b>4. Individual and collective achievements:</b> Youth initiatives and projects often lead to individual and collective achievements. ",
+      "<b>5. Educational and training opportunities:</b>  Youth activism provides educational and training opportunities that promote the learning and development of young people. ",
+      "<b>6. Changing stereotypes and attitudes towards young people:</b>   Young people who engage in positive and social initiatives can change stereotypes and attitudes towards them in society. "
+    ]
   },
   "Slovenia": {
-    "SampleText": "Wow",
-    "SampleText2": "Wow"
+    "Content_heading": "Content",
+    "M1_title": "Module 1 Slovenia",
+    "M1_topic1_quotes": [
+      "E. Casey",
+      "Dreams are today's answers to tomorrow's questions.",
+      "P. Drucker",
+      "The best way to predict the future is to create it.",
+      "L. Brown",
+      "Personal development is the key to overcoming your limitations.",
+      "N. Hill",
+      " A person can achieve anything as long as he believes in it."
+    ],
+    "M1_topic1": "Politics",
+    "M1_topic1_text": "Politics in Slovenia is formed through parliamentary democracy. ",
+    "M1_topic2": "Community",
+    "M1_topic2_text": "Society in Slovenia is diverse and culturally rich. ",
+    "M1_topic3_text": "<b>1. Ethnic and cultural diversity:</b> Slovenia is a relatively small country, but has a diverse population with different ethnic and cultural identities.  <br/><b>2. Language features:</b> The Slovenian language is the official language of the country.  <br/><b>3. Education and Science:</b> Education is highly valued in society.  <br/><b>4. Economy and work:</b> Slovenia has a stable and developed economy.  <br/><b>5. Social care and health care:</b> Slovenia provides extensive social care and high quality healthcare.  <br/><b>6. Cultural traditions and art:</b> Slovenia's cultural heritage is rich and diverse. ",
+    "M1_topic3_texts": [
+      "1. Literature and writers: Slovenian literature has a long history that stretches from medieval epics to modern authors. ",
+      "2. Music: Music is an important part of culture in Slovenia. ",
+      "3. Visual Arts: The country has a rich tradition of visual arts, including painting, sculpture and graphics. ",
+      "4. Theater and Cinema: Theatrical arts are an important aspect of culture. ",
+      "5. Cultural Festivals: Slovenia hosts numerous cultural festivals throughout the year. ",
+      "6. Culinary traditions: Slovenia's culinary art reflects influences from neighboring countries. "
+    ],
+    "M1_topic4": "Institutions",
+    "M1_topic4_text": "Institutions in Slovenia cover various spheres of government and functioning of the country. \n",
+    "M1_topic5_texts": [
+      "1. Executive: The Government and the President of the Republic of Slovenia govern the country and direct the executive functions.",
+      "2. Legislation: The Parliament of the Republic of Slovenia adopts laws and regulations that regulate various aspects of public life.",
+      "3. Judicial system: It includes various courts and instances that ensure independent and fair justice in the country.\n",
+      "4. Electoral processes: Institutions related to elections organize and control the electoral process, including presidential, parliamentary and local body elections.\n",
+      "5. Education and Culture: Various institutions support the educational and cultural interests of citizens.",
+      "6. Social and health services: Institutions that take care of the social and health welfare of citizens.",
+      "7. Economy and Finance: Institutions related to the economic and financial aspects of government.",
+      "8. Local self-government: Municipalities and regional structures manage local affairs and provide services to citizens.",
+      "9. Foreign policy and international relations: Institutions that deal with foreign relations and the representation of the country on the international stage.\n"
+    ],
+    "M1_topic5_button": "More",
+    "M1_topic6": "Information pages",
+    "M1_topic6_text": "Politics in Europe is extremely diverse as Europe is made up of many countries with their own governments and political systems. ",
+    "M1_topic7_text": "<p> <b>1. Choices:</b> Citizens of Slovenia have the right to participate in parliamentary, presidential and local elections.  </p> <br/> <p> <b>2. Civil organizations:</b> There are many civil organizations operating in the country that deal with various social, economic and environmental issues.  </p> <br/> <p> <b>3. Public consultations:</b> The authorities in Slovenia often organize public consultations on various issues, such as economy, ecology, education, etc.  </p> <br/> <p> <b>4. Social movements and protests:</b> Citizens of Slovenia have engaged in various social movements and protests that focus on various problems and issues.  </p> <br/> <p> <b>5. Media and Online Participation:</b> Citizens have the opportunity to express their opinions and share information through the media and social networks.  </p> <br/> <p className={\"text-opacity-25\"}> Civic participation plays an important role in the development of a democratic society in Slovenia, giving citizens a voice and supporting their participation in the decision-making process. </p>",
+    "M1_topic7_button": "To list",
+    "M2_title": "Module 2 Slovenia",
+    "M2_topic3": "Civic education lessons",
+    "M2_topic3_text": "Civic education in Slovenia aims to prepare citizens with knowledge, skills and values ​​necessary for active and responsible participation in a democratic society. ",
+    "M2_topic4": "Several characteristics of civic education in the country:",
+    "M2_topic4_texts": [
+      "1. Curricula and lessons: Civic education is integrated into the curricula of various educational levels - from primary to secondary education. ",
+      "2. Values ​​of democracy: The education system promotes values ​​such as freedom, tolerance, equality and respect for the opinions of others. \n",
+      "3. Teaching materials: Textbooks and civic education materials are updated to reflect current events and challenges in society. \n",
+      "4. Teaching methods: Civic education is based on interactive and participatory teaching methods. \n",
+      "5. Civic Responsibility and Activism: Students are encouraged to engage with society and participate in initiatives that promote change for the betterment of society.",
+      "6. Preparation for civic life: Civic education provides skills necessary for participation in civic organizations, decision-making processes and solving societal problems."
+    ],
+    "M2_topic5": "Youth engagement in action",
+    "M2_topic5_text": "Youth engagement in Slovenia is promoted and supported through various programs, organizations and initiatives. ",
+    "M2_topic6_texts": [
+      "European programs: Slovenia participates in various European programs and initiatives that promote youth engagement.",
+      "Youth education programs In Slovenia, there are education programs and courses that focus on developing leadership skills, entrepreneurship, social skills and other skills that are useful for youth engagement.",
+      "Volunteering and civic engagement: Young people in Slovenia have the opportunity to get involved in volunteering projects and civic initiatives that deal with issues as diverse as the environment, education, culture and social integration.",
+      "Youth centers and events: Youth centers in various cities of Slovenia provide a place for meetings, trainings, discussions and events for young people. ",
+      "Financial support: Youth engagement in Slovenia can also be supported financially through grants and funds that are provided for youth projects and initiatives."
+    ],
+    "M2_topic7": "Benefits of youth engagement",
+    "M2_topic7_text": "Youth engagement in Slovenia represents the active and conscious participation of young people in various areas of society in order to achieve change and improvement. \n",
+    "M2_topic8_text": "<p> <b>1. Personal and professional development:</b> Participation in youth organizations, initiatives and projects provides young people with the opportunity to develop communication skills, leadership qualities, problem solving and teamwork.  </p> <br/> <p> <b>2. Civil liability and activity: </b> Youth participation in community initiatives teaches them about active participation in society.  </p> <br/> <p> <b>3. Boosting self-esteem:</b> Young people who are involved in community initiatives often experience increased self-confidence and a sense of achievement.  </p> <br/> <p> <b>4. Social connections and networks:</b> Youth engagement gives young people the opportunity to meet and work with people from different fields and backgrounds.  </p> <br/> <p> <b>5. Change in society:</b> Young people are often drivers of changes in society.  </p> <br/> <p> <b>6. Diversity of viewpoints:</b> Young people are a diverse group with different perspectives and ideas.  </p>",
+    "M2_topic8_button": "To list",
+    "M2_topic9": "Opportunities for youth engagement",
+    "M2_topic9_text": "There are a variety of youth engagement opportunities in Slovenia that provide young people with the opportunity to actively participate in society, develop skills and contribute to positive change.",
+    "M2_topic9_texts2": [
+      "<p> <b>1. Youth organizations:</b> There are many youth organizations in Slovenia that provide opportunities for young people to get involved in various initiatives, projects and campaigns related to education, culture, environment, health and more. </p> <br/> <p> <b>2. Youth clubs and centers:</b> Youth clubs and centers offer spaces where young people can meet, exchange ideas, participate in educational events and work on community projects. </p> <br/> <p> <b>3. Youth Councils:</b> In many cities and communities there are youth councils that give young people the opportunity to engage in discussion of important issues and present their ideas to local authorities. </p> <br/> <p> <b>4. Educational programs and courses:</b> Youth organizations and schools provide a variety of educational programs and courses that develop youth skills in areas such as leadership, entrepreneurship, communication and more. </p>",
+      "<b>5. International exchange programs:</b> Young people have the opportunity to participate in international exchange programs that give them the opportunity to travel, get to know different cultures and expand their horizons. <br><b>6. Volunteering and social work:</b> Young people can engage as volunteers in various social and community initiatives that aim to help those in need and improve society. <br><b>7. Youth media and projects:</b> Young people can get involved in media projects, blogs, podcasts and other media platforms to share their opinions and ideas. <br><b>8. Environmental protection initiatives:</b> Young people can get involved in initiatives and projects related to environmental protection and sustainable development."
+    ],
+    "M2_topic10": "Media Literacy and Recognizing Fake News",
+    "M2_topic10_text": "Media literacy and recognizing fake news are important skills for young people and citizens in general, regardless of country. ",
+    "M2_topic11_texts": [
+      "<p> <b>1. Educational programs: </b> Educational institutions and organizations can develop special programs and lessons aimed at developing media literacy.  </p> <p> <b>2. Trainings and seminars:</b> Youth centers, universities, media organizations and other institutions can organize trainings and seminars to provide young people with practical tools to recognize fake news. </p> <p> <b>3. Media campaigns:</b> Organizations and initiatives in Slovenia can run media campaigns to raise awareness of the importance of media literacy and recognizing fake news. </p>",
+      "<p> <b>4. Online Resources:</b> Creating online resources such as websites, blogs, or video tutorials can be a useful way to reach youth and provide information on media literacy issues. </p> <b>5. Cooperation with media:</b> Cooperation between media organizations and educational institutions can contribute to a better understanding of the processes behind news work and the recognition of reliable news sources. <p> <b>6. Critical thinking in the curriculum:</b> Integrating critical thinking skills and recognizing fake news into curricula can help students become more vigilant and informed citizens. </p>"
+    ],
+    "M2_topic12": "Evaluation of the impact of youth activity",
+    "M2_topic12_text": "Youth activism in Slovenia is a dynamic and diverse sector that encourages young people to engage in various initiatives and activities for personal and social development. ",
+    "M2_topic13_text": "<ul> <li>Education and skills;</li> <li>Personality development;</li> <li>Civic participation and democracy;</li> <li>Development of the social network;</li> <li>Intercultural understanding;</li> <li>Supporting entrepreneurship.</li> </ul>",
+    "M3_title": "Module 3 Slovenia",
+    "M3_topic3": "Living, working, traveling in the EU",
+    "M3_topic3_texts": [
+      "<p> Slovenia is a wonderful country in the European Union with many advantages for living, working and traveling.  </p> <p> <b>1. Freedom of movement:</b> Being part of the European Union, citizens of Slovenia and other member states have the right to free movement and work in all EU countries.  </p> <p> <b>2. Euro as currency:</b> Slovenia uses the euro as its currency.  </p> <p> <b>3. Stability and infrastructure:</b> The country has a stable and developed economy, as well as a well-developed infrastructure, which improves the quality of life. </p>",
+      "<p> <b>4. Beautiful nature: </b> Slovenia has extremely beautiful nature, including mountains, lakes and forests.  </p> <p> <b> 5. Cultural and historical heritage:</b> The country has a rich history and culture, which means there are many sights, museums and traditions to explore. </p> <p> <b>6. Education:</b> Slovenia offers quality education at all levels - from primary to university.  </p> <p> <b>Healthcare:</b> Healthcare in Slovenia is well organized and affordable.  </p>"
+    ],
+    "M3_topic4": "What does it mean to be an active European citizen?\n",
+    "M3_topic4_text": "Being an active European citizen means actively participating in the public life of the European Union, using your rights and engaging in activities that support integration, cooperation and understanding between member states. \n",
+    "M3_topic5_texts": [
+      "<p> <b>1. Voting in elections:</b> Participate in European Parliament elections as well as local elections to exercise your right to vote and influence decision-making.</p> <p> <b>2. Educational events:</b> Attend seminars, conferences and educational events where you can learn more about the European Union, its institutions and policies.</p> <p> <b>3. Participation in public consultations:</b> Keep an eye out for EU and national policy consultations and discussions and provide your perspective and suggestions.</p> <p> <b>4. European voluntary projects:</b> Join volunteer projects and initiatives that promote cultural exchange, environmental awareness and social integration.</p>",
+      "<p> <b>5. Support of European initiatives: </b> Participate in campaigns and petitions that support specific European initiatives and values ​​you care about. </p> <p> <b>6. Participation in European cultural events:</b> Join cultural events related to different EU countries to learn more about their traditions and customs. </p> <p> <b>7. Dissemination of information:</b> Share information about the EU and its benefits with your friends and family to raise their awareness. </p>"
+    ],
+    "M3_topic6": "What does the EU do for its citizens?\n",
+    "M3_topic6_text": "The European Union (EU) provides a variety of benefits and support for its Slovenian citizens and citizens of all member states. ",
+    "M3_topic7_texts": [
+      "<p> <b>1. Free movement and work:</b> Citizens of Slovenia have the right to free movement and work in all EU member states.  </p> <br/> <p> <b> 2. Financial support:</b> Slovenian citizens benefit from financial support from the EU through the structural and investment funds.  </p>",
+      "<p> <b>3. Education and research:</b> Slovenian citizens have access to EU-funded education, training and research programmes.  </p> <p> <b>4. Health and Social Affairs:</b> The EU supports cooperation between Member States in the field of health, social security and social integration.  </p> <p> <b>5. Security and Rights:</b> The EU seeks to ensure the security and protection of its citizens through cooperation in the fields of justice, police cooperation and the fight against terrorism.  </p> <p> <b>Social programs:</b> The EU supports various social programs that aim to help vulnerable groups in society, including the unemployed, children, the elderly, etc. </p>"
+    ],
+    "M3_topic7_button": "To list",
+    "M3_topic8": "What are the European instruments?",
+    "M3_topic8_texts": [
+      "<p> Youth activism includes participation in various initiatives, programs and activities that aim to support the development and participation of youth in society.  </p> <p> <b>1. Structural and Investment Funds (SIF): </b> These funds provide funding for various projects that improve economic and social development in EU regions.  </p> <p> <b>2. \"Horizon 2020\" program (Horizon 2020):</b> It is a research and innovation program that funds projects aimed at the development of scientific knowledge, technological progress and innovation. </p>",
+      "<p> <b>3. European Social Fund (ESF):</b> This fund supports projects and initiatives that improve employment, training and education as well as social inclusion in the EU </p> <p> <b>4. \"Erasmus\" program (Erasmus):</b> This program supports educational, training and youth projects that promote mobility and intercultural exchange among young people in the EU. </p> <p> <b>5. EU Health Programme:</b> This program supports collaboration in the field of public health and facilitates the exchange of information and best practices. </p> <p> <b>6. European Framework for Justice Cooperation (EJSC):</b> It is a framework for cooperation between Member States in the field of justice, where information is shared and common strategies are created. </p> <p> <b>7. European External Action Service (EEAS):</b> It is a diplomatic service of the EU that supports the Union's foreign policy and activities. </p>"
+    ],
+    "M3_topic9": "Documents and publications Following the priorities of the Erasmus programme.\n",
+    "M3_topic9_text": "The Erasmus program is an educational program of the European Union that supports mobility and cooperation between educational institutions in different member states, including Slovenia. ",
+    "M3_topic9_button": "See Examples",
+    "M3_topic10_texts": [
+      "Student mobility: The program provides students with the opportunity to study or intern at educational institutions or businesses in other EU member states, exposing them to new educational and cultural experiences.",
+      "Staff mobility: Lecturers, teachers and other specialists from educational institutions can participate in trainings, internships and seminars abroad to improve their skills and share experience.",
+      "Youth exchange and activities: The program promotes youth exchange and the active participation of young people in society through various projects and initiatives.",
+      "Cooperation between institutions: The program supports cooperation between educational institutions, schools and universities, as well as between organizations in the field of youth work.",
+      "Improving the quality of education and training: Through the exchange of experience and good practices, the program promotes the improvement of the quality of education and training at all levels."
+    ]
   }
 }
