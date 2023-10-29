@@ -1,8 +1,8 @@
 import OpenAI from "openai";
 import React, {useEffect, useState} from "react";
 import styles from './chatGpt.module.scss'
-import chatGptIcon from "../../../public/img/ChatGPT.png"
 import config from "@/lib/config";
+import {getTexts} from "@/contexts/LanguageContext";
 
 interface Props {
     prompt: string;
@@ -13,7 +13,8 @@ const ChatGpt = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false)
     const [response, setResponse] = useState<any>("");
     const [generatingResponse, setGeneratingResponse] = useState<boolean>(false);
-    console.log(prompt)
+
+    const {texts: {Bulgaria: texts}} = getTexts();
 
     useEffect(() => {
         window.addEventListener(config.CHATGPT_MSG, (event: any) => handleNewMessage(event));

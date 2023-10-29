@@ -2,6 +2,28 @@
   @apply pb-4;
   height: 25px;
   width: 80px;
-  background: gray;
+  max-height: 25px;
+  max-width: 80px;
   border-radius: 30px;
+}
+
+.container:hover {
+    .language {
+      display: flex;
+      flex-direction: column;
+    }
+}
+
+.language {
+  display: none;
+  position: absolute;
+  z-index: 3;
+  flex-direction: column;
+  background: white;
+  backdrop-filter: blur(15px);
+  li {
+    a {
+      color: var(--background);
+    }
+  }
 }

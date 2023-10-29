@@ -47,6 +47,7 @@ const Slovenia = () => {
                 moduleText={texts.M1_title}
                 moduleBackgroundColor={styles.bgRed}
                 className={styles.sectionContainer}
+                commaImage={"./img/redComma.svg"}
             />
             <div className={`${styles.quotesContainer} ${styles.sectionContainer}`}>
                 <div className={`${styles.quotesRow} mb-20`}>
@@ -216,6 +217,7 @@ const Slovenia = () => {
                 moduleText={texts.M2_title}
                 moduleBackgroundColor={styles.bgRed}
                 className={styles.sectionContainer}
+                commaImage={"./img/redComma.svg"}
             />
 
             <ContentReview
@@ -352,13 +354,16 @@ const Slovenia = () => {
                 <img src={'img/greyScribble.svg'} className={`${styles.topLeftScribble2}`}/>
                 <div className={styles.textContent2}>
                     {parse(texts.M2_topic13_text)}
-                    <img src={'img/greyScribble.svg'} className={`${styles.topLeftScribbleDown2}`}/>
-
                 </div>
             </div>
 
             <Exam titleImage={redTitleCircle} background={"redBackground"} className={styles.sectionContainer}/>
-            <StartingModule moduleBackgroundColor={styles.whiteBackground} moduleText={texts.M3_title} className={styles.sectionContainer}/>
+            <StartingModule
+                moduleBackgroundColor={styles.whiteBackground}
+                moduleText={texts.M3_title}
+                className={styles.sectionContainer}
+                commaImage={'/img/grayComma.svg'}
+            />
             <ContentReview heading={texts.Content_heading} contentImage={contentReview3} background={styles.whiteBackground} className={styles.sectionContainer}/>
             <div id={"impact-assessment"} className={`${styles.sectionContainer} ${styles.impactAssessment} ${styles.bgBlue}`}>
                 <div className={styles.IATitle}>

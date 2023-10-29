@@ -30,108 +30,14 @@ const Europe = () => {
         theme === "dark" ? setTheme("light") : setTheme("dark");
     };
 
-    const handleInputChange = (event: any) => {
-        setPrompt(event?.target?.value);
-    }
-
-    const askChatGPT = async () => {
-        if (!generatingResponse) {
-            if (prompt?.length <= 0) {
-                alert("Please insert a valid message! :)");
-            }
-
-            setGeneratingResponse(true);
-            const openai = new OpenAI({
-                apiKey: process.env["NEXT_PUBLIC_OPENAI_API_KEY"],
-                dangerouslyAllowBrowser: true
-            });
-
-            setResponse("");
-            const chatCompletion = await openai.chat.completions.create({
-                messages: [{ role: 'user', content: prompt }],
-                model: 'gpt-3.5-turbo',
-            });
-
-            if (!chatCompletion?.choices[0]?.message?.content) {
-                alert("Something went wrong! Please try asking another question...")
-            } else {
-                setResponse(`Q: ${prompt}\n\nA: ${chatCompletion?.choices[0]?.message?.content}`)
-            }
-
-            setGeneratingResponse(false);
-        } else {
-            alert("Please wait, a response is being generated for you! :)")
-        }
-    }
-
     return (
         <div className={"app-container"}>
             <StartingModule
                 moduleText={texts.M1_title}
                 moduleBackgroundColor={"blueBackground"}
                 className={styles.sectionContainer}
+                commaImage={'/img/europe/quote_darkblue.svg'}
             />
-            <div id={"chat-gpt2"} className={`${styles.chatGPTContainer} ${styles.sectionContainer} ${styles.bgBlue}`}>
-                <div className={styles.CGPTTitle}>
-                    Попитай chatGPT относно тази тема !<br/>
-                    <span>(Powered by ChatGPT)</span>
-                </div>
-                <div className={styles.CGPTContent}>
-                    <div className={styles.CGPTInputWrapper}>
-                        <input
-                            id={"chatGPT-prompt"}
-                            placeholder={"Напишете въпроса тук"}
-                            className={styles.CGPTInput}
-                            value={prompt}
-                            onChange={handleInputChange}
-                        />
-                        <div
-                            className={styles.askChatGPTBtn}
-                            onClick={askChatGPT}
-                            title={generatingResponse ? "Generating response, please wait..." : ""}
-                        >
-                            {generatingResponse ? "..." : "GO"}
-                        </div>
-                    </div>
-                    <pre id={"response-body"} className={styles.CGPTResponse}>
-                        {response ?? "Response will be generated here..."}
-                    </pre>
-                </div>
-            </div>
-
-            <div className={`${styles.sectionContainer}`}>
-                <div className={`${styles.titleText} relative`}>
-                    Политика на европа
-                </div>
-                <div className={styles.mainTextContainer}>
-                    <div className={styles.mainText}>
-                        Политиката в Европа е изключително разнообразна, тъй като Европа се състои от множество държави със собствени правителства и политически системи. Европейският съюз (ЕС) обаче играе ключова роля във формирането на общата политическа атмосфера на континента.
-                    </div>
-                </div>
-                <div className={`${styles.bottomRightImage}`}>
-                    <div className={styles.CGPTContentDownRight}>
-                        <div className={styles.CGPTInputWrapper}>
-                            <input
-                                id={"chatGPT-prompt"}
-                                placeholder={"Напишете въпроса тук"}
-                                className={styles.CGPTInput}
-                                value={prompt}
-                                onChange={handleInputChange}
-                            />
-                            <div
-                                className={styles.askChatGPTBtn}
-                                onClick={askChatGPT}
-                                title={generatingResponse ? "Generating response, please wait..." : ""}
-                            >
-                                {generatingResponse ? "..." : "GO"}
-                            </div>
-                        </div>
-                        <pre id={"response-body"} className={styles.CGPTResponse}>
-                        {response ?? "Response will be generated here..."}
-                    </pre>
-                    </div>
-                </div>
-            </div>
             <div className={`${styles.quotesContainer} ${styles.sectionContainer}`}>
                 <div className={`${styles.quotesRow} mb-20`}>
                     <div className={styles.quoteMerkel}>
@@ -334,6 +240,7 @@ const Europe = () => {
                 moduleText={texts.M2_title}
                 moduleBackgroundColor={"yellowBackground"}
                 className={`${styles.sectionContainer} ${styles.bgYellow}`}
+                commaImage={'./img/yellowComma.png'}
             />
             <div className={`${styles.contentsModule2Container} ${styles.sectionContainer}`}>
                 <div className={styles.contentsModule2Title}>{texts.Content_heading}</div>
@@ -566,6 +473,7 @@ const Europe = () => {
                 moduleText={texts.M3_title}
                 moduleBackgroundColor={"grayBackground"}
                 className={styles.sectionContainer}
+                commaImage={'/img/grayComma.svg'}
             />
             <div className={`${styles.contentsModule3Container} ${styles.sectionContainer}`}>
                 <div className={styles.contentsModule3Title}>{texts.Content_heading}</div>
