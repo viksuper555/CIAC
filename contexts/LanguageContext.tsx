@@ -29,7 +29,7 @@ const LanguageProv = ({ children }: Props) => {
 
     useEffect(() => {
         getDefaultLocale = localStorage.getItem("locale")
-        setLocaleHandler(getDefaultLocale)
+        setLocaleHandler(getDefaultLocale ?? "eng")
         defaultLocale = getDefaultLocale ? handleDefaultLocale(getDefaultLocale) : LANGUAGES.eng
         setLanguage(defaultLocale)
     }, [getDefaultLocale, language]);
