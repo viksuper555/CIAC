@@ -35,7 +35,7 @@ import parse from "html-react-parser";
 
 const HomePage = () => {
     const [theme, setTheme] = useState("dark");
-    const {texts: {Bulgaria: texts}} = getTexts();
+    const {texts: {Bulgaria: texts}, locale} = getTexts();
 
     const changeTheme = () => {
         theme === "dark" ? setTheme("light") : setTheme("dark")
@@ -104,8 +104,12 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
-            <ContentReview heading={texts.M1_content_heading} contentImage={infoContent} background={"whiteBackground"}
-                           className={styles.sectionContainer}/>
+            <ContentReview
+                heading={texts.M1_content_heading}
+                contentImage={`./img/infoContent-${locale}.png`}
+                background={"whiteBackground"}
+                className={styles.sectionContainer}
+            />
             <MainTopic titleImage={greenTitleCircle} background={"greenBackground"} hasButton={true}
                        hasTitleImage={true}
                        className={styles.sectionContainer}

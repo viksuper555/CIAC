@@ -4,7 +4,6 @@
   margin-top: 50px;
   padding-left: 150px;
   color: #686767;
-  text-align: justify;
   font-family: Montserrat;
   font-size: 33px;
   font-style: normal;
@@ -19,7 +18,6 @@
 .firstCol {
   @apply flex flex-col ml-20;
   color: #686767;
-  text-align: justify;
   font-family: Montserrat;
   font-size: 24px;
   font-style: normal;
@@ -39,7 +37,6 @@
 
   @apply flex flex-col pl-20;
   color: #686767;
-  text-align: justify;
   font-family: Montserrat;
   font-size: 24px;
   font-style: normal;
@@ -74,12 +71,21 @@
 }
 
 .text {
-  @apply my-10;
-  max-width: 200px;
+  width: 200px;
 }
 
 .sectionContainer {
   @apply py-4 relative overflow-hidden;
   height: 1080px;
   width: 100%;
+}
+
+.textContainer {
+  overflow: auto;
+  font-size: 30px;
+  max-height: 500px;
+  margin-left: 10%;
+  max-width: 80%;
+
+  scrollbar-color: auto;
 }

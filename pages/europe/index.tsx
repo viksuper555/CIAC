@@ -21,11 +21,8 @@ import parse from "html-react-parser";
 
 const Europe = () => {
     const [theme, setTheme] = useState("dark");
-    const [prompt, setPrompt] = useState("");
-    const [response, setResponse] = useState<any>("");
-    const [generatingResponse, setGeneratingResponse] = useState<boolean>(false);
-    const { texts: {Europe: texts} } = getTexts();
-
+    const { texts: {Europe: texts}, defaultLocale } = getTexts();
+    console.log("==> ",defaultLocale)
     const changeTheme = () => {
         theme === "dark" ? setTheme("light") : setTheme("dark");
     };

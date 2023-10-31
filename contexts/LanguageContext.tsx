@@ -20,23 +20,25 @@ const LanguageProv = ({ children }: Props) => {
     let defaultLocale = getDefaultLocale ? handleDefaultLocale(getDefaultLocale) : LANGUAGES.eng
 
     const [language, setLanguage] = useState<any>(defaultLocale)
+    const [localeHandler, setLocaleHandler] = useState("eng")
 
     const changeLanguage = (event: any) => {
         setLanguage(LANGUAGES[event])
-        console.log(LANGUAGES[event])
         localStorage.setItem('locale', event)
     }
 
     useEffect(() => {
         getDefaultLocale = localStorage.getItem("locale")
+        setLocaleHandler(getDefaultLocale)
         defaultLocale = getDefaultLocale ? handleDefaultLocale(getDefaultLocale) : LANGUAGES.eng
         setLanguage(defaultLocale)
-    }, [getDefaultLocale]);
+    }, [getDefaultLocale, language]);
 
     return (
         <LanguageContext.Provider value={{
             texts: language,
-            changeLanguage
+            changeLanguage,
+            locale: localeHandler
         }}
         >
             {children}
