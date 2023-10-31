@@ -1,0 +1,19 @@
+.sectionContainer {
+  @apply py-4 relative overflow-hidden;
+  height: 1080px;
+  width: 100%;
+  padding: 100px;
+}
+
+.aboutProject {
+  color: #686767;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #FBAE25 !important;
+  }
+}

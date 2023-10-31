@@ -16,7 +16,7 @@ const Navbar:FC<Props> = ({changeTheme, currentTheme, className}: Props) => {
         <nav className={`${styles.nav} ${className}`}>
             <div>
                 <div className={styles.brand}>
-                    <Image src={logo} alt={"logo"}/>
+                    CIAC.EU
                 </div>
             </div>
             <div className={styles.toggleContainer}>
@@ -26,16 +26,23 @@ const Navbar:FC<Props> = ({changeTheme, currentTheme, className}: Props) => {
                 </div>
                 <div>
                     <ul className={styles.links}>
-                        <li>
-                            <a href={"#"}> За Нас </a>
-                        </li>
+                        <ul className={styles.aboutProject}>
+                            <a href={"/aboutProject"}> За проекта </a>
+                            <div className={styles.aboutItems}>
+                                <li><a className={styles.item} href="/resume"> Резюме </a></li>
+                                <li><a className={styles.item} href="/goals">Цели </a></li>
+                                <li><a className={styles.item} href="/groups">Целеви групи </a></li>
+                                <li><a className={styles.item} href="/expectedResults">Очаквани резултати</a></li>
+                                <li><a className={styles.item} href="/partnership">Партньорство</a></li>
+                            </div>
+                        </ul>
                         <ul className={styles.moduleDropdown}>
-                            <a href={"/modules"}> Модули </a>
+                            <a href={"/"}> Модули </a>
                             <div className={styles.dropdownItems}>
-                                <li><a href="/"> България</a></li>
-                                <li><a href="/europe">Европа</a></li>
-                                <li><a href="/slovenia">Словения</a></li>
-                                <li><a href="/westernBalkans">Западни Балкани</a></li>
+                                <li><a className={styles.item} href="/"> България</a></li>
+                                <li><a className={styles.item} href="/europe">Европа</a></li>
+                                <li><a className={styles.item} href="/slovenia">Словения</a></li>
+                                <li><a className={styles.item} href="/westernBalkans">Западни Балкани</a></li>
                             </div>
                         </ul>
                         <li>

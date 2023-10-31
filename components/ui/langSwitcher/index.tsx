@@ -8,9 +8,9 @@ const LangSwitcher = () => {
         <div className={styles.container}>
         <img src={'./img/langIcon.svg'}/>
             <div className={styles.language}>
-                <li onClick={() => changeLanguage("eng")}> English</li>
-                <li onClick={() => changeLanguage("bg")}>Bulgarian</li>
-                <li onClick={() => changeLanguage("slo")}>Slovenian</li>
+                <li className={styles.item} onClick={() => changeLanguage("eng")}> English</li>
+                <li className={styles.item} onClick={() => changeLanguage("bg")}>Bulgarian</li>
+                <li className={styles.item} onClick={() => changeLanguage("slo")}>Slovenian</li>
             </div>
         </div>
     )

@@ -1,4 +1,5 @@
 import styles from './materials.module.scss'
+import "../../app/globals.scss";
 const Materials = () => {
     return (
         <div className={styles.sectionContainer}>
@@ -111,7 +112,6 @@ const Materials = () => {
                     </div>
                 </div>
             </div>
-
         </div>
     )
 }

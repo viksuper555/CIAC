@@ -19,11 +19,17 @@
   position: absolute;
   z-index: 3;
   flex-direction: column;
-  background: white;
   backdrop-filter: blur(15px);
+  cursor: pointer;
   li {
     a {
       color: var(--background);
     }
+  }
+}
+
+.item {
+  &:hover {
+    color: #F8A94F !important;
   }
 }

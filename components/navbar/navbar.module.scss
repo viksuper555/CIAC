@@ -12,6 +12,7 @@
   img {
     height: 100%
   }
+  @apply ml-10;
 }
 
 .toggle-container {
@@ -22,14 +23,12 @@
   list-style-type: none;
   display: flex;
   gap: 4rem;
+  color: #686767;
 
   li {
     a {
-      color:#686767;
       text-decoration: none;
-      &:last-of-type {
-       color: #686767;
-      }
+
     }
   }
 }
@@ -51,12 +50,7 @@
   .links {
     flex-direction: column;
     li {
-      a {
-        color: var(--background);
-      }
-      &:last-of-type {
-        display: none;
-      }
+
     }
   }
 }
@@ -65,13 +59,28 @@
   .dropdownItems {
     position: absolute;
     display: block;
-    color: black !important;
   }
 }
 
 .dropdownItems {
-  background: white;
-  backdrop-filter: blur(15px);
+  display: none;
+  z-index: 20;
+}
+
+.item {
+  &:hover {
+    color: #F8A94F !important;
+  }
+}
+
+.aboutProject:hover {
+  .aboutItems {
+    position: absolute;
+    display: block;
+  }
+}
+
+.aboutItems {
   display: none;
   z-index: 20;
 }

@@ -1,0 +1,21 @@
+.container {
+  @apply relative flex flex-row overflow-hidden;
+
+  margin-top: 120px;
+  height: 1080px;
+  width: 100%;
+}
+
+.textContainer {
+  overflow: auto;
+  width: 45%;
+  font-size: 30px;
+  max-height: 400px;
+
+  scrollbar-color: auto;
+}
+
+.imgContainer {
+  @apply mx-auto;
+}
+
