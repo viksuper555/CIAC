@@ -32,6 +32,7 @@ const LanguageProv = ({ children }: Props) => {
         setLocaleHandler(getDefaultLocale ?? "eng")
         defaultLocale = getDefaultLocale ? handleDefaultLocale(getDefaultLocale) : LANGUAGES.eng
         setLanguage(defaultLocale)
+
     }, [getDefaultLocale, language]);
 
     return (

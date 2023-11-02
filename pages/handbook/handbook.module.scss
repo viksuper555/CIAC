@@ -1,0 +1,56 @@
+.sectionContainer {
+  @apply py-4 relative overflow-hidden flex;
+  height: 1080px;
+  width: 100%;
+  padding: 100px;
+}
+
+.handbookContainer {
+  @apply flex flex-col;
+  margin-left: 10%;
+}
+
+.downloadContainer {
+  @apply flex justify-center items-center;
+}
+
+.downloadText {
+  color: #686767;
+
+  cursor: pointer;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  border-radius: 38px;
+  border: 2px solid #686767;
+  width: 100px;
+}
+
+.groups {
+  color: #686767;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #FBAE25 !important;
+  }
+}
+
+
+.textContainer {
+  margin-top: 50px;
+  margin-left: auto;
+  overflow: auto;
+  width: 45%;
+  font-size: 30px;
+  max-height: 550px;
+
+  scrollbar-color: auto;
+}

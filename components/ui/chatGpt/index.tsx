@@ -91,7 +91,7 @@ const ChatGpt = () => {
                 </div>
                 <pre id={"response-body"} className={styles.CGPTResponse}>
                         {response ?? "Response will be generated here..."}
-                    </pre>
+                </pre>
             </div>
             }
         </div>

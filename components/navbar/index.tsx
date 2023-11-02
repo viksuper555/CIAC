@@ -49,7 +49,7 @@ const Navbar:FC<Props> = ({changeTheme, currentTheme, className}: Props) => {
                             <a href={"/materials"}> Национален Опит </a>
                         </li>
                         <li>
-                            <a href={"/Handbook"}> Ресурси </a>
+                            <a href={"/handbook"}> Ресурси </a>
                         </li>
                         <li>
                             <a href={"/"}> Контакти </a>
