@@ -45,7 +45,7 @@ const ChatGpt = () => {
 
             setGeneratingResponse(true);
             const openai = new OpenAI({
-                apiKey: "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",
+                apiKey:  process.env.NEXT_PUBLIC_API_KEY,
                 dangerouslyAllowBrowser: true
             });
 
