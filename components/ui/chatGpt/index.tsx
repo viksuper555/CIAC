@@ -3,6 +3,7 @@ import React, {useEffect, useState} from "react";
 import styles from './chatGpt.module.scss'
 import config from "@/lib/config";
 import {getTexts} from "@/contexts/LanguageContext";
+import Spinner from "@/components/ui/spinner";
 
 interface Props {
     prompt: string;
@@ -44,13 +45,13 @@ const ChatGpt = () => {
 
             setGeneratingResponse(true);
             const openai = new OpenAI({
-                apiKey: process.env["NEXT_PUBLIC_OPENAI_API_KEY"],
+                apiKey: "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",
                 dangerouslyAllowBrowser: true
             });
 
             setResponse("");
             const chatCompletion = await openai.chat.completions.create({
-                messages: [{ role: 'user', content: prompt }],
+                messages: [{ role: 'user', content: "Кратко обяснение:" +prompt }],
                 model: 'gpt-3.5-turbo',
             });
 
@@ -91,6 +92,7 @@ const ChatGpt = () => {
                 </div>
                 <pre id={"response-body"} className={styles.CGPTResponse}>
                         {response ?? "Response will be generated here..."}
+                        {generatingResponse && <Spinner/>}
                 </pre>
             </div>
             }

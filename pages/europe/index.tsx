@@ -1,6 +1,6 @@
 "use client";
 import "../../app/globals.scss";
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import Navbar from "@/components/navbar";
 import StartingModule from "@/components/startingModule";
 import ContentReview from "@/components/contentReview";
@@ -12,8 +12,8 @@ import peopleWithPlanet from "../../public/img/europe/Group.png";
 import grayTitleCircle from "../../public/img/bulgaria/grayTitleCircle.png";
 import Exam from "@/components/exam";
 import styles from './europe.module.scss';
-import { Table } from '@/components/table';
-import { TextWithAction } from "@/components/textWithAction";
+import {Table} from '@/components/table';
+import {TextWithAction} from "@/components/textWithAction";
 import OpenAI from 'openai';
 import Image from "next/image";
 import {getTexts} from "@/contexts/LanguageContext";
@@ -21,11 +21,41 @@ import parse from "html-react-parser";
 
 const Europe = () => {
     const [theme, setTheme] = useState("dark");
-    const { texts: {Europe: texts}, defaultLocale } = getTexts();
-    console.log("==> ",defaultLocale)
-    const changeTheme = () => {
-        theme === "dark" ? setTheme("light") : setTheme("dark");
-    };
+    const {texts: {Europe: texts}, locale} = getTexts();
+    console.log("==> ", locale)
+    const [ytLink, setYtLink] = useState<any>()
+
+    useEffect(() => {
+        switch (locale) {
+            case 'bg': {
+                setYtLink(
+                    <iframe width="800" height="515" src="https://www.youtube.com/embed/Z6cHHQ2wwrk"
+                            title="YouTube video player" frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen></iframe>
+                );
+                return;
+            }
+            case 'eng': {
+                setYtLink(
+                    <iframe width="800" height="515" src="https://www.youtube.com/embed/y4hGxSYpFT0"
+                            title="YouTube video player" frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen></iframe>
+                )
+                return
+            }
+            case 'slo': {
+                setYtLink(
+                    <iframe width="800" height="515" src="https://www.youtube.com/embed/AmRul2NW1us"
+                            title="YouTube video player" frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen></iframe>
+                )
+                return;
+            }
+        }
+    }, [locale]);
 
     return (
         <div className={"app-container"}>
@@ -45,7 +75,7 @@ const Europe = () => {
                         <div className={styles.text}>
                             <p className={styles.person}>{texts.M1_topic1_quotes[0]}</p>
                             <p className={styles.quoteText}>
-                            {texts.M1_topic1_quotes[1]}
+                                {texts.M1_topic1_quotes[1]}
                             </p>
                         </div>
                     </div>
@@ -94,9 +124,19 @@ const Europe = () => {
             </div>
             <ContentReview
                 heading={texts.Content_heading}
-                contentImage={infoContent} background={"whiteBackgroundEurope"}
+                contentImage={infoContent} background={"greyBackground"}
                 className={styles.sectionContainer}
             />
+            <div
+                id={"educational-video-europe"}
+                className={`grayBackground ${styles.sectionContainer}`}
+            >
+                <p className={styles.textForVideo}>{texts.textForVideo}</p>
+
+                <div className={styles.videoContainer}>
+                    {ytLink}
+                </div>
+            </div>
             <MainTopic
                 titleImage={blueTitleCircle}
                 background={"blueBackground"}
@@ -120,7 +160,8 @@ const Europe = () => {
             >
                 {parse(texts.M1_topic4_text)}
             </TextWithAction>
-            <div className={`${styles.bgBlue} ${styles.sectionContainer} ${styles.countriesListContainer}`} id={"countries-list"}>
+            <div className={`${styles.bgBlue} ${styles.sectionContainer} ${styles.countriesListContainer}`}
+                 id={"countries-list"}>
                 <div className={styles.countriesListTitle}>
                     {texts.M1_topic5}
                     <img src={'/img/sparkle.svg'} className={styles.sparkle}/>
@@ -154,7 +195,8 @@ const Europe = () => {
                 mainText={texts.M1_topic7_text}
                 className={`${styles.sectionContainer} ${styles.bgGray} ${styles.institutionsContainer}`}
             />
-            <div id={"CA-examples"} className={`${styles.citizenAwarenessExamplesContainer} ${styles.sectionContainer}`}>
+            <div id={"CA-examples"}
+                 className={`${styles.citizenAwarenessExamplesContainer} ${styles.sectionContainer}`}>
                 <div className={styles.CANotes}>
                     <div className={styles.CAFirstRow}>
                         <div className={styles.stickyNoteContainerBlue}>
@@ -211,7 +253,7 @@ const Europe = () => {
             >
                 <div className={styles.singleStickyNote}>
                     <div className={styles.stickyNotePinBlue}/>
-                        {parse(texts.M1_topic10_texts[0])}
+                    {parse(texts.M1_topic10_texts[0])}
                 </div>
             </div>
             <div
@@ -220,7 +262,7 @@ const Europe = () => {
             >
                 <div className={styles.singleStickyNoteSecond}>
                     <div className={styles.stickyNotePinYellow}/>
-                        {parse(texts.M1_topic10_texts[1])}
+                    {parse(texts.M1_topic10_texts[1])}
                     <img
                         src={'/img/europe/informed-woman.png'}
                         className={styles.informedWoman}
@@ -255,9 +297,10 @@ const Europe = () => {
                 className={`${styles.sectionContainer} ${styles.citizenAwarenessContainer}`}
                 btnClass={styles.btnCitizenAwareness}
             />
-            <div id={"CA-examples"} className={`${styles.citizenAwarenessExamplesContainer} ${styles.sectionContainer}`}>
+            <div id={"CA-examples"}
+                 className={`${styles.citizenAwarenessExamplesContainer} ${styles.sectionContainer}`}>
                 <div className={styles.CATitle}>
-                    
+
                 </div>
                 <div className={styles.CANotes}>
                     <div className={styles.CAFirstRow}>
@@ -322,7 +365,7 @@ const Europe = () => {
                 className={`${styles.sectionContainer} ${styles.bgBlue}`}
                 scribbleImg={'/img/scribble.svg'}
                 hasActionBtn={false}
-            >  
+            >
                 {parse(texts.M2_topic5_text)}
                 <img
                     src={"/img/europe/youthEngagement.png"}
@@ -364,7 +407,8 @@ const Europe = () => {
                 downRightImageClass={styles.YEBottomRightImg}
                 bottomRightImageContainerClass={styles.YEImageContainer}
             />
-            <div id={"YE-examples"} className={`${styles.citizenAwarenessExamplesContainer} ${styles.sectionContainer}`}>
+            <div id={"YE-examples"}
+                 className={`${styles.citizenAwarenessExamplesContainer} ${styles.sectionContainer}`}>
                 <div className={styles.CANotes}>
                     <div className={styles.CAFirstRow}>
                         <div className={styles.stickyNoteContainerGreen}>
@@ -377,7 +421,7 @@ const Europe = () => {
                         <div className={styles.stickyNoteContainerYellow}>
                             <div className={styles.CAStickyNotePinYellow}/>
                             <div className={styles.YEStickyNoteText}>
-                                {parse(texts.M2_topic9_texts[1])}  
+                                {parse(texts.M2_topic9_texts[1])}
                             </div>
                         </div>
 
@@ -430,18 +474,19 @@ const Europe = () => {
                 className={`${styles.bgBlue} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}
             >
                 <div className={styles.MAInner}>
-                        {parse(texts.M2_topic11_text)}
+                    {parse(texts.M2_topic11_text)}
                     <img src={'/img/sparkle.svg'} className={styles.MASparkle}/>
                 </div>
             </div>
-            <div id={"impact-assessment"} className={`${styles.sectionContainer} ${styles.impactAssessment} ${styles.bgYellow}`}>
+            <div id={"impact-assessment"}
+                 className={`${styles.sectionContainer} ${styles.impactAssessment} ${styles.bgYellow}`}>
                 <div className={styles.IATitle}>
                     <span>{texts.M2_topic12}</span>
                     <img src={"/img/europe/yellowTitleCircle.png"} className={styles.IATitleCircle}/>
                 </div>
                 <div className={styles.textContent}>
                     <img src={"/img/sparkle-yellow.svg"} className={styles.IAsparkle}/>
-                        {parse(texts.M2_topic12_text)}
+                    {parse(texts.M2_topic12_text)}
                 </div>
             </div>
             <MainTopic

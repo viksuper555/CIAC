@@ -62,6 +62,18 @@
   }
 }
 
+.resources:hover {
+  .resourceItems {
+    position: absolute;
+    display: block;
+  }
+}
+
+.resourceItems {
+  display: none;
+  z-index: 20;
+}
+
 .dropdownItems {
   display: none;
   z-index: 20;

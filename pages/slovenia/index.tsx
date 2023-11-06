@@ -1,6 +1,6 @@
 "use client";
 import "../../app/globals.scss";
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import Navbar from "@/components/navbar";
 import StartingModule from "@/components/startingModule";
 import ContentReview from "@/components/contentReview";
@@ -16,7 +16,7 @@ import styles from './slovenia.module.scss';
 import workingPeople from "../../public/img/slovenia/workingPeople.png"
 import sloveniaCommunity from "../../public/img/slovenia/sloveniaCommunity.png"
 import SixInfoStickyNotes from "@/components/sixInfoStickyNotes";
-import { Table } from "@/components/table";
+import {Table} from "@/components/table";
 import Image from "next/image";
 import StickyNote from "@/components/ui/stickyNote";
 import blueSticky from "../../public/img/slovenia/blueSticky.png"
@@ -29,17 +29,46 @@ import contentReview3 from "../../public/img/slovenia/contentReview3.png"
 import europeanCitizen from "../../public/img/slovenia/europeanCItizen.png"
 import redTitleCircle from "../../public/img/redTitleCircle.png"
 import notesCheck from "../../public/img/slovenia/notesCheck.png"
-import { getTexts } from "@/contexts/LanguageContext";
+import {getTexts} from "@/contexts/LanguageContext";
 import parse from "html-react-parser";
-import { text } from "stream/consumers";
+import {text} from "stream/consumers";
 
 const Slovenia = () => {
     const [theme, setTheme] = useState("dark");
-    const { texts: {Slovenia: texts} } = getTexts();
+    const {texts: {Slovenia: texts}, locale} = getTexts();
+    const [ytLink, setYtLink] = useState<any>()
 
-    const changeTheme = () => {
-        theme === "dark" ? setTheme("light") : setTheme("dark");
-    };
+    useEffect(() => {
+        switch (locale) {
+            case 'bg': {
+                setYtLink(
+                    <iframe width="800" height="515" src="https://www.youtube.com/embed/dhOhiluSH2w"
+                            title="YouTube video player" frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen></iframe>
+                );
+                return;
+            }
+            case 'eng': {
+                setYtLink(
+                    <iframe width="800" height="515" src="https://www.youtube.com/embed/O-34AfFRErk"
+                            title="YouTube video player" frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen></iframe>
+                )
+                return
+            }
+            case 'slo': {
+                setYtLink(
+                    <iframe width="800" height="515" src="https://www.youtube.com/embed/FEcjIgcJJU8"
+                            title="YouTube video player" frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen></iframe>
+                )
+                return;
+            }
+        }
+    }, [locale]);
 
     return (
         <div className={"app-container"}>
@@ -59,7 +88,7 @@ const Slovenia = () => {
                         <div className={styles.text}>
                             <p className={styles.person}>{texts.M1_topic1_quotes[0]}</p>
                             <p className={styles.quoteText}>
-                            {texts.M1_topic1_quotes[1]}
+                                {texts.M1_topic1_quotes[1]}
                             </p>
                         </div>
                     </div>
@@ -72,7 +101,7 @@ const Slovenia = () => {
                         <div className={styles.text}>
                             <p className={styles.person}>{texts.M1_topic1_quotes[2]}</p>
                             <p className={styles.quoteText}>
-                            {texts.M1_topic1_quotes[3]}
+                                {texts.M1_topic1_quotes[3]}
                             </p>
                         </div>
                     </div>
@@ -87,7 +116,7 @@ const Slovenia = () => {
                         <div className={styles.text}>
                             <p className={styles.person}>{texts.M1_topic1_quotes[4]}</p>
                             <p className={styles.quoteText}>
-                            {texts.M1_topic1_quotes[5]}
+                                {texts.M1_topic1_quotes[5]}
                             </p>
                         </div>
                     </div>
@@ -100,7 +129,7 @@ const Slovenia = () => {
                         <div className={styles.text}>
                             <p className={styles.person}>{texts.M1_topic1_quotes[6]}</p>
                             <p className={styles.quoteText}>
-                            {texts.M1_topic1_quotes[7]}
+                                {texts.M1_topic1_quotes[7]}
                             </p>
                         </div>
                     </div>
@@ -111,6 +140,16 @@ const Slovenia = () => {
                 contentImage={infoContent} background={styles.redText}
                 className={styles.sectionContainer}
             />
+            <div
+                id={"educational-video-slovenia"}
+                className={`grayBackground ${styles.sectionContainer}`}
+            >
+                <p className={styles.textForVideo}>{texts.textForVideo}</p>
+
+                <div className={styles.videoContainer}>
+                    {ytLink}
+                </div>
+            </div>
             <MainTopic
                 titleImage={blueTitleCircle}
                 background={"blueBackground"}
@@ -144,14 +183,14 @@ const Slovenia = () => {
                 {parse(texts.M1_topic3_text)}
             </TextWithAction>
             <SixInfoStickyNotes
-                    text1={parse(texts.M1_topic3_texts[0]) as string}
-                    text2={parse(texts.M1_topic3_texts[1]) as string}
-                    text3={parse(texts.M1_topic3_texts[2]) as string}
-                    text4={parse(texts.M1_topic3_texts[3]) as string}
-                    text5={parse(texts.M1_topic3_texts[4]) as string}
-                    text6={parse(texts.M1_topic3_texts[5]) as string}
-                    className={styles.sectionContainer}
-                />
+                text1={parse(texts.M1_topic3_texts[0]) as string}
+                text2={parse(texts.M1_topic3_texts[1]) as string}
+                text3={parse(texts.M1_topic3_texts[2]) as string}
+                text4={parse(texts.M1_topic3_texts[3]) as string}
+                text5={parse(texts.M1_topic3_texts[4]) as string}
+                text6={parse(texts.M1_topic3_texts[5]) as string}
+                className={styles.sectionContainer}
+            />
             <MainTopic
                 titleImage={grayTitleCircle}
                 background={"greyBackground"}
@@ -180,9 +219,12 @@ const Slovenia = () => {
                 </div>
 
                 <div className={"flex flex-row justify-center"}>
-                    <StickyNote noteImageSrc={blueSticky} circleImageSrc={blueTitleCircle} noteText={parse(texts.M1_topic5_texts[6]) as string}/>
-                    <StickyNote noteImageSrc={yellowSticky} circleImageSrc={yellowElipse} noteText={parse(texts.M1_topic5_texts[7]) as string}/>
-                    <StickyNote noteImageSrc={blueSticky} circleImageSrc={blueTitleCircle} noteText={parse(texts.M1_topic5_texts[8]) as string}/>
+                    <StickyNote noteImageSrc={blueSticky} circleImageSrc={blueTitleCircle}
+                                noteText={parse(texts.M1_topic5_texts[6]) as string}/>
+                    <StickyNote noteImageSrc={yellowSticky} circleImageSrc={yellowElipse}
+                                noteText={parse(texts.M1_topic5_texts[7]) as string}/>
+                    <StickyNote noteImageSrc={blueSticky} circleImageSrc={blueTitleCircle}
+                                noteText={parse(texts.M1_topic5_texts[8]) as string}/>
                 </div>
 
             </div>
@@ -308,7 +350,7 @@ const Slovenia = () => {
                 className={`${styles.bgRed} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}>
                 <div className={styles.MAInner}>
                     {parse(texts.M2_topic9_texts2[1])}
-                   <img src={'/img/redScribble.png'} className={styles.MAScribble}/>
+                    <img src={'/img/redScribble.png'} className={styles.MAScribble}/>
                 </div>
             </div>
             <MainTopic
@@ -336,7 +378,7 @@ const Slovenia = () => {
                 className={`${styles.bgBlue} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}
             >
                 <div className={styles.MAInner}>
-                {parse(texts.M2_topic11_texts[1])}
+                    {parse(texts.M2_topic11_texts[1])}
                     <img src={'/img/sparkle.svg'} className={styles.MASparkleLeft}/>
                 </div>
             </div>
@@ -364,8 +406,10 @@ const Slovenia = () => {
                 className={styles.sectionContainer}
                 commaImage={'/img/grayComma.svg'}
             />
-            <ContentReview heading={texts.Content_heading} contentImage={contentReview3} background={styles.whiteBackground} className={styles.sectionContainer}/>
-            <div id={"impact-assessment"} className={`${styles.sectionContainer} ${styles.impactAssessment} ${styles.bgBlue}`}>
+            <ContentReview heading={texts.Content_heading} contentImage={contentReview3}
+                           background={styles.whiteBackground} className={styles.sectionContainer}/>
+            <div id={"impact-assessment"}
+                 className={`${styles.sectionContainer} ${styles.impactAssessment} ${styles.bgBlue}`}>
                 <div className={styles.IATitle}>
                     <span>{texts.M3_topic3}</span>
                     <img src={"/img/europe/blueTitleCircle.png"} className={styles.IATitleCircle}/>
@@ -381,8 +425,8 @@ const Slovenia = () => {
             >
                 <div className={`${styles.bgBlue} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}>
                     <div className={styles.MAInner}>
-                    {parse(texts.M3_topic3_texts[1])}
-                    <img src={'/img/sparkle.svg'} className={styles.MASparkleLeft}/>
+                        {parse(texts.M3_topic3_texts[1])}
+                        <img src={'/img/sparkle.svg'} className={styles.MASparkleLeft}/>
                     </div>
                 </div>
             </div>
@@ -402,7 +446,7 @@ const Slovenia = () => {
             >
                 <div className={styles.MAInner}>
                     {parse(texts.M3_topic5_texts[0])}
-                   <img src={'/img/redScribble.png'} className={styles.MAScribble}/>
+                    <img src={'/img/redScribble.png'} className={styles.MAScribble}/>
                 </div>
             </div>
 
@@ -411,7 +455,7 @@ const Slovenia = () => {
                 className={`${styles.bgRed} ${styles.sectionContainer} ${styles.EUBInfoContainer}`}
             >
                 <div className={styles.TEAdviceText}>
-                {parse(texts.M3_topic5_texts[1])}
+                    {parse(texts.M3_topic5_texts[1])}
                     <img src={'/img/scribble-gray.svg'} className={styles.EUBSparkle}/>
                 </div>
             </div>
@@ -440,12 +484,13 @@ const Slovenia = () => {
                 className={`${styles.whiteBackground} ${styles.sectionContainer} ${styles.EUBInfoContainer}`}
             >
                 <div className={styles.TEAdviceText}>
-                {parse(texts.M3_topic7_texts[1])}
+                    {parse(texts.M3_topic7_texts[1])}
 
                     <img src={'/img/scribble-gray.svg'} className={styles.EUBSparkle}/>
                 </div>
             </div>
-            <div id={"european-instruments"} className={`${styles.sectionContainer} ${styles.impactAssessment} ${styles.bgBlue}`}>
+            <div id={"european-instruments"}
+                 className={`${styles.sectionContainer} ${styles.impactAssessment} ${styles.bgBlue}`}>
                 <div className={styles.IATitle}>
                     <span>{texts.M3_topic8}</span>
                     <img src={"/img/europe/blueTitleCircle.png"} className={styles.IATitleCircle}/>
@@ -462,7 +507,7 @@ const Slovenia = () => {
             >
                 <div className={`${styles.bgBlue} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}>
                     <div className={styles.MAInner}>
-                    {parse(texts.M3_topic8_texts[1])}
+                        {parse(texts.M3_topic8_texts[1])}
                         <img src={'/img/sparkle.svg'} className={styles.MASparkleLeft}/>
                     </div>
                 </div>

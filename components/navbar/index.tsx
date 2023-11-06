@@ -48,9 +48,13 @@ const Navbar:FC<Props> = ({changeTheme, currentTheme, className}: Props) => {
                         <li>
                             <a href={"/materials"}> Национален Опит </a>
                         </li>
-                        <li>
+                        <ul className={styles.resources}>
                             <a href={"/handbook"}> Ресурси </a>
-                        </li>
+                            <div className={styles.resourceItems}>
+                                <li><a className={styles.item} href="/handbook"> Handbook</a></li>
+                                <li><a className={styles.item} href="/methodology"> Study Methodology</a></li>
+                            </div>
+                        </ul>
                         <li>
                             <a href={"/"}> Контакти </a>
                         </li>

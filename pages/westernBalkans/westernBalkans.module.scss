@@ -4,6 +4,30 @@
   width: 100%;
 }
 
+.videoContainer {
+  @apply flex justify-center items-center;
+  font-weight: 500;
+
+  p {
+    @apply mt-12;
+  }
+}
+
+.textForVideo {
+  @apply my-12;
+  color: #686767;
+
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+
 .quotesContainer {
   background: #ECECEC;
   display: flex;
@@ -247,6 +271,8 @@
     height: 250px;
   }
 }
+
+
 
 .titleText {
   @apply absolute self-center mt-4 pb-8;

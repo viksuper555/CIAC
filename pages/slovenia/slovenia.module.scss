@@ -12,6 +12,29 @@
   align-items: center;
 }
 
+.textForVideo {
+  @apply my-12;
+  color: #686767;
+
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.videoContainer {
+  @apply flex justify-center items-center;
+  font-weight: 500;
+
+  p {
+    @apply mt-12;
+  }
+}
+
 .quotesRow {
   @apply mb-20;
   display: flex;

@@ -6,7 +6,7 @@ import styles from "./westernBalkans.module.scss";
 import ContentReview from "@/components/contentReview";
 import infoContent from "@/public/img/bulgaria/infoContent.png";
 import MainTopic from "@/components/mainTopic";
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import yellowComma from '../../public/img/yellowComma.png'
 import yellowTitleCircle from "../../public/img/europe/yellowTitleCircle.png"
 import {Table} from "@/components/table";
@@ -28,10 +28,40 @@ import parse from "html-react-parser";
 
 const WesternBalkans = () => {
     const [theme, setTheme] = useState("dark");
-    const { texts: {WesternBalkans: texts} } = getTexts();
-    const changeTheme = () => {
-        theme === "dark" ? setTheme("light") : setTheme("dark")
-    }
+    const {texts: {WesternBalkans: texts}, locale} = getTexts();
+    const [ytLink, setYtLink] = useState<any>()
+
+    useEffect(() => {
+        switch (locale) {
+            case 'bg': {
+                setYtLink(
+                    <iframe width="800" height="515" src="https://www.youtube.com/embed/JKBhj7D9s0A"
+                            title="YouTube video player" frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen></iframe>
+                );
+                return;
+            }
+            case 'eng': {
+                setYtLink(
+                    <iframe width="800" height="515" src="https://www.youtube.com/embed/KLT5o4aA_T0"
+                            title="YouTube video player" frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen></iframe>
+                )
+                return
+            }
+            case 'slo': {
+                setYtLink(
+                    <iframe width="800" height="515" src="https://www.youtube.com/embed/Bk6cd8Lbn-Y"
+                            title="YouTube video player" frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen></iframe>
+                )
+                return;
+            }
+        }
+    }, [locale]);
 
     return <div className={"h-full"}>
         <StartingModule moduleText={texts.M1_title} commaImage={'/img/yellowComma.png'}
@@ -46,7 +76,7 @@ const WesternBalkans = () => {
                     <div className={styles.text}>
                         <p className={styles.person}>{texts.M1_topic1_quotes[0]}</p>
                         <p className={styles.quoteText}>
-                        {texts.M1_topic1_quotes[1]}
+                            {texts.M1_topic1_quotes[1]}
                         </p>
                     </div>
                 </div>
@@ -59,7 +89,7 @@ const WesternBalkans = () => {
                     <div className={styles.text}>
                         <p className={styles.person}>{texts.M1_topic1_quotes[2]}</p>
                         <p className={styles.quoteText}>
-                        {texts.M1_topic1_quotes[3]}
+                            {texts.M1_topic1_quotes[3]}
                         </p>
                     </div>
                 </div>
@@ -74,7 +104,7 @@ const WesternBalkans = () => {
                     <div className={styles.text}>
                         <p className={styles.person}>{texts.M1_topic1_quotes[4]}</p>
                         <p className={styles.quoteText}>
-                        {texts.M1_topic1_quotes[5]}
+                            {texts.M1_topic1_quotes[5]}
                         </p>
                     </div>
                 </div>
@@ -87,13 +117,24 @@ const WesternBalkans = () => {
                     <div className={styles.text}>
                         <p className={styles.person}>{texts.M1_topic1_quotes[6]}</p>
                         <p className={styles.quoteText}>
-                        {texts.M1_topic1_quotes[7]}
+                            {texts.M1_topic1_quotes[7]}
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-        <ContentReview heading={texts.Content_heading} contentImage={infoContent} background={styles.yellowText} className={styles.sectionContainer}/>
+        <ContentReview heading={texts.Content_heading} contentImage={infoContent} background={styles.yellowText}
+                       className={styles.sectionContainer}/>
+        <div
+            id={"eu-for-citizens-3"}
+            className={`grayBackground ${styles.sectionContainer}`}
+        >
+            <p className={styles.textForVideo}>{texts.textForVideo}</p>
+
+            <div className={styles.videoContainer}>
+                {ytLink}
+            </div>
+        </div>
         <MainTopic
             titleImage={yellowTitleCircle}
             background={styles.yellowBackground}
@@ -158,7 +199,7 @@ const WesternBalkans = () => {
             className={`${styles.yellowBg} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}
         >
             <div className={styles.MAInner}>
-            {parse(texts.M1_topic8_text)}
+                {parse(texts.M1_topic8_text)}
                 <img src={'/img/sparkle-yellow.svg'} className={styles.MASparkle}/>
             </div>
         </div>
@@ -237,21 +278,21 @@ const WesternBalkans = () => {
                     <div className={styles.stickyNoteContainerGreen}>
                         <div className={styles.CAStickyNotePinGreen}/>
                         <div className={styles.YEStickyNoteText}>
-                        {parse(texts.M2_topic8_texts[0])}
-                        </div>  
+                            {parse(texts.M2_topic8_texts[0])}
+                        </div>
                     </div>
 
                     <div className={styles.stickyNoteContainerYellow}>
                         <div className={styles.CAStickyNotePinYellow}/>
                         <div className={styles.YEStickyNoteText}>
-                        {parse(texts.M2_topic8_texts[1])}
+                            {parse(texts.M2_topic8_texts[1])}
                         </div>
                     </div>
 
                     <div className={styles.stickyNoteContainerGreen}>
                         <div className={styles.CAStickyNotePinGreen}/>
                         <div className={styles.YEStickyNoteText}>
-                        {parse(texts.M2_topic8_texts[2])}
+                            {parse(texts.M2_topic8_texts[2])}
                         </div>
                     </div>
                 </div>
@@ -259,14 +300,14 @@ const WesternBalkans = () => {
                     <div className={styles.stickyNoteContainerYellow}>
                         <div className={styles.CAStickyNotePinYellow}/>
                         <div className={styles.YEStickyNoteText}>
-                        {parse(texts.M2_topic8_texts[3])}
+                            {parse(texts.M2_topic8_texts[3])}
                         </div>
                     </div>
 
                     <div className={styles.stickyNoteContainerYellow}>
                         <div className={styles.CAStickyNotePinYellow}/>
                         <div className={styles.YEStickyNoteText}>
-                        {parse(texts.M2_topic8_texts[4])}
+                            {parse(texts.M2_topic8_texts[4])}
                         </div>
                     </div>
                 </div>
@@ -289,7 +330,7 @@ const WesternBalkans = () => {
             className={`${styles.whiteBackground} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}
         >
             <div className={styles.MAInner}>
-            {parse(texts.M2_topic10_texts[0])}
+                {parse(texts.M2_topic10_texts[0])}
                 <img src={'/img/sparkle.svg'} className={styles.MASparkle}/>
             </div>
         </div>
@@ -298,7 +339,7 @@ const WesternBalkans = () => {
             className={`${styles.whiteBackground} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}
         >
             <div className={styles.MAInner}>
-            {parse(texts.M2_topic10_texts[1])}
+                {parse(texts.M2_topic10_texts[1])}
                 <img src={'/img/sparkle.svg'} className={styles.MASparkle}/>
             </div>
         </div>
@@ -319,7 +360,7 @@ const WesternBalkans = () => {
             className={`${styles.yellowBackground} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}
         >
             <div className={styles.MAInner}>
-            {parse(texts.M2_topic12_texts[0])}	
+                {parse(texts.M2_topic12_texts[0])}
             </div>
         </div>
         <div
@@ -327,7 +368,7 @@ const WesternBalkans = () => {
             className={`${styles.yellowBackground} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}
         >
             <div className={styles.MAInner}>
-            {parse(texts.M2_topic12_texts[1])}	
+                {parse(texts.M2_topic12_texts[1])}
             </div>
         </div>
         <MainTopic
@@ -348,21 +389,21 @@ const WesternBalkans = () => {
                     <div className={styles.stickyNoteContainerGreen}>
                         <div className={styles.CAStickyNotePinGreen}/>
                         <div className={styles.YEStickyNoteText}>
-                        {parse(texts.M2_topic14_texts[0])}	
+                            {parse(texts.M2_topic14_texts[0])}
                         </div>
                     </div>
 
                     <div className={styles.stickyNoteContainerYellow}>
                         <div className={styles.CAStickyNotePinYellow}/>
                         <div className={styles.YEStickyNoteText}>
-                        {parse(texts.M2_topic14_texts[1])}	
+                            {parse(texts.M2_topic14_texts[1])}
                         </div>
                     </div>
 
                     <div className={styles.stickyNoteContainerGreen}>
                         <div className={styles.CAStickyNotePinGreen}/>
                         <div className={styles.YEStickyNoteText}>
-                        {parse(texts.M2_topic14_texts[2])}	
+                            {parse(texts.M2_topic14_texts[2])}
                         </div>
                     </div>
                 </div>
@@ -370,26 +411,26 @@ const WesternBalkans = () => {
                     <div className={styles.stickyNoteContainerYellow}>
                         <div className={styles.CAStickyNotePinYellow}/>
                         <div className={styles.YEStickyNoteText}>
-                        {parse(texts.M2_topic14_texts[3])}
+                            {parse(texts.M2_topic14_texts[3])}
                         </div>
                     </div>
 
                     <div className={styles.stickyNoteContainerGreen}>
                         <div className={styles.CAStickyNotePinGreen}/>
                         <div className={styles.YEStickyNoteText}>
-                        {parse(texts.M2_topic14_texts[4])}
+                            {parse(texts.M2_topic14_texts[4])}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <TextWithAction
-                className={`${styles.sectionContainer} ${styles.tealBackground}`}
-                scribbleImg={'/img/scribble.svg'}
-                hasActionBtn={false}
-            >  
-                {parse(texts.M2_topic15_text)}
-                {/* <img
+            className={`${styles.sectionContainer} ${styles.tealBackground}`}
+            scribbleImg={'/img/scribble.svg'}
+            hasActionBtn={false}
+        >
+            {parse(texts.M2_topic15_text)}
+            {/* <img
                     src={"/img/europe/youthEngagement.png"}
                     className={styles.youthEngagementImg}
                 /> */}
@@ -461,7 +502,7 @@ const WesternBalkans = () => {
             className={`${styles.tealBackground} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}
         >
             <div className={styles.MAInner}>
-            {parse(texts.M3_topic6_text)}
+                {parse(texts.M3_topic6_text)}
             </div>
         </div>
         <MainTopic
@@ -481,7 +522,7 @@ const WesternBalkans = () => {
             className={`${styles.whiteBackground} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}
         >
             <div className={styles.MAInner}>
-            {parse(texts.M3_topic8_texts[0])}
+                {parse(texts.M3_topic8_texts[0])}
                 <img src={'/img/greyScribble.svg'} className={styles.topLeftScribbleWb}/>
             </div>
         </div>
@@ -491,7 +532,7 @@ const WesternBalkans = () => {
             className={`${styles.whiteBackground} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}
         >
             <div className={styles.MAInner}>
-            {parse(texts.M3_topic8_texts[1])}
+                {parse(texts.M3_topic8_texts[1])}
                 <img src={'/img/greyScribble.svg'} className={styles.maSparkleDownRight}/>
             </div>
         </div>
@@ -513,7 +554,7 @@ const WesternBalkans = () => {
             className={`${styles.yellowBackground} ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}
         >
             <div className={styles.MAInner}>
-            {parse(texts.M3_topic10_text)}
+                {parse(texts.M3_topic10_text)}
                 <img src={'/img/scribble-yellow.svg'} className={styles.maSparkleDownRight}/>
             </div>
         </div>
@@ -535,21 +576,21 @@ const WesternBalkans = () => {
                     <div className={styles.stickyNoteContainerGreen}>
                         <div className={styles.CAStickyNotePinGreen}/>
                         <div className={styles.YEStickyNoteText}>
-                        {parse(texts.M3_topic12_texts[0])}	
+                            {parse(texts.M3_topic12_texts[0])}
                         </div>
                     </div>
 
                     <div className={styles.stickyNoteContainerYellow}>
                         <div className={styles.CAStickyNotePinYellow}/>
                         <div className={styles.YEStickyNoteText}>
-                        {parse(texts.M3_topic12_texts[1])}	
+                            {parse(texts.M3_topic12_texts[1])}
                         </div>
                     </div>
 
                     <div className={styles.stickyNoteContainerGreen}>
                         <div className={styles.CAStickyNotePinGreen}/>
                         <div className={styles.YEStickyNoteText}>
-                        {parse(texts.M3_topic12_texts[2])}	
+                            {parse(texts.M3_topic12_texts[2])}
                         </div>
                     </div>
                 </div>
@@ -557,21 +598,21 @@ const WesternBalkans = () => {
                     <div className={styles.stickyNoteContainerYellow}>
                         <div className={styles.CAStickyNotePinYellow}/>
                         <div className={styles.YEStickyNoteText}>
-                        {parse(texts.M3_topic12_texts[3])}
+                            {parse(texts.M3_topic12_texts[3])}
                         </div>
                     </div>
 
                     <div className={styles.stickyNoteContainerGreen}>
                         <div className={styles.CAStickyNotePinGreen}/>
                         <div className={styles.YEStickyNoteText}>
-                        {parse(texts.M3_topic12_texts[4])}
+                            {parse(texts.M3_topic12_texts[4])}
                         </div>
                     </div>
 
                     <div className={styles.stickyNoteContainerYellow}>
                         <div className={styles.CAStickyNotePinYellow}/>
                         <div className={styles.YEStickyNoteText}>
-                        {parse(texts.M3_topic12_texts[5])}
+                            {parse(texts.M3_topic12_texts[5])}
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,5 @@
 "use client";
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import Navbar from "@/components/navbar";
 import StartingModule from "@/components/startingModule";
 import CenteredScheme from "@/components/centeredScheme";
@@ -36,6 +36,40 @@ import parse from "html-react-parser";
 const HomePage = () => {
     const [theme, setTheme] = useState("dark");
     const {texts: {Bulgaria: texts}, locale} = getTexts();
+    console.log("==> locale", locale)
+    const [ytLink, setYtLink] = useState<any>()
+
+    useEffect(() => {
+        switch (locale) {
+            case 'bg': {
+                setYtLink(
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XuiL4Ia9vqg"
+                            title="YouTube video player" frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen></iframe>
+                );
+                return;
+            }
+            case 'eng': {
+                setYtLink(
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XWeCt84A13E"
+                            title="YouTube video player" frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen></iframe>
+                )
+                return
+            }
+            case 'slo': {
+                setYtLink(
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JADqULc5J20"
+                            title="YouTube video player" frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen></iframe>
+                )
+                return;
+            }
+        }
+    }, [locale]);
 
     const changeTheme = () => {
         theme === "dark" ? setTheme("light") : setTheme("dark")
@@ -107,14 +141,25 @@ const HomePage = () => {
             <ContentReview
                 heading={texts.M1_content_heading}
                 contentImage={`./img/infoContent-${locale}.png`}
-                background={"whiteBackground"}
+                background={"grayBackground"}
                 className={styles.sectionContainer}
             />
+            <div
+                id={"eu-for-citizens-3"}
+                className={`grayBackground ${styles.sectionContainer}`}
+            >
+                <p className={styles.textForVideo}>{texts.textForVideo}</p>
+
+                <div className={styles.videoContainer}>
+                    {ytLink}
+                </div>
+            </div>
             <MainTopic titleImage={greenTitleCircle} background={"greenBackground"} hasButton={true}
                        hasTitleImage={true}
                        className={styles.sectionContainer}
                        titleText={texts.M1_topic1} mainText={texts.M1_topic1_text}/>
-            <CenteredScheme title={texts.M1_topic2} centerImageSrc={scheme1} text={texts.M1_topic2_text} className={styles.sectionContainer}/>
+            <CenteredScheme title={texts.M1_topic2} centerImageSrc={scheme1} text={texts.M1_topic2_text}
+                            className={styles.sectionContainer}/>
             <div
                 id={"eu-for-citizens-3"}
                 className={`greenBackground ${styles.sectionContainer} ${styles.mediaAdviceContainer}`}
@@ -213,6 +258,8 @@ const HomePage = () => {
                             className={styles.sectionContainer} commaImage={"./img/redComma.svg"}/>
             <ContentReview heading={texts.M2_content_heading} contentImage={ContentReview2} background={"redBackground"}
                            className={styles.sectionContainer}/>
+
+
             <MainTopic
                 background={"grayBackground"}
                 hasButton={true}
