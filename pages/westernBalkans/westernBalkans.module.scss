@@ -4,6 +4,11 @@
   width: 100%;
 }
 
+.videoSection {
+  @apply mx-auto my-auto py-4;
+  max-height: 800px;
+}
+
 .videoContainer {
   @apply flex justify-center items-center;
   font-weight: 500;

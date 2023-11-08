@@ -22,14 +22,13 @@ import parse from "html-react-parser";
 const Europe = () => {
     const [theme, setTheme] = useState("dark");
     const {texts: {Europe: texts}, locale} = getTexts();
-    console.log("==> ", locale)
     const [ytLink, setYtLink] = useState<any>()
 
     useEffect(() => {
         switch (locale) {
             case 'bg': {
                 setYtLink(
-                    <iframe width="800" height="515" src="https://www.youtube.com/embed/Z6cHHQ2wwrk"
+                    <iframe width="900" height="715" src="https://www.youtube.com/embed/Z6cHHQ2wwrk"
                             title="YouTube video player" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
@@ -38,7 +37,7 @@ const Europe = () => {
             }
             case 'eng': {
                 setYtLink(
-                    <iframe width="800" height="515" src="https://www.youtube.com/embed/y4hGxSYpFT0"
+                    <iframe width="900" height="715" src="https://www.youtube.com/embed/y4hGxSYpFT0"
                             title="YouTube video player" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
@@ -47,7 +46,7 @@ const Europe = () => {
             }
             case 'slo': {
                 setYtLink(
-                    <iframe width="800" height="515" src="https://www.youtube.com/embed/AmRul2NW1us"
+                    <iframe width="900" height="715" src="https://www.youtube.com/embed/AmRul2NW1us"
                             title="YouTube video player" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
@@ -123,8 +122,9 @@ const Europe = () => {
                 </div>
             </div>
             <ContentReview
-                heading={texts.Content_heading}
-                contentImage={infoContent} background={"greyBackground"}
+                heading={texts.M1_content_heading}
+                contentImage={`./img/infoContent-${locale}.png`}
+                background={"grayBackground"}
                 className={styles.sectionContainer}
             />
             <div
@@ -149,7 +149,7 @@ const Europe = () => {
                 downRightImageClass={styles.politicsImg}
             />
             <Table
-                tableImg={'/img/europe/politicsTable.png'}
+                tableImg={`/img/europe/politicsTable-${locale}.png`}
                 className={styles.sectionContainer}
             />
             <TextWithAction
@@ -283,7 +283,7 @@ const Europe = () => {
             />
             <div className={`${styles.contentsModule2Container} ${styles.sectionContainer}`}>
                 <div className={styles.contentsModule2Title}>{texts.Content_heading}</div>
-                <img src={'/img/contents2.png'} className={styles.contentsModule2}/>
+                <img src={`./img/contentReview2-${locale}.png`} className={styles.contentsModule2}/>
             </div>
             <MainTopic
                 id={"citizen-awareness"}
@@ -519,7 +519,7 @@ const Europe = () => {
             />
             <div className={`${styles.contentsModule3Container} ${styles.sectionContainer}`}>
                 <div className={styles.contentsModule3Title}>{texts.Content_heading}</div>
-                <img src={'/img/contents-module-3.png'} className={styles.contentsModule2}/>
+                <img src={`./img/contentReview3-${locale}.png`} className={styles.contentsModule2}/>
             </div>
             <MainTopic
                 id={"travel-europe"}
@@ -694,9 +694,6 @@ const Europe = () => {
                 btnClass={styles.IABtnClass}
                 titleClass={styles.IATestTitle}
             />
-            <div id={"extra-resources"} className={`${styles.sectionContainer} ${styles.bgYellow}`}>
-                <img src={'/img/europe/extra-resource.png'} className={styles.ERImg}/>
-            </div>
         </div>
     );
 };

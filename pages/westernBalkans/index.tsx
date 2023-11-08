@@ -1,13 +1,11 @@
 "use client";
 import "../../app/globals.scss";
-import Navbar from "@/components/navbar";
 import StartingModule from "@/components/startingModule";
 import styles from "./westernBalkans.module.scss";
 import ContentReview from "@/components/contentReview";
 import infoContent from "@/public/img/bulgaria/infoContent.png";
 import MainTopic from "@/components/mainTopic";
 import React, {useEffect, useState} from "react";
-import yellowComma from '../../public/img/yellowComma.png'
 import yellowTitleCircle from "../../public/img/europe/yellowTitleCircle.png"
 import {Table} from "@/components/table";
 import tealTitleCircle from "../../public/img/westernBalkans/tealTitleCircle.png"
@@ -19,7 +17,7 @@ import FiveInfoStickyNotes from "@/components/fiveInfoStickyNotes";
 import infoPagesWB from "../../public/img/westernBalkans/infoPagesWB.png"
 import Exam from "@/components/exam";
 import civilianEducationWB from "../../public/img/westernBalkans/civilianEducationWB.png"
-import contentReview3 from "../../public/img/westernBalkans/content3Wb.png"
+import contentReview3 from "../../public/img/westernBalkans/content3Wb-bg.png"
 import activeCitizen from "../../public/img/westernBalkans/activeCitizen.png"
 import wbInstruments from "../../public/img/westernBalkans/wbInstruments.png"
 import wbDocuments from "../../public/img/westernBalkans/wbInstruments.png"
@@ -35,7 +33,7 @@ const WesternBalkans = () => {
         switch (locale) {
             case 'bg': {
                 setYtLink(
-                    <iframe width="800" height="515" src="https://www.youtube.com/embed/JKBhj7D9s0A"
+                    <iframe width="900" height="715" src="https://www.youtube.com/embed/JKBhj7D9s0A"
                             title="YouTube video player" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
@@ -44,7 +42,7 @@ const WesternBalkans = () => {
             }
             case 'eng': {
                 setYtLink(
-                    <iframe width="800" height="515" src="https://www.youtube.com/embed/KLT5o4aA_T0"
+                    <iframe width="900" height="715" src="https://www.youtube.com/embed/KLT5o4aA_T0"
                             title="YouTube video player" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
@@ -53,7 +51,7 @@ const WesternBalkans = () => {
             }
             case 'slo': {
                 setYtLink(
-                    <iframe width="800" height="515" src="https://www.youtube.com/embed/Bk6cd8Lbn-Y"
+                    <iframe width="900" height="715" src="https://www.youtube.com/embed/Bk6cd8Lbn-Y"
                             title="YouTube video player" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
@@ -123,14 +121,17 @@ const WesternBalkans = () => {
                 </div>
             </div>
         </div>
-        <ContentReview heading={texts.Content_heading} contentImage={infoContent} background={styles.yellowText}
-                       className={styles.sectionContainer}/>
+        <ContentReview
+            heading={texts.Content_heading}
+            contentImage={`./img/infoContent-${locale}.png`}
+            background={styles.yellowText}
+            className={styles.sectionContainer}
+        />
         <div
             id={"eu-for-citizens-3"}
             className={`grayBackground ${styles.sectionContainer}`}
         >
             <p className={styles.textForVideo}>{texts.textForVideo}</p>
-
             <div className={styles.videoContainer}>
                 {ytLink}
             </div>
@@ -145,7 +146,7 @@ const WesternBalkans = () => {
             mainText={texts.M1_topic1_text}
         />
         <Table
-            tableImg={'/img/westernBalkans/westernBalkansTable.png'}
+            tableImg={`/img/westernBalkans/westernBalkansTable-${locale}.png`}
             className={`${styles.sectionContainer} ${styles.yellowBg}`}
         />
         <MainTopic
@@ -216,7 +217,7 @@ const WesternBalkans = () => {
                         commaImage={'/img/tealComma.svg'}/>
         <div className={`${styles.contentsModule2Container} ${styles.sectionContainer}`}>
             <div className={styles.contentsModule2Title}>{texts.Content_heading}</div>
-            <img src={'/img/contents2.png'} className={styles.contentsModule2}/>
+            <img src={`./img/contentReview2-${locale}.png`}className={styles.contentsModule2}/>
         </div>
         <MainTopic
             titleImage={grayTitleCircle}
@@ -450,7 +451,7 @@ const WesternBalkans = () => {
         />
         <ContentReview
             heading={texts.Content_heading}
-            contentImage={contentReview3}
+            contentImage={`/img/westernBalkans/content3Wb-${locale}.png`}
             background={styles.whiteBackground}
             className={styles.sectionContainer}
         />

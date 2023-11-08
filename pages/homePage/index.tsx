@@ -3,7 +3,7 @@ import React, {useEffect, useState} from "react";
 import Navbar from "@/components/navbar";
 import StartingModule from "@/components/startingModule";
 import CenteredScheme from "@/components/centeredScheme";
-import scheme1 from "../../public/img/bulgaria/scheme1.png";
+import scheme1 from "../../public/img/bulgaria/scheme1-bg.png";
 import ContentReview from "@/components/contentReview";
 import TopLeftImage from "@/components/topLeftImage";
 import TopRightImage from "@/components/topRightImage";
@@ -13,8 +13,6 @@ import redTitleCircle from "../../public/img/bulgaria/redTitleCircle.png";
 import grayTitleCircle from "../../public/img/bulgaria/grayTitleCircle.png";
 import peopleDigging from "../../public/img/bulgaria/twoPeopleDigging.png";
 import InfoWithNotes from "@/components/infoWithNotes";
-import infoContent from "../../public/img/bulgaria/infoContent.png";
-import ContentReview2 from "../../public/img/bulgaria/contentReview2.png";
 import womenWorking from "../../public/img/bulgaria/womenWorking.png";
 import Exam from "@/components/exam";
 import DownLeftImageTexts from "@/components/downLeftImageTexts";
@@ -31,7 +29,6 @@ import europeanInstruments from "../../public/img/bulgaria/europeanInstruments.p
 import docs from "../../public/img/bulgaria/docs.png"
 import styles from './bulgaria.module.scss'
 import {getTexts} from "@/contexts/LanguageContext";
-import parse from "html-react-parser";
 
 const HomePage = () => {
     const [theme, setTheme] = useState("dark");
@@ -43,7 +40,7 @@ const HomePage = () => {
         switch (locale) {
             case 'bg': {
                 setYtLink(
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XuiL4Ia9vqg"
+                    <iframe width="900" height="715" src="https://www.youtube.com/embed/XuiL4Ia9vqg"
                             title="YouTube video player" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
@@ -52,7 +49,7 @@ const HomePage = () => {
             }
             case 'eng': {
                 setYtLink(
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XWeCt84A13E"
+                    <iframe width="900" height="715" src="https://www.youtube.com/embed/XWeCt84A13E"
                             title="YouTube video player" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
@@ -61,7 +58,7 @@ const HomePage = () => {
             }
             case 'slo': {
                 setYtLink(
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JADqULc5J20"
+                    <iframe width="900" height="715" src="https://www.youtube.com/embed/JADqULc5J20"
                             title="YouTube video player" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
@@ -158,7 +155,7 @@ const HomePage = () => {
                        hasTitleImage={true}
                        className={styles.sectionContainer}
                        titleText={texts.M1_topic1} mainText={texts.M1_topic1_text}/>
-            <CenteredScheme title={texts.M1_topic2} centerImageSrc={scheme1} text={texts.M1_topic2_text}
+            <CenteredScheme title={texts.M1_topic2} centerImageSrc={`./img/bulgaria/scheme1-${locale}.png`} text={texts.M1_topic2_text}
                             className={styles.sectionContainer}/>
             <div
                 id={"eu-for-citizens-3"}
@@ -256,8 +253,12 @@ const HomePage = () => {
                   scribbleImgClass={styles.greenScribble}/>
             <StartingModule moduleText={texts.M2_title} moduleBackgroundColor={"redBackground"}
                             className={styles.sectionContainer} commaImage={"./img/redComma.svg"}/>
-            <ContentReview heading={texts.M2_content_heading} contentImage={ContentReview2} background={"redBackground"}
-                           className={styles.sectionContainer}/>
+            <ContentReview
+                heading={texts.M2_content_heading}
+                contentImage={`./img/contentReview2-${locale}.png`}
+                background={"redBackground"}
+                className={styles.sectionContainer}
+            />
 
 
             <MainTopic
@@ -391,8 +392,12 @@ const HomePage = () => {
             <Exam titleImage={redTitleCircle} background={"redBackground"} className={styles.sectionContainer}/>
             <StartingModule moduleText={texts.M3_title} moduleBackgroundColor={"grayBackground"}
                             className={styles.sectionContainer}/>
-            <ContentReview heading={texts.M3_content_heading} contentImage={ContentReview2} background={"redBackground"}
-                           className={styles.sectionContainer}/>
+            <ContentReview
+                heading={texts.M3_content_heading}
+                contentImage={`./img/contentReview3-${locale}.png`}
+                background={"whiteBackground"}
+                className={styles.sectionContainer}
+            />
             <MainTopic
                 background={"greenBackground"}
                 hasButton={true}
@@ -500,10 +505,8 @@ const HomePage = () => {
                 </div>
             </div>
             <Exam titleImage={redTitleCircle} background={"redBackground"} className={styles.sectionContainer}
-                  btnClass={styles.redText} scribbleImg={'/img/redScribble.png'}/>
-            <div id={"extra-resources"} className={`${styles.sectionContainer} ${styles.redBackground}`}>
-                <img src={'/img/europe/extra-resource.png'} className={styles.ERImg}/>
-            </div>
+                  btnClass={styles.redText} scribbleImg={'/img/redScribble.png'}
+            />
         </div>
     )
 }

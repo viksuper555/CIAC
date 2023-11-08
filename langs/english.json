@@ -120,7 +120,7 @@
     "M1_title": "Module 1 Bulgaria",
     "M1_content_heading": "Content",
     "M1_topic1": "Politics",
-    "M1_topic1_text": "Bulgaria's policy is based on several key principles and values ​​that determine the direction and priorities of the country. ",
+    "M1_topic1_text": "Bulgaria's policy is based on several key principles and values that determine the direction and priorities of the country. Here are some of the basics for Bulgaria's political system and governance. ",
     "M1_topic1_quotes": [
       "N. Haitov",
       "Only those whose hearts want to fly have wings...",
@@ -496,7 +496,31 @@
     "mainText": "Целта на настоящия Национален анализ (Интелектуален продукт 1 по проекта) е да послужи като основа и инструмент за подготовка на младежки работници, представители на местните власти, учители и млади хора по отношение насърчаването на активното младежко участие. Обхваща и четирите измерения на активното гражданство - социално, културно, икономическо и политическо, и предоставя необходимата информационна база за ефективна последваща работа на различните представители в процеса на оказване на подкрепа за повишаване на младежката ангажираност във всички сфери на обществения и политическия живот.\nОсновните използвани методи при провеждане на изследването и подготовката на настоящия анализ са:\n- Търсене, подбор и преглед на изследвания в рамките на държавата/обхванатите от проекта райони и друга налична литература и надеждни източници на информация по темата\n- Ползване на резултатите от проведени анкетни проучвания сред младежи от целевите групи в двата района, обхванати от проекта – тези на София и на Кърджали, България (анкетното проучва и доклад от анкетните проучвания са приложени по-долу ) и Вторичен анализ на вече провеждани изследвания, проучвания и анализи по разглежданата тема.\nНастоящият анализ е изготвен в рамките на проект 2020-2-BG01-KA205-079486 Creativity and Innovation for Active Citizenship (CIAC) по програма Еразъм+, с водеща организация „OMEGA“ (Кърджали, България), партньори Фондация „Кореняк“ (София, България) и „DRUSTVO ZA RAZVIJANJE PROSTOVOLJNEGA DELA NOVO MESTO“ (Словения).\nОсновни целеви групи на проекта са: Младежи; Младежки лидери; Младежки работници; Младежи доброволци; Младежки НПО и Власти на местно, регионално и национално ниво."
   },
   "handbook": {
-    "download": "Изтегли",
+    "download": "Download",
     "description": "Описание за продукта Добре дошли в платформата за обучение на младите граждани! Нашата мисия е да предоставим образователни ресурси и инструменти, които да помогнат на младите хора да се развиват като активни и отговорни граждани. \n\nПлатформата е изработена съгласно проект 2020-2-BG01-KA205-079486 Creativity and Innovation for Active Citizenship (CIAC), изпълняван в партньорство с Фондация „Кореняк“ и „DRUSTVO ZA RAZVIJANJE PROSTOVOLJNEGA DELA NOVO MESTO“, с бенефициент Сдружение ОМЕГА.\n\nТук ще откриете разнообразие от материали, предназначени да насърчат младежите да разберат и да се ангажират с важни граждански въпроси. Ще намерите информация за различни аспекти на гражданското участие, като демократични процеси, правата и отговорностите на гражданите, лидерство и управление на обществото.\n\n\n"
+  },
+  "components": {
+    "aboutProject": "About project",
+    "resume": "Resume",
+    "goals": "Goals",
+    "targetGroups": "Target groups",
+    "expectedResults": "Expected results",
+    "partnership": "Partnership",
+    "modules": "Modules",
+    "nationalExperience": "National experience",
+    "resources": "Resources",
+    "contacts": "Contacts",
+    "bulgarian": "Bulgarian",
+    "english": "English",
+    "slovenian": "Slovenia",
+    "bulgaria": "Bulgaria",
+    "europe": "Europe",
+    "slovenia": "Slovenia",
+    "westernBalkans": "Western Balkans",
+    "handbook": "Handbook",
+    "studyMethodology": "Study methodology",
+    "seeMore": "See more",
+    "exam": "Exam",
+    "изтегли": "Download"
   }
 }

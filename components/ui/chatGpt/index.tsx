@@ -14,6 +14,7 @@ const ChatGpt = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false)
     const [response, setResponse] = useState<any>("");
     const [generatingResponse, setGeneratingResponse] = useState<boolean>(false);
+    console.log("api key",process.env.NEXT_PUBLIC_API_KEY)
 
     const {texts: {Bulgaria: texts}} = getTexts();
 

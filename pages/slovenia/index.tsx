@@ -34,7 +34,6 @@ import parse from "html-react-parser";
 import {text} from "stream/consumers";
 
 const Slovenia = () => {
-    const [theme, setTheme] = useState("dark");
     const {texts: {Slovenia: texts}, locale} = getTexts();
     const [ytLink, setYtLink] = useState<any>()
 
@@ -42,7 +41,7 @@ const Slovenia = () => {
         switch (locale) {
             case 'bg': {
                 setYtLink(
-                    <iframe width="800" height="515" src="https://www.youtube.com/embed/dhOhiluSH2w"
+                    <iframe width="900" height="715" src="https://www.youtube.com/embed/dhOhiluSH2w"
                             title="YouTube video player" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
@@ -51,7 +50,7 @@ const Slovenia = () => {
             }
             case 'eng': {
                 setYtLink(
-                    <iframe width="800" height="515" src="https://www.youtube.com/embed/O-34AfFRErk"
+                    <iframe width="900" height="715" src="https://www.youtube.com/embed/O-34AfFRErk"
                             title="YouTube video player" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
@@ -60,7 +59,7 @@ const Slovenia = () => {
             }
             case 'slo': {
                 setYtLink(
-                    <iframe width="800" height="515" src="https://www.youtube.com/embed/FEcjIgcJJU8"
+                    <iframe width="900" height="715" src="https://www.youtube.com/embed/FEcjIgcJJU8"
                             title="YouTube video player" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
@@ -137,7 +136,7 @@ const Slovenia = () => {
             </div>
             <ContentReview
                 heading={texts.Content_heading}
-                contentImage={infoContent} background={styles.redText}
+                contentImage={`./img/infoContent-${locale}.png`} background={styles.redText}
                 className={styles.sectionContainer}
             />
             <div
@@ -162,7 +161,7 @@ const Slovenia = () => {
                 chatGptMessage={"woof woof"}
             />
             <Table
-                tableImg={'/img/slovenia/slovTable.png'}
+                tableImg={`/img/slovenia/slovTable-${locale}.png`}
                 className={styles.sectionContainer}
             />
             <MainTopic
@@ -254,7 +253,6 @@ const Slovenia = () => {
                 className={styles.sectionContainer}
             />
 
-
             <StartingModule
                 moduleText={texts.M2_title}
                 moduleBackgroundColor={styles.bgRed}
@@ -264,7 +262,7 @@ const Slovenia = () => {
 
             <ContentReview
                 heading={texts.Content_heading}
-                contentImage={sloveniaContentTwo} background={styles.bgRed}
+                contentImage={`./img/contentReview2-${locale}.png`} background={styles.bgRed}
                 className={styles.sectionContainer}
             />
             <MainTopic
@@ -406,7 +404,7 @@ const Slovenia = () => {
                 className={styles.sectionContainer}
                 commaImage={'/img/grayComma.svg'}
             />
-            <ContentReview heading={texts.Content_heading} contentImage={contentReview3}
+            <ContentReview heading={texts.Content_heading} contentImage={`./img/contentReview3-${locale}.png`}
                            background={styles.whiteBackground} className={styles.sectionContainer}/>
             <div id={"impact-assessment"}
                  className={`${styles.sectionContainer} ${styles.impactAssessment} ${styles.bgBlue}`}>
@@ -532,9 +530,6 @@ const Slovenia = () => {
                 className={styles.sectionContainer}
             />
             <Exam titleImage={redTitleCircle} background={styles.bgRed} className={styles.sectionContainer}/>
-            <div id={"extra-resources"} className={`${styles.sectionContainer} ${styles.bgRed}`}>
-                <img src={'/img/europe/extra-resource.png'} className={styles.ERImg}/>
-            </div>
         </div>
     );
 };

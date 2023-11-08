@@ -4,6 +4,7 @@ import React from "react";
 import RedirectButton from "@/components/ui/readMoreBtn";
 import examW1 from "@/public/img/bulgaria/examW1.png"
 import examW2 from "@/public/img/bulgaria/examW2.png"
+import {getTexts} from "@/contexts/LanguageContext";
 
 interface Props {
     titleImage: any,
@@ -20,13 +21,14 @@ const Exam = ({
     titleImage, background, className, id, scribbleImg,
     scribbleImgClass, btnClass, titleClass
 }: Props) => {
+    const {texts: {components: texts}, locale} = getTexts();
 
     return (
             <div id={id} className={`${styles.examContainer} ${background} ${className}`}>
                 <div className={styles.titleContainer}>
                     <Image src={titleImage} alt={"commaImg"} className="mt-6"/>
                     <span className={`${styles.titleText} ${titleClass}`}>
-                        Тест
+                        {texts.exam}
                     </span>
                 </div>
             <div className={styles.actionBtnContainer}>

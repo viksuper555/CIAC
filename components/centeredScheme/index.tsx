@@ -25,7 +25,7 @@ const CenteredScheme = ({ title, centerImageSrc, text, className }: Props) => {
                     </div>
                 }
                 <div className={styles.schemeContainer}>
-                    <Image src={centerImageSrc} alt={"commaImg"} className="mt-6"/>
+                    <img src={centerImageSrc} alt={"commaImg"} className="mt-6"/>
                 </div>
                 <div className={styles.bottomText}>
                     {text}
