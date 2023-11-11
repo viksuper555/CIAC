@@ -214,7 +214,8 @@ const WesternBalkans = () => {
             titleClass={styles.IATestTitle}
         />
         <StartingModule moduleBackgroundColor={styles.tealBackground} moduleText={texts.M2_title}
-                        commaImage={'/img/tealComma.svg'}/>
+                        commaImage={'/img/tealComma.svg'}
+        className={styles.sectionContainer}/>
         <div className={`${styles.contentsModule2Container} ${styles.sectionContainer}`}>
             <div className={styles.contentsModule2Title}>{texts.Content_heading}</div>
             <img src={`./img/contentReview2-${locale}.png`}className={styles.contentsModule2}/>

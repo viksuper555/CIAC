@@ -337,7 +337,7 @@ const Slovenia = () => {
                 className={styles.sectionContainer}
             />
             <TextWithAction
-                className={`${styles.sectionContainer} ${styles.bgRed} w-1/2`}
+                className={`${styles.sectionContainer} ${styles.bgRed}`}
                 scribbleImg={'/img/scribble.svg'}
                 hasActionBtn={false}
             >

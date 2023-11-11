@@ -521,6 +521,10 @@
     "studyMethodology": "Study methodology",
     "seeMore": "See more",
     "exam": "Exam",
-    "изтегли": "Download"
+    "download": "Download",
+    "shortSummary": "Short summary",
+    "validMessage": "Please enter a valid sentence",
+    "generatingResponse": "Please wait, a response is being generated for you! :) ",
+    "enterSentence": "Write your question"
   }
 }

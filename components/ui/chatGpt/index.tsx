@@ -14,16 +14,14 @@ const ChatGpt = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false)
     const [response, setResponse] = useState<any>("");
     const [generatingResponse, setGeneratingResponse] = useState<boolean>(false);
-    console.log("api key",process.env.NEXT_PUBLIC_API_KEY)
 
-    const {texts: {Bulgaria: texts}} = getTexts();
+    const {texts: {components: texts}} = getTexts();
 
     useEffect(() => {
         window.addEventListener(config.CHATGPT_MSG, (event: any) => handleNewMessage(event));
     }, []);
 
     const handleNewMessage = (event: any) => {
-        console.log(event)
         if(event) {
             setIsOpen(true)
             setPrompt(event.detail)
@@ -41,7 +39,7 @@ const ChatGpt = () => {
     const askChatGPT = async () => {
         if (!generatingResponse) {
             if (prompt?.length <= 0) {
-                alert("Please insert a valid message! :)");
+                alert(texts.validMessage);
             }
 
             setGeneratingResponse(true);
@@ -52,7 +50,7 @@ const ChatGpt = () => {
 
             setResponse("");
             const chatCompletion = await openai.chat.completions.create({
-                messages: [{ role: 'user', content: "Кратко обяснение:" +prompt }],
+                messages: [{ role: 'user', content: `${texts.shortSummary}` +prompt }],
                 model: 'gpt-3.5-turbo',
             });
 
@@ -79,7 +77,7 @@ const ChatGpt = () => {
                 <div className={styles.CGPTInputWrapper}>
                     <input
                         id={"chatGPT-prompt"}
-                        placeholder={"Напишете въпроса тук"}
+                        placeholder={texts.enterSentence}
                         className={styles.CGPTInput}
                         value={prompt}
                         onChange={handleInputChange}

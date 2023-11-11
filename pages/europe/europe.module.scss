@@ -1,7 +1,7 @@
 .sectionContainer {
     @apply py-4 relative overflow-hidden;
     height: 1080px;
-    width: 100%;
+    margin: 1rem;
 }
 
 .chatGPTContainer {
@@ -1073,7 +1073,6 @@
 
 .policyContainer {
     height: 100%;
-    width: 100%;
 
     min-height: 800px;
 }

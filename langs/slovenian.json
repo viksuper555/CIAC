@@ -510,6 +510,11 @@
     "studyMethodology": "Учебна методология",
     "seeMore": "Виж още",
     "exam": "Тест",
-    "изтегли": "Изтегли"
+    "download": "Изтегли",
+    "shortSummary": "Short summary",
+    "validMessage": "Моля въведете изречение",
+    "generatingResponse": "Моля изчакайте, генерира се отговор вмомента :)",
+    "enterSentence": "Въведете въпроса тук"
+
   }
 }

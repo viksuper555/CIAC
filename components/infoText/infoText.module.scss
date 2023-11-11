@@ -1,7 +1,6 @@
 .infoTextContainer {
   @apply flex justify-center items-center mt-4;
   height: 100%;
-  width: 100%;
 
   @media screen and (min-width: 1024px) {
     @apply mt-12;
