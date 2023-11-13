@@ -5,7 +5,7 @@
   align-items: center;
   height: 100px;
   background: #F9F9F9;
-  bbackdrop-filter: blur(34px);
+  font-size: 22px;
 }
 
 .brand {
@@ -79,12 +79,24 @@
 
 .resourceItems {
   display: none;
+  position: absolute;
   z-index: 20;
+  padding-left: 5px;
+  padding-right: 5px;
+  flex-direction: column;
+  background: white;
+  cursor: pointer;
 }
 
 .dropdownItems {
   display: none;
+  position: absolute;
   z-index: 20;
+  padding-left: 5px;
+  padding-right: 5px;
+  flex-direction: column;
+  background: white;
+  cursor: pointer;
 }
 
 .item {
@@ -102,5 +114,11 @@
 
 .aboutItems {
   display: none;
+  position: absolute;
   z-index: 20;
+  padding-left: 5px;
+  padding-right: 5px;
+  flex-direction: column;
+  background: white;
+  cursor: pointer;
 }
