@@ -8,9 +8,10 @@ interface Props {
     title: string;
     text1: string;
     text2: string;
+    chatGptMessage?: string;
 }
 
-const TopRightImage = ({title, text1, text2}: Props) => {
+const TopRightImage = ({title, text1, text2, chatGptMessage}: Props) => {
     return (
         <div className={styles.container}>
             <div>
@@ -31,7 +32,7 @@ const TopRightImage = ({title, text1, text2}: Props) => {
                         <div className={styles.text}>
                             {text2}
                         </div>
-                        <RedirectButton/>
+                        <RedirectButton chatGptMessage={chatGptMessage}/>
                     </div>
                 </div>
             </div>

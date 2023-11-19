@@ -151,10 +151,15 @@ const HomePage = () => {
                     {ytLink}
                 </div>
             </div>
-            <MainTopic titleImage={greenTitleCircle} background={"greenBackground"} hasButton={true}
-                       hasTitleImage={true}
-                       className={styles.sectionContainer}
-                       titleText={texts.M1_topic1} mainText={texts.M1_topic1_text}/>
+            <MainTopic
+                titleImage={greenTitleCircle}
+                background={"greenBackground"}
+                hasButton={true}
+                hasTitleImage={true}
+                className={styles.sectionContainer}
+                titleText={texts.M1_topic1} mainText={texts.M1_topic1_text}
+                chatGptMessage={texts.chatGptQuestion1}
+            />
             <CenteredScheme title={texts.M1_topic2} centerImageSrc={`./img/bulgaria/scheme1-${locale}.png`} text={texts.M1_topic2_text}
                             className={styles.sectionContainer}/>
             <div
@@ -176,7 +181,7 @@ const HomePage = () => {
             </div>
             <TopLeftImage title={texts.M1_topic3} text1={texts.M1_topic3_text1} text2={texts.M1_topic3_text2}
                           text3={texts.M1_topic3_text3}/>
-            <TopRightImage title={texts.M1_topic3} text1={texts.M1_topic3_text4} text2={texts.M1_topic3_text5}/>
+            <TopRightImage title={texts.M1_topic3} text1={texts.M1_topic3_text4} text2={texts.M1_topic3_text5} chatGptMessage={texts.chatGptQuestion2}/>
             <MainTopic
                 titleImage={redTitleCircle}
                 background={"redBackground"}
@@ -185,6 +190,7 @@ const HomePage = () => {
                 titleText={texts.M1_topic5}
                 mainText={texts.M1_topic5_text}
                 className={styles.sectionContainer}
+                chatGptMessage={texts.chatGptQuestion3}
             />
             <MainTopic
                 background={"redBackground"}
@@ -204,6 +210,7 @@ const HomePage = () => {
                 mainText={texts.M1_topic7_text}
                 downRightImage={peopleDigging}
                 className={styles.sectionContainer}
+                chatGptMessage={texts.chatGptQuestion4}
             />
             <div
                 id={"media-advice"}
@@ -259,8 +266,6 @@ const HomePage = () => {
                 background={"redBackground"}
                 className={styles.sectionContainer}
             />
-
-
             <MainTopic
                 background={"grayBackground"}
                 hasButton={true}
@@ -270,6 +275,7 @@ const HomePage = () => {
                 mainText={texts.M2_topic1_text}
                 downRightImage={womenWorking}
                 className={styles.sectionContainer}
+                chatGptMessage={texts.chatGptQuestion5}
             />
             <InfoWithNotes
                 background={"grayBackground"}
@@ -298,6 +304,7 @@ const HomePage = () => {
                 mainText={texts.M2_topic4_text}
                 downRightImage={cleaning}
                 className={styles.sectionContainer}
+                chatGptMessage={texts.chatGptQuestion6}
             />
             <div
                 id={"svobodi"}
@@ -330,6 +337,7 @@ const HomePage = () => {
                 mainText={texts.M2_topic6_text}
                 downRightImage={greenHandsTree}
                 className={styles.sectionContainer}
+                chatGptMessage={texts.chatGptQuestion7}
             />
             <div
                 id={"svobodi"}
@@ -359,6 +367,7 @@ const HomePage = () => {
                 mainText={texts.M2_topic8_text}
                 downRightImage={falseNews}
                 className={styles.sectionContainer}
+                chatGptMessage={texts.chatGptQuestion8}
             />
             <div
                 id={"false-news-recoginition"}
@@ -407,6 +416,7 @@ const HomePage = () => {
                 mainText={texts.M3_topic1_text}
                 downRightImage={workAndTravel1}
                 className={styles.sectionContainer}
+                chatGptMessage={texts.chatGptQuestion9}
             />
             <MainTopic
                 background={"redBackground"}
@@ -426,6 +436,7 @@ const HomePage = () => {
                 mainText={texts.M3_topic4_text}
                 downRightImage={euForPeople}
                 className={styles.sectionContainer}
+                chatGptMessage={texts.chatGptQuestion10}
             />
             <DownLeftImageTexts texts={texts.M3_topic5_texts} background={"grayBackground"}
                                 leftImage={handsTree} className={styles.sectionContainer}/>
@@ -455,6 +466,7 @@ const HomePage = () => {
                 mainText={texts.M3_topic7_text}
                 downRightImage={europeanInstruments}
                 className={styles.sectionContainer}
+                chatGptMessage={texts.chatGptQuestion11}
             />
             <div
                 id={"european-instrument-texts"}
@@ -484,6 +496,7 @@ const HomePage = () => {
                 mainText={texts.M3_topic9_text}
                 downRightImage={docs}
                 className={styles.sectionContainer}
+                chatGptMessage={texts.chatGptQuestion12}
             />
             <div
                 id={"european-instrument-texts"}
