@@ -158,7 +158,8 @@ const Slovenia = () => {
                 mainText={texts.M1_topic1_text}
                 className={styles.sectionContainer}
                 downRightImage={workingPeople}
-                chatGptMessage={"woof woof"}
+                chatGptMessage={texts.chatGptQuestion1}
+
             />
             <Table
                 tableImg={`/img/slovenia/slovTable-${locale}.png`}
@@ -237,6 +238,7 @@ const Slovenia = () => {
                 downRightImage={peopleWithPlanet}
                 mainText={texts.M1_topic6_text}
                 className={styles.sectionContainer}
+                chatGptMessage={texts.chatGptQuestion2}
             />
 
             <TextWithAction
@@ -274,6 +276,7 @@ const Slovenia = () => {
                 downRightImage={citizenEducation}
                 mainText={texts.M2_topic3_text}
                 className={styles.sectionContainer}
+                chatGptMessage={texts.chatGptQuestion3}
             />
 
             <div className={styles.sectionContainer}>
@@ -317,6 +320,7 @@ const Slovenia = () => {
                 downRightImage={citizenEducation}
                 mainText={texts.M2_topic7_text}
                 className={styles.sectionContainer}
+                chatGptMessage={texts.chatGptQuestion4}
             />
             <TextWithAction
                 className={`${styles.sectionContainer} ${styles.bgRed}`}
@@ -335,6 +339,7 @@ const Slovenia = () => {
                 downRightImage={celebrating}
                 mainText={texts.M2_topic9_text}
                 className={styles.sectionContainer}
+                chatGptMessage={texts.chatGptQuestion5}
             />
             <TextWithAction
                 className={`${styles.sectionContainer} ${styles.bgRed}`}
@@ -360,6 +365,7 @@ const Slovenia = () => {
                 downRightImage={celebrating}
                 mainText={texts.M2_topic10_text}
                 className={styles.sectionContainer}
+                chatGptMessage={texts.chatGptQuestion6}
             />
             <div
                 id={"media-advice"}
@@ -389,6 +395,7 @@ const Slovenia = () => {
                 downRightImage={celebrating}
                 mainText={texts.M2_topic12_text}
                 className={styles.sectionContainer}
+                chatGptMessage={texts.chatGptQuestion7}
             />
             <div id={"list"} className={`${styles.sectionContainer}   ${styles.centeredContent} ${"redBackground"}`}>
                 <img src={'img/greyScribble.svg'} className={`${styles.topLeftScribble2}`}/>
@@ -437,6 +444,7 @@ const Slovenia = () => {
                 downRightImage={europeanCitizen}
                 mainText={texts.M3_topic4_text}
                 className={styles.sectionContainer}
+                chatGptMessage={texts.chatGptQuestion8}
             />
             <div
                 id={"european-citizen-text"}
@@ -466,6 +474,7 @@ const Slovenia = () => {
                 downRightImage={notesCheck}
                 mainText={texts.M3_topic6_text}
                 className={styles.sectionContainer}
+                chatGptMessage={texts.chatGptQuestion9}
             />
             <TextWithAction
                 className={`${styles.sectionContainer} ${styles.whiteBackground}`}
@@ -520,6 +529,7 @@ const Slovenia = () => {
                 mainText={texts.M3_topic9_text}
                 className={styles.sectionContainer}
                 btnText={texts.M3_topic9_button}
+                chatGptMessage={texts.chatGptQuestion10}
             />
             <FiveInfoStickyNotes
                 text1={parse(texts.M3_topic10_texts[0]) as string}

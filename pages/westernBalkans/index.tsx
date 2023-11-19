@@ -144,6 +144,7 @@ const WesternBalkans = () => {
             className={styles.sectionContainer}
             titleText={texts.M1_topic1}
             mainText={texts.M1_topic1_text}
+            chatGptMessage={texts.chatGptQuestion1}
         />
         <Table
             tableImg={`/img/westernBalkans/westernBalkansTable-${locale}.png`}
@@ -158,6 +159,7 @@ const WesternBalkans = () => {
             titleText={texts.M1_topic3}
             downRightImage={wBSociety}
             mainText={texts.M1_topic3_text}
+            chatGptMessage={texts.chatGptQuestion2}
         />
         <TextWithAction
             className={`${styles.sectionContainer} ${styles.tealBackground}`}
@@ -176,6 +178,7 @@ const WesternBalkans = () => {
             titleText={texts.M1_topic5}
             downRightImage={wbInstitutions}
             mainText={texts.M1_topic5_text}
+            chatGptMessage={texts.chatGptQuestion3}
         />
         <FiveInfoStickyNotes
             className={`${styles.whiteBackground} ${styles.sectionContainer}`}
@@ -194,6 +197,7 @@ const WesternBalkans = () => {
             titleText={texts.M1_topic7}
             downRightImage={infoPagesWB}
             mainText={texts.M1_topic7_text}
+            chatGptMessage={texts.chatGptQuestion4}
         />
         <div
             id={"media-advice"}
@@ -229,6 +233,7 @@ const WesternBalkans = () => {
             titleText={texts.M2_topic3}
             downRightImage={civilianEducationWB}
             mainText={texts.M2_topic3_text}
+            chatGptMessage={texts.chatGptQuestion5}
         />
 
         <div
@@ -254,6 +259,7 @@ const WesternBalkans = () => {
             btnClass={styles.btnYouthEngagement}
             btnText={texts.M2_topic5_button}
             downRightImage={'/img/westernBalkans/youthactivityWb.png'}
+            chatGptMessage={texts.chatGptQuestion6}
         />
         <TextWithAction
             className={`${styles.sectionContainer} ${styles.yellowBackground}`}
@@ -326,6 +332,7 @@ const WesternBalkans = () => {
             className={`${styles.sectionContainer} ${styles.youthEngagement} ${styles.yellowBackground}`}
             btnClass={styles.btnYouthEngagement}
             downRightImage={'/img/westernBalkans/youthactivityWb.png'}
+            chatGptMessage={texts.chatGptQuestion7}
         />
         <div
             id={"list-of-opportunities"}
@@ -498,6 +505,7 @@ const WesternBalkans = () => {
             className={`${styles.sectionContainer} ${styles.youthEngagement}`}
             btnClass={styles.btnYouthEngagement}
             downRightImage={activeCitizen}
+            chatGptMessage={texts.chatGptQuestion8}
         />
         <div
             id={"active-citizen-wb-2"}
@@ -518,6 +526,7 @@ const WesternBalkans = () => {
             className={`${styles.sectionContainer} ${styles.youthEngagement}`}
             btnClass={styles.yellowText}
             downRightImage={activeCitizen}
+            chatGptMessage={texts.chatGptQuestion9}
         />
         <div
             id={"wb-for-citizen-2"}
@@ -549,6 +558,7 @@ const WesternBalkans = () => {
             className={`${styles.sectionContainer} ${styles.youthEngagement}`}
             btnClass={styles.yellowText}
             downRightImage={wbInstruments}
+            chatGptMessage={texts.chatGptQuestion10}
         />
 
         <div
@@ -571,6 +581,7 @@ const WesternBalkans = () => {
             className={`${styles.sectionContainer} ${styles.youthEngagement}`}
             btnClass={styles.tealBtnClass}
             downRightImage={wbDocuments}
+            chatGptMessage={texts.chatGptQuestion11}
         />
         <div id={"YE-examples"} className={`${styles.citizenAwarenessExamplesContainer} ${styles.sectionContainer}`}>
             <div className={styles.CANotes}>

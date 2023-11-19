@@ -147,6 +147,7 @@ const Europe = () => {
                 className={styles.sectionContainer}
                 downRightImage={'/img/europe/politics.png'}
                 downRightImageClass={styles.politicsImg}
+                chatGptMessage={texts.chatGptQuestion1}
             />
             <Table
                 tableImg={`/img/europe/politicsTable-${locale}.png`}
@@ -194,6 +195,7 @@ const Europe = () => {
                 downRightImage={peopleWithPlanet}
                 mainText={texts.M1_topic7_text}
                 className={`${styles.sectionContainer} ${styles.bgGray} ${styles.institutionsContainer}`}
+                chatGptMessage={texts.chatGptQuestion2}
             />
             <div id={"CA-examples"}
                  className={`${styles.citizenAwarenessExamplesContainer} ${styles.sectionContainer}`}>
@@ -296,6 +298,7 @@ const Europe = () => {
                 mainText={texts.M2_topic2_text}
                 className={`${styles.sectionContainer} ${styles.citizenAwarenessContainer}`}
                 btnClass={styles.btnCitizenAwareness}
+                chatGptMessage={texts.chatGptQuestion3}
             />
             <div id={"CA-examples"}
                  className={`${styles.citizenAwarenessExamplesContainer} ${styles.sectionContainer}`}>
@@ -360,6 +363,7 @@ const Europe = () => {
                 className={`${styles.sectionContainer} ${styles.youthEngagement} ${styles.bgBlue}`}
                 btnClass={styles.btnYouthEngagement}
                 btnText={texts.M2_topic4_button}
+                chatGptMessage={texts.chatGptQuestion4}
             />
             <TextWithAction
                 className={`${styles.sectionContainer} ${styles.bgBlue}`}
@@ -384,6 +388,7 @@ const Europe = () => {
                 btnClass={styles.YEBenefitsBtn}
                 downRightImageClass={styles.YEImage}
                 bottomRightImageContainerClass={styles.YEImageContainer}
+                chatGptMessage={texts.chatGptQuestion5}
             />
             <TextWithAction
                 className={`${styles.sectionContainer} ${styles.bgYellow}`}
@@ -406,6 +411,7 @@ const Europe = () => {
                 btnClass={styles.btnCitizenAwareness}
                 downRightImageClass={styles.YEBottomRightImg}
                 bottomRightImageContainerClass={styles.YEImageContainer}
+                chatGptMessage={texts.chatGptQuestion6}
             />
             <div id={"YE-examples"}
                  className={`${styles.citizenAwarenessExamplesContainer} ${styles.sectionContainer}`}>
@@ -532,6 +538,7 @@ const Europe = () => {
                 mainText={texts.M3_topic1_text}
                 className={styles.sectionContainer}
                 btnClass={styles.TEBtn}
+                chatGptMessage={texts.chatGptQuestion7}
             />
             <div
                 id={"travel-advice"}
@@ -564,6 +571,7 @@ const Europe = () => {
                 btnClass={styles.YEBenefitsBtn}
                 downRightImageClass={styles.YEImage}
                 bottomRightImageContainerClass={styles.YEImageContainer}
+                chatGptMessage={texts.chatGptQuestion8}
             />
             <div
                 id={"active-citizens-info"}
@@ -602,6 +610,7 @@ const Europe = () => {
                 btnClass={styles.EUBenefitsBtn}
                 downRightImageClass={styles.YEImage}
                 bottomRightImageContainerClass={styles.YEImageContainer}
+                chatGptMessage={texts.chatGptQuestion9}
             />
             <div
                 id={"eu-benefits-info"}
@@ -634,6 +643,7 @@ const Europe = () => {
                 btnClass={styles.EUToolsBtn}
                 downRightImageClass={styles.YEImage}
                 bottomRightImageContainerClass={styles.YEImageContainer}
+                chatGptMessage={texts.chatGptQuestion10}
             />
             <div
                 id={"eu-tools-info"}
@@ -665,6 +675,7 @@ const Europe = () => {
                 btnText={"Виж примери"}
                 downRightImageClass={styles.YEImage}
                 bottomRightImageContainerClass={styles.YEImageContainer}
+                chatGptMessage={texts.chatGptQuestion11}
             />
             <div
                 id={"erasmus-docs-info"}
