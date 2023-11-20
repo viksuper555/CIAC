@@ -1,26 +1,52 @@
 .nav {
   @apply pr-4 w-full z-[50];
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  height: 1080px;
+  background: #F9F9F9;
+  font-size: 22px;
+}
+
+.navItems {
+  @apply w-full z-[50];
+  display: flex;
   align-items: center;
   height: 100px;
   background: #F9F9F9;
-  font-size: 22px;
+  font-size: 18px;
+  justify-content: flex-start;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 22px;
+  }
+}
+
+.navbarIcon {
+  height: 1200px;
+  width: 100%;
 }
 
 .brand {
   img {
     height: 100%
   }
-  @apply ml-10;
+  @apply ml-10 pr-4;
   color: #686767;
 
   text-align: justify;
   font-family: Montserrat;
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  justify-self: flex-start;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 24px;
+    margin-right: 500px;
+  }
 }
 
 .toggle-container {

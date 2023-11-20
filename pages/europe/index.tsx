@@ -56,6 +56,8 @@ const Europe = () => {
         }
     }, [locale]);
 
+
+
     return (
         <div className={"app-container"}>
             <StartingModule
