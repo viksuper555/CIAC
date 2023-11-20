@@ -33,14 +33,13 @@ import {getTexts} from "@/contexts/LanguageContext";
 const HomePage = () => {
     const [theme, setTheme] = useState("dark");
     const {texts: {Bulgaria: texts}, locale} = getTexts();
-    console.log("==> locale", locale)
     const [ytLink, setYtLink] = useState<any>()
 
     useEffect(() => {
         switch (locale) {
             case 'bg': {
                 setYtLink(
-                    <iframe width="900" height="715" src="https://www.youtube.com/embed/XuiL4Ia9vqg"
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/XuiL4Ia9vqg"
                             title="YouTube video player" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
@@ -49,7 +48,7 @@ const HomePage = () => {
             }
             case 'eng': {
                 setYtLink(
-                    <iframe width="900" height="715" src="https://www.youtube.com/embed/XWeCt84A13E"
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/XWeCt84A13E"
                             title="YouTube video player" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
@@ -58,7 +57,7 @@ const HomePage = () => {
             }
             case 'slo': {
                 setYtLink(
-                    <iframe width="900" height="715" src="https://www.youtube.com/embed/JADqULc5J20"
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/JADqULc5J20"
                             title="YouTube video player" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>

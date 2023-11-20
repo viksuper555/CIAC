@@ -28,7 +28,7 @@ const Europe = () => {
         switch (locale) {
             case 'bg': {
                 setYtLink(
-                    <iframe width="900" height="715" src="https://www.youtube.com/embed/Z6cHHQ2wwrk"
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/Z6cHHQ2wwrk"
                             title="YouTube video player" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
@@ -37,7 +37,7 @@ const Europe = () => {
             }
             case 'eng': {
                 setYtLink(
-                    <iframe width="900" height="715" src="https://www.youtube.com/embed/y4hGxSYpFT0"
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/y4hGxSYpFT0"
                             title="YouTube video player" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
@@ -46,7 +46,7 @@ const Europe = () => {
             }
             case 'slo': {
                 setYtLink(
-                    <iframe width="900" height="715" src="https://www.youtube.com/embed/AmRul2NW1us"
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/AmRul2NW1us"
                             title="YouTube video player" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>

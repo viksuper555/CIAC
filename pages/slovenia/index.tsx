@@ -41,7 +41,7 @@ const Slovenia = () => {
         switch (locale) {
             case 'bg': {
                 setYtLink(
-                    <iframe width="900" height="715" src="https://www.youtube.com/embed/dhOhiluSH2w"
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/dhOhiluSH2w"
                             title="YouTube video player" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
@@ -50,7 +50,7 @@ const Slovenia = () => {
             }
             case 'eng': {
                 setYtLink(
-                    <iframe width="900" height="715" src="https://www.youtube.com/embed/O-34AfFRErk"
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/O-34AfFRErk"
                             title="YouTube video player" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
@@ -59,7 +59,7 @@ const Slovenia = () => {
             }
             case 'slo': {
                 setYtLink(
-                    <iframe width="900" height="715" src="https://www.youtube.com/embed/FEcjIgcJJU8"
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/FEcjIgcJJU8"
                             title="YouTube video player" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>

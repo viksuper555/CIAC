@@ -33,7 +33,7 @@ const WesternBalkans = () => {
         switch (locale) {
             case 'bg': {
                 setYtLink(
-                    <iframe width="900" height="715" src="https://www.youtube.com/embed/JKBhj7D9s0A"
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/JKBhj7D9s0A"
                             title="YouTube video player" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
@@ -42,7 +42,7 @@ const WesternBalkans = () => {
             }
             case 'eng': {
                 setYtLink(
-                    <iframe width="900" height="715" src="https://www.youtube.com/embed/KLT5o4aA_T0"
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/KLT5o4aA_T0"
                             title="YouTube video player" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
@@ -51,7 +51,7 @@ const WesternBalkans = () => {
             }
             case 'slo': {
                 setYtLink(
-                    <iframe width="900" height="715" src="https://www.youtube.com/embed/Bk6cd8Lbn-Y"
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/Bk6cd8Lbn-Y"
                             title="YouTube video player" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
