@@ -34,7 +34,7 @@ const Exam = ({
             <div className={styles.actionBtnContainer}>
                 <div className={styles.actionBtnInner}>
                     <div className={`${styles.actionBtn} ${btnClass}`}>
-                        Изтегли
+                        {texts.download}
                     </div>
                     <img src={scribbleImg ?? '/img/scribble.svg'} className={`${styles.scribble} ${scribbleImgClass}`}/>
                 </div>
