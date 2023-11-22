@@ -10,7 +10,7 @@
 }
 
 .navItems {
-  @apply w-full z-[50];
+  @apply w-full z-[50] pr-8;
   display: flex;
   align-items: center;
   height: 100px;
@@ -41,7 +41,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  justify-self: flex-start;
+  justify-self: flex-end;
 
   @media screen and (min-width: 1440px) {
     font-size: 24px;
@@ -73,20 +73,6 @@
 
 .dark {
   color: black;
-}
-
-@media screen and (min-width: 280px) and (max-width: 1080px) {
-  .nav {
-    position: relative;
-    padding: 1rem 2rem;
-  }
-
-  .links {
-    flex-direction: column;
-    li {
-
-    }
-  }
 }
 
 .moduleDropdown:hover {

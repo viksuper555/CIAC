@@ -18,9 +18,9 @@ const Navbar:FC<Props> = ({changeTheme, currentTheme, className}: Props) => {
         <nav className={`${styles.nav} ${className}`}>
             <img src={'./img/navbarIcon.png'} width={1920} height={300} className={styles.navbarIcon}/>
             <div className={styles.navItems}>
-                <div>
+                <div className={styles.brand}> CIAC.EU</div>
+                <div className={"flex justify-end w-full"}>
                     <ul className={styles.links}>
-                        <div className={styles.brand}> CIAC.EU</div>
                         <ul className={styles.aboutProject}>
                             <a href={"/aboutProject"}> {texts.aboutProject} </a>
                             <div className={styles.aboutItems}>
