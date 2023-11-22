@@ -22,7 +22,10 @@ import parse from "html-react-parser";
 const Europe = () => {
     const [theme, setTheme] = useState("dark");
     const {texts: {Europe: texts}, locale} = getTexts();
-    const [ytLink, setYtLink] = useState<any>()
+    const [ytLink, setYtLink] = useState<any>();
+    const [downloadLinkOne, setDownloadLinkOne] = useState<any>()
+    const [downloadLinkTwo, setDownloadLinkTwo] = useState<any>()
+    const [downloadLinkThree, setDownloadLinkThree] = useState<any>()
 
     useEffect(() => {
         switch (locale) {
@@ -33,6 +36,9 @@ const Europe = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
                 );
+                setDownloadLinkOne("https://drive.google.com/uc?export=download&id=14HBE2aNX0dv-kjRe_cOX2z2eBJMlBB62")
+                setDownloadLinkTwo("https://drive.google.com/uc?export=download&id=1c9fn7S1CInRxCRRmMcjsHErmcjGUO25h")
+                setDownloadLinkThree("https://drive.google.com/uc?export=download&id=1OxIsuciwo-QH2RUb21GWeTxon4CpSzRx")
                 return;
             }
             case 'eng': {
@@ -42,6 +48,9 @@ const Europe = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
                 )
+                setDownloadLinkOne("https://drive.google.com/uc?export=download&id=1vMh9UcewZtJIjndDKEeT941j-RdrPP2z")
+                setDownloadLinkTwo("https://drive.google.com/uc?export=download&id=1tbVndkrpucUWEI3jLTg-X2fGNosE1IvH")
+                setDownloadLinkThree("https://drive.google.com/uc?export=download&id=1JCriZEfE4HFtL0nOFFwnEECwoHjF8nUl")
                 return
             }
             case 'slo': {
@@ -51,6 +60,9 @@ const Europe = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
                 )
+                setDownloadLinkOne("https://drive.google.com/uc?export=download&id=1ErkEN2eCOmEpzY29-NvhnklHe0p3vyaw")
+                setDownloadLinkTwo("https://drive.google.com/uc?export=download&id=1EqITPThFwOr3egzYoFUNUWYy5O6CpVJh")
+                setDownloadLinkThree("https://drive.google.com/uc?export=download&id=1CfjNWeCPfGbUZmarVfzPyYrYoiqVNa5Y")
                 return;
             }
         }
@@ -277,6 +289,7 @@ const Europe = () => {
                 id={"exam-europe-module-1"}
                 titleImage={blueTitleCircle} background={"blueBackground"}
                 className={styles.sectionContainer}
+                downloadLink={downloadLinkOne}
             />
             <StartingModule
                 id={"starting-module-2"}
@@ -517,6 +530,7 @@ const Europe = () => {
                 scribbleImgClass={styles.IAScribble}
                 btnClass={styles.IABtnClass}
                 titleClass={styles.IATestTitle}
+                downloadLink={downloadLinkTwo}
             />
             <StartingModule
                 id={"starting-module-3"}
@@ -706,6 +720,7 @@ const Europe = () => {
                 scribbleImgClass={styles.IAScribble}
                 btnClass={styles.IABtnClass}
                 titleClass={styles.IATestTitle}
+                downloadLink={downloadLinkThree}
             />
         </div>
     );

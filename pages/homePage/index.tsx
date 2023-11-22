@@ -34,6 +34,9 @@ const HomePage = () => {
     const [theme, setTheme] = useState("dark");
     const {texts: {Bulgaria: texts}, locale} = getTexts();
     const [ytLink, setYtLink] = useState<any>()
+    const [downloadLinkOne, setDownloadLinkOne] = useState<any>()
+    const [downloadLinkTwo, setDownloadLinkTwo] = useState<any>()
+    const [downloadLinkThree, setDownloadLinkThree] = useState<any>()
 
     useEffect(() => {
         switch (locale) {
@@ -44,6 +47,9 @@ const HomePage = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
                 );
+                setDownloadLinkOne("https://drive.google.com/uc?export=download&id=1kkKQAbtIhjlLHb62peAk_2VVNDZKly98");
+                setDownloadLinkTwo("https://drive.google.com/uc?export=download&id=1rfCnZ3JOVtZj22FSWkilfHguwSG4F2FL");
+                setDownloadLinkThree("https://drive.google.com/uc?export=download&id=1H_w7zLtP4F0YuYC7lG07j7vFolTYd1rx");
                 return;
             }
             case 'eng': {
@@ -53,7 +59,10 @@ const HomePage = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
                 )
-                return
+                setDownloadLinkOne("https://drive.google.com/uc?export=download&id=1C2gGjuxv4uh8Al03N14gCcWbtGyJTgbh")
+                setDownloadLinkTwo("https://drive.google.com/uc?export=download&id=1xhXdh8_TpnuuE0kPmwvQ9ZbKR5-XytwO")
+                setDownloadLinkThree("https://drive.google.com/uc?export=download&id=1yXLFKUko7eEdBJV2kOQ3AlcXc0J3nlth")
+                return;
             }
             case 'slo': {
                 setYtLink(
@@ -62,6 +71,9 @@ const HomePage = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
                 )
+                setDownloadLinkOne("https://drive.google.com/uc?export=download&id=1M6QPdxzgiqZcKmgEzRFq6knl08OyW3sX")
+                setDownloadLinkTwo("https://drive.google.com/uc?export=download&id=1yREq4Nc9x0LQ8kqfy_wfqKB3JjNqs0-V")
+                setDownloadLinkThree("https://drive.google.com/uc?export=download&id=1qPQzsI6-ji9tHZMEtbL_Z-jEhRIphK6l")
                 return;
             }
         }
@@ -256,7 +268,7 @@ const HomePage = () => {
             />
             <Exam titleImage={greenTitleCircle} background={"greenBackground"} className={styles.sectionContainer}
                   btnClass={styles.greenText} scribbleImg={'./img/greenScribble.svg'}
-                  scribbleImgClass={styles.greenScribble}/>
+                  scribbleImgClass={styles.greenScribble} downloadLink={downloadLinkOne}/>
             <StartingModule moduleText={texts.M2_title} moduleBackgroundColor={"redBackground"}
                             className={styles.sectionContainer} commaImage={"./img/redComma.svg"}/>
             <ContentReview
@@ -397,7 +409,7 @@ const HomePage = () => {
                 downRightImage={heartPeople}
                 className={styles.sectionContainer}
             />
-            <Exam titleImage={redTitleCircle} background={"redBackground"} className={styles.sectionContainer}/>
+            <Exam titleImage={redTitleCircle} background={"redBackground"} className={styles.sectionContainer} downloadLink={downloadLinkTwo}/>
             <StartingModule moduleText={texts.M3_title} moduleBackgroundColor={"grayBackground"}
                             className={styles.sectionContainer}/>
             <ContentReview
@@ -517,7 +529,7 @@ const HomePage = () => {
                 </div>
             </div>
             <Exam titleImage={redTitleCircle} background={"redBackground"} className={styles.sectionContainer}
-                  btnClass={styles.redText} scribbleImg={'/img/redScribble.png'}
+                downloadLink={downloadLinkThree} btnClass={styles.redText} scribbleImg={'/img/redScribble.png'}
             />
         </div>
     )

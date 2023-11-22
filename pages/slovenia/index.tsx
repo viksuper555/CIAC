@@ -36,6 +36,9 @@ import {text} from "stream/consumers";
 const Slovenia = () => {
     const {texts: {Slovenia: texts}, locale} = getTexts();
     const [ytLink, setYtLink] = useState<any>()
+    const [downloadLinkOne, setDownloadLinkOne] = useState<any>()
+    const [downloadLinkTwo, setDownloadLinkTwo] = useState<any>()
+    const [downloadLinkThree, setDownloadLinkThree] = useState<any>()
 
     useEffect(() => {
         switch (locale) {
@@ -46,6 +49,9 @@ const Slovenia = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
                 );
+                setDownloadLinkOne("https://drive.google.com/uc?export=download&id=1I-XRFJlMx-We6hhHkR6JhKQ41g7pMN4j");
+                setDownloadLinkTwo("https://drive.google.com/uc?export=download&id=1OJD8nyLQDLKY7EoW56JT4JiVyio4SMhX");
+                setDownloadLinkThree("https://drive.google.com/uc?export=download&id=1kh60v2i6Q0WGj_H2HTT3C6fZ624ocUgI");
                 return;
             }
             case 'eng': {
@@ -54,7 +60,10 @@ const Slovenia = () => {
                             title="YouTube video player" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
-                )
+                );
+                setDownloadLinkOne("https://drive.google.com/uc?export=download&id=1LYvY5cTsDPhB58_E_mk4BC_BX60dHaQR");
+                setDownloadLinkTwo("https://drive.google.com/uc?export=download&id=1qafJQn30Ruell8GAQPQQoqoNezRBufse");
+                setDownloadLinkThree("https://drive.google.com/uc?export=download&id=19jyJENojKxtkJpnPOifsDOpYY2GaKucj");
                 return
             }
             case 'slo': {
@@ -63,7 +72,10 @@ const Slovenia = () => {
                             title="YouTube video player" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
-                )
+                );
+                setDownloadLinkOne("https://drive.google.com/uc?export=download&id=17HjSFpV--ksUmCQyx2EYRdbe0IXHD-9P");
+                setDownloadLinkTwo("https://drive.google.com/uc?export=download&id=1XGKgBQdcTvVZ93goGXqheetmIMrYhMVm");
+                setDownloadLinkThree("https://drive.google.com/uc?export=download&id=1XGKgBQdcTvVZ93goGXqheetmIMrYhMVm");
                 return;
             }
         }
@@ -253,6 +265,7 @@ const Slovenia = () => {
             <Exam
                 titleImage={blueTitleCircle} background={"blueBackground"}
                 className={styles.sectionContainer}
+                downloadLink={downloadLinkOne}
             />
 
             <StartingModule
@@ -404,7 +417,7 @@ const Slovenia = () => {
                 </div>
             </div>
 
-            <Exam titleImage={redTitleCircle} background={"redBackground"} className={styles.sectionContainer}/>
+            <Exam titleImage={redTitleCircle} background={"redBackground"} className={styles.sectionContainer} downloadLink={downloadLinkTwo}/>
             <StartingModule
                 moduleBackgroundColor={styles.whiteBackground}
                 moduleText={texts.M3_title}
@@ -539,7 +552,7 @@ const Slovenia = () => {
                 text5={parse(texts.M3_topic10_texts[4]) as string}
                 className={styles.sectionContainer}
             />
-            <Exam titleImage={redTitleCircle} background={styles.bgRed} className={styles.sectionContainer}/>
+            <Exam titleImage={redTitleCircle} background={styles.bgRed} className={styles.sectionContainer} downloadLink={downloadLinkThree}/>
         </div>
     );
 };

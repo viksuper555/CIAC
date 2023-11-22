@@ -16,12 +16,23 @@ interface Props {
     scribbleImgClass?: string;
     btnClass?: string;
     titleClass?: string;
+    downloadLink: string;
 }
 const Exam = ({
     titleImage, background, className, id, scribbleImg,
-    scribbleImgClass, btnClass, titleClass
+    scribbleImgClass, btnClass, titleClass, downloadLink
 }: Props) => {
     const {texts: {components: texts}, locale} = getTexts();
+
+    const handleOpenNewWindow = () => {
+        // Open a new window and set its location to the specified URL
+        const newWindow = window.open(downloadLink, '_blank');
+
+        // Optional: Focus the new window
+        if (newWindow) {
+            newWindow.focus();
+        }
+    };
 
     return (
             <div id={id} className={`${styles.examContainer} ${background} ${className}`}>
@@ -33,7 +44,7 @@ const Exam = ({
                 </div>
             <div className={styles.actionBtnContainer}>
                 <div className={styles.actionBtnInner}>
-                    <div className={`${styles.actionBtn} ${btnClass}`}>
+                    <div className={`${styles.actionBtn} ${btnClass}`} onClick={() => handleOpenNewWindow()}>
                         {texts.download}
                     </div>
                     <img src={scribbleImg ?? '/img/scribble.svg'} className={`${styles.scribble} ${scribbleImgClass}`}/>

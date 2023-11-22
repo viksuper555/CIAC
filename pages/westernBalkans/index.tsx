@@ -28,6 +28,9 @@ const WesternBalkans = () => {
     const [theme, setTheme] = useState("dark");
     const {texts: {WesternBalkans: texts}, locale} = getTexts();
     const [ytLink, setYtLink] = useState<any>()
+    const [downloadLinkOne, setDownloadLinkOne] = useState<any>()
+    const [downloadLinkTwo, setDownloadLinkTwo] = useState<any>()
+    const [downloadLinkThree, setDownloadLinkThree] = useState<any>()
 
     useEffect(() => {
         switch (locale) {
@@ -38,6 +41,9 @@ const WesternBalkans = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
                 );
+                setDownloadLinkOne("https://drive.google.com/uc?export=download&id=1HSjT7-gqpFEPJNmDaTpwt4odw6I2VDJL")
+                setDownloadLinkTwo("https://drive.google.com/uc?export=download&id=15j__UmCjpnSNB_qyiAWQZ_ok69Quu4w9")
+                setDownloadLinkThree("https://drive.google.com/uc?export=download&id=1feP_0B8Zve7LPCGtPvQj8pbkpEaW-5yu")
                 return;
             }
             case 'eng': {
@@ -47,6 +53,9 @@ const WesternBalkans = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
                 )
+                setDownloadLinkOne("https://drive.google.com/uc?export=download&id=1Rw_8ZZLhzuMAN08Hco6aSkHDv7t-kcPL")
+                setDownloadLinkTwo("https://drive.google.com/uc?export=download&id=156gKbVQObayVo7-3dhGUnMvZG1nv0tMI")
+                setDownloadLinkThree("https://drive.google.com/uc?export=download&id=1NTUBaQ3BJxHC_us6FYbicdnTtzpfWgZf")
                 return
             }
             case 'slo': {
@@ -56,6 +65,9 @@ const WesternBalkans = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
                 )
+                setDownloadLinkOne("https://drive.google.com/uc?export=download&id=1zKNn6AqTSWxS8J1XY1IYIjVhLgx1BkwB")
+                setDownloadLinkTwo("https://drive.google.com/uc?export=download&id=14RV3MswVcD5xpY5m0UY7mmWtqkLEz84r")
+                setDownloadLinkThree("https://drive.google.com/uc?export=download&id=1ddOcdIptmVoVaEDdzarnijlZWNYd3-OP")
                 return;
             }
         }
@@ -216,6 +228,7 @@ const WesternBalkans = () => {
             scribbleImgClass={styles.IAScribble}
             btnClass={styles.IABtnClass}
             titleClass={styles.IATestTitle}
+            downloadLink={downloadLinkOne}
         />
         <StartingModule moduleBackgroundColor={styles.tealBackground} moduleText={texts.M2_title}
                         commaImage={'/img/tealComma.svg'}
@@ -450,6 +463,7 @@ const WesternBalkans = () => {
             className={styles.sectionContainer}
             scribbleImg={'/img/westernBalkans/tealScribble.svg'}
             btnClass={styles.tealBtnClass}
+            downloadLink={downloadLinkTwo}
         />
         <StartingModule
             moduleBackgroundColor={styles.whiteBackground}
@@ -639,6 +653,7 @@ const WesternBalkans = () => {
             scribbleImgClass={styles.IAScribble}
             btnClass={styles.tealBtnClass}
             titleClass={styles.IATestTitle}
+            downloadLink={downloadLinkThree}
         />
     </div>
 }
