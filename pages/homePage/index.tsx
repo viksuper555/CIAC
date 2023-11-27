@@ -415,7 +415,7 @@ const HomePage = () => {
             <ContentReview
                 heading={texts.M3_content_heading}
                 contentImage={`./img/contentReview3-${locale}.png`}
-                background={"whiteBackground"}
+                background={"grayBackground"}
                 className={styles.sectionContainer}
             />
             <MainTopic
