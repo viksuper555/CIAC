@@ -4,6 +4,8 @@ import styles from './chatGpt.module.scss'
 import config from "@/lib/config";
 import {getTexts} from "@/contexts/LanguageContext";
 import Spinner from "@/components/ui/spinner";
+import TextareaAutosize from 'react-textarea-autosize';
+
 
 interface Props {
     prompt: string;
@@ -73,21 +75,25 @@ const ChatGpt = () => {
             </div>
             }
             {isOpen && <div className={styles.CGPTContentDownRight}>
-                <div className={styles.closeBtn} onClick={handleClose}> X</div>
                 <div className={styles.CGPTInputWrapper}>
-                    <input
+                    <TextareaAutosize
                         id={"chatGPT-prompt"}
                         placeholder={texts.enterSentence}
                         className={styles.CGPTInput}
                         value={prompt}
                         onChange={handleInputChange}
                     />
-                    <img
-                        src={'img/sendMsg.png'}
-                        className={styles.askChatGPTBtn}
-                        onClick={askChatGPT}
-                        title={generatingResponse ? "Generating response, please wait..." : ""}
-                    />
+                    <div className={"flex flex-col"}>
+                        <div className={styles.closeBtn} onClick={handleClose}>X</div>
+                        <div>
+                            <img
+                                src={'img/sendMsg.png'}
+                                className={styles.askChatGPTBtn}
+                                onClick={askChatGPT}
+                                title={generatingResponse ? "Generating response, please wait..." : ""}
+                            />
+                        </div>
+                    </div>
                 </div>
                 <pre id={"response-body"} className={styles.CGPTResponse}>
                         {response ?? "Response will be generated here..."}

@@ -688,7 +688,6 @@ const Europe = () => {
                 mainText={texts.M3_topic10_text}
                 className={`${styles.sectionContainer} ${styles.EDContainer}`}
                 btnClass={styles.YEBenefitsBtn}
-                btnText={"Виж примери"}
                 downRightImageClass={styles.YEImage}
                 bottomRightImageContainerClass={styles.YEImageContainer}
                 chatGptMessage={texts.chatGptQuestion11}

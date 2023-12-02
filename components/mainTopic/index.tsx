@@ -43,22 +43,25 @@ const MainTopic = ({
             </div>
 
             <div className={styles.mainTextContainer}>
-                <div className={styles.mainText}>
-                    {mainText}
+                <div className={"flex flex-col w-[55%]"}>
+                    <div className={styles.mainText}>
+                        {mainText}
+                    </div>
+                    {hasButton && <RedirectButton btnText={btnText} btnClass={btnClass} chatGptMessage={chatGptMessage}/>}
                 </div>
-                {hasButton && <RedirectButton btnText={btnText} btnClass={btnClass} chatGptMessage={chatGptMessage}/>}
+
+                {downRightImage &&
+                    <div className={`${styles.bottomRightImage} ${bottomRightImageContainerClass}`}>
+                        <Image
+                            src={downRightImage}
+                            alt={"img"}
+                            className={`${styles.bottomRightImage} ${downRightImageClass}`}
+                            height={300}
+                            width={500}
+                        />
+                    </div>
+                }
             </div>
-            {downRightImage &&
-                <div className={`${styles.bottomRightImage} ${bottomRightImageContainerClass}`}>
-                    <Image
-                        src={downRightImage}
-                        alt={"img"}
-                        className={`${styles.bottomRightImage} ${downRightImageClass}`}
-                        height={300}
-                        width={500}
-                    />
-                </div>
-            }
         </div>
     )
 }

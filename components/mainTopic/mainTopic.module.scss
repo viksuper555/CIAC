@@ -37,18 +37,16 @@
 }
 
 .mainTextContainer {
-    @apply flex flex-col;
-    margin-left: 110px;
+    @apply flex flex-row;
+    padding-left: 110px;
+    padding-right: 40px;
     margin-top: 50px;
-    width: 360px;
-
-    @media screen and (min-width: 1024px) {
-        @apply w-[40%];
-    }
+    width: 100%;
+    justify-content: space-between;
 }
 
 .mainText {
-    width: 828px;
+    margin-right: 10%;
     text-align: center;
     font-size: 34px;
     font-family: Montserrat;
@@ -56,6 +54,7 @@
     font-weight: 500;
     line-height: normal;
     z-index: 10;
+
 
     @media screen and (min-width: 1024px) {
         text-align: justify;

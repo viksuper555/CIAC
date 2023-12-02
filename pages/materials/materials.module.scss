@@ -1,7 +1,8 @@
 .moreMaterials {
-  max-width: 300px;
   border-bottom: 1px solid;
+  max-width: 600px;
   margin-top: 50px;
+  padding-bottom: 50px;
   padding-left: 150px;
   color: #686767;
   font-family: Montserrat;
@@ -12,7 +13,7 @@
 }
 
 .columnContainers {
-  @apply flex flex-row w-full
+  @apply flex flex-row w-full justify-center
 }
 
 .firstCol {
@@ -23,7 +24,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  max-width: 200px;
+  max-width: 450px;
   min-width: 200px;
 
   @media screen and (min-width: 1440px) {
@@ -76,14 +77,11 @@
 
 .sectionContainer {
   @apply py-4 relative overflow-hidden;
-  height: 1080px;
   width: 100%;
 }
 
 .textContainer {
-  overflow: auto;
-  font-size: 30px;
-  max-height: 500px;
+  font-size: 23px;
   margin-left: 10%;
   max-width: 80%;
 

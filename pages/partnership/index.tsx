@@ -55,7 +55,7 @@ const Partnership = () => {
                             ngo.omega@gmail.com
                         </p>
                     </div>
-                    <div className={styles.downloadContainer} onClick={() => handleOpenNewWindow("www.omega-ngo.bg")}>
+                    <div className={styles.downloadContainer} onClick={() => handleOpenNewWindow("https://www.omega-ngo.bg")}>
                         <p className={styles.downloadText}>Към сайта</p>
                     </div>
                 </div>
@@ -67,7 +67,7 @@ const Partnership = () => {
                             foundation.korenyak@gmail.com
                         </p>
                     </div>
-                    <div className={styles.downloadContainer} onClick={() => handleOpenNewWindow("www.korenyakproject.org")}>
+                    <div className={styles.downloadContainer} onClick={() => handleOpenNewWindow("https://www.korenyakproject.org")}>
                         <p className={styles.downloadText}>Към сайта</p>
                     </div>
                 </div>
@@ -79,9 +79,9 @@ const Partnership = () => {
                             info@drpdnm.org
                         </p>
                     </div>
-                    <div className={styles.downloadContainer} onClick={() => handleOpenNewWindow("nevladnik.info")}>
+                    <a className={styles.downloadContainer} href={"https://www.nevladnik.info"} target={"_blank"}>
                         <p className={styles.downloadText}>Към сайта</p>
-                    </div>
+                    </a>
                 </div>
             </div>
 
