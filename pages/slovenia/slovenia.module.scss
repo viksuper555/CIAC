@@ -282,6 +282,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  font-size: 64px;
   text-align: center;
 }
 
@@ -296,7 +297,11 @@
 }
 
 .redText {
-  color: #FB5E60;
+  color: #FB5E60 !important;
+}
+
+.blackText {
+  color: #000 !important;
 }
 
 .yellowBackground {
@@ -522,6 +527,6 @@
 }
 
 .grayBackground {
-  background: #686767;
+  background: #ECECEC !important;
   color: #686767 !important;
 }

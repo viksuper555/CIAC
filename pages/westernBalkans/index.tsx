@@ -20,7 +20,7 @@ import civilianEducationWB from "../../public/img/westernBalkans/civilianEducati
 import contentReview3 from "../../public/img/westernBalkans/content3Wb-bg.png"
 import activeCitizen from "../../public/img/westernBalkans/activeCitizen.png"
 import wbInstruments from "../../public/img/westernBalkans/wbInstruments.png"
-import wbDocuments from "../../public/img/westernBalkans/wbInstruments.png"
+import wbDocuments from "../../public/img/westernBalkans/wbDocuments.png"
 import {getTexts} from "@/contexts/LanguageContext";
 import parse from "html-react-parser";
 
@@ -157,6 +157,7 @@ const WesternBalkans = () => {
             titleText={texts.M1_topic1}
             mainText={texts.M1_topic1_text}
             chatGptMessage={texts.chatGptQuestion1}
+            downRightImage={'/img/wbPolicy.png'}
         />
         <Table
             tableImg={`/img/westernBalkans/westernBalkansTable-${locale}.png`}
@@ -291,7 +292,7 @@ const WesternBalkans = () => {
             mainText={texts.M2_topic7_text}
             className={`${styles.sectionContainer} ${styles.youthEngagement} ${styles.yellowBackground}`}
             btnClass={styles.btnYouthEngagement}
-            downRightImage={'/img/westernBalkans/youthactivityWb.png'}
+            downRightImage={'/img/wbYouthEngage.png'}
         />
         <div id={"YE-examples"} className={`${styles.citizenAwarenessExamplesContainer} ${styles.sectionContainer}`}>
             <div className={styles.CANotes}>
@@ -344,7 +345,7 @@ const WesternBalkans = () => {
             mainText={texts.M2_topic9_text}
             className={`${styles.sectionContainer} ${styles.youthEngagement} ${styles.yellowBackground}`}
             btnClass={styles.btnYouthEngagement}
-            downRightImage={'/img/westernBalkans/youthactivityWb.png'}
+            downRightImage={'/img/wbYouthOpportunity.png'}
             chatGptMessage={texts.chatGptQuestion7}
         />
         <div
@@ -403,7 +404,7 @@ const WesternBalkans = () => {
             mainText={texts.M2_topic13_text}
             className={`${styles.sectionContainer} ${styles.youthEngagement} ${styles.yellowBackground}`}
             btnClass={styles.btnYouthEngagement}
-            downRightImage={'/img/westernBalkans/falseNewsWb.png'}
+            downRightImage={'/img/estimateYouthActivity.png'}
         />
         <div id={"YE-examples"} className={`${styles.citizenAwarenessExamplesContainer} ${styles.sectionContainer}`}>
             <div className={styles.CANotes}>
@@ -487,7 +488,7 @@ const WesternBalkans = () => {
             mainText={texts.M3_topic3_text}
             className={`${styles.sectionContainer} ${styles.youthEngagement} ${styles.yellowBackground}`}
             btnClass={styles.btnYouthEngagement}
-            downRightImage={'/img/westernBalkans/falseNewsWb.png'}
+            downRightImage={'/img/module3Wb1.png'}
         />
         <div
             id={"life-wb"}
@@ -539,7 +540,7 @@ const WesternBalkans = () => {
             mainText={texts.M3_topic7_text}
             className={`${styles.sectionContainer} ${styles.youthEngagement}`}
             btnClass={styles.yellowText}
-            downRightImage={activeCitizen}
+            downRightImage={'/img/module3Wb2.png'}
             chatGptMessage={texts.chatGptQuestion9}
         />
         <div

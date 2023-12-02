@@ -60,6 +60,7 @@ const ChatGpt = () => {
                 alert("Something went wrong! Please try asking another question...")
             } else {
                 setResponse(`Q: ${prompt}\n\nA: ${chatCompletion?.choices[0]?.message?.content}`)
+                setPrompt("");
             }
 
             setGeneratingResponse(false);

@@ -15,7 +15,7 @@
 }
 
 .titleText {
-    @apply absolute self-center mt-6;
+    @apply absolute self-center mt-8;
     font-size: 50px;
     font-family: Montserrat;
     font-style: normal;
@@ -27,7 +27,7 @@
 
 .titleTextSmall {
     @apply absolute self-center mt-6;
-    font-size: 35px;
+    font-size: 32px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 700;

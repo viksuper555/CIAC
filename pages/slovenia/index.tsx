@@ -148,7 +148,8 @@ const Slovenia = () => {
             </div>
             <ContentReview
                 heading={texts.Content_heading}
-                contentImage={`./img/infoContent-${locale}.png`} background={styles.redText}
+                contentImage={`./img/infoContent-${locale}.png`}
+                background={`${styles.whiteBackground} ${styles.redText}`}
                 className={styles.sectionContainer}
             />
             <div
@@ -205,7 +206,7 @@ const Slovenia = () => {
             />
             <MainTopic
                 titleImage={grayTitleCircle}
-                background={"greyBackground"}
+                background={styles.grayBackground}
                 hasButton={false}
                 hasTitleImage={true}
                 titleText={texts.M1_topic4}
@@ -222,7 +223,7 @@ const Slovenia = () => {
                 text6={parse(texts.M1_topic5_texts[5]) as string}
                 className={styles.sectionContainer}
             />
-            <div id={"three-sticky"} className={`${styles.sectionContainer} greyBackground}`}>
+            <div id={"three-sticky"} className={`${styles.sectionContainer} ${styles.grayBackground}`}>
                 <div className={styles.titleContainer}>
                     <Image src={grayTitleCircle} alt={"commaImg"} className="mt-6"/>
                     <span className={`${styles.titleText}`}>
@@ -247,7 +248,7 @@ const Slovenia = () => {
                 hasButton={true}
                 hasTitleImage={true}
                 titleText={texts.M1_topic6}
-                downRightImage={peopleWithPlanet}
+                downRightImage={'/img/sloveniaM1T6.png'}
                 mainText={texts.M1_topic6_text}
                 className={styles.sectionContainer}
                 chatGptMessage={texts.chatGptQuestion2}
@@ -277,7 +278,8 @@ const Slovenia = () => {
 
             <ContentReview
                 heading={texts.Content_heading}
-                contentImage={`./img/contentReview2-${locale}.png`} background={styles.bgRed}
+                contentImage={`./img/contentReview2-${locale}.png`}
+                background={styles.bgRed}
                 className={styles.sectionContainer}
             />
             <MainTopic
@@ -312,7 +314,7 @@ const Slovenia = () => {
                 hasButton={false}
                 hasTitleImage={true}
                 titleText={texts.M2_topic5}
-                downRightImage={citizenEducation}
+                downRightImage={'/img/sloveniaM2T5.png'}
                 mainText={texts.M2_topic5_text}
                 className={styles.sectionContainer}
             />
@@ -322,7 +324,7 @@ const Slovenia = () => {
                 text3={parse(texts.M2_topic6_texts[2]) as string}
                 text4={parse(texts.M2_topic6_texts[3]) as string}
                 text5={parse(texts.M2_topic6_texts[4]) as string}
-                className={styles.sectionContainer}
+                className={`${styles.bgBlue} ${styles.sectionContainer} ${styles.blackText}`}
             />
             <MainTopic
                 titleImage={redTitleCircle}
@@ -330,7 +332,7 @@ const Slovenia = () => {
                 hasButton={true}
                 hasTitleImage={true}
                 titleText={texts.M2_topic7}
-                downRightImage={citizenEducation}
+                downRightImage={'/img/sloveniaM2T7.png'}
                 mainText={texts.M2_topic7_text}
                 className={styles.sectionContainer}
                 chatGptMessage={texts.chatGptQuestion4}
@@ -345,7 +347,7 @@ const Slovenia = () => {
             </TextWithAction>
             <MainTopic
                 titleImage={grayTitleCircle}
-                background={"greyBackground"}
+                background={styles.grayBackground}
                 hasButton={true}
                 hasTitleImage={true}
                 titleText={texts.M2_topic9}
@@ -375,7 +377,7 @@ const Slovenia = () => {
                 hasButton={true}
                 hasTitleImage={true}
                 titleText={texts.M2_topic10}
-                downRightImage={celebrating}
+                downRightImage={'/img/sloveniaM2T10.png'}
                 mainText={texts.M2_topic10_text}
                 className={styles.sectionContainer}
                 chatGptMessage={texts.chatGptQuestion6}
@@ -405,7 +407,7 @@ const Slovenia = () => {
                 hasButton={true}
                 hasTitleImage={true}
                 titleText={texts.M2_topic12}
-                downRightImage={celebrating}
+                downRightImage={"/img/sloveniaM2T12.png"}
                 mainText={texts.M2_topic12_text}
                 className={styles.sectionContainer}
                 chatGptMessage={texts.chatGptQuestion7}
@@ -539,12 +541,13 @@ const Slovenia = () => {
                 </div>
             </div>
             <MainTopic
+                id={"m3t9"}
                 titleImage={redTitleCircle}
                 background={styles.bgRed}
                 hasButton={true}
                 hasTitleImage={true}
                 titleText={texts.M3_topic9}
-                downRightImage={notesCheck}
+                downRightImage={'/img/sloveniaM3T9.png'}
                 mainText={texts.M3_topic9_text}
                 className={styles.sectionContainer}
                 btnText={texts.M3_topic9_button}
@@ -556,7 +559,7 @@ const Slovenia = () => {
                 text3={parse(texts.M3_topic10_texts[2]) as string}
                 text4={parse(texts.M3_topic10_texts[3]) as string}
                 text5={parse(texts.M3_topic10_texts[4]) as string}
-                className={styles.sectionContainer}
+                className={`${styles.bgRed} ${styles.sectionContainer} ${styles.blackText}`}
             />
             <Exam
                 btnClass={styles.redText}
