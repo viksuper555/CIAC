@@ -168,7 +168,7 @@ const Europe = () => {
                 className={styles.sectionContainer}
             />
             <TextWithAction
-                className={`${styles.sectionContainer} ${styles.bgBlue}`}
+                className={`${styles.sectionContainer} ${styles.bgBlue} ${styles.activeCitizensContainer2}`}
                 scribbleImg={'/img/scribble.svg'}
                 hasActionBtn={true}
                 actionBtnTxt={texts.M1_topic4_button}
