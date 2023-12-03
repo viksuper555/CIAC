@@ -296,6 +296,22 @@
   color: white;
 }
 
+.activeCitizensContainer2 {
+  padding-top: 120px !important;
+}
+
+.sparkleNew {
+  @apply absolute hidden;
+  width: 65px;
+
+  @media screen and (min-width: 1200px) {
+    @apply block;
+    right: -30px !important;
+    top: -20px !important;
+    left: auto !important;
+  }
+}
+
 .redText {
   color: #FB5E60 !important;
 }

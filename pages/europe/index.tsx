@@ -381,7 +381,7 @@ const Europe = () => {
                 chatGptMessage={texts.chatGptQuestion4}
             />
             <TextWithAction
-                className={`${styles.sectionContainer} ${styles.bgBlue}`}
+                className={`${styles.sectionContainer} ${styles.bgBlue} ${styles.activeCitizensContainer2}`}
                 scribbleImg={'/img/scribble.svg'}
                 hasActionBtn={false}
             >
@@ -406,7 +406,7 @@ const Europe = () => {
                 chatGptMessage={texts.chatGptQuestion5}
             />
             <TextWithAction
-                className={`${styles.sectionContainer} ${styles.bgYellow}`}
+                className={`${styles.sectionContainer} ${styles.bgYellow} ${styles.activeCitizensContainer2}`}
                 scribbleImg={'/img/scribble-yellow.svg'}
                 scribbleImgClass={styles.YEScribbleClass}
                 hasActionBtn={false}

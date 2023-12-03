@@ -19,7 +19,7 @@ const Materials = () => {
             </div>
 
             <div className={styles.moreMaterials}>
-                Материали
+                {texts.materials}
             </div>
             <div className={styles.columnContainers}>
                 <div className={styles.firstCol}>

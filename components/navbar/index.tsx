@@ -50,9 +50,6 @@ const Navbar:FC<Props> = ({changeTheme, currentTheme, className}: Props) => {
                                 <li><a className={styles.item} href="/methodology"> Study Methodology</a></li>
                             </div>
                         </ul>
-                        <li>
-                            <a href={"/"}> {texts.contacts} </a>
-                        </li>
                         <LangSwitcher/>
                     </ul>
                 </div>

@@ -189,7 +189,7 @@ const Slovenia = () => {
                 className={styles.sectionContainer}
             />
             <TextWithAction
-                className={`${styles.sectionContainer} ${styles.bgRed}`}
+                className={`${styles.sectionContainer} ${styles.bgRed} ${styles.activeCitizensContainer2}`}
                 scribbleImg={'/img/redScribble.png'}
                 hasActionBtn={false}
             >
@@ -255,8 +255,9 @@ const Slovenia = () => {
             />
 
             <TextWithAction
-                className={`${styles.sectionContainer} ${styles.bgBlue}`}
-                scribbleImg={'/img/Scribble.svg'}
+                className={`${styles.sectionContainer} ${styles.bgBlue} ${styles.activeCitizensContainer2}`}
+                scribbleImg={'/img/sparkle.svg'}
+                scribbleImgClass={styles.sparkleNew}
                 hasActionBtn={false}
                 actionBtnTxt={texts.M1_topic7_button}
             >
