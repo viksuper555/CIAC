@@ -24,26 +24,26 @@ const Partnership = () => {
             </div>
             <div className={""}>
                 <div className={styles.partnerTitle}>
-                    {texts.partnerOne}
+                    {texts.partner1}
                 </div>
                 <div className={styles.partnerText}>
-                    {texts.contentOne}
+                    {texts.content1}
                 </div>
             </div>
             <div className={""}>
                 <div className={styles.partnerTitle}>
-                    {texts.partnerTwo}
+                    {texts.partner2}
                 </div>
                 <div className={styles.partnerText}>
-                    {texts.contentTwo}
+                    {texts.content2}
                 </div>
             </div>
             <div className={""}>
                 <div className={styles.partnerTitle}>
-                    {texts.partnerThree}
+                    {texts.partner3}
                 </div>
                 <div className={styles.partnerText}>
-                    {texts.contentThree}
+                    {texts.content3}
                 </div>
             </div>
             <div className={styles.partnerBoxContainer}>
@@ -51,36 +51,36 @@ const Partnership = () => {
                     <img src={'./img/organizationOmega.png'} width={400}/>
                     <div className={styles.organizationMail}>
                         <p className={styles.p}>
-                            Кърджали, България
+                            {texts.partner1_info}
                             ngo.omega@gmail.com
                         </p>
                     </div>
                     <div className={styles.downloadContainer} onClick={() => handleOpenNewWindow("https://www.omega-ngo.bg")}>
-                        <p className={styles.downloadText}>Към сайта</p>
+                        <p className={styles.downloadText}>{texts.button_text}</p>
                     </div>
                 </div>
                 <div className={styles.handbookContainer}>
                     <img src={'./img/fondaciqKorenyak.png'} width={400}/>
                     <div className={styles.organizationMail}>
                         <p className={styles.p}>
-                            София, България
+                            {texts.partner2_info}
                             foundation.korenyak@gmail.com
                         </p>
                     </div>
                     <div className={styles.downloadContainer} onClick={() => handleOpenNewWindow("https://www.korenyakproject.org")}>
-                        <p className={styles.downloadText}>Към сайта</p>
+                        <p className={styles.downloadText}>{texts.button_text}</p>
                     </div>
                 </div>
                 <div className={styles.handbookContainer}>
                     <img src={'./img/drpd.png'} width={400}/>
                     <div className={styles.organizationMail}>
                         <p className={styles.p}>
-                            Ново Место, Словения
+                            {texts.partner3_info}
                             info@drpdnm.org
                         </p>
                     </div>
                     <a className={styles.downloadContainer} href={"https://www.nevladnik.info"} target={"_blank"}>
-                        <p className={styles.downloadText}>Към сайта</p>
+                        <p className={styles.downloadText}>{texts.button_text}</p>
                     </a>
                 </div>
             </div>
