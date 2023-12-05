@@ -32,7 +32,7 @@ const Navbar:FC<Props> = ({changeTheme, currentTheme, className}: Props) => {
                             </div>
                         </ul>
                         <ul className={styles.moduleDropdown}>
-                            <a href={"/"}> {texts.modules} </a>
+                            <a href={"/modules"}> {texts.modules} </a>
                             <div className={styles.dropdownItems}>
                                 <li><a className={styles.item} href="/"> {texts.bulgaria}</a></li>
                                 <li><a className={styles.item} href="/europe">{texts.europe}</a></li>

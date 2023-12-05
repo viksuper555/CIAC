@@ -1,6 +1,7 @@
 "use client";
 import React, {useEffect, useState} from "react";
 import Navbar from "@/components/navbar";
+import "../../app/globals.scss";
 import StartingModule from "@/components/startingModule";
 import CenteredScheme from "@/components/centeredScheme";
 import scheme1 from "../../public/img/bulgaria/scheme1-bg.png";

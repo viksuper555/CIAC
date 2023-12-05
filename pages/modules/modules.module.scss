@@ -1,0 +1,22 @@
+.container {
+  margin: 20px auto;
+  width: 100%;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-row: auto auto;
+  grid-column-gap: 100px;
+  justify-content: center;
+  grid-row-gap: 50px;
+}
+
+.box {
+  color: #fff;
+  display: flex;
+  width: 450px;
+  max-width: 900px;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-family: sans-serif;
+}
