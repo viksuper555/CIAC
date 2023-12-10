@@ -22,7 +22,7 @@ const Navbar:FC<Props> = ({changeTheme, currentTheme, className}: Props) => {
                 <div className={"flex justify-end w-full"}>
                     <ul className={styles.links}>
                         <ul className={styles.aboutProject}>
-                            <a href={"/aboutProject"}> {texts.aboutProject} </a>
+                            <a href={"/"}> {texts.aboutProject} </a>
                             <div className={styles.aboutItems}>
                                 <li><a className={styles.item} href="/resume"> {texts.resume} </a></li>
                                 <li><a className={styles.item} href="/goals">{texts.goals} </a></li>
@@ -34,7 +34,7 @@ const Navbar:FC<Props> = ({changeTheme, currentTheme, className}: Props) => {
                         <ul className={styles.moduleDropdown}>
                             <a href={"/modules"}> {texts.modules} </a>
                             <div className={styles.dropdownItems}>
-                                <li><a className={styles.item} href="/"> {texts.bulgaria}</a></li>
+                                <li><a className={styles.item} href="/bulgaria"> {texts.bulgaria}</a></li>
                                 <li><a className={styles.item} href="/europe">{texts.europe}</a></li>
                                 <li><a className={styles.item} href="/slovenia">{texts.slovenia}</a></li>
                                 <li><a className={styles.item} href="/westernBalkans">{texts.westernBalkans}</a></li>
